@@ -57,7 +57,7 @@ Principle developer:
 Developers:
 - Robin Drahovskey
 - Caroline Jabs
-- David Korzeniewski
+- Hans Vrapi
 
 
    [Storm]: <https://www.stormchecker.org/>
