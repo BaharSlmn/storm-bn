@@ -1,0 +1,23 @@
+Network name = sachs
+
+
+Time for Sensitivity Analysis: 0.010474920272827148s
+
+
+Parameter node = PKA
+Parameter entry = [PKCLOW,PKALOW]
+Hypothesis = RafLOW
+Evidence = default
+
+
+Parameter value = 0.3864255
+Sensitivity value = -0.22682683214386243
+P(Abnormal | e) = 0.5112633348336981
+Alpha = -0.22682683214386243
+Beta = 0.5989150068583062
+Delta = 1.0
+Gamma = 0.0
+
+
+Eval(0.2) = 0.5535496404295337
+Eval'(0.2) = -0.22682683214386243

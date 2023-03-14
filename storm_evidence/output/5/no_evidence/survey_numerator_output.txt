@@ -1,0 +1,28 @@
+Storm 1.6.4
+
+Date: Wed Jun  8 15:08:55 2022
+Command line arguments: --jani jani_files/no_evidence/survey.jani --prop 'P=? [F(E=1|O=1)]'
+Current working directory: /home/hans/Desktop/Storm-bn/storm_evidence
+
+Time for model input parsing: 0.001s.
+
+ WARN (FormulaParserGrammar.cpp:328): Identifier `R' coincides with a reserved keyword or operator. Property expressions using the variable or constant 'R' will not be parsed correctly.
+ WARN (FormulaParserGrammar.cpp:328): Identifier `S' coincides with a reserved keyword or operator. Property expressions using the variable or constant 'S' will not be parsed correctly.
+ WARN (FormulaParserGrammar.cpp:331): Identifier `T' coincides with a reserved keyword or operator. Property expressions using the variable or constant 'T' might not be parsed correctly.
+Time for model construction: 0.019s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	18
+Transitions: 	35
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 3 item(s)
+   * init -> 1 item(s)
+   * ((E = 1) | (O = 1)) -> 2 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F ((E = 1) | (O = 1))] ...
+Result (for initial states): 0.284416
+Time for model checking: 0.000s.

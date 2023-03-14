@@ -1,0 +1,1 @@
+storm --jani storm/hailfinder/hailfinder.jani --prop "P=? [F((VISCloudCov=0|CldShadeOth=0|LoLevMoistAd=0|InsChange=1|CapChange=0|MorningCIN=0|AMCINInScen=0|CurPropConv=0))]" >> storm/output/hailfinder_disjunction_8_result.txt

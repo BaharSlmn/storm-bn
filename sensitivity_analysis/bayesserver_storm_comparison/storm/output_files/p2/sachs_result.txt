@@ -1,0 +1,69 @@
+Storm-pars 1.6.4
+
+Date: Fri Apr 22 12:40:40 2022
+Command line arguments: -drn storm/drn_files/p2/sachs.drn --prop 'P=? [F("Raf0")]' --bisimulation
+Current working directory: /experiments/bayesserver_storm_comparison
+
+Time for model construction: 0.022s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	130
+Transitions: 	384
+Reward Models:  none
+State Labels: 	35 labels
+   * Akt1 -> 1 item(s)
+   * deadlock -> 3 item(s)
+   * Akt0 -> 1 item(s)
+   * Erk2 -> 3 item(s)
+   * Erk1 -> 3 item(s)
+   * Plcg2 -> 1 item(s)
+   * Mek1 -> 3 item(s)
+   * PIP30 -> 3 item(s)
+   * PIP22 -> 1 item(s)
+   * PIP21 -> 1 item(s)
+   * PKA1 -> 3 item(s)
+   * P381 -> 9 item(s)
+   * PIP31 -> 3 item(s)
+   * PKC2 -> 1 item(s)
+   * Akt2 -> 1 item(s)
+   * init -> 1 item(s)
+   * PKC0 -> 1 item(s)
+   * Jnk2 -> 9 item(s)
+   * PKC1 -> 1 item(s)
+   * PIP20 -> 1 item(s)
+   * PKA0 -> 3 item(s)
+   * Plcg0 -> 1 item(s)
+   * PKA2 -> 3 item(s)
+   * Mek0 -> 3 item(s)
+   * Erk0 -> 3 item(s)
+   * Jnk0 -> 9 item(s)
+   * P382 -> 9 item(s)
+   * Plcg1 -> 1 item(s)
+   * P380 -> 9 item(s)
+   * Jnk1 -> 9 item(s)
+   * Raf0 -> 9 item(s)
+   * Raf1 -> 9 item(s)
+   * Raf2 -> 9 item(s)
+   * PIP32 -> 3 item(s)
+   * Mek2 -> 3 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	42
+Transitions: 	66
+Reward Models:  none
+State Labels: 	2 labels
+   * init -> 1 item(s)
+   * Raf0 -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F "Raf0"] ...
+Result (initial states): (-6250000516336889087971751 * (106791239540170584568059928881972500000000*p0*p1+(-175887127123815038375102261936250000000000)*p111+(-119206513154170584568059928881972500000000)*p1+(-108217345301689185421551426572173869919441)*p11))/(1245078125000000000000000000000000000000000000000000000000000000000)
+Time for model checking: 0.000s.
+

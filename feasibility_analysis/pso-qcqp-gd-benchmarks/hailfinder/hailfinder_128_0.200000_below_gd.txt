@@ -1,0 +1,865 @@
+Storm-pars 1.6.4 (dev)
+
+Date: Fri Dec 31 13:30:36 2021
+Command line arguments: --explicit-drn pso-qcqp-gd-benchmarks/hailfinder/hailfinder_128.drn --prop 'Pmin<=0.200000 [F("R5Fcst1"|"Dewpoints1"|"LowLLapse1"|"WindFieldPln1"|"PlainsFcst1")]
+' --find-feasible
+Current working directory: /Users/bahare/Documents/Experiments/gradient-descent
+
+Time for model construction: 0.940s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	20304
+Transitions: 	55976
+Reward Models:  none
+State Labels: 	225 labels
+   * N34StarFcst1 -> 33 item(s)
+   * LLIW0 -> 1188 item(s)
+   * SubjVertMo0 -> 4 item(s)
+   * OutflowFrMt1 -> 96 item(s)
+   * QGVertMotion0 -> 16 item(s)
+   * Dewpoints4 -> 1 item(s)
+   * SubjVertMo1 -> 4 item(s)
+   * CombClouds1 -> 16 item(s)
+   * RaoContMoist0 -> 4 item(s)
+   * RaoContMoist1 -> 4 item(s)
+   * N0_7muVerMo1 -> 1 item(s)
+   * Scenario8 -> 9 item(s)
+   * CombVerMo1 -> 1 item(s)
+   * CapChange0 -> 99 item(s)
+   * CombMoisture2 -> 4 item(s)
+   * AreaMeso_ALS0 -> 1 item(s)
+   * ScenRelAMCIN0 -> 54 item(s)
+   * WindAloft0 -> 10 item(s)
+   * QGVertMotion1 -> 16 item(s)
+   * AMDewptCalPl2 -> 99 item(s)
+   * MorningBound0 -> 336 item(s)
+   * SatContMoist1 -> 16 item(s)
+   * ScenRel3_42 -> 9 item(s)
+   * AreaMoDryAir0 -> 4 item(s)
+   * LoLevMoistAd2 -> 297 item(s)
+   * MorningBound2 -> 336 item(s)
+   * ScnRelPlFcst10 -> 108 item(s)
+   * SatContMoist3 -> 16 item(s)
+   * N0_7muVerMo3 -> 1 item(s)
+   * CombMoisture1 -> 4 item(s)
+   * SubjVertMo2 -> 4 item(s)
+   * AMDewptCalPl0 -> 99 item(s)
+   * R5Fcst0 -> 11 item(s)
+   * CombVerMo2 -> 1 item(s)
+   * CombMoisture3 -> 4 item(s)
+   * ScenRel3_41 -> 9 item(s)
+   * AreaMoDryAir1 -> 4 item(s)
+   * Date2 -> 9 item(s)
+   * SatContMoist0 -> 16 item(s)
+   * TempDis1 -> 11 item(s)
+   * AreaMoDryAir3 -> 4 item(s)
+   * Boundaries0 -> 144 item(s)
+   * ScnRelPlFcst8 -> 108 item(s)
+   * SynForcng4 -> 11 item(s)
+   * MidLLapse2 -> 10 item(s)
+   * Scenario10 -> 9 item(s)
+   * SfcWndShfDis3 -> 10 item(s)
+   * MidLLapse1 -> 11 item(s)
+   * VISCloudCov0 -> 16 item(s)
+   * CldShadeOth0 -> 4 item(s)
+   * AMInstabMt0 -> 12 item(s)
+   * MorningBound1 -> 336 item(s)
+   * SynForcng1 -> 11 item(s)
+   * VISCloudCov1 -> 16 item(s)
+   * QGVertMotion3 -> 16 item(s)
+   * QGVertMotion2 -> 16 item(s)
+   * RHRatio2 -> 11 item(s)
+   * AreaMoDryAir2 -> 4 item(s)
+   * AreaMeso_ALS3 -> 1 item(s)
+   * CurPropConv1 -> 297 item(s)
+   * CombClouds2 -> 16 item(s)
+   * IRCloudCover0 -> 48 item(s)
+   * CapChange2 -> 99 item(s)
+   * CombMoisture0 -> 4 item(s)
+   * Scenario4 -> 9 item(s)
+   * Scenario3 -> 9 item(s)
+   * IRCloudCover2 -> 48 item(s)
+   * Boundaries1 -> 144 item(s)
+   * MeanRH2 -> 10 item(s)
+   * CombClouds0 -> 16 item(s)
+   * AMDewptCalPl1 -> 99 item(s)
+   * ScenRel3_44 -> 18 item(s)
+   * CldShadeOth2 -> 4 item(s)
+   * Dewpoints1 -> 1 item(s)
+   * AMInstabMt2 -> 12 item(s)
+   * ScenRelAMIns5 -> 108 item(s)
+   * WindFieldPln5 -> 7 item(s)
+   * Date5 -> 9 item(s)
+   * InsInMt1 -> 12 item(s)
+   * MountainFcst0 -> 3 item(s)
+   * WndHodograph1 -> 36 item(s)
+   * AMInstabMt1 -> 12 item(s)
+   * N34StarFcst0 -> 33 item(s)
+   * MvmtFeatures2 -> 11 item(s)
+   * WndHodograph2 -> 36 item(s)
+   * WndHodograph3 -> 36 item(s)
+   * ScnRelPlFcst7 -> 108 item(s)
+   * RaoContMoist2 -> 4 item(s)
+   * MeanRH0 -> 10 item(s)
+   * Date1 -> 9 item(s)
+   * Scenario2 -> 9 item(s)
+   * Boundaries2 -> 144 item(s)
+   * CapInScen1 -> 99 item(s)
+   * AreaMeso_ALS2 -> 1 item(s)
+   * Dewpoints0 -> 1 item(s)
+   * MeanRH1 -> 10 item(s)
+   * CldShadeConv2 -> 72 item(s)
+   * CompPlFcst0 -> 3 item(s)
+   * CompPlFcst1 -> 3 item(s)
+   * ScenRelAMIns2 -> 108 item(s)
+   * CapInScen2 -> 99 item(s)
+   * CompPlFcst2 -> 3 item(s)
+   * Scenario1 -> 9 item(s)
+   * WindFieldMt0 -> 11 item(s)
+   * Scenario5 -> 9 item(s)
+   * OutflowFrMt2 -> 96 item(s)
+   * AMCINInScen0 -> 297 item(s)
+   * RaoContMoist3 -> 4 item(s)
+   * SynForcng0 -> 11 item(s)
+   * AreaMeso_ALS1 -> 1 item(s)
+   * LatestCIN3 -> 297 item(s)
+   * ScnRelPlFcst1 -> 108 item(s)
+   * PlainsFcst2 -> 33 item(s)
+   * Date4 -> 9 item(s)
+   * init -> 1 item(s)
+   * ScenRelAMIns0 -> 324 item(s)
+   * Scenario0 -> 9 item(s)
+   * MorningCIN3 -> 297 item(s)
+   * InsInMt2 -> 12 item(s)
+   * SfcWndShfDis2 -> 11 item(s)
+   * RHRatio0 -> 9 item(s)
+   * Scenario6 -> 9 item(s)
+   * N0_7muVerMo2 -> 1 item(s)
+   * AMCINInScen2 -> 297 item(s)
+   * Date0 -> 9 item(s)
+   * Scenario7 -> 9 item(s)
+   * Scenario9 -> 9 item(s)
+   * WndHodograph0 -> 36 item(s)
+   * LIfr12ZDENSd0 -> 297 item(s)
+   * LIfr12ZDENSd3 -> 297 item(s)
+   * ScenRelAMIns1 -> 432 item(s)
+   * ScenRelAMIns3 -> 108 item(s)
+   * N0_7muVerMo0 -> 1 item(s)
+   * AMInsWliScen0 -> 99 item(s)
+   * AMInsWliScen1 -> 99 item(s)
+   * CldShadeConv1 -> 72 item(s)
+   * MorningCIN1 -> 297 item(s)
+   * AMInsWliScen2 -> 99 item(s)
+   * LoLevMoistAd0 -> 297 item(s)
+   * ScenRelAMCIN1 -> 243 item(s)
+   * MountainFcst1 -> 3 item(s)
+   * LoLevMoistAd1 -> 297 item(s)
+   * ScnRelPlFcst5 -> 108 item(s)
+   * OutflowFrMt0 -> 144 item(s)
+   * LoLevMoistAd3 -> 297 item(s)
+   * InsChange1 -> 297 item(s)
+   * TempDis0 -> 11 item(s)
+   * InsChange2 -> 297 item(s)
+   * InsChange0 -> 297 item(s)
+   * InsSclInScen1 -> 99 item(s)
+   * IRCloudCover1 -> 48 item(s)
+   * InsSclInScen2 -> 99 item(s)
+   * MorningCIN0 -> 297 item(s)
+   * MorningCIN2 -> 297 item(s)
+   * SfcWndShfDis0 -> 10 item(s)
+   * WindFieldPln0 -> 11 item(s)
+   * ScenRelAMIns4 -> 108 item(s)
+   * AMCINInScen1 -> 297 item(s)
+   * Date3 -> 9 item(s)
+   * CapInScen0 -> 99 item(s)
+   * VISCloudCov2 -> 16 item(s)
+   * LatestCIN0 -> 297 item(s)
+   * LIfr12ZDENSd2 -> 297 item(s)
+   * LatestCIN1 -> 297 item(s)
+   * LatestCIN2 -> 297 item(s)
+   * SubjVertMo3 -> 4 item(s)
+   * Dewpoints6 -> 1 item(s)
+   * LLIW1 -> 1188 item(s)
+   * LowLLapse3 -> 10 item(s)
+   * ScnRelPlFcst9 -> 108 item(s)
+   * MidLLapse0 -> 10 item(s)
+   * LLIW2 -> 1188 item(s)
+   * CurPropConv0 -> 297 item(s)
+   * CurPropConv2 -> 297 item(s)
+   * CurPropConv3 -> 297 item(s)
+   * LIfr12ZDENSd1 -> 297 item(s)
+   * ScnRelPlFcst0 -> 108 item(s)
+   * ScenRel3_40 -> 45 item(s)
+   * SynForcng2 -> 10 item(s)
+   * ScnRelPlFcst2 -> 108 item(s)
+   * WindFieldPln4 -> 10 item(s)
+   * CldShadeConv0 -> 108 item(s)
+   * ScnRelPlFcst3 -> 108 item(s)
+   * ScnRelPlFcst4 -> 108 item(s)
+   * ScnRelPlFcst6 -> 108 item(s)
+   * PlainsFcst0 -> 33 item(s)
+   * PlainsFcst1 -> 33 item(s)
+   * ScenRel3_43 -> 18 item(s)
+   * N34StarFcst2 -> 33 item(s)
+   * R5Fcst1 -> 11 item(s)
+   * SatContMoist2 -> 16 item(s)
+   * SfcWndShfDis6 -> 11 item(s)
+   * R5Fcst2 -> 11 item(s)
+   * WindFieldPln1 -> 10 item(s)
+   * CapChange1 -> 99 item(s)
+   * WindFieldPln2 -> 11 item(s)
+   * SynForcng3 -> 11 item(s)
+   * CombVerMo0 -> 1 item(s)
+   * WindFieldPln3 -> 10 item(s)
+   * RHRatio1 -> 9 item(s)
+   * WindFieldMt1 -> 11 item(s)
+   * CldShadeOth1 -> 4 item(s)
+   * CombVerMo3 -> 1 item(s)
+   * TempDis2 -> 10 item(s)
+   * LLIW3 -> 1188 item(s)
+   * InsSclInScen0 -> 99 item(s)
+   * MountainFcst2 -> 3 item(s)
+   * InsInMt0 -> 12 item(s)
+   * TempDis3 -> 11 item(s)
+   * WindAloft1 -> 9 item(s)
+   * WindAloft2 -> 9 item(s)
+   * WindAloft3 -> 11 item(s)
+   * MvmtFeatures0 -> 10 item(s)
+   * MvmtFeatures1 -> 10 item(s)
+   * MvmtFeatures3 -> 10 item(s)
+   * SfcWndShfDis1 -> 11 item(s)
+   * SfcWndShfDis4 -> 9 item(s)
+   * SfcWndShfDis5 -> 11 item(s)
+   * LowLLapse0 -> 10 item(s)
+   * LowLLapse1 -> 11 item(s)
+   * LowLLapse2 -> 11 item(s)
+   * deadlock -> 7 item(s)
+   * Dewpoints2 -> 1 item(s)
+   * Dewpoints3 -> 1 item(s)
+   * Dewpoints5 -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model simplification: 0.753s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	436
+Transitions: 	2764
+Reward Models:  none
+State Labels: 	226 labels
+   * WndHodograph2 -> 0 item(s)
+   * WindFieldPln3 -> 0 item(s)
+   * ScnRelPlFcst4 -> 30 item(s)
+   * SatContMoist3 -> 0 item(s)
+   * N0_7muVerMo3 -> 0 item(s)
+   * WindFieldMt0 -> 0 item(s)
+   * Scenario1 -> 0 item(s)
+   * CompPlFcst2 -> 0 item(s)
+   * TempDis1 -> 0 item(s)
+   * WindAloft1 -> 0 item(s)
+   * AreaMoDryAir0 -> 0 item(s)
+   * LoLevMoistAd2 -> 0 item(s)
+   * WindAloft3 -> 0 item(s)
+   * LowLLapse1 -> 1 item(s)
+   * SfcWndShfDis1 -> 10 item(s)
+   * SfcWndShfDis0 -> 9 item(s)
+   * MorningCIN2 -> 0 item(s)
+   * CombMoisture1 -> 0 item(s)
+   * IRCloudCover0 -> 0 item(s)
+   * ScenRelAMIns1 -> 0 item(s)
+   * InsChange2 -> 0 item(s)
+   * VISCloudCov0 -> 0 item(s)
+   * QGVertMotion3 -> 0 item(s)
+   * QGVertMotion2 -> 0 item(s)
+   * SynForcng4 -> 9 item(s)
+   * ScnRelPlFcst8 -> 30 item(s)
+   * MidLLapse2 -> 0 item(s)
+   * Boundaries0 -> 0 item(s)
+   * LatestCIN2 -> 0 item(s)
+   * SubjVertMo3 -> 0 item(s)
+   * Dewpoints6 -> 1 item(s)
+   * SubjVertMo1 -> 0 item(s)
+   * PlainsFcst0 -> 1 item(s)
+   * SfcWndShfDis4 -> 8 item(s)
+   * N34StarFcst1 -> 1 item(s)
+   * OutflowFrMt1 -> 0 item(s)
+   * SubjVertMo0 -> 0 item(s)
+   * LLIW0 -> 1 item(s)
+   * WndHodograph3 -> 0 item(s)
+   * MorningCIN0 -> 0 item(s)
+   * MorningBound2 -> 0 item(s)
+   * ScnRelPlFcst10 -> 0 item(s)
+   * ScnRelPlFcst6 -> 30 item(s)
+   * ScnRelPlFcst3 -> 30 item(s)
+   * WindAloft2 -> 0 item(s)
+   * ScnRelPlFcst2 -> 30 item(s)
+   * LoLevMoistAd3 -> 0 item(s)
+   * AMCINInScen2 -> 0 item(s)
+   * Date0 -> 0 item(s)
+   * ScnRelPlFcst0 -> 33 item(s)
+   * ScenRel3_40 -> 0 item(s)
+   * SynForcng2 -> 8 item(s)
+   * deadlock -> 2 item(s)
+   * Scenario4 -> 0 item(s)
+   * Scenario3 -> 0 item(s)
+   * SatContMoist1 -> 0 item(s)
+   * SynForcng0 -> 9 item(s)
+   * AMCINInScen0 -> 0 item(s)
+   * RaoContMoist3 -> 0 item(s)
+   * VISCloudCov1 -> 0 item(s)
+   * RaoContMoist1 -> 0 item(s)
+   * RaoContMoist0 -> 0 item(s)
+   * RHRatio1 -> 0 item(s)
+   * R5Fcst2 -> 0 item(s)
+   * QGVertMotion1 -> 0 item(s)
+   * MidLLapse1 -> 0 item(s)
+   * AreaMoDryAir3 -> 0 item(s)
+   * QGVertMotion0 -> 0 item(s)
+   * Dewpoints4 -> 1 item(s)
+   * ScnRelPlFcst9 -> 30 item(s)
+   * MidLLapse0 -> 0 item(s)
+   * LowLLapse0 -> 9 item(s)
+   * PlainsFcst1 -> 1 item(s)
+   * Scenario5 -> 0 item(s)
+   * OutflowFrMt2 -> 0 item(s)
+   * N34StarFcst2 -> 0 item(s)
+   * N0_7muVerMo1 -> 0 item(s)
+   * Scenario9 -> 0 item(s)
+   * N0_7muVerMo0 -> 0 item(s)
+   * ScenRelAMIns3 -> 0 item(s)
+   * WndHodograph0 -> 0 item(s)
+   * MvmtFeatures3 -> 0 item(s)
+   * TempDis3 -> 0 item(s)
+   * N34StarFcst0 -> 1 item(s)
+   * MvmtFeatures2 -> 0 item(s)
+   * WndHodograph1 -> 0 item(s)
+   * SatContMoist2 -> 0 item(s)
+   * SfcWndShfDis6 -> 10 item(s)
+   * R5Fcst1 -> 1 item(s)
+   * MvmtFeatures1 -> 0 item(s)
+   * MvmtFeatures0 -> 0 item(s)
+   * SfcWndShfDis3 -> 9 item(s)
+   * Scenario10 -> 0 item(s)
+   * LLIW3 -> 0 item(s)
+   * InsSclInScen0 -> 0 item(s)
+   * MountainFcst2 -> 0 item(s)
+   * InsInMt0 -> 0 item(s)
+   * TempDis2 -> 0 item(s)
+   * SfcWndShfDis5 -> 10 item(s)
+   * Date5 -> 0 item(s)
+   * LoLevMoistAd0 -> 0 item(s)
+   * MountainFcst0 -> 0 item(s)
+   * MountainFcst1 -> 0 item(s)
+   * ScenRelAMCIN1 -> 0 item(s)
+   * ScenRelAMIns5 -> 0 item(s)
+   * AMInstabMt2 -> 0 item(s)
+   * WindFieldPln5 -> 0 item(s)
+   * Scenario0 -> 0 item(s)
+   * MorningCIN3 -> 0 item(s)
+   * InsInMt2 -> 0 item(s)
+   * SfcWndShfDis2 -> 10 item(s)
+   * RHRatio0 -> 0 item(s)
+   * LoLevMoistAd1 -> 0 item(s)
+   * MeanRH0 -> 0 item(s)
+   * OutflowFrMt0 -> 0 item(s)
+   * ScnRelPlFcst5 -> 30 item(s)
+   * ScnRelPlFcst7 -> 26 item(s)
+   * RaoContMoist2 -> 0 item(s)
+   * ScenRel3_43 -> 0 item(s)
+   * LowLLapse3 -> 9 item(s)
+   * LLIW1 -> 0 item(s)
+   * LIfr12ZDENSd2 -> 0 item(s)
+   * LatestCIN0 -> 0 item(s)
+   * LLIW2 -> 0 item(s)
+   * Dewpoints5 -> 1 item(s)
+   * LIfr12ZDENSd3 -> 0 item(s)
+   * IRCloudCover1 -> 0 item(s)
+   * InsSclInScen1 -> 0 item(s)
+   * InsInMt1 -> 0 item(s)
+   * WindFieldMt1 -> 0 item(s)
+   * CombVerMo3 -> 0 item(s)
+   * CldShadeOth1 -> 0 item(s)
+   * LatestCIN1 -> 0 item(s)
+   * CombMoisture0 -> 0 item(s)
+   * CapChange2 -> 0 item(s)
+   * CldShadeOth2 -> 0 item(s)
+   * Dewpoints1 -> 1 item(s)
+   * AreaMoDryAir2 -> 0 item(s)
+   * RHRatio2 -> 0 item(s)
+   * MeanRH1 -> 0 item(s)
+   * Dewpoints0 -> 1 item(s)
+   * CapInScen1 -> 0 item(s)
+   * AreaMeso_ALS2 -> 0 item(s)
+   * ScnRelPlFcst1 -> 30 item(s)
+   * PlainsFcst2 -> 0 item(s)
+   * AreaMeso_ALS1 -> 0 item(s)
+   * LatestCIN3 -> 0 item(s)
+   * AMCINInScen1 -> 0 item(s)
+   * Date3 -> 0 item(s)
+   * Date1 -> 0 item(s)
+   * Scenario2 -> 0 item(s)
+   * Scenario8 -> 0 item(s)
+   * LIfr12ZDENSd1 -> 0 item(s)
+   * CurPropConv3 -> 0 item(s)
+   * CurPropConv2 -> 0 item(s)
+   * AreaMeso_ALS3 -> 0 item(s)
+   * CurPropConv1 -> 0 item(s)
+   * ScenRelAMIns2 -> 0 item(s)
+   * CapInScen2 -> 0 item(s)
+   * CompPlFcst1 -> 0 item(s)
+   * CombMoisture2 -> 0 item(s)
+   * target -> 1 item(s)
+   * InsSclInScen2 -> 0 item(s)
+   * WindFieldPln2 -> 0 item(s)
+   * SynForcng3 -> 9 item(s)
+   * CombVerMo0 -> 0 item(s)
+   * ScenRel3_41 -> 1 item(s)
+   * CombMoisture3 -> 0 item(s)
+   * WindFieldPln1 -> 1 item(s)
+   * CapChange1 -> 0 item(s)
+   * Scenario7 -> 0 item(s)
+   * LowLLapse2 -> 10 item(s)
+   * CombClouds2 -> 0 item(s)
+   * CombClouds1 -> 0 item(s)
+   * ScenRel3_44 -> 1 item(s)
+   * AMDewptCalPl1 -> 0 item(s)
+   * CurPropConv0 -> 1 item(s)
+   * SynForcng1 -> 9 item(s)
+   * AMInstabMt0 -> 0 item(s)
+   * MorningBound1 -> 0 item(s)
+   * CldShadeOth0 -> 0 item(s)
+   * AMInsWliScen2 -> 0 item(s)
+   * CldShadeConv2 -> 0 item(s)
+   * Dewpoints3 -> 1 item(s)
+   * AMInsWliScen0 -> 0 item(s)
+   * AMInsWliScen1 -> 0 item(s)
+   * CldShadeConv1 -> 0 item(s)
+   * IRCloudCover2 -> 0 item(s)
+   * MeanRH2 -> 0 item(s)
+   * Boundaries1 -> 0 item(s)
+   * VISCloudCov2 -> 0 item(s)
+   * CapInScen0 -> 0 item(s)
+   * ScenRelAMIns0 -> 0 item(s)
+   * Date4 -> 0 item(s)
+   * init -> 1 item(s)
+   * CapChange0 -> 0 item(s)
+   * TempDis0 -> 0 item(s)
+   * InsChange1 -> 0 item(s)
+   * SatContMoist0 -> 0 item(s)
+   * Date2 -> 0 item(s)
+   * AreaMoDryAir1 -> 0 item(s)
+   * WindFieldPln4 -> 0 item(s)
+   * CldShadeConv0 -> 0 item(s)
+   * MorningCIN1 -> 0 item(s)
+   * WindAloft0 -> 0 item(s)
+   * ScenRelAMCIN0 -> 0 item(s)
+   * AreaMeso_ALS0 -> 0 item(s)
+   * Boundaries2 -> 0 item(s)
+   * ScenRel3_42 -> 0 item(s)
+   * R5Fcst0 -> 0 item(s)
+   * CombVerMo2 -> 0 item(s)
+   * SubjVertMo2 -> 0 item(s)
+   * AMDewptCalPl0 -> 0 item(s)
+   * InsChange0 -> 0 item(s)
+   * AMInstabMt1 -> 0 item(s)
+   * MorningBound0 -> 0 item(s)
+   * AMDewptCalPl2 -> 0 item(s)
+   * Scenario6 -> 0 item(s)
+   * N0_7muVerMo2 -> 0 item(s)
+   * CombVerMo1 -> 0 item(s)
+   * CompPlFcst0 -> 0 item(s)
+   * LIfr12ZDENSd0 -> 0 item(s)
+   * WindFieldPln0 -> 0 item(s)
+   * ScenRelAMIns4 -> 0 item(s)
+   * Dewpoints2 -> 1 item(s)
+   * CombClouds0 -> 0 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.754s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	436
+Transitions: 	2764
+Reward Models:  none
+State Labels: 	226 labels
+   * WndHodograph2 -> 0 item(s)
+   * WindFieldPln3 -> 0 item(s)
+   * ScnRelPlFcst4 -> 30 item(s)
+   * SatContMoist3 -> 0 item(s)
+   * N0_7muVerMo3 -> 0 item(s)
+   * WindFieldMt0 -> 0 item(s)
+   * Scenario1 -> 0 item(s)
+   * CompPlFcst2 -> 0 item(s)
+   * TempDis1 -> 0 item(s)
+   * WindAloft1 -> 0 item(s)
+   * AreaMoDryAir0 -> 0 item(s)
+   * LoLevMoistAd2 -> 0 item(s)
+   * WindAloft3 -> 0 item(s)
+   * LowLLapse1 -> 1 item(s)
+   * SfcWndShfDis1 -> 10 item(s)
+   * SfcWndShfDis0 -> 9 item(s)
+   * MorningCIN2 -> 0 item(s)
+   * CombMoisture1 -> 0 item(s)
+   * IRCloudCover0 -> 0 item(s)
+   * ScenRelAMIns1 -> 0 item(s)
+   * InsChange2 -> 0 item(s)
+   * VISCloudCov0 -> 0 item(s)
+   * QGVertMotion3 -> 0 item(s)
+   * QGVertMotion2 -> 0 item(s)
+   * SynForcng4 -> 9 item(s)
+   * ScnRelPlFcst8 -> 30 item(s)
+   * MidLLapse2 -> 0 item(s)
+   * Boundaries0 -> 0 item(s)
+   * LatestCIN2 -> 0 item(s)
+   * SubjVertMo3 -> 0 item(s)
+   * Dewpoints6 -> 1 item(s)
+   * SubjVertMo1 -> 0 item(s)
+   * PlainsFcst0 -> 1 item(s)
+   * SfcWndShfDis4 -> 8 item(s)
+   * N34StarFcst1 -> 1 item(s)
+   * OutflowFrMt1 -> 0 item(s)
+   * SubjVertMo0 -> 0 item(s)
+   * LLIW0 -> 1 item(s)
+   * WndHodograph3 -> 0 item(s)
+   * MorningCIN0 -> 0 item(s)
+   * MorningBound2 -> 0 item(s)
+   * ScnRelPlFcst10 -> 0 item(s)
+   * ScnRelPlFcst6 -> 30 item(s)
+   * ScnRelPlFcst3 -> 30 item(s)
+   * WindAloft2 -> 0 item(s)
+   * ScnRelPlFcst2 -> 30 item(s)
+   * LoLevMoistAd3 -> 0 item(s)
+   * AMCINInScen2 -> 0 item(s)
+   * Date0 -> 0 item(s)
+   * ScnRelPlFcst0 -> 33 item(s)
+   * ScenRel3_40 -> 0 item(s)
+   * SynForcng2 -> 8 item(s)
+   * deadlock -> 2 item(s)
+   * Scenario4 -> 0 item(s)
+   * Scenario3 -> 0 item(s)
+   * SatContMoist1 -> 0 item(s)
+   * SynForcng0 -> 9 item(s)
+   * AMCINInScen0 -> 0 item(s)
+   * RaoContMoist3 -> 0 item(s)
+   * VISCloudCov1 -> 0 item(s)
+   * RaoContMoist1 -> 0 item(s)
+   * RaoContMoist0 -> 0 item(s)
+   * RHRatio1 -> 0 item(s)
+   * R5Fcst2 -> 0 item(s)
+   * QGVertMotion1 -> 0 item(s)
+   * MidLLapse1 -> 0 item(s)
+   * AreaMoDryAir3 -> 0 item(s)
+   * QGVertMotion0 -> 0 item(s)
+   * Dewpoints4 -> 1 item(s)
+   * ScnRelPlFcst9 -> 30 item(s)
+   * MidLLapse0 -> 0 item(s)
+   * LowLLapse0 -> 9 item(s)
+   * PlainsFcst1 -> 1 item(s)
+   * Scenario5 -> 0 item(s)
+   * OutflowFrMt2 -> 0 item(s)
+   * N34StarFcst2 -> 0 item(s)
+   * N0_7muVerMo1 -> 0 item(s)
+   * Scenario9 -> 0 item(s)
+   * N0_7muVerMo0 -> 0 item(s)
+   * ScenRelAMIns3 -> 0 item(s)
+   * WndHodograph0 -> 0 item(s)
+   * MvmtFeatures3 -> 0 item(s)
+   * TempDis3 -> 0 item(s)
+   * N34StarFcst0 -> 1 item(s)
+   * MvmtFeatures2 -> 0 item(s)
+   * WndHodograph1 -> 0 item(s)
+   * SatContMoist2 -> 0 item(s)
+   * SfcWndShfDis6 -> 10 item(s)
+   * R5Fcst1 -> 1 item(s)
+   * MvmtFeatures1 -> 0 item(s)
+   * MvmtFeatures0 -> 0 item(s)
+   * SfcWndShfDis3 -> 9 item(s)
+   * Scenario10 -> 0 item(s)
+   * LLIW3 -> 0 item(s)
+   * InsSclInScen0 -> 0 item(s)
+   * MountainFcst2 -> 0 item(s)
+   * InsInMt0 -> 0 item(s)
+   * TempDis2 -> 0 item(s)
+   * SfcWndShfDis5 -> 10 item(s)
+   * Date5 -> 0 item(s)
+   * LoLevMoistAd0 -> 0 item(s)
+   * MountainFcst0 -> 0 item(s)
+   * MountainFcst1 -> 0 item(s)
+   * ScenRelAMCIN1 -> 0 item(s)
+   * ScenRelAMIns5 -> 0 item(s)
+   * AMInstabMt2 -> 0 item(s)
+   * WindFieldPln5 -> 0 item(s)
+   * Scenario0 -> 0 item(s)
+   * MorningCIN3 -> 0 item(s)
+   * InsInMt2 -> 0 item(s)
+   * SfcWndShfDis2 -> 10 item(s)
+   * RHRatio0 -> 0 item(s)
+   * LoLevMoistAd1 -> 0 item(s)
+   * MeanRH0 -> 0 item(s)
+   * OutflowFrMt0 -> 0 item(s)
+   * ScnRelPlFcst5 -> 30 item(s)
+   * ScnRelPlFcst7 -> 26 item(s)
+   * RaoContMoist2 -> 0 item(s)
+   * ScenRel3_43 -> 0 item(s)
+   * LowLLapse3 -> 9 item(s)
+   * LLIW1 -> 0 item(s)
+   * LIfr12ZDENSd2 -> 0 item(s)
+   * LatestCIN0 -> 0 item(s)
+   * LLIW2 -> 0 item(s)
+   * Dewpoints5 -> 1 item(s)
+   * LIfr12ZDENSd3 -> 0 item(s)
+   * IRCloudCover1 -> 0 item(s)
+   * InsSclInScen1 -> 0 item(s)
+   * InsInMt1 -> 0 item(s)
+   * WindFieldMt1 -> 0 item(s)
+   * CombVerMo3 -> 0 item(s)
+   * CldShadeOth1 -> 0 item(s)
+   * LatestCIN1 -> 0 item(s)
+   * CombMoisture0 -> 0 item(s)
+   * CapChange2 -> 0 item(s)
+   * CldShadeOth2 -> 0 item(s)
+   * Dewpoints1 -> 1 item(s)
+   * AreaMoDryAir2 -> 0 item(s)
+   * RHRatio2 -> 0 item(s)
+   * MeanRH1 -> 0 item(s)
+   * Dewpoints0 -> 1 item(s)
+   * CapInScen1 -> 0 item(s)
+   * AreaMeso_ALS2 -> 0 item(s)
+   * ScnRelPlFcst1 -> 30 item(s)
+   * PlainsFcst2 -> 0 item(s)
+   * AreaMeso_ALS1 -> 0 item(s)
+   * LatestCIN3 -> 0 item(s)
+   * AMCINInScen1 -> 0 item(s)
+   * Date3 -> 0 item(s)
+   * Date1 -> 0 item(s)
+   * Scenario2 -> 0 item(s)
+   * Scenario8 -> 0 item(s)
+   * LIfr12ZDENSd1 -> 0 item(s)
+   * CurPropConv3 -> 0 item(s)
+   * CurPropConv2 -> 0 item(s)
+   * AreaMeso_ALS3 -> 0 item(s)
+   * CurPropConv1 -> 0 item(s)
+   * ScenRelAMIns2 -> 0 item(s)
+   * CapInScen2 -> 0 item(s)
+   * CompPlFcst1 -> 0 item(s)
+   * CombMoisture2 -> 0 item(s)
+   * target -> 1 item(s)
+   * InsSclInScen2 -> 0 item(s)
+   * WindFieldPln2 -> 0 item(s)
+   * SynForcng3 -> 9 item(s)
+   * CombVerMo0 -> 0 item(s)
+   * ScenRel3_41 -> 1 item(s)
+   * CombMoisture3 -> 0 item(s)
+   * WindFieldPln1 -> 1 item(s)
+   * CapChange1 -> 0 item(s)
+   * Scenario7 -> 0 item(s)
+   * LowLLapse2 -> 10 item(s)
+   * CombClouds2 -> 0 item(s)
+   * CombClouds1 -> 0 item(s)
+   * ScenRel3_44 -> 1 item(s)
+   * AMDewptCalPl1 -> 0 item(s)
+   * CurPropConv0 -> 1 item(s)
+   * SynForcng1 -> 9 item(s)
+   * AMInstabMt0 -> 0 item(s)
+   * MorningBound1 -> 0 item(s)
+   * CldShadeOth0 -> 0 item(s)
+   * AMInsWliScen2 -> 0 item(s)
+   * CldShadeConv2 -> 0 item(s)
+   * Dewpoints3 -> 1 item(s)
+   * AMInsWliScen0 -> 0 item(s)
+   * AMInsWliScen1 -> 0 item(s)
+   * CldShadeConv1 -> 0 item(s)
+   * IRCloudCover2 -> 0 item(s)
+   * MeanRH2 -> 0 item(s)
+   * Boundaries1 -> 0 item(s)
+   * VISCloudCov2 -> 0 item(s)
+   * CapInScen0 -> 0 item(s)
+   * ScenRelAMIns0 -> 0 item(s)
+   * Date4 -> 0 item(s)
+   * init -> 1 item(s)
+   * CapChange0 -> 0 item(s)
+   * TempDis0 -> 0 item(s)
+   * InsChange1 -> 0 item(s)
+   * SatContMoist0 -> 0 item(s)
+   * Date2 -> 0 item(s)
+   * AreaMoDryAir1 -> 0 item(s)
+   * WindFieldPln4 -> 0 item(s)
+   * CldShadeConv0 -> 0 item(s)
+   * MorningCIN1 -> 0 item(s)
+   * WindAloft0 -> 0 item(s)
+   * ScenRelAMCIN0 -> 0 item(s)
+   * AreaMeso_ALS0 -> 0 item(s)
+   * Boundaries2 -> 0 item(s)
+   * ScenRel3_42 -> 0 item(s)
+   * R5Fcst0 -> 0 item(s)
+   * CombVerMo2 -> 0 item(s)
+   * SubjVertMo2 -> 0 item(s)
+   * AMDewptCalPl0 -> 0 item(s)
+   * InsChange0 -> 0 item(s)
+   * AMInstabMt1 -> 0 item(s)
+   * MorningBound0 -> 0 item(s)
+   * AMDewptCalPl2 -> 0 item(s)
+   * Scenario6 -> 0 item(s)
+   * N0_7muVerMo2 -> 0 item(s)
+   * CombVerMo1 -> 0 item(s)
+   * CompPlFcst0 -> 0 item(s)
+   * LIfr12ZDENSd0 -> 0 item(s)
+   * WindFieldPln0 -> 0 item(s)
+   * ScenRelAMIns4 -> 0 item(s)
+   * Dewpoints2 -> 1 item(s)
+   * CombClouds0 -> 0 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+Parameters: p28 p117 p37 p127 p47 p57 p67 p77 p87 p97 p107 p29 p118 p38 p48 p58 p68 p78 p88 p98 p108 p30 p119 p39 p49 p59 p69 p79 p89 p99 p109 p31 p120 p40 p50 p60 p70 p80 p90 p100 p110 p32 p121 p41 p51 p61 p71 p81 p91 p101 p111 p33 p122 p42 p52 p62 p72 p82 p92 p102 p112 p34 p123 p43 p53 p63 p73 p83 p93 p103 p113 p124 p44 p54 p64 p74 p84 p94 p104 p114 p35 p125 p45 p55 p65 p75 p85 p95 p105 p115 p36 p126 p46 p56 p66 p76 p86 p96 p106 p116 p19 p20 p21 p22 p23 p24 p25 p26 p27 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p0 p1 p2 p3 p4 p5 p6 p7 p8 
+Finding a feasible instantiation using Gradient Descent
+Trying out a new starting point
+Trying initial guess (p->0.5 for every parameter p or set start point)
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.4957471098
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.5088676369
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.4963666253
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.496653298
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.5233124384
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.5193735787
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.5551885409
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.5026350688
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.5118219989
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.4959609168
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.5022657829
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.5165502851
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.5099508171
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.5047685939
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.5095683951
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.5396037168
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.508743121
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.5630910755
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.6104295334
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.5191723363
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.5131311589
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.5349256204
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.4973378666
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.4994968374
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.5783166512
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.497372403
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.5164461586
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.515265954
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.558194906
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.6166724811
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.5229247149
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.590062228
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.5079428315
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.5681540534
+Sorry, couldn't satisfy the bound (yet). Best found value so far: 0.4957471098
+Trying out a new starting point
+Currently at 0.5790713967

@@ -1,0 +1,25 @@
+Storm 1.6.4
+
+Date: Wed Jun  8 15:14:12 2022
+Command line arguments: --jani jani_files/no_evidence/hepar2.jani --prop 'P=? [F(flatulence=1|amylase=1|amylase=2|surgery=1|vh_amn=1|ChHepatitis=1|ChHepatitis=2|hbeag=1|hbsag=1|hbsag_anti=1|Hyperbilirubinemia=1|pain=1|pain_ruq=1|THepatitis=1|ggtp=1|ggtp=2|ggtp=3|anorexia=1|hepatalgia=1|Cirrhosis=1|Cirrhosis=2|inr=1|inr=2|bleeding=1|albumin=1|albumin=2|edema=1|spiders=1)]'
+Current working directory: /home/hans/Desktop/Storm-bn/storm_evidence
+
+Time for model input parsing: 0.078s.
+
+Time for model construction: 0.072s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	1132
+Transitions: 	2451
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 3 item(s)
+   * init -> 1 item(s)
+   * ((((((((((((((((((((((((((((flatulence = 1) | (amylase = 1)) | (amylase = 2)) | (surgery = 1)) | (vh_amn = 1)) | (ChHepatitis = 1)) | (ChHepatitis = 2)) | (hbeag = 1)) | (hbsag = 1)) | (hbsag_anti = 1)) | (Hyperbilirubinemia = 1)) | (pain = 1)) | (pain_ruq = 1)) | (THepatitis = 1)) | (ggtp = 1)) | (ggtp = 2)) | (ggtp = 3)) | (anorexia = 1)) | (hepatalgia = 1)) | (Cirrhosis = 1)) | (Cirrhosis = 2)) | (inr = 1)) | (inr = 2)) | (bleeding = 1)) | (albumin = 1)) | (albumin = 2)) | (edema = 1)) | (spiders = 1)) -> 214 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F ((((((((((((((((((((((((((((flatulence = 1) | (amylase = 1)) | (amylase = 2)) | (surgery = 1)) | (vh_amn = 1)) | (ChHepatitis = 1)) | (ChHepatitis = 2)) | (hbeag = 1)) | (hbsag = 1)) | (hbsag_anti = 1)) | (Hyperbilirubinemia = 1)) | (pain = 1)) | (pain_ruq = 1)) | (THepatitis = 1)) | (ggtp = 1)) | (ggtp = 2)) | (ggtp = 3)) | (anorexia = 1)) | (hepatalgia = 1)) | (Cirrhosis = 1)) | (Cirrhosis = 2)) | (inr = 1)) | (inr = 2)) | (bleeding = 1)) | (albumin = 1)) | (albumin = 2)) | (edema = 1)) | (spiders = 1))] ...
+Result (for initial states): 1
+Time for model checking: 0.001s.

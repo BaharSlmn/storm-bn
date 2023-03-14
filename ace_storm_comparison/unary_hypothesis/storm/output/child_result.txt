@@ -1,0 +1,145 @@
+Storm 1.6.4 (dev)
+
+Date: Thu Apr 28 12:33:35 2022
+Command line arguments: --jani storm/jani_files/child.jani --expvisittimes --build-all-labels
+Current working directory: /home/hans/Desktop/private/ace_storm_comparison/unary_hypothesis
+
+Time for model input parsing: 0.011s.
+
+Time for model construction: 0.048s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	1450
+Transitions: 	4620
+Reward Models:  none
+State Labels: 	62 labels
+   * deadlock -> 4 item(s)
+   * XrayReport4 -> 36 item(s)
+   * Disease1 -> 1 item(s)
+   * Disease0 -> 1 item(s)
+   * BirthAsphyxia1 -> 1 item(s)
+   * Disease3 -> 1 item(s)
+   * ChestXray1 -> 36 item(s)
+   * LowerBodyO20 -> 108 item(s)
+   * ChestXray0 -> 36 item(s)
+   * DuctFlow2 -> 4 item(s)
+   * LungParench0 -> 48 item(s)
+   * CardiacMixing3 -> 15 item(s)
+   * ChestXray4 -> 36 item(s)
+   * Age2 -> 12 item(s)
+   * BirthAsphyxia0 -> 1 item(s)
+   * Disease2 -> 1 item(s)
+   * Grunting0 -> 6 item(s)
+   * CO21 -> 2 item(s)
+   * ChestXray2 -> 36 item(s)
+   * RUQO20 -> 36 item(s)
+   * HypDistrib1 -> 24 item(s)
+   * Disease5 -> 1 item(s)
+   * Disease4 -> 1 item(s)
+   * LVHreport0 -> 6 item(s)
+   * XrayReport3 -> 36 item(s)
+   * CardiacMixing0 -> 15 item(s)
+   * CO20 -> 2 item(s)
+   * Age1 -> 12 item(s)
+   * GruntingReport1 -> 6 item(s)
+   * HypoxiaInO20 -> 36 item(s)
+   * CO2Report0 -> 2 item(s)
+   * LungFlow2 -> 36 item(s)
+   * DuctFlow1 -> 5 item(s)
+   * CardiacMixing1 -> 15 item(s)
+   * DuctFlow0 -> 6 item(s)
+   * CardiacMixing2 -> 15 item(s)
+   * GruntingReport0 -> 6 item(s)
+   * RUQO21 -> 36 item(s)
+   * Grunting1 -> 6 item(s)
+   * init -> 1 item(s)
+   * HypoxiaInO21 -> 36 item(s)
+   * LowerBodyO21 -> 108 item(s)
+   * LVH0 -> 6 item(s)
+   * LVH1 -> 6 item(s)
+   * LVHreport1 -> 6 item(s)
+   * LungFlow1 -> 36 item(s)
+   * CO22 -> 2 item(s)
+   * LowerBodyO22 -> 108 item(s)
+   * LungFlow0 -> 36 item(s)
+   * LungParench1 -> 48 item(s)
+   * XrayReport1 -> 36 item(s)
+   * Age0 -> 12 item(s)
+   * CO2Report1 -> 2 item(s)
+   * LungParench2 -> 48 item(s)
+   * ChestXray3 -> 36 item(s)
+   * RUQO22 -> 36 item(s)
+   * HypoxiaInO22 -> 36 item(s)
+   * Sick0 -> 36 item(s)
+   * XrayReport2 -> 36 item(s)
+   * HypDistrib0 -> 24 item(s)
+   * Sick1 -> 36 item(s)
+   * XrayReport0 -> 36 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+Accumulated values for labels:
+	Age0: 0.6489918355
+	Age1: 0.1795230616
+	Age2: 0.1714851029
+	BirthAsphyxia0: 0.1
+	BirthAsphyxia1: 0.9
+	CO20: 0.7185871935
+	CO21: 0.08578198972
+	CO22: 0.1956308167
+	CO2Report0: inf
+	CO2Report1: inf
+	CardiacMixing0: 0.05464693769
+	CardiacMixing1: 0.1300734685
+	CardiacMixing2: 0.5360010251
+	CardiacMixing3: 0.2792785687
+	ChestXray0: 0.217089838
+	ChestXray1: 0.3459059336
+	ChestXray2: 0.2177503381
+	ChestXray3: 0.09134012605
+	ChestXray4: 0.1279137642
+	Disease0: 0.047551016
+	Disease1: 0.333061221
+	Disease2: 0.291326533
+	Disease3: 0.226224492
+	Disease4: 0.050918369
+	Disease5: 0.050918369
+	DuctFlow0: 0.5267112285
+	DuctFlow1: 0.3642622436
+	DuctFlow2: 0.109026528
+	Grunting0: 0.2235986792
+	Grunting1: 0.7764013208
+	GruntingReport0: 0.2565190754
+	GruntingReport1: 0.7434809246
+	HypDistrib0: 0.9018228364
+	HypDistrib1: 0.09817716359
+	HypoxiaInO20: 0.1099627314
+	HypoxiaInO21: 0.5162738768
+	HypoxiaInO22: 0.3737633918
+	LVH0: 0.2784336751
+	LVH1: 0.7215663248
+	LVHreport0: 0.2866686239
+	LVHreport1: 0.7133313761
+	LowerBodyO20: 0.3714316465
+	LowerBodyO21: 0.4886932368
+	LowerBodyO22: 0.1398751167
+	LungFlow0: 0.1981173471
+	LungFlow1: 0.4830969398
+	LungFlow2: 0.318785713
+	LungParench0: 0.7156397944
+	LungParench1: 0.09056632755
+	LungParench2: 0.1937938781
+	RUQO20: 0.3527601321
+	RUQO21: 0.4922585022
+	RUQO22: 0.1549813657
+	Sick0: 0.3163571435
+	Sick1: 0.6836428565
+	XrayReport0: 0.2475778088
+	XrayReport1: 0.2984902218
+	XrayReport2: 0.2160691684
+	XrayReport3: 0.08321037425
+	XrayReport4: 0.1546524267
+	deadlock: inf
+	init: 1
+Result: [1.500818926e-06, inf] (range)
+Time for model checking: 0.001s.

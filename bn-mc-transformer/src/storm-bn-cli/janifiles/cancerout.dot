@@ -1,0 +1,83 @@
+digraph "DD" {
+size = "7.5,10"
+center = true;
+edge [dir = none];
+{ node [shape = plaintext];
+  edge [style = invis];
+  "CONST NODES" [style = invis];
+" l_cancer.0 " -> " l_cancer.1 " -> " l_cancer.2 " -> " Pollution.0 " -> " Pollution.1 " -> " Smoker.0 " -> " Smoker.1 " -> " Cancer.0 " -> " Cancer.1 " -> " Xray.0 " -> " Xray.1 " -> " Dyspnoea.0 " -> " Dyspnoea.1 " -> "CONST NODES"; 
+}
+{ rank = same; node [shape = box]; edge [style = invis];
+"  f  "; }
+{ rank = same; " l_cancer.0 ";
+"0x7fd773987a60";
+}
+{ rank = same; " l_cancer.1 ";
+"0x7fd773987a40";
+}
+{ rank = same; " l_cancer.2 ";
+"0x7fd773987a20";
+}
+{ rank = same; " Pollution.0 ";
+"0x7fd773987800";
+}
+{ rank = same; " Pollution.1 ";
+"0x7fd7739877e0";
+}
+{ rank = same; " Smoker.0 ";
+"0x7fd7739877c0";
+}
+{ rank = same; " Smoker.1 ";
+"0x7fd7739877a0";
+}
+{ rank = same; " Cancer.0 ";
+"0x7fd773987780";
+}
+{ rank = same; " Cancer.1 ";
+"0x7fd773987760";
+}
+{ rank = same; " Xray.0 ";
+"0x7fd773987740";
+}
+{ rank = same; " Xray.1 ";
+"0x7fd773987720";
+}
+{ rank = same; " Dyspnoea.0 ";
+"0x7fd7739875a0";
+}
+{ rank = same; " Dyspnoea.1 ";
+"0x7fd7748063a0";
+}
+{ rank = same; "CONST NODES";
+{ node [shape = box]; "0x7fd774805020";
+}
+}
+"  f  " -> "0x7fd773987a60" [style = dotted];
+"0x7fd773987a60" -> "0x7fd774805020";
+"0x7fd773987a60" -> "0x7fd773987a40" [style = dashed];
+"0x7fd773987a40" -> "0x7fd774805020";
+"0x7fd773987a40" -> "0x7fd773987a20" [style = dashed];
+"0x7fd773987a20" -> "0x7fd774805020";
+"0x7fd773987a20" -> "0x7fd773987800" [style = dashed];
+"0x7fd773987800" -> "0x7fd774805020";
+"0x7fd773987800" -> "0x7fd7739877e0" [style = dashed];
+"0x7fd7739877e0" -> "0x7fd774805020";
+"0x7fd7739877e0" -> "0x7fd7739877c0" [style = dashed];
+"0x7fd7739877c0" -> "0x7fd774805020";
+"0x7fd7739877c0" -> "0x7fd7739877a0" [style = dashed];
+"0x7fd7739877a0" -> "0x7fd774805020";
+"0x7fd7739877a0" -> "0x7fd773987780" [style = dashed];
+"0x7fd773987780" -> "0x7fd774805020";
+"0x7fd773987780" -> "0x7fd773987760" [style = dashed];
+"0x7fd773987760" -> "0x7fd774805020";
+"0x7fd773987760" -> "0x7fd773987740" [style = dashed];
+"0x7fd773987740" -> "0x7fd774805020";
+"0x7fd773987740" -> "0x7fd773987720" [style = dashed];
+"0x7fd773987720" -> "0x7fd774805020";
+"0x7fd773987720" -> "0x7fd7739875a0" [style = dashed];
+"0x7fd7739875a0" -> "0x7fd774805020";
+"0x7fd7739875a0" -> "0x7fd7748063a0" [style = dashed];
+"0x7fd7748063a0" -> "0x7fd774805020";
+"0x7fd7748063a0" -> "0x7fd774805020" [style = dotted];
+"0x7fd774805020" [label = "1"];
+}

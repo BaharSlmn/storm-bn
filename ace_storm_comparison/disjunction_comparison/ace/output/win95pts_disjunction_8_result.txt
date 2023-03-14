@@ -1,0 +1,15 @@
+Pr(e) = 0.9999999999999998
+Network : ace/win95pts/win95pts_disjunction_8.net
+Network Read Time (ms) : 121.57730099999999
+Number of Evidence Sets : 1
+AC :
+  Nodes : 4004
+  Edges : 7634
+  Total Initialization Time (ms) : 25.563385
+  Total Inference Time (ms) : 2.482437
+  Minimum Inference Time (ms) : 2.482437
+  Maximum Inference Time (ms) : 2.482437
+  Median Inference Time (ms) : 2.482437
+  Mean Inference Time (ms) : 2.482437
+  Standard Deviation Inference Time (ms) : 0.0
+

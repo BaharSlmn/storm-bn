@@ -1,0 +1,235 @@
+Storm 1.6.4 (dev)
+
+Date: Thu Apr 28 12:14:26 2022
+Command line arguments: --jani storm/jani_files/alarm.jani --expvisittimes --build-all-labels
+Current working directory: /home/hans/Desktop/private/ace_storm_comparison/unary_hypothesis
+
+Time for model input parsing: 0.045s.
+
+Time for model construction: 0.141s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	1256
+Transitions: 	3576
+Reward Models:  none
+State Labels: 	107 labels
+   * deadlock -> 3 item(s)
+   * init -> 1 item(s)
+   * VENTTUBE2 -> 1 item(s)
+   * VENTLUNG1 -> 3 item(s)
+   * VENTALV2 -> 8 item(s)
+   * VENTALV1 -> 8 item(s)
+   * VENTALV0 -> 8 item(s)
+   * TPR2 -> 18 item(s)
+   * TPR1 -> 18 item(s)
+   * STROKEVOLUME2 -> 36 item(s)
+   * STROKEVOLUME1 -> 36 item(s)
+   * SHUNT1 -> 12 item(s)
+   * SAO21 -> 16 item(s)
+   * SAO20 -> 16 item(s)
+   * PVSAT2 -> 24 item(s)
+   * PVSAT1 -> 32 item(s)
+   * PULMEMBOLUS1 -> 12 item(s)
+   * PRESS3 -> 24 item(s)
+   * PRESS2 -> 24 item(s)
+   * PRESS0 -> 24 item(s)
+   * PCWP0 -> 3 item(s)
+   * PAP2 -> 24 item(s)
+   * PAP0 -> 24 item(s)
+   * MINVOLSET2 -> 1 item(s)
+   * STROKEVOLUME0 -> 36 item(s)
+   * MINVOLSET1 -> 1 item(s)
+   * VENTTUBE3 -> 1 item(s)
+   * EXPCO22 -> 9 item(s)
+   * SAO22 -> 16 item(s)
+   * HRBP0 -> 3 item(s)
+   * VENTLUNG2 -> 3 item(s)
+   * FIO20 -> 32 item(s)
+   * VENTMACH1 -> 1 item(s)
+   * EXPCO20 -> 9 item(s)
+   * ARTCO21 -> 12 item(s)
+   * EXPCO21 -> 9 item(s)
+   * LVEDVOLUME0 -> 27 item(s)
+   * VENTTUBE0 -> 1 item(s)
+   * VENTMACH2 -> 1 item(s)
+   * ERRLOWOUTPUT1 -> 3 item(s)
+   * SHUNT0 -> 12 item(s)
+   * ERRCAUTER1 -> 3 item(s)
+   * ARTCO20 -> 12 item(s)
+   * FIO21 -> 32 item(s)
+   * DISCONNECT0 -> 4 item(s)
+   * HISTORY0 -> 36 item(s)
+   * VENTLUNG0 -> 3 item(s)
+   * PCWP2 -> 3 item(s)
+   * PCWP1 -> 3 item(s)
+   * CO1 -> 27 item(s)
+   * VENTMACH3 -> 1 item(s)
+   * HR1 -> 3 item(s)
+   * ERRLOWOUTPUT0 -> 3 item(s)
+   * HRBP1 -> 3 item(s)
+   * MINVOL3 -> 12 item(s)
+   * MINVOL0 -> 12 item(s)
+   * ANAPHYLAXIS0 -> 18 item(s)
+   * ANAPHYLAXIS1 -> 18 item(s)
+   * BP2 -> 9 item(s)
+   * CATECHOL0 -> 3 item(s)
+   * CVP0 -> 9 item(s)
+   * EXPCO23 -> 9 item(s)
+   * KINKEDTUBE1 -> 4 item(s)
+   * BP0 -> 9 item(s)
+   * CO2 -> 27 item(s)
+   * HR2 -> 3 item(s)
+   * PVSAT0 -> 32 item(s)
+   * CO0 -> 27 item(s)
+   * VENTMACH0 -> 1 item(s)
+   * CVP2 -> 9 item(s)
+   * BP1 -> 9 item(s)
+   * HR0 -> 3 item(s)
+   * VENTLUNG3 -> 3 item(s)
+   * DISCONNECT1 -> 4 item(s)
+   * HRBP2 -> 3 item(s)
+   * HISTORY1 -> 36 item(s)
+   * LVEDVOLUME1 -> 27 item(s)
+   * ERRCAUTER0 -> 3 item(s)
+   * ARTCO22 -> 12 item(s)
+   * HREKG0 -> 6 item(s)
+   * TPR0 -> 18 item(s)
+   * PAP1 -> 24 item(s)
+   * HREKG1 -> 6 item(s)
+   * VENTTUBE1 -> 1 item(s)
+   * LVEDVOLUME2 -> 27 item(s)
+   * PRESS1 -> 24 item(s)
+   * CVP1 -> 9 item(s)
+   * HREKG2 -> 6 item(s)
+   * MINVOLSET0 -> 1 item(s)
+   * HRSAT0 -> 1 item(s)
+   * INTUBATION0 -> 8 item(s)
+   * HRSAT2 -> 1 item(s)
+   * CATECHOL1 -> 3 item(s)
+   * HRSAT1 -> 1 item(s)
+   * INSUFFANESTH0 -> 9 item(s)
+   * INTUBATION1 -> 8 item(s)
+   * HYPOVOLEMIA0 -> 9 item(s)
+   * HYPOVOLEMIA1 -> 9 item(s)
+   * INSUFFANESTH1 -> 9 item(s)
+   * INTUBATION2 -> 8 item(s)
+   * VENTALV3 -> 8 item(s)
+   * PULMEMBOLUS0 -> 12 item(s)
+   * KINKEDTUBE0 -> 4 item(s)
+   * LVFAILURE0 -> 18 item(s)
+   * LVFAILURE1 -> 18 item(s)
+   * MINVOL1 -> 12 item(s)
+   * MINVOL2 -> 12 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+Accumulated values for labels:
+	ANAPHYLAXIS0: 0.01
+	ANAPHYLAXIS1: 0.99
+	ARTCO20: 0.1801525411
+	ARTCO21: 0.06177229331
+	ARTCO22: 0.7580751656
+	BP0: 0.3899930877
+	BP1: 0.2047077625
+	BP2: 0.4052991498
+	CATECHOL0: 0.1001342843
+	CATECHOL1: 0.8998657157
+	CO0: 0.1723430731
+	CO1: 0.1844673596
+	CO2: 0.6431895672
+	CVP0: 0.114341
+	CVP1: 0.731104
+	CVP2: 0.154555
+	DISCONNECT0: 0.1
+	DISCONNECT1: 0.9
+	ERRCAUTER0: 0.1
+	ERRCAUTER1: 0.9
+	ERRLOWOUTPUT0: 0.05
+	ERRLOWOUTPUT1: 0.95
+	EXPCO20: 0.04322734207
+	EXPCO21: 0.8647676936
+	EXPCO22: 0.05730683837
+	EXPCO23: 0.03469812601
+	FIO20: 0.05
+	FIO21: 0.95
+	HISTORY0: 0.0545
+	HISTORY1: 0.9455
+	HR0: 0.01400537137
+	HR1: 0.1711087703
+	HR2: 0.8148858583
+	HRBP0: 0.1760260596
+	HRBP1: 0.06057554478
+	HRBP2: 0.7633983956
+	HREKG0: 0.1694388757
+	HREKG1: 0.09910484754
+	HREKG2: 0.7314562767
+	HRSAT0: inf
+	HRSAT1: inf
+	HRSAT2: inf
+	HYPOVOLEMIA0: 0.2
+	HYPOVOLEMIA1: 0.8
+	INSUFFANESTH0: 0.1
+	INSUFFANESTH1: 0.9
+	INTUBATION0: 0.92
+	INTUBATION1: 0.03
+	INTUBATION2: 0.05
+	KINKEDTUBE0: 0.04
+	KINKEDTUBE1: 0.96
+	LVEDVOLUME0: 0.0886
+	LVEDVOLUME1: 0.7019
+	LVEDVOLUME2: 0.2095
+	LVFAILURE0: 0.05
+	LVFAILURE1: 0.95
+	MINVOL0: 0.715185057
+	MINVOL1: 0.06239805721
+	MINVOL2: 0.03136437484
+	MINVOL3: 0.1910525109
+	MINVOLSET0: 0.05
+	MINVOLSET1: 0.9
+	MINVOLSET2: 0.05
+	PAP0: 0.0496
+	PAP1: 0.8929
+	PAP2: 0.0575
+	PCWP0: 0.114341
+	PCWP1: 0.678729
+	PCWP2: 0.20693
+	PRESS0: 0.02721445357
+	PRESS1: 0.2538232026
+	PRESS2: 0.2110182438
+	PRESS3: 0.5079441001
+	PULMEMBOLUS0: 0.01
+	PULMEMBOLUS1: 0.99
+	PVSAT0: 0.7998439197
+	PVSAT1: 0.02192378909
+	PVSAT2: 0.1782322912
+	SAO20: 0.7964263472
+	SAO21: 0.03161577553
+	SAO22: 0.1719578773
+	SHUNT0: 0.896905
+	SHUNT1: 0.103095
+	STROKEVOLUME0: 0.1808
+	STROKEVOLUME1: 0.7788
+	STROKEVOLUME2: 0.0404
+	TPR0: 0.3068
+	TPR1: 0.3961
+	TPR2: 0.2971
+	VENTALV0: 0.6958317403
+	VENTALV1: 0.07413633231
+	VENTALV2: 0.04020450496
+	VENTALV3: 0.1898274224
+	VENTLUNG0: 0.7426392623
+	VENTLUNG1: 0.2199898004
+	VENTLUNG2: 0.01164372275
+	VENTLUNG3: 0.02572721459
+	VENTMACH0: 0.05
+	VENTMACH1: 0.056
+	VENTMACH2: 0.838
+	VENTMACH3: 0.056
+	VENTTUBE0: 0.192208
+	VENTTUBE1: 0.734032
+	VENTTUBE2: 0.015376
+	VENTTUBE3: 0.058384
+	deadlock: inf
+	init: 1
+Result: [3e-08, inf] (range)
+Time for model checking: 0.002s.

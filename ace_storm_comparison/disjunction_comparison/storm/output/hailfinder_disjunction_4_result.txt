@@ -1,0 +1,50 @@
+Storm 1.6.4
+
+Date: Tue Apr 26 11:01:40 2022
+Command line arguments: --jani storm/hailfinder/hailfinder.jani --prop 'P=? [F((SatContMoist=1|AMInstabMt=0|R5Fcst=1|Dewpoints=1))]'
+Current working directory: /experiments/ace_storm_comparison/disjunction_comparison
+
+Time for model input parsing: 0.112s.
+
+Time for model construction: 0.318s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	20016
+Transitions: 	55277
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 6 item(s)
+   * init -> 1 item(s)
+   * ((((SatContMoist = 1) | (AMInstabMt = 0)) | (R5Fcst = 1)) | (Dewpoints = 1)) -> 40 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F ((((SatContMoist = 1) | (AMInstabMt = 0)) | (R5Fcst = 1)) | (Dewpoints = 1))] ...
+Result (for initial states): 0.7701065043
+Time for model checking: 0.012s.
+Storm 1.6.4
+
+Date: Tue Apr 26 11:02:25 2022
+Command line arguments: --jani storm/hailfinder/hailfinder.jani --prop 'P=? [F((SatContMoist=1|AMInstabMt=0|R5Fcst=1|Dewpoints=1))]'
+Current working directory: /experiments/ace_storm_comparison/disjunction_comparison
+
+Time for model input parsing: 0.110s.
+
+Time for model construction: 0.315s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	20016
+Transitions: 	55277
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 6 item(s)
+   * init -> 1 item(s)
+   * ((((SatContMoist = 1) | (AMInstabMt = 0)) | (R5Fcst = 1)) | (Dewpoints = 1)) -> 40 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F ((((SatContMoist = 1) | (AMInstabMt = 0)) | (R5Fcst = 1)) | (Dewpoints = 1))] ...
+Result (for initial states): 0.7701065043
+Time for model checking: 0.012s.

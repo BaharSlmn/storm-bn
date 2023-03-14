@@ -1,0 +1,1 @@
+storm --jani jani_files/no_evidence/earthquake.jani --prop "P=? [F(Burglary=1)]"

@@ -1,0 +1,471 @@
+Storm 1.6.4 (dev)
+
+Date: Thu Apr 28 12:33:35 2022
+Command line arguments: --jani storm/jani_files/hailfinder.jani --expvisittimes --build-all-labels
+Current working directory: /home/hans/Desktop/private/ace_storm_comparison/unary_hypothesis
+
+Time for model input parsing: 0.172s.
+
+Time for model construction: 0.495s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	20304
+Transitions: 	55976
+Reward Models:  none
+State Labels: 	225 labels
+   * init -> 1 item(s)
+   * WndHodograph2 -> 36 item(s)
+   * WndHodograph1 -> 36 item(s)
+   * WindFieldPln4 -> 10 item(s)
+   * WindFieldPln3 -> 10 item(s)
+   * WindFieldPln1 -> 10 item(s)
+   * WindFieldPln0 -> 11 item(s)
+   * WindAloft1 -> 9 item(s)
+   * VISCloudCov1 -> 16 item(s)
+   * VISCloudCov0 -> 16 item(s)
+   * TempDis0 -> 11 item(s)
+   * SynForcng4 -> 11 item(s)
+   * SynForcng2 -> 10 item(s)
+   * SubjVertMo3 -> 4 item(s)
+   * SubjVertMo1 -> 4 item(s)
+   * SfcWndShfDis6 -> 11 item(s)
+   * SfcWndShfDis1 -> 11 item(s)
+   * SfcWndShfDis0 -> 10 item(s)
+   * WindAloft3 -> 11 item(s)
+   * ScnRelPlFcst8 -> 108 item(s)
+   * ScnRelPlFcst7 -> 108 item(s)
+   * SubjVertMo2 -> 4 item(s)
+   * ScnRelPlFcst2 -> 108 item(s)
+   * ScnRelPlFcst10 -> 108 item(s)
+   * ScnRelPlFcst0 -> 108 item(s)
+   * Scenario9 -> 9 item(s)
+   * Scenario7 -> 9 item(s)
+   * Scenario6 -> 9 item(s)
+   * Scenario4 -> 9 item(s)
+   * Scenario3 -> 9 item(s)
+   * Scenario1 -> 9 item(s)
+   * Scenario0 -> 9 item(s)
+   * ScenRelAMIns4 -> 108 item(s)
+   * ScenRelAMIns3 -> 108 item(s)
+   * WndHodograph3 -> 36 item(s)
+   * ScenRelAMIns2 -> 108 item(s)
+   * ScenRelAMIns1 -> 432 item(s)
+   * ScenRelAMIns0 -> 324 item(s)
+   * ScenRelAMCIN0 -> 54 item(s)
+   * ScenRel3_43 -> 18 item(s)
+   * SubjVertMo0 -> 4 item(s)
+   * ScenRel3_41 -> 9 item(s)
+   * SatContMoist2 -> 16 item(s)
+   * SatContMoist1 -> 16 item(s)
+   * RaoContMoist0 -> 4 item(s)
+   * SynForcng3 -> 11 item(s)
+   * RHRatio1 -> 9 item(s)
+   * R5Fcst2 -> 11 item(s)
+   * WindAloft0 -> 10 item(s)
+   * R5Fcst1 -> 11 item(s)
+   * R5Fcst0 -> 11 item(s)
+   * QGVertMotion3 -> 16 item(s)
+   * QGVertMotion2 -> 16 item(s)
+   * QGVertMotion0 -> 16 item(s)
+   * PlainsFcst2 -> 33 item(s)
+   * PlainsFcst0 -> 33 item(s)
+   * OutflowFrMt2 -> 96 item(s)
+   * Date3 -> 9 item(s)
+   * Date1 -> 9 item(s)
+   * AreaMeso_ALS1 -> 1 item(s)
+   * deadlock -> 7 item(s)
+   * Scenario5 -> 9 item(s)
+   * Date4 -> 9 item(s)
+   * SfcWndShfDis5 -> 11 item(s)
+   * CldShadeOth2 -> 4 item(s)
+   * ScnRelPlFcst1 -> 108 item(s)
+   * CombVerMo2 -> 1 item(s)
+   * CombMoisture1 -> 4 item(s)
+   * ScenRel3_40 -> 45 item(s)
+   * LowLLapse3 -> 10 item(s)
+   * CombMoisture2 -> 4 item(s)
+   * CombMoisture0 -> 4 item(s)
+   * MountainFcst0 -> 3 item(s)
+   * CombClouds1 -> 16 item(s)
+   * AMDewptCalPl1 -> 99 item(s)
+   * CombClouds0 -> 16 item(s)
+   * RaoContMoist2 -> 4 item(s)
+   * CurPropConv0 -> 297 item(s)
+   * MorningBound1 -> 336 item(s)
+   * CurPropConv2 -> 297 item(s)
+   * CurPropConv1 -> 297 item(s)
+   * TempDis1 -> 11 item(s)
+   * CldShadeOth0 -> 4 item(s)
+   * ScnRelPlFcst5 -> 108 item(s)
+   * CldShadeConv2 -> 72 item(s)
+   * CombMoisture3 -> 4 item(s)
+   * ScnRelPlFcst4 -> 108 item(s)
+   * Scenario8 -> 9 item(s)
+   * Dewpoints0 -> 1 item(s)
+   * RaoContMoist3 -> 4 item(s)
+   * QGVertMotion1 -> 16 item(s)
+   * Date0 -> 9 item(s)
+   * AreaMoDryAir2 -> 4 item(s)
+   * MidLLapse2 -> 10 item(s)
+   * AMInsWliScen0 -> 99 item(s)
+   * AMInsWliScen2 -> 99 item(s)
+   * CapInScen2 -> 99 item(s)
+   * WindFieldPln2 -> 11 item(s)
+   * WindAloft2 -> 9 item(s)
+   * AMCINInScen2 -> 297 item(s)
+   * LIfr12ZDENSd1 -> 297 item(s)
+   * SynForcng0 -> 11 item(s)
+   * LatestCIN3 -> 297 item(s)
+   * TempDis2 -> 10 item(s)
+   * CapInScen1 -> 99 item(s)
+   * CldShadeConv0 -> 108 item(s)
+   * AreaMeso_ALS0 -> 1 item(s)
+   * RaoContMoist1 -> 4 item(s)
+   * RHRatio2 -> 11 item(s)
+   * CompPlFcst0 -> 3 item(s)
+   * Boundaries2 -> 144 item(s)
+   * CompPlFcst2 -> 3 item(s)
+   * InsChange2 -> 297 item(s)
+   * CombClouds2 -> 16 item(s)
+   * MorningBound2 -> 336 item(s)
+   * Boundaries0 -> 144 item(s)
+   * InsSclInScen2 -> 99 item(s)
+   * CompPlFcst1 -> 3 item(s)
+   * AMInstabMt2 -> 12 item(s)
+   * CombVerMo0 -> 1 item(s)
+   * CldShadeOth1 -> 4 item(s)
+   * MountainFcst1 -> 3 item(s)
+   * AMInstabMt0 -> 12 item(s)
+   * PlainsFcst1 -> 33 item(s)
+   * OutflowFrMt1 -> 96 item(s)
+   * LowLLapse0 -> 10 item(s)
+   * AMCINInScen1 -> 297 item(s)
+   * TempDis3 -> 11 item(s)
+   * ScenRel3_42 -> 9 item(s)
+   * AreaMeso_ALS2 -> 1 item(s)
+   * ScnRelPlFcst3 -> 108 item(s)
+   * Boundaries1 -> 144 item(s)
+   * SfcWndShfDis2 -> 11 item(s)
+   * MorningCIN3 -> 297 item(s)
+   * SatContMoist3 -> 16 item(s)
+   * AMCINInScen0 -> 297 item(s)
+   * CapChange0 -> 99 item(s)
+   * CapChange2 -> 99 item(s)
+   * AreaMeso_ALS3 -> 1 item(s)
+   * RHRatio0 -> 9 item(s)
+   * AMDewptCalPl2 -> 99 item(s)
+   * MeanRH1 -> 10 item(s)
+   * AreaMoDryAir0 -> 4 item(s)
+   * MorningCIN2 -> 297 item(s)
+   * LIfr12ZDENSd2 -> 297 item(s)
+   * WndHodograph0 -> 36 item(s)
+   * WindFieldMt1 -> 11 item(s)
+   * AMInstabMt1 -> 12 item(s)
+   * MvmtFeatures1 -> 10 item(s)
+   * ScnRelPlFcst9 -> 108 item(s)
+   * LatestCIN2 -> 297 item(s)
+   * CombVerMo3 -> 1 item(s)
+   * CapInScen0 -> 99 item(s)
+   * LLIW0 -> 1188 item(s)
+   * N34StarFcst0 -> 33 item(s)
+   * MvmtFeatures0 -> 10 item(s)
+   * Date2 -> 9 item(s)
+   * SynForcng1 -> 11 item(s)
+   * N34StarFcst2 -> 33 item(s)
+   * Date5 -> 9 item(s)
+   * CombVerMo1 -> 1 item(s)
+   * Dewpoints2 -> 1 item(s)
+   * WindFieldMt0 -> 11 item(s)
+   * MidLLapse0 -> 10 item(s)
+   * SfcWndShfDis4 -> 9 item(s)
+   * ScenRel3_44 -> 18 item(s)
+   * AreaMoDryAir1 -> 4 item(s)
+   * Dewpoints3 -> 1 item(s)
+   * Scenario10 -> 9 item(s)
+   * Dewpoints4 -> 1 item(s)
+   * Dewpoints6 -> 1 item(s)
+   * LLIW1 -> 1188 item(s)
+   * IRCloudCover2 -> 48 item(s)
+   * ScenRelAMCIN1 -> 243 item(s)
+   * InsInMt0 -> 12 item(s)
+   * WindFieldPln5 -> 7 item(s)
+   * InsChange0 -> 297 item(s)
+   * ScnRelPlFcst6 -> 108 item(s)
+   * Scenario2 -> 9 item(s)
+   * InsChange1 -> 297 item(s)
+   * Dewpoints5 -> 1 item(s)
+   * InsInMt1 -> 12 item(s)
+   * AreaMoDryAir3 -> 4 item(s)
+   * InsInMt2 -> 12 item(s)
+   * InsSclInScen1 -> 99 item(s)
+   * ScenRelAMIns5 -> 108 item(s)
+   * CldShadeConv1 -> 72 item(s)
+   * LoLevMoistAd1 -> 297 item(s)
+   * LIfr12ZDENSd0 -> 297 item(s)
+   * MeanRH2 -> 10 item(s)
+   * LIfr12ZDENSd3 -> 297 item(s)
+   * SfcWndShfDis3 -> 10 item(s)
+   * IRCloudCover0 -> 48 item(s)
+   * CapChange1 -> 99 item(s)
+   * MvmtFeatures2 -> 11 item(s)
+   * LLIW3 -> 1188 item(s)
+   * SatContMoist0 -> 16 item(s)
+   * N0_7muVerMo2 -> 1 item(s)
+   * LatestCIN0 -> 297 item(s)
+   * LatestCIN1 -> 297 item(s)
+   * AMInsWliScen1 -> 99 item(s)
+   * IRCloudCover1 -> 48 item(s)
+   * LoLevMoistAd0 -> 297 item(s)
+   * LoLevMoistAd2 -> 297 item(s)
+   * VISCloudCov2 -> 16 item(s)
+   * InsSclInScen0 -> 99 item(s)
+   * LoLevMoistAd3 -> 297 item(s)
+   * LowLLapse1 -> 11 item(s)
+   * LowLLapse2 -> 11 item(s)
+   * MeanRH0 -> 10 item(s)
+   * MidLLapse1 -> 11 item(s)
+   * AMDewptCalPl0 -> 99 item(s)
+   * LLIW2 -> 1188 item(s)
+   * MorningBound0 -> 336 item(s)
+   * MorningCIN0 -> 297 item(s)
+   * MorningCIN1 -> 297 item(s)
+   * Dewpoints1 -> 1 item(s)
+   * MountainFcst2 -> 3 item(s)
+   * N0_7muVerMo0 -> 1 item(s)
+   * MvmtFeatures3 -> 10 item(s)
+   * N0_7muVerMo1 -> 1 item(s)
+   * N0_7muVerMo3 -> 1 item(s)
+   * CurPropConv3 -> 297 item(s)
+   * OutflowFrMt0 -> 144 item(s)
+   * N34StarFcst1 -> 33 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+Accumulated values for labels:
+	AMCINInScen0: 0.3353703254
+	AMCINInScen1: 0.4321527883
+	AMCINInScen2: 0.2324768862
+	AMDewptCalPl0: 0.3
+	AMDewptCalPl1: 0.25
+	AMDewptCalPl2: 0.45
+	AMInsWliScen0: 0.3356108424
+	AMInsWliScen1: 0.3320312885
+	AMInsWliScen2: 0.3323578691
+	AMInstabMt0: 0.333333
+	AMInstabMt1: 0.333333
+	AMInstabMt2: 0.333334
+	AreaMeso_ALS0: 0.11675
+	AreaMeso_ALS1: 0.2713125
+	AreaMeso_ALS2: 0.4393125
+	AreaMeso_ALS3: 0.172625
+	AreaMoDryAir0: 0.2110082318
+	AreaMoDryAir1: 0.2862634952
+	AreaMoDryAir2: 0.3336335079
+	AreaMoDryAir3: 0.1690947652
+	Boundaries0: 0.2283389283
+	Boundaries1: 0.4691507938
+	Boundaries2: 0.302510278
+	CapChange0: 0.2359540912
+	CapChange1: 0.3579624999
+	CapChange2: 0.4060834089
+	CapInScen0: 0.3420200745
+	CapInScen1: 0.2857075261
+	CapInScen2: 0.3722723994
+	CldShadeConv0: 0.3686501713
+	CldShadeConv1: 0.304708487
+	CldShadeConv2: 0.3266413417
+	CldShadeOth0: 0.2075510545
+	CldShadeOth1: 0.377530252
+	CldShadeOth2: 0.4149186935
+	CombClouds0: 0.16035
+	CombClouds1: 0.39705
+	CombClouds2: 0.4426
+	CombMoisture0: 0.182625
+	CombMoisture1: 0.281375
+	CombMoisture2: 0.358875
+	CombMoisture3: 0.177125
+	CombVerMo0: 0.11675
+	CombVerMo1: 0.2713125
+	CombVerMo2: 0.4393125
+	CombVerMo3: 0.172625
+	CompPlFcst0: 0.4060834089
+	CompPlFcst1: 0.3579624999
+	CompPlFcst2: 0.2359540912
+	CurPropConv0: 0.33429
+	CurPropConv1: 0.25107
+	CurPropConv2: 0.2094
+	CurPropConv3: 0.20524
+	Date0: 0.254098
+	Date1: 0.131148
+	Date2: 0.106557
+	Date3: 0.213115
+	Date4: 0.07377
+	Date5: 0.221312
+	Dewpoints0: inf
+	Dewpoints1: inf
+	Dewpoints2: inf
+	Dewpoints3: inf
+	Dewpoints4: inf
+	Dewpoints5: inf
+	Dewpoints6: inf
+	IRCloudCover0: 0.15
+	IRCloudCover1: 0.45
+	IRCloudCover2: 0.4
+	InsChange0: 0.3086984276
+	InsChange1: 0.3350410545
+	InsChange2: 0.3562605179
+	InsInMt0: 0.2076161116
+	InsInMt1: 0.2066202457
+	InsInMt2: 0.5857636427
+	InsSclInScen0: 0.3564622927
+	InsSclInScen1: 0.2663225789
+	InsSclInScen2: 0.3772151284
+	LIfr12ZDENSd0: 0.1
+	LIfr12ZDENSd1: 0.52
+	LIfr12ZDENSd2: 0.3
+	LIfr12ZDENSd3: 0.08
+	LLIW0: 0.12
+	LLIW1: 0.32
+	LLIW2: 0.38
+	LLIW3: 0.18
+	LatestCIN0: 0.4
+	LatestCIN1: 0.4
+	LatestCIN2: 0.15
+	LatestCIN3: 0.05
+	LoLevMoistAd0: 0.12
+	LoLevMoistAd1: 0.28
+	LoLevMoistAd2: 0.3
+	LoLevMoistAd3: 0.3
+	LowLLapse0: 0.2533049181
+	LowLLapse1: 0.3323893471
+	LowLLapse2: 0.2454508202
+	LowLLapse3: 0.1688549146
+	MeanRH0: 0.1981401624
+	MeanRH1: 0.4347311446
+	MeanRH2: 0.367128693
+	MidLLapse0: 0.2958467229
+	MidLLapse1: 0.3547073739
+	MidLLapse2: 0.3494459032
+	MorningBound0: 0.5
+	MorningBound1: 0.35
+	MorningBound2: 0.15
+	MorningCIN0: 0.15
+	MorningCIN1: 0.57
+	MorningCIN2: 0.2
+	MorningCIN3: 0.08
+	MountainFcst0: 0.423946558
+	MountainFcst1: 0.3961919442
+	MountainFcst2: 0.1798614977
+	MvmtFeatures0: 0.1419434479
+	MvmtFeatures1: 0.2249745871
+	MvmtFeatures2: 0.1685573749
+	MvmtFeatures3: 0.4645245901
+	N0_7muVerMo0: 0.25
+	N0_7muVerMo1: 0.25
+	N0_7muVerMo2: 0.25
+	N0_7muVerMo3: 0.25
+	N34StarFcst0: 0.5939967494
+	N34StarFcst1: 0.2504426268
+	N34StarFcst2: 0.1555606238
+	OutflowFrMt0: 0.3926825104
+	OutflowFrMt1: 0.2571013349
+	OutflowFrMt2: 0.3502161548
+	PlainsFcst0: 0.6136511897
+	PlainsFcst1: 0.2382400215
+	PlainsFcst2: 0.1481087888
+	QGVertMotion0: 0.15
+	QGVertMotion1: 0.15
+	QGVertMotion2: 0.5
+	QGVertMotion3: 0.2
+	R5Fcst0: 0.2520648054
+	R5Fcst1: 0.4405994793
+	R5Fcst2: 0.3073357153
+	RHRatio0: 0.300963112
+	RHRatio1: 0.3498114785
+	RHRatio2: 0.3492254095
+	RaoContMoist0: 0.15
+	RaoContMoist1: 0.2
+	RaoContMoist2: 0.4
+	RaoContMoist3: 0.25
+	SatContMoist0: 0.15
+	SatContMoist1: 0.2
+	SatContMoist2: 0.4
+	SatContMoist3: 0.25
+	ScenRel3_40: 0.44729507
+	ScenRel3_41: 0.13565574
+	ScenRel3_42: 0.07844263
+	ScenRel3_43: 0.19721312
+	ScenRel3_44: 0.14139344
+	ScenRelAMCIN0: 0.19442622
+	ScenRelAMCIN1: 0.80557378
+	ScenRelAMIns0: 0.27065573
+	ScenRelAMIns1: 0.40696721
+	ScenRelAMIns2: 0.03352459
+	ScenRelAMIns3: 0.09680328
+	ScenRelAMIns4: 0.06516393
+	ScenRelAMIns5: 0.12688526
+	Scenario0: 0.05877048
+	Scenario1: 0.13565574
+	Scenario10: 0.12688526
+	Scenario2: 0.09655737
+	Scenario3: 0.07844263
+	Scenario4: 0.13155737
+	Scenario5: 0.03352459
+	Scenario6: 0.09680328
+	Scenario7: 0.06516393
+	Scenario8: 0.07622951
+	Scenario9: 0.10040984
+	ScnRelPlFcst0: 0.05877048
+	ScnRelPlFcst1: 0.13565574
+	ScnRelPlFcst10: 0.12688526
+	ScnRelPlFcst2: 0.09655737
+	ScnRelPlFcst3: 0.07844263
+	ScnRelPlFcst4: 0.13155737
+	ScnRelPlFcst5: 0.03352459
+	ScnRelPlFcst6: 0.09680328
+	ScnRelPlFcst7: 0.06516393
+	ScnRelPlFcst8: 0.07622951
+	ScnRelPlFcst9: 0.10040984
+	SfcWndShfDis0: 0.1635172083
+	SfcWndShfDis1: 0.1393303239
+	SfcWndShfDis2: 0.1120278675
+	SfcWndShfDis3: 0.1281278722
+	SfcWndShfDis4: 0.1904303331
+	SfcWndShfDis5: 0.1925614755
+	SfcWndShfDis6: 0.0740049195
+	SubjVertMo0: 0.15
+	SubjVertMo1: 0.15
+	SubjVertMo2: 0.5
+	SubjVertMo3: 0.2
+	SynForcng0: 0.1668319663
+	SynForcng1: 0.1647180309
+	SynForcng2: 0.1522581983
+	SynForcng3: 0.1866385236
+	SynForcng4: 0.3295532809
+	TempDis0: 0.156922134
+	TempDis1: 0.1464106574
+	TempDis2: 0.4301098346
+	TempDis3: 0.266557374
+	VISCloudCov0: 0.1
+	VISCloudCov1: 0.5
+	VISCloudCov2: 0.4
+	WindAloft0: 0.2129631185
+	WindAloft1: 0.2967172012
+	WindAloft2: 0.2219811498
+	WindAloft3: 0.2683385305
+	WindFieldMt0: 0.5276147509
+	WindFieldMt1: 0.4723852491
+	WindFieldPln0: 0.2229631155
+	WindFieldPln1: 0.1834417994
+	WindFieldPln2: 0.1672401608
+	WindFieldPln3: 0.1259418002
+	WindFieldPln4: 0.1389950847
+	WindFieldPln5: 0.1614180394
+	WndHodograph0: 0.3
+	WndHodograph1: 0.25
+	WndHodograph2: 0.25
+	WndHodograph3: 0.2
+	deadlock: inf
+	init: 1
+Result: [8.767179133e-07, inf] (range)
+Time for model checking: 0.011s.

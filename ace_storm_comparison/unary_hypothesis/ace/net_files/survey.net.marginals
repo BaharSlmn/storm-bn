@@ -1,0 +1,27 @@
+Network : ace/net_files/survey.net
+Network Read Time (ms) : 115.324626
+Number of Evidence Sets : 1
+AC :
+  Nodes : 125
+  Edges : 164
+  Total Initialization Time (ms) : 9.852993
+  Total Inference Time (ms) : 0.6524179999999999
+  Minimum Inference Time (ms) : 0.6524179999999999
+  Maximum Inference Time (ms) : 0.6524179999999999
+  Median Inference Time (ms) : 0.6524179999999999
+  Mean Inference Time (ms) : 0.6524179999999999
+  Standard Deviation Inference Time (ms) : 0.0
+
+
+=============================================
+
+e = {}
+
+Pr(e) = 1E0
+
+Pr(A,e) = [0.3, 0.5, 0.2]
+Pr(E,e) = [0.7454000000000001, 0.25460000000000005]
+Pr(T,e) = [0.5618339760000001, 0.280857252, 0.157308772]
+Pr(O,e) = [0.9498160000000001, 0.050184000000000006]
+Pr(S,e) = [0.6, 0.4]
+Pr(R,e) = [0.23726999999999998, 0.7627300000000001]

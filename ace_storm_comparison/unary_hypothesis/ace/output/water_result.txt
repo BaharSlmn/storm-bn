@@ -1,0 +1,15 @@
+Pr(e) = 0.9999998999999999
+Network : ace/net_files/water.net
+Network Read Time (ms) : 174.33764599999998
+Number of Evidence Sets : 1
+AC :
+  Nodes : 28741
+  Edges : 56496
+  Total Initialization Time (ms) : 103.116187
+  Total Inference Time (ms) : 12.981074
+  Minimum Inference Time (ms) : 12.981074
+  Maximum Inference Time (ms) : 12.981074
+  Median Inference Time (ms) : 12.981074
+  Mean Inference Time (ms) : 12.981074
+  Standard Deviation Inference Time (ms) : 0.0
+

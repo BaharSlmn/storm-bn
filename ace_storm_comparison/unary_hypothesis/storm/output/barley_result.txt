@@ -1,0 +1,8 @@
+Storm 1.6.4 (dev)
+
+Date: Thu Apr 28 12:15:56 2022
+Command line arguments: --jani storm/jani_files/barley.jani --expvisittimes --build-all-labels
+Current working directory: /home/hans/Desktop/private/ace_storm_comparison/unary_hypothesis
+
+Time for model input parsing: 5.077s.
+

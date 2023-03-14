@@ -1,0 +1,2 @@
+storm-pars -drn storm/drn_files/p2/hepar2.drn --prop "P=? [F(\"urea0\")]" --bisimulation
+

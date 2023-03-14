@@ -1,0 +1,1 @@
+/usr/bin/c++  -no-pie   CMakeFiles/uai_compiler.dir/uai_compiler.cpp.o  -o uai_compiler   -L/usr/local/lib  -L/home/hans/Desktop/Storm-bn/psdd_storm_comparison/psdd/lib/linux  -Wl,-rpath,/usr/local/lib:/home/hans/Desktop/Storm-bn/psdd_storm_comparison/psdd/lib/linux libpsdd.a -lsdd -lgmp -lhtd -lkahypar 

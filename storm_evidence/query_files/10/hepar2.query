@@ -1,0 +1,1 @@
+storm --jani jani_files/10/hepar2.jani --prop "P=? [G(obesity=0 | obesity=-1)]"

@@ -1,0 +1,1 @@
+storm --jani jani_files/30/sachs.jani --prop "P=? [G(Mek=0 | Mek=-1)]"

@@ -1,0 +1,1 @@
+storm --jani jani_files/1/child.jani --prop "P=? [G(XrayReport=0 | XrayReport=-1)]"

@@ -1,0 +1,1 @@
+storm --jani jani_files/no_evidence/hepar2.jani --prop "P=? [F(amylase=1|amylase=2|le_cells=1|hepatotoxic=1|carcinoma=1|edema=1)]"

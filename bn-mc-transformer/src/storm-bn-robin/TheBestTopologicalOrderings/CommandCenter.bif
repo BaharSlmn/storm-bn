@@ -1,0 +1,38 @@
+network CommandCenter {
+}
+variable Antenna_Structure {
+  type discrete [ 2 ] { Intact, Damaged };
+}
+variable Fuel_Supply {
+  type discrete [ 2 ] { Present, Absent };
+}
+variable Generator {
+  type discrete [ 2 ] { Working, Dead };
+}
+variable Radar {
+  type discrete [ 2 ] { Working, Dead };
+}
+variable Communications {
+  type discrete [ 2 ] { Present, Absent };
+}
+variable Command_Center {
+  type discrete [ 2 ] { Operational, Dead };
+}
+probability ( Antenna_Structure ){
+  table 0.9, 0.09999999999999998;
+}
+probability ( Fuel_Supply ){
+  table 0.9, 0.09999999999999998;
+}
+probability ( Generator | Fuel_Supply  ){
+  table 0.95, 0.05000000000000004, 0, 1;
+}
+probability ( Radar | Antenna_Structure, Generator  ){
+  table 0.99, 0.01000000000000001, 0.1, 0.9, 0.1, 0.9, 0, 1;
+}
+probability ( Communications | Generator  ){
+  table 0.95, 0.05000000000000004, 0.2, 0.8;
+}
+probability ( Command_Center | Radar, Communications  ){
+  table 0.99, 0.01000000000000001, 0.9, 0.09999999999999998, 0.95, 0.05000000000000004, 0.2, 0.8;
+}

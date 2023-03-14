@@ -1,0 +1,1 @@
+storm --jani storm/mildew/mildew.jani --prop "P=? [F((nedboer_1=1|mikro_1=0|middel_1=1|meldug_2=1|middel_2=0|straaling_2=0|dm_1=1|dm_3=1))]" >> storm/output/mildew_disjunction_8_result.txt

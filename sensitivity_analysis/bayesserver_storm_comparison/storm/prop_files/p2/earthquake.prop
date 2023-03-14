@@ -1,0 +1,2 @@
+storm-pars -drn storm/drn_files/p2/earthquake.drn --prop "P=? [F(\"MaryCalls0\")]" --bisimulation
+

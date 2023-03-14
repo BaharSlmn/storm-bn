@@ -1,0 +1,25 @@
+Storm 1.6.4
+
+Date: Wed Jun  8 15:08:50 2022
+Command line arguments: --jani jani_files/no_evidence/alarm.jani --prop 'P=? [F(DISCONNECT=1|VENTTUBE=1|VENTTUBE=2|VENTTUBE=3|PRESS=1|PRESS=2|PRESS=3|PULMEMBOLUS=1|PAP=1|PAP=2|SHUNT=1|FIO2=1|HREKG=1|HREKG=2|HRBP=1|HRBP=2|STROKEVOLUME=1|STROKEVOLUME=2|CO=1|CO=2|PCWP=1|PCWP=2|CVP=1|CVP=2)]'
+Current working directory: /home/hans/Desktop/Storm-bn/storm_evidence
+
+Time for model input parsing: 0.020s.
+
+Time for model construction: 0.083s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	966
+Transitions: 	2183
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 3 item(s)
+   * init -> 1 item(s)
+   * ((((((((((((((((((((((((DISCONNECT = 1) | (VENTTUBE = 1)) | (VENTTUBE = 2)) | (VENTTUBE = 3)) | (PRESS = 1)) | (PRESS = 2)) | (PRESS = 3)) | (PULMEMBOLUS = 1)) | (PAP = 1)) | (PAP = 2)) | (SHUNT = 1)) | (FIO2 = 1)) | (HREKG = 1)) | (HREKG = 2)) | (HRBP = 1)) | (HRBP = 2)) | (STROKEVOLUME = 1)) | (STROKEVOLUME = 2)) | (CO = 1)) | (CO = 2)) | (PCWP = 1)) | (PCWP = 2)) | (CVP = 1)) | (CVP = 2)) -> 257 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F ((((((((((((((((((((((((DISCONNECT = 1) | (VENTTUBE = 1)) | (VENTTUBE = 2)) | (VENTTUBE = 3)) | (PRESS = 1)) | (PRESS = 2)) | (PRESS = 3)) | (PULMEMBOLUS = 1)) | (PAP = 1)) | (PAP = 2)) | (SHUNT = 1)) | (FIO2 = 1)) | (HREKG = 1)) | (HREKG = 2)) | (HRBP = 1)) | (HRBP = 2)) | (STROKEVOLUME = 1)) | (STROKEVOLUME = 2)) | (CO = 1)) | (CO = 2)) | (PCWP = 1)) | (PCWP = 2)) | (CVP = 1)) | (CVP = 2))] ...
+Result (for initial states): 1
+Time for model checking: 0.001s.

@@ -1,0 +1,25 @@
+Storm 1.6.4
+
+Date: Wed Jun  8 15:08:51 2022
+Command line arguments: --jani jani_files/no_evidence/child.jani --prop 'P=? [F(HypDistrib=1|HypoxiaInO2=1|HypoxiaInO2=2)]'
+Current working directory: /home/hans/Desktop/Storm-bn/storm_evidence
+
+Time for model input parsing: 0.007s.
+
+Time for model construction: 0.060s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	695
+Transitions: 	2068
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 2 item(s)
+   * init -> 1 item(s)
+   * (((HypDistrib = 1) | (HypoxiaInO2 = 1)) | (HypoxiaInO2 = 2)) -> 60 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F (((HypDistrib = 1) | (HypoxiaInO2 = 1)) | (HypoxiaInO2 = 2))] ...
+Result (for initial states): 0.912698137
+Time for model checking: 0.000s.

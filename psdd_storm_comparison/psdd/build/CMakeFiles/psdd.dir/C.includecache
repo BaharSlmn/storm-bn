@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/psdd/csvparser.h
+stdio.h
+-
+
+/home/hans/Desktop/Storm-bn/psdd_storm_comparison/psdd/src/csvparser.c
+stdlib.h
+-
+string.h
+-
+stdio.h
+-
+errno.h
+-
+psdd/csvparser.h
+-
+

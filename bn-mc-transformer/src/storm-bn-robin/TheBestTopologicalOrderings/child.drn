@@ -1,0 +1,3095 @@
+// Exported by storm
+// Original model type: DTMC
+@type: DTMC
+@parameters
+
+@reward_models
+
+@nr_states
+587
+@nr_choices
+587
+@model
+state 0 init
+	action 0
+		1 : 0.1
+		2 : 0.9
+state 1 BirthAsphyxia0
+	action 0
+		3 : 0.2
+		4 : 0.3
+		5 : 0.25
+		6 : 0.15
+		7 : 0.05
+		8 : 0.05
+state 2 BirthAsphyxia1
+	action 0
+		3 : 0.03061224
+		4 : 0.33673469
+		5 : 0.29591837
+		6 : 0.23469388
+		7 : 0.05102041
+		8 : 0.05102041
+state 3 Disease0
+	action 0
+		9 : 0.1
+		10 : 0.9
+state 4 Disease1
+	action 0
+		11 : 0.1
+		12 : 0.9
+state 5 Disease2
+	action 0
+		13 : 0.1
+		14 : 0.9
+state 6 Disease3
+	action 0
+		15 : 0.9
+		16 : 0.1
+state 7 Disease4
+	action 0
+		17 : 0.05
+		18 : 0.95
+state 8 Disease5
+	action 0
+		19 : 0.1
+		20 : 0.9
+state 9 LVH0
+	action 0
+		21 : 0.9
+		22 : 0.1
+state 10 LVH1
+	action 0
+		21 : 0.05
+		22 : 0.95
+state 11 LVH0
+	action 0
+		23 : 0.9
+		24 : 0.1
+state 12 LVH1
+	action 0
+		23 : 0.05
+		24 : 0.95
+state 13 LVH0
+	action 0
+		25 : 0.9
+		26 : 0.1
+state 14 LVH1
+	action 0
+		25 : 0.05
+		26 : 0.95
+state 15 LVH0
+	action 0
+		27 : 0.9
+		28 : 0.1
+state 16 LVH1
+	action 0
+		27 : 0.05
+		28 : 0.95
+state 17 LVH0
+	action 0
+		29 : 0.9
+		30 : 0.1
+state 18 LVH1
+	action 0
+		29 : 0.05
+		30 : 0.95
+state 19 LVH0
+	action 0
+		31 : 0.9
+		32 : 0.1
+state 20 LVH1
+	action 0
+		31 : 0.05
+		32 : 0.95
+state 21 LVHreport0
+	action 0
+		33 : 0.4
+		34 : 0.6
+state 22 LVHreport1
+	action 0
+		33 : 0.4
+		34 : 0.6
+state 23 LVHreport0
+	action 0
+		35 : 0.3
+		36 : 0.7
+state 24 LVHreport1
+	action 0
+		35 : 0.3
+		36 : 0.7
+state 25 LVHreport0
+	action 0
+		37 : 0.2
+		38 : 0.8
+state 26 LVHreport1
+	action 0
+		37 : 0.2
+		38 : 0.8
+state 27 LVHreport0
+	action 0
+		39 : 0.3
+		40 : 0.7
+state 28 LVHreport1
+	action 0
+		39 : 0.3
+		40 : 0.7
+state 29 LVHreport0
+	action 0
+		41 : 0.7
+		42 : 0.3
+state 30 LVHreport1
+	action 0
+		41 : 0.7
+		42 : 0.3
+state 31 LVHreport0
+	action 0
+		43 : 0.7
+		44 : 0.3
+state 32 LVHreport1
+	action 0
+		43 : 0.7
+		44 : 0.3
+state 33 Sick0
+	action 0
+		45 : 0.95
+		46 : 0.03
+		47 : 0.02
+state 34 Sick1
+	action 0
+		48 : 0.85
+		49 : 0.1
+		50 : 0.05
+state 35 Sick0
+	action 0
+		51 : 0.8
+		52 : 0.15
+		53 : 0.05
+state 36 Sick1
+	action 0
+		54 : 0.7
+		55 : 0.2
+		56 : 0.1
+state 37 Sick0
+	action 0
+		57 : 0.7
+		58 : 0.15
+		59 : 0.15
+state 38 Sick1
+	action 0
+		60 : 0.25
+		61 : 0.25
+		62 : 0.5
+state 39 Sick0
+	action 0
+		63 : 0.8
+		64 : 0.15
+		65 : 0.05
+state 40 Sick1
+	action 0
+		66 : 0.8
+		67 : 0.15
+		68 : 0.05
+state 41 Sick0
+	action 0
+		69 : 0.8
+		70 : 0.15
+		71 : 0.05
+state 42 Sick1
+	action 0
+		72 : 0.7
+		73 : 0.2
+		74 : 0.1
+state 43 Sick0
+	action 0
+		75 : 0.9
+		76 : 0.08
+		77 : 0.02
+state 44 Sick1
+	action 0
+		78 : 0.8
+		79 : 0.15
+		80 : 0.05
+state 45 Age0
+	action 0
+		81 : 0.6
+		82 : 0.1
+		83 : 0.3
+state 46 Age1
+	action 0
+		81 : 0.6
+		82 : 0.1
+		83 : 0.3
+state 47 Age2
+	action 0
+		81 : 0.6
+		82 : 0.1
+		83 : 0.3
+state 48 Age0
+	action 0
+		84 : 0.6
+		85 : 0.1
+		86 : 0.3
+state 49 Age1
+	action 0
+		84 : 0.6
+		85 : 0.1
+		86 : 0.3
+state 50 Age2
+	action 0
+		84 : 0.6
+		85 : 0.1
+		86 : 0.3
+state 51 Age0
+	action 0
+		87 : 0.8
+		88 : 0.05
+		89 : 0.15
+state 52 Age1
+	action 0
+		87 : 0.8
+		88 : 0.05
+		89 : 0.15
+state 53 Age2
+	action 0
+		87 : 0.8
+		88 : 0.05
+		89 : 0.15
+state 54 Age0
+	action 0
+		90 : 0.8
+		91 : 0.05
+		92 : 0.15
+state 55 Age1
+	action 0
+		90 : 0.8
+		91 : 0.05
+		92 : 0.15
+state 56 Age2
+	action 0
+		90 : 0.8
+		91 : 0.05
+		92 : 0.15
+state 57 Age0
+	action 0
+		93 : 0.8
+		94 : 0.05
+		95 : 0.15
+state 58 Age1
+	action 0
+		93 : 0.8
+		94 : 0.05
+		95 : 0.15
+state 59 Age2
+	action 0
+		93 : 0.8
+		94 : 0.05
+		95 : 0.15
+state 60 Age0
+	action 0
+		96 : 0.8
+		97 : 0.05
+		98 : 0.15
+state 61 Age1
+	action 0
+		96 : 0.8
+		97 : 0.05
+		98 : 0.15
+state 62 Age2
+	action 0
+		96 : 0.8
+		97 : 0.05
+		98 : 0.15
+state 63 Age0
+	action 0
+		99 : 0.8
+		100 : 0.05
+		101 : 0.15
+state 64 Age1
+	action 0
+		99 : 0.8
+		100 : 0.05
+		101 : 0.15
+state 65 Age2
+	action 0
+		99 : 0.8
+		100 : 0.05
+		101 : 0.15
+state 66 Age0
+	action 0
+		102 : 0.8
+		103 : 0.05
+		104 : 0.15
+state 67 Age1
+	action 0
+		102 : 0.8
+		103 : 0.05
+		104 : 0.15
+state 68 Age2
+	action 0
+		102 : 0.8
+		103 : 0.05
+		104 : 0.15
+state 69 Age0
+	action 0
+		105 : 0.1
+		106 : 0.6
+		107 : 0.3
+state 70 Age1
+	action 0
+		105 : 0.1
+		106 : 0.6
+		107 : 0.3
+state 71 Age2
+	action 0
+		105 : 0.1
+		106 : 0.6
+		107 : 0.3
+state 72 Age0
+	action 0
+		108 : 0.1
+		109 : 0.6
+		110 : 0.3
+state 73 Age1
+	action 0
+		108 : 0.1
+		109 : 0.6
+		110 : 0.3
+state 74 Age2
+	action 0
+		108 : 0.1
+		109 : 0.6
+		110 : 0.3
+state 75 Age0
+	action 0
+		111 : 0.03
+		112 : 0.25
+		113 : 0.72
+state 76 Age1
+	action 0
+		111 : 0.03
+		112 : 0.25
+		113 : 0.72
+state 77 Age2
+	action 0
+		111 : 0.03
+		112 : 0.25
+		113 : 0.72
+state 78 Age0
+	action 0
+		114 : 0.03
+		115 : 0.25
+		116 : 0.72
+state 79 Age1
+	action 0
+		114 : 0.03
+		115 : 0.25
+		116 : 0.72
+state 80 Age2
+	action 0
+		114 : 0.03
+		115 : 0.25
+		116 : 0.72
+state 81 LungParench0
+	action 0
+		117 : 0.2
+		118 : 0.8
+state 82 LungParench1
+	action 0
+		119 : 0.4
+		120 : 0.6
+state 83 LungParench2
+	action 0
+		121 : 0.8
+		122 : 0.2
+state 84 LungParench0
+	action 0
+		117 : 0.05
+		118 : 0.95
+state 85 LungParench1
+	action 0
+		119 : 0.2
+		120 : 0.8
+state 86 LungParench2
+	action 0
+		121 : 0.6
+		122 : 0.4
+state 87 LungParench0
+	action 0
+		123 : 0.2
+		124 : 0.8
+state 88 LungParench1
+	action 0
+		125 : 0.4
+		126 : 0.6
+state 89 LungParench2
+	action 0
+		127 : 0.8
+		128 : 0.2
+state 90 LungParench0
+	action 0
+		123 : 0.05
+		124 : 0.95
+state 91 LungParench1
+	action 0
+		125 : 0.2
+		126 : 0.8
+state 92 LungParench2
+	action 0
+		127 : 0.6
+		128 : 0.4
+state 93 LungParench0
+	action 0
+		129 : 0.2
+		130 : 0.8
+state 94 LungParench1
+	action 0
+		131 : 0.4
+		132 : 0.6
+state 95 LungParench2
+	action 0
+		133 : 0.8
+		134 : 0.2
+state 96 LungParench0
+	action 0
+		129 : 0.05
+		130 : 0.95
+state 97 LungParench1
+	action 0
+		131 : 0.2
+		132 : 0.8
+state 98 LungParench2
+	action 0
+		133 : 0.6
+		134 : 0.4
+state 99 LungParench0
+	action 0
+		135 : 0.2
+		136 : 0.8
+state 100 LungParench1
+	action 0
+		137 : 0.4
+		138 : 0.6
+state 101 LungParench2
+	action 0
+		139 : 0.8
+		140 : 0.2
+state 102 LungParench0
+	action 0
+		135 : 0.05
+		136 : 0.95
+state 103 LungParench1
+	action 0
+		137 : 0.2
+		138 : 0.8
+state 104 LungParench2
+	action 0
+		139 : 0.6
+		140 : 0.4
+state 105 LungParench0
+	action 0
+		141 : 0.2
+		142 : 0.8
+state 106 LungParench1
+	action 0
+		143 : 0.4
+		144 : 0.6
+state 107 LungParench2
+	action 0
+		145 : 0.8
+		146 : 0.2
+state 108 LungParench0
+	action 0
+		141 : 0.05
+		142 : 0.95
+state 109 LungParench1
+	action 0
+		143 : 0.2
+		144 : 0.8
+state 110 LungParench2
+	action 0
+		145 : 0.6
+		146 : 0.4
+state 111 LungParench0
+	action 0
+		147 : 0.2
+		148 : 0.8
+state 112 LungParench1
+	action 0
+		149 : 0.4
+		150 : 0.6
+state 113 LungParench2
+	action 0
+		151 : 0.8
+		152 : 0.2
+state 114 LungParench0
+	action 0
+		147 : 0.05
+		148 : 0.95
+state 115 LungParench1
+	action 0
+		149 : 0.2
+		150 : 0.8
+state 116 LungParench2
+	action 0
+		151 : 0.6
+		152 : 0.4
+state 117 Grunting0
+	action 0
+		153 : 0.8
+		154 : 0.2
+state 118 Grunting1
+	action 0
+		153 : 0.1
+		154 : 0.9
+state 119 Grunting0
+	action 0
+		155 : 0.8
+		156 : 0.2
+state 120 Grunting1
+	action 0
+		155 : 0.1
+		156 : 0.9
+state 121 Grunting0
+	action 0
+		157 : 0.8
+		158 : 0.2
+state 122 Grunting1
+	action 0
+		157 : 0.1
+		158 : 0.9
+state 123 Grunting0
+	action 0
+		159 : 0.8
+		160 : 0.2
+state 124 Grunting1
+	action 0
+		159 : 0.1
+		160 : 0.9
+state 125 Grunting0
+	action 0
+		161 : 0.8
+		162 : 0.2
+state 126 Grunting1
+	action 0
+		161 : 0.1
+		162 : 0.9
+state 127 Grunting0
+	action 0
+		163 : 0.8
+		164 : 0.2
+state 128 Grunting1
+	action 0
+		163 : 0.1
+		164 : 0.9
+state 129 Grunting0
+	action 0
+		165 : 0.8
+		166 : 0.2
+state 130 Grunting1
+	action 0
+		165 : 0.1
+		166 : 0.9
+state 131 Grunting0
+	action 0
+		167 : 0.8
+		168 : 0.2
+state 132 Grunting1
+	action 0
+		167 : 0.1
+		168 : 0.9
+state 133 Grunting0
+	action 0
+		169 : 0.8
+		170 : 0.2
+state 134 Grunting1
+	action 0
+		169 : 0.1
+		170 : 0.9
+state 135 Grunting0
+	action 0
+		171 : 0.8
+		172 : 0.2
+state 136 Grunting1
+	action 0
+		171 : 0.1
+		172 : 0.9
+state 137 Grunting0
+	action 0
+		173 : 0.8
+		174 : 0.2
+state 138 Grunting1
+	action 0
+		173 : 0.1
+		174 : 0.9
+state 139 Grunting0
+	action 0
+		175 : 0.8
+		176 : 0.2
+state 140 Grunting1
+	action 0
+		175 : 0.1
+		176 : 0.9
+state 141 Grunting0
+	action 0
+		177 : 0.8
+		178 : 0.2
+state 142 Grunting1
+	action 0
+		177 : 0.1
+		178 : 0.9
+state 143 Grunting0
+	action 0
+		179 : 0.8
+		180 : 0.2
+state 144 Grunting1
+	action 0
+		179 : 0.1
+		180 : 0.9
+state 145 Grunting0
+	action 0
+		181 : 0.8
+		182 : 0.2
+state 146 Grunting1
+	action 0
+		181 : 0.1
+		182 : 0.9
+state 147 Grunting0
+	action 0
+		183 : 0.8
+		184 : 0.2
+state 148 Grunting1
+	action 0
+		183 : 0.1
+		184 : 0.9
+state 149 Grunting0
+	action 0
+		185 : 0.8
+		186 : 0.2
+state 150 Grunting1
+	action 0
+		185 : 0.1
+		186 : 0.9
+state 151 Grunting0
+	action 0
+		187 : 0.8
+		188 : 0.2
+state 152 Grunting1
+	action 0
+		187 : 0.1
+		188 : 0.9
+state 153 GruntingReport0
+	action 0
+		189 : 0.3
+		190 : 0.65
+		191 : 0.05
+state 154 GruntingReport1
+	action 0
+		189 : 0.3
+		190 : 0.65
+		191 : 0.05
+state 155 GruntingReport0
+	action 0
+		192 : 0.3
+		193 : 0.65
+		194 : 0.05
+state 156 GruntingReport1
+	action 0
+		192 : 0.3
+		193 : 0.65
+		194 : 0.05
+state 157 GruntingReport0
+	action 0
+		195 : 0.3
+		196 : 0.65
+		197 : 0.05
+state 158 GruntingReport1
+	action 0
+		195 : 0.3
+		196 : 0.65
+		197 : 0.05
+state 159 GruntingReport0
+	action 0
+		198 : 0.2
+		199 : 0.05
+		200 : 0.75
+state 160 GruntingReport1
+	action 0
+		198 : 0.2
+		199 : 0.05
+		200 : 0.75
+state 161 GruntingReport0
+	action 0
+		201 : 0.2
+		202 : 0.05
+		203 : 0.75
+state 162 GruntingReport1
+	action 0
+		201 : 0.2
+		202 : 0.05
+		203 : 0.75
+state 163 GruntingReport0
+	action 0
+		204 : 0.2
+		205 : 0.05
+		206 : 0.75
+state 164 GruntingReport1
+	action 0
+		204 : 0.2
+		205 : 0.05
+		206 : 0.75
+state 165 GruntingReport0
+	action 0
+		207 : 0.15
+		208 : 0.8
+		209 : 0.05
+state 166 GruntingReport1
+	action 0
+		207 : 0.15
+		208 : 0.8
+		209 : 0.05
+state 167 GruntingReport0
+	action 0
+		210 : 0.15
+		211 : 0.8
+		212 : 0.05
+state 168 GruntingReport1
+	action 0
+		210 : 0.15
+		211 : 0.8
+		212 : 0.05
+state 169 GruntingReport0
+	action 0
+		213 : 0.15
+		214 : 0.8
+		215 : 0.05
+state 170 GruntingReport1
+	action 0
+		213 : 0.15
+		214 : 0.8
+		215 : 0.05
+state 171 GruntingReport0
+	action 0
+		216 : 0.1
+		217 : 0.85
+		218 : 0.05
+state 172 GruntingReport1
+	action 0
+		216 : 0.1
+		217 : 0.85
+		218 : 0.05
+state 173 GruntingReport0
+	action 0
+		219 : 0.1
+		220 : 0.85
+		221 : 0.05
+state 174 GruntingReport1
+	action 0
+		219 : 0.1
+		220 : 0.85
+		221 : 0.05
+state 175 GruntingReport0
+	action 0
+		222 : 0.1
+		223 : 0.85
+		224 : 0.05
+state 176 GruntingReport1
+	action 0
+		222 : 0.1
+		223 : 0.85
+		224 : 0.05
+state 177 GruntingReport0
+	action 0
+		225 : 0.3
+		226 : 0.1
+		227 : 0.6
+state 178 GruntingReport1
+	action 0
+		225 : 0.3
+		226 : 0.1
+		227 : 0.6
+state 179 GruntingReport0
+	action 0
+		228 : 0.3
+		229 : 0.1
+		230 : 0.6
+state 180 GruntingReport1
+	action 0
+		228 : 0.3
+		229 : 0.1
+		230 : 0.6
+state 181 GruntingReport0
+	action 0
+		231 : 0.3
+		232 : 0.1
+		233 : 0.6
+state 182 GruntingReport1
+	action 0
+		231 : 0.3
+		232 : 0.1
+		233 : 0.6
+state 183 GruntingReport0
+	action 0
+		234 : 0.7
+		235 : 0.1
+		236 : 0.2
+state 184 GruntingReport1
+	action 0
+		234 : 0.7
+		235 : 0.1
+		236 : 0.2
+state 185 GruntingReport0
+	action 0
+		237 : 0.7
+		238 : 0.1
+		239 : 0.2
+state 186 GruntingReport1
+	action 0
+		237 : 0.7
+		238 : 0.1
+		239 : 0.2
+state 187 GruntingReport0
+	action 0
+		240 : 0.7
+		241 : 0.1
+		242 : 0.2
+state 188 GruntingReport1
+	action 0
+		240 : 0.7
+		241 : 0.1
+		242 : 0.2
+state 189 LungFlow0
+	action 0
+		243 : 0.9
+		244 : 0.03
+		245 : 0.03
+		246 : 0.01
+		247 : 0.03
+state 190 LungFlow1
+	action 0
+		243 : 0.14
+		244 : 0.8
+		245 : 0.02
+		246 : 0.02
+		247 : 0.02
+state 191 LungFlow2
+	action 0
+		243 : 0.15
+		244 : 0.01
+		245 : 0.79
+		246 : 0.04
+		247 : 0.01
+state 192 LungFlow0
+	action 0
+		248 : 0.05
+		249 : 0.02
+		250 : 0.15
+		251 : 0.7
+		252 : 0.08
+state 193 LungFlow1
+	action 0
+		248 : 0.05
+		249 : 0.22
+		250 : 0.08
+		251 : 0.5
+		252 : 0.15
+state 194 LungFlow2
+	action 0
+		248 : 0.05
+		249 : 0.02
+		250 : 0.4
+		251 : 0.4
+		252 : 0.13
+state 195 LungFlow0
+	action 0
+		253 : 0.05
+		254 : 0.05
+		255 : 0.05
+		256 : 0.05
+		257 : 0.8
+state 196 LungFlow1
+	action 0
+		253 : 0.05
+		254 : 0.15
+		255 : 0.05
+		256 : 0.05
+		257 : 0.7
+state 197 LungFlow2
+	action 0
+		253 : 0.24
+		254 : 0.33
+		255 : 0.03
+		256 : 0.34
+		257 : 0.06
+state 198 LungFlow0
+	action 0
+		258 : 0.9
+		259 : 0.03
+		260 : 0.03
+		261 : 0.01
+		262 : 0.03
+state 199 LungFlow1
+	action 0
+		258 : 0.14
+		259 : 0.8
+		260 : 0.02
+		261 : 0.02
+		262 : 0.02
+state 200 LungFlow2
+	action 0
+		258 : 0.15
+		259 : 0.01
+		260 : 0.79
+		261 : 0.04
+		262 : 0.01
+state 201 LungFlow0
+	action 0
+		263 : 0.05
+		264 : 0.02
+		265 : 0.15
+		266 : 0.7
+		267 : 0.08
+state 202 LungFlow1
+	action 0
+		263 : 0.05
+		264 : 0.22
+		265 : 0.08
+		266 : 0.5
+		267 : 0.15
+state 203 LungFlow2
+	action 0
+		263 : 0.05
+		264 : 0.02
+		265 : 0.4
+		266 : 0.4
+		267 : 0.13
+state 204 LungFlow0
+	action 0
+		268 : 0.05
+		269 : 0.05
+		270 : 0.05
+		271 : 0.05
+		272 : 0.8
+state 205 LungFlow1
+	action 0
+		268 : 0.05
+		269 : 0.15
+		270 : 0.05
+		271 : 0.05
+		272 : 0.7
+state 206 LungFlow2
+	action 0
+		268 : 0.24
+		269 : 0.33
+		270 : 0.03
+		271 : 0.34
+		272 : 0.06
+state 207 LungFlow0
+	action 0
+		273 : 0.9
+		274 : 0.03
+		275 : 0.03
+		276 : 0.01
+		277 : 0.03
+state 208 LungFlow1
+	action 0
+		273 : 0.14
+		274 : 0.8
+		275 : 0.02
+		276 : 0.02
+		277 : 0.02
+state 209 LungFlow2
+	action 0
+		273 : 0.15
+		274 : 0.01
+		275 : 0.79
+		276 : 0.04
+		277 : 0.01
+state 210 LungFlow0
+	action 0
+		278 : 0.05
+		279 : 0.02
+		280 : 0.15
+		281 : 0.7
+		282 : 0.08
+state 211 LungFlow1
+	action 0
+		278 : 0.05
+		279 : 0.22
+		280 : 0.08
+		281 : 0.5
+		282 : 0.15
+state 212 LungFlow2
+	action 0
+		278 : 0.05
+		279 : 0.02
+		280 : 0.4
+		281 : 0.4
+		282 : 0.13
+state 213 LungFlow0
+	action 0
+		283 : 0.05
+		284 : 0.05
+		285 : 0.05
+		286 : 0.05
+		287 : 0.8
+state 214 LungFlow1
+	action 0
+		283 : 0.05
+		284 : 0.15
+		285 : 0.05
+		286 : 0.05
+		287 : 0.7
+state 215 LungFlow2
+	action 0
+		283 : 0.24
+		284 : 0.33
+		285 : 0.03
+		286 : 0.34
+		287 : 0.06
+state 216 LungFlow0
+	action 0
+		288 : 0.9
+		289 : 0.03
+		290 : 0.03
+		291 : 0.01
+		292 : 0.03
+state 217 LungFlow1
+	action 0
+		288 : 0.14
+		289 : 0.8
+		290 : 0.02
+		291 : 0.02
+		292 : 0.02
+state 218 LungFlow2
+	action 0
+		288 : 0.15
+		289 : 0.01
+		290 : 0.79
+		291 : 0.04
+		292 : 0.01
+state 219 LungFlow0
+	action 0
+		293 : 0.05
+		294 : 0.02
+		295 : 0.15
+		296 : 0.7
+		297 : 0.08
+state 220 LungFlow1
+	action 0
+		293 : 0.05
+		294 : 0.22
+		295 : 0.08
+		296 : 0.5
+		297 : 0.15
+state 221 LungFlow2
+	action 0
+		293 : 0.05
+		294 : 0.02
+		295 : 0.4
+		296 : 0.4
+		297 : 0.13
+state 222 LungFlow0
+	action 0
+		298 : 0.05
+		299 : 0.05
+		300 : 0.05
+		301 : 0.05
+		302 : 0.8
+state 223 LungFlow1
+	action 0
+		298 : 0.05
+		299 : 0.15
+		300 : 0.05
+		301 : 0.05
+		302 : 0.7
+state 224 LungFlow2
+	action 0
+		298 : 0.24
+		299 : 0.33
+		300 : 0.03
+		301 : 0.34
+		302 : 0.06
+state 225 LungFlow0
+	action 0
+		303 : 0.9
+		304 : 0.03
+		305 : 0.03
+		306 : 0.01
+		307 : 0.03
+state 226 LungFlow1
+	action 0
+		303 : 0.14
+		304 : 0.8
+		305 : 0.02
+		306 : 0.02
+		307 : 0.02
+state 227 LungFlow2
+	action 0
+		303 : 0.15
+		304 : 0.01
+		305 : 0.79
+		306 : 0.04
+		307 : 0.01
+state 228 LungFlow0
+	action 0
+		308 : 0.05
+		309 : 0.02
+		310 : 0.15
+		311 : 0.7
+		312 : 0.08
+state 229 LungFlow1
+	action 0
+		308 : 0.05
+		309 : 0.22
+		310 : 0.08
+		311 : 0.5
+		312 : 0.15
+state 230 LungFlow2
+	action 0
+		308 : 0.05
+		309 : 0.02
+		310 : 0.4
+		311 : 0.4
+		312 : 0.13
+state 231 LungFlow0
+	action 0
+		313 : 0.05
+		314 : 0.05
+		315 : 0.05
+		316 : 0.05
+		317 : 0.8
+state 232 LungFlow1
+	action 0
+		313 : 0.05
+		314 : 0.15
+		315 : 0.05
+		316 : 0.05
+		317 : 0.7
+state 233 LungFlow2
+	action 0
+		313 : 0.24
+		314 : 0.33
+		315 : 0.03
+		316 : 0.34
+		317 : 0.06
+state 234 LungFlow0
+	action 0
+		318 : 0.9
+		319 : 0.03
+		320 : 0.03
+		321 : 0.01
+		322 : 0.03
+state 235 LungFlow1
+	action 0
+		318 : 0.14
+		319 : 0.8
+		320 : 0.02
+		321 : 0.02
+		322 : 0.02
+state 236 LungFlow2
+	action 0
+		318 : 0.15
+		319 : 0.01
+		320 : 0.79
+		321 : 0.04
+		322 : 0.01
+state 237 LungFlow0
+	action 0
+		323 : 0.05
+		324 : 0.02
+		325 : 0.15
+		326 : 0.7
+		327 : 0.08
+state 238 LungFlow1
+	action 0
+		323 : 0.05
+		324 : 0.22
+		325 : 0.08
+		326 : 0.5
+		327 : 0.15
+state 239 LungFlow2
+	action 0
+		323 : 0.05
+		324 : 0.02
+		325 : 0.4
+		326 : 0.4
+		327 : 0.13
+state 240 LungFlow0
+	action 0
+		328 : 0.05
+		329 : 0.05
+		330 : 0.05
+		331 : 0.05
+		332 : 0.8
+state 241 LungFlow1
+	action 0
+		328 : 0.05
+		329 : 0.15
+		330 : 0.05
+		331 : 0.05
+		332 : 0.7
+state 242 LungFlow2
+	action 0
+		328 : 0.24
+		329 : 0.33
+		330 : 0.03
+		331 : 0.34
+		332 : 0.06
+state 243 ChestXray0
+	action 0
+		333 : 0.8
+		334 : 0.06
+		335 : 0.06
+		336 : 0.02
+		337 : 0.06
+state 244 ChestXray1
+	action 0
+		333 : 0.1
+		334 : 0.8
+		335 : 0.02
+		336 : 0.02
+		337 : 0.06
+state 245 ChestXray2
+	action 0
+		333 : 0.1
+		334 : 0.02
+		335 : 0.8
+		336 : 0.02
+		337 : 0.06
+state 246 ChestXray3
+	action 0
+		333 : 0.08
+		334 : 0.02
+		335 : 0.1
+		336 : 0.6
+		337 : 0.2
+state 247 ChestXray4
+	action 0
+		333 : 0.08
+		334 : 0.02
+		335 : 0.1
+		336 : 0.1
+		337 : 0.7
+state 248 ChestXray0
+	action 0
+		338 : 0.8
+		339 : 0.06
+		340 : 0.06
+		341 : 0.02
+		342 : 0.06
+state 249 ChestXray1
+	action 0
+		338 : 0.1
+		339 : 0.8
+		340 : 0.02
+		341 : 0.02
+		342 : 0.06
+state 250 ChestXray2
+	action 0
+		338 : 0.1
+		339 : 0.02
+		340 : 0.8
+		341 : 0.02
+		342 : 0.06
+state 251 ChestXray3
+	action 0
+		338 : 0.08
+		339 : 0.02
+		340 : 0.1
+		341 : 0.6
+		342 : 0.2
+state 252 ChestXray4
+	action 0
+		338 : 0.08
+		339 : 0.02
+		340 : 0.1
+		341 : 0.1
+		342 : 0.7
+state 253 ChestXray0
+	action 0
+		343 : 0.8
+		344 : 0.06
+		345 : 0.06
+		346 : 0.02
+		347 : 0.06
+state 254 ChestXray1
+	action 0
+		343 : 0.1
+		344 : 0.8
+		345 : 0.02
+		346 : 0.02
+		347 : 0.06
+state 255 ChestXray2
+	action 0
+		343 : 0.1
+		344 : 0.02
+		345 : 0.8
+		346 : 0.02
+		347 : 0.06
+state 256 ChestXray3
+	action 0
+		343 : 0.08
+		344 : 0.02
+		345 : 0.1
+		346 : 0.6
+		347 : 0.2
+state 257 ChestXray4
+	action 0
+		343 : 0.08
+		344 : 0.02
+		345 : 0.1
+		346 : 0.1
+		347 : 0.7
+state 258 ChestXray0
+	action 0
+		348 : 0.8
+		349 : 0.06
+		350 : 0.06
+		351 : 0.02
+		352 : 0.06
+state 259 ChestXray1
+	action 0
+		348 : 0.1
+		349 : 0.8
+		350 : 0.02
+		351 : 0.02
+		352 : 0.06
+state 260 ChestXray2
+	action 0
+		348 : 0.1
+		349 : 0.02
+		350 : 0.8
+		351 : 0.02
+		352 : 0.06
+state 261 ChestXray3
+	action 0
+		348 : 0.08
+		349 : 0.02
+		350 : 0.1
+		351 : 0.6
+		352 : 0.2
+state 262 ChestXray4
+	action 0
+		348 : 0.08
+		349 : 0.02
+		350 : 0.1
+		351 : 0.1
+		352 : 0.7
+state 263 ChestXray0
+	action 0
+		353 : 0.8
+		354 : 0.06
+		355 : 0.06
+		356 : 0.02
+		357 : 0.06
+state 264 ChestXray1
+	action 0
+		353 : 0.1
+		354 : 0.8
+		355 : 0.02
+		356 : 0.02
+		357 : 0.06
+state 265 ChestXray2
+	action 0
+		353 : 0.1
+		354 : 0.02
+		355 : 0.8
+		356 : 0.02
+		357 : 0.06
+state 266 ChestXray3
+	action 0
+		353 : 0.08
+		354 : 0.02
+		355 : 0.1
+		356 : 0.6
+		357 : 0.2
+state 267 ChestXray4
+	action 0
+		353 : 0.08
+		354 : 0.02
+		355 : 0.1
+		356 : 0.1
+		357 : 0.7
+state 268 ChestXray0
+	action 0
+		358 : 0.8
+		359 : 0.06
+		360 : 0.06
+		361 : 0.02
+		362 : 0.06
+state 269 ChestXray1
+	action 0
+		358 : 0.1
+		359 : 0.8
+		360 : 0.02
+		361 : 0.02
+		362 : 0.06
+state 270 ChestXray2
+	action 0
+		358 : 0.1
+		359 : 0.02
+		360 : 0.8
+		361 : 0.02
+		362 : 0.06
+state 271 ChestXray3
+	action 0
+		358 : 0.08
+		359 : 0.02
+		360 : 0.1
+		361 : 0.6
+		362 : 0.2
+state 272 ChestXray4
+	action 0
+		358 : 0.08
+		359 : 0.02
+		360 : 0.1
+		361 : 0.1
+		362 : 0.7
+state 273 ChestXray0
+	action 0
+		363 : 0.8
+		364 : 0.06
+		365 : 0.06
+		366 : 0.02
+		367 : 0.06
+state 274 ChestXray1
+	action 0
+		363 : 0.1
+		364 : 0.8
+		365 : 0.02
+		366 : 0.02
+		367 : 0.06
+state 275 ChestXray2
+	action 0
+		363 : 0.1
+		364 : 0.02
+		365 : 0.8
+		366 : 0.02
+		367 : 0.06
+state 276 ChestXray3
+	action 0
+		363 : 0.08
+		364 : 0.02
+		365 : 0.1
+		366 : 0.6
+		367 : 0.2
+state 277 ChestXray4
+	action 0
+		363 : 0.08
+		364 : 0.02
+		365 : 0.1
+		366 : 0.1
+		367 : 0.7
+state 278 ChestXray0
+	action 0
+		368 : 0.8
+		369 : 0.06
+		370 : 0.06
+		371 : 0.02
+		372 : 0.06
+state 279 ChestXray1
+	action 0
+		368 : 0.1
+		369 : 0.8
+		370 : 0.02
+		371 : 0.02
+		372 : 0.06
+state 280 ChestXray2
+	action 0
+		368 : 0.1
+		369 : 0.02
+		370 : 0.8
+		371 : 0.02
+		372 : 0.06
+state 281 ChestXray3
+	action 0
+		368 : 0.08
+		369 : 0.02
+		370 : 0.1
+		371 : 0.6
+		372 : 0.2
+state 282 ChestXray4
+	action 0
+		368 : 0.08
+		369 : 0.02
+		370 : 0.1
+		371 : 0.1
+		372 : 0.7
+state 283 ChestXray0
+	action 0
+		373 : 0.8
+		374 : 0.06
+		375 : 0.06
+		376 : 0.02
+		377 : 0.06
+state 284 ChestXray1
+	action 0
+		373 : 0.1
+		374 : 0.8
+		375 : 0.02
+		376 : 0.02
+		377 : 0.06
+state 285 ChestXray2
+	action 0
+		373 : 0.1
+		374 : 0.02
+		375 : 0.8
+		376 : 0.02
+		377 : 0.06
+state 286 ChestXray3
+	action 0
+		373 : 0.08
+		374 : 0.02
+		375 : 0.1
+		376 : 0.6
+		377 : 0.2
+state 287 ChestXray4
+	action 0
+		373 : 0.08
+		374 : 0.02
+		375 : 0.1
+		376 : 0.1
+		377 : 0.7
+state 288 ChestXray0
+	action 0
+		378 : 0.8
+		379 : 0.06
+		380 : 0.06
+		381 : 0.02
+		382 : 0.06
+state 289 ChestXray1
+	action 0
+		378 : 0.1
+		379 : 0.8
+		380 : 0.02
+		381 : 0.02
+		382 : 0.06
+state 290 ChestXray2
+	action 0
+		378 : 0.1
+		379 : 0.02
+		380 : 0.8
+		381 : 0.02
+		382 : 0.06
+state 291 ChestXray3
+	action 0
+		378 : 0.08
+		379 : 0.02
+		380 : 0.1
+		381 : 0.6
+		382 : 0.2
+state 292 ChestXray4
+	action 0
+		378 : 0.08
+		379 : 0.02
+		380 : 0.1
+		381 : 0.1
+		382 : 0.7
+state 293 ChestXray0
+	action 0
+		383 : 0.8
+		384 : 0.06
+		385 : 0.06
+		386 : 0.02
+		387 : 0.06
+state 294 ChestXray1
+	action 0
+		383 : 0.1
+		384 : 0.8
+		385 : 0.02
+		386 : 0.02
+		387 : 0.06
+state 295 ChestXray2
+	action 0
+		383 : 0.1
+		384 : 0.02
+		385 : 0.8
+		386 : 0.02
+		387 : 0.06
+state 296 ChestXray3
+	action 0
+		383 : 0.08
+		384 : 0.02
+		385 : 0.1
+		386 : 0.6
+		387 : 0.2
+state 297 ChestXray4
+	action 0
+		383 : 0.08
+		384 : 0.02
+		385 : 0.1
+		386 : 0.1
+		387 : 0.7
+state 298 ChestXray0
+	action 0
+		388 : 0.8
+		389 : 0.06
+		390 : 0.06
+		391 : 0.02
+		392 : 0.06
+state 299 ChestXray1
+	action 0
+		388 : 0.1
+		389 : 0.8
+		390 : 0.02
+		391 : 0.02
+		392 : 0.06
+state 300 ChestXray2
+	action 0
+		388 : 0.1
+		389 : 0.02
+		390 : 0.8
+		391 : 0.02
+		392 : 0.06
+state 301 ChestXray3
+	action 0
+		388 : 0.08
+		389 : 0.02
+		390 : 0.1
+		391 : 0.6
+		392 : 0.2
+state 302 ChestXray4
+	action 0
+		388 : 0.08
+		389 : 0.02
+		390 : 0.1
+		391 : 0.1
+		392 : 0.7
+state 303 ChestXray0
+	action 0
+		393 : 0.8
+		394 : 0.06
+		395 : 0.06
+		396 : 0.02
+		397 : 0.06
+state 304 ChestXray1
+	action 0
+		393 : 0.1
+		394 : 0.8
+		395 : 0.02
+		396 : 0.02
+		397 : 0.06
+state 305 ChestXray2
+	action 0
+		393 : 0.1
+		394 : 0.02
+		395 : 0.8
+		396 : 0.02
+		397 : 0.06
+state 306 ChestXray3
+	action 0
+		393 : 0.08
+		394 : 0.02
+		395 : 0.1
+		396 : 0.6
+		397 : 0.2
+state 307 ChestXray4
+	action 0
+		393 : 0.08
+		394 : 0.02
+		395 : 0.1
+		396 : 0.1
+		397 : 0.7
+state 308 ChestXray0
+	action 0
+		398 : 0.8
+		399 : 0.06
+		400 : 0.06
+		401 : 0.02
+		402 : 0.06
+state 309 ChestXray1
+	action 0
+		398 : 0.1
+		399 : 0.8
+		400 : 0.02
+		401 : 0.02
+		402 : 0.06
+state 310 ChestXray2
+	action 0
+		398 : 0.1
+		399 : 0.02
+		400 : 0.8
+		401 : 0.02
+		402 : 0.06
+state 311 ChestXray3
+	action 0
+		398 : 0.08
+		399 : 0.02
+		400 : 0.1
+		401 : 0.6
+		402 : 0.2
+state 312 ChestXray4
+	action 0
+		398 : 0.08
+		399 : 0.02
+		400 : 0.1
+		401 : 0.1
+		402 : 0.7
+state 313 ChestXray0
+	action 0
+		403 : 0.8
+		404 : 0.06
+		405 : 0.06
+		406 : 0.02
+		407 : 0.06
+state 314 ChestXray1
+	action 0
+		403 : 0.1
+		404 : 0.8
+		405 : 0.02
+		406 : 0.02
+		407 : 0.06
+state 315 ChestXray2
+	action 0
+		403 : 0.1
+		404 : 0.02
+		405 : 0.8
+		406 : 0.02
+		407 : 0.06
+state 316 ChestXray3
+	action 0
+		403 : 0.08
+		404 : 0.02
+		405 : 0.1
+		406 : 0.6
+		407 : 0.2
+state 317 ChestXray4
+	action 0
+		403 : 0.08
+		404 : 0.02
+		405 : 0.1
+		406 : 0.1
+		407 : 0.7
+state 318 ChestXray0
+	action 0
+		408 : 0.8
+		409 : 0.06
+		410 : 0.06
+		411 : 0.02
+		412 : 0.06
+state 319 ChestXray1
+	action 0
+		408 : 0.1
+		409 : 0.8
+		410 : 0.02
+		411 : 0.02
+		412 : 0.06
+state 320 ChestXray2
+	action 0
+		408 : 0.1
+		409 : 0.02
+		410 : 0.8
+		411 : 0.02
+		412 : 0.06
+state 321 ChestXray3
+	action 0
+		408 : 0.08
+		409 : 0.02
+		410 : 0.1
+		411 : 0.6
+		412 : 0.2
+state 322 ChestXray4
+	action 0
+		408 : 0.08
+		409 : 0.02
+		410 : 0.1
+		411 : 0.1
+		412 : 0.7
+state 323 ChestXray0
+	action 0
+		413 : 0.8
+		414 : 0.06
+		415 : 0.06
+		416 : 0.02
+		417 : 0.06
+state 324 ChestXray1
+	action 0
+		413 : 0.1
+		414 : 0.8
+		415 : 0.02
+		416 : 0.02
+		417 : 0.06
+state 325 ChestXray2
+	action 0
+		413 : 0.1
+		414 : 0.02
+		415 : 0.8
+		416 : 0.02
+		417 : 0.06
+state 326 ChestXray3
+	action 0
+		413 : 0.08
+		414 : 0.02
+		415 : 0.1
+		416 : 0.6
+		417 : 0.2
+state 327 ChestXray4
+	action 0
+		413 : 0.08
+		414 : 0.02
+		415 : 0.1
+		416 : 0.1
+		417 : 0.7
+state 328 ChestXray0
+	action 0
+		418 : 0.8
+		419 : 0.06
+		420 : 0.06
+		421 : 0.02
+		422 : 0.06
+state 329 ChestXray1
+	action 0
+		418 : 0.1
+		419 : 0.8
+		420 : 0.02
+		421 : 0.02
+		422 : 0.06
+state 330 ChestXray2
+	action 0
+		418 : 0.1
+		419 : 0.02
+		420 : 0.8
+		421 : 0.02
+		422 : 0.06
+state 331 ChestXray3
+	action 0
+		418 : 0.08
+		419 : 0.02
+		420 : 0.1
+		421 : 0.6
+		422 : 0.2
+state 332 ChestXray4
+	action 0
+		418 : 0.08
+		419 : 0.02
+		420 : 0.1
+		421 : 0.1
+		422 : 0.7
+state 333 XrayReport0
+	action 0
+		423 : 0.15
+		424 : 0.05
+		425 : 0.8
+state 334 XrayReport1
+	action 0
+		423 : 0.15
+		424 : 0.05
+		425 : 0.8
+state 335 XrayReport2
+	action 0
+		423 : 0.15
+		424 : 0.05
+		425 : 0.8
+state 336 XrayReport3
+	action 0
+		423 : 0.15
+		424 : 0.05
+		425 : 0.8
+state 337 XrayReport4
+	action 0
+		423 : 0.15
+		424 : 0.05
+		425 : 0.8
+state 338 XrayReport0
+	action 0
+		426 : 0.15
+		427 : 0.05
+		428 : 0.8
+state 339 XrayReport1
+	action 0
+		426 : 0.15
+		427 : 0.05
+		428 : 0.8
+state 340 XrayReport2
+	action 0
+		426 : 0.15
+		427 : 0.05
+		428 : 0.8
+state 341 XrayReport3
+	action 0
+		426 : 0.15
+		427 : 0.05
+		428 : 0.8
+state 342 XrayReport4
+	action 0
+		426 : 0.15
+		427 : 0.05
+		428 : 0.8
+state 343 XrayReport0
+	action 0
+		429 : 0.15
+		430 : 0.05
+		431 : 0.8
+state 344 XrayReport1
+	action 0
+		429 : 0.15
+		430 : 0.05
+		431 : 0.8
+state 345 XrayReport2
+	action 0
+		429 : 0.15
+		430 : 0.05
+		431 : 0.8
+state 346 XrayReport3
+	action 0
+		429 : 0.15
+		430 : 0.05
+		431 : 0.8
+state 347 XrayReport4
+	action 0
+		429 : 0.15
+		430 : 0.05
+		431 : 0.8
+state 348 XrayReport0
+	action 0
+		432 : 0.1
+		433 : 0.8
+		434 : 0.1
+state 349 XrayReport1
+	action 0
+		432 : 0.1
+		433 : 0.8
+		434 : 0.1
+state 350 XrayReport2
+	action 0
+		432 : 0.1
+		433 : 0.8
+		434 : 0.1
+state 351 XrayReport3
+	action 0
+		432 : 0.1
+		433 : 0.8
+		434 : 0.1
+state 352 XrayReport4
+	action 0
+		432 : 0.1
+		433 : 0.8
+		434 : 0.1
+state 353 XrayReport0
+	action 0
+		435 : 0.1
+		436 : 0.8
+		437 : 0.1
+state 354 XrayReport1
+	action 0
+		435 : 0.1
+		436 : 0.8
+		437 : 0.1
+state 355 XrayReport2
+	action 0
+		435 : 0.1
+		436 : 0.8
+		437 : 0.1
+state 356 XrayReport3
+	action 0
+		435 : 0.1
+		436 : 0.8
+		437 : 0.1
+state 357 XrayReport4
+	action 0
+		435 : 0.1
+		436 : 0.8
+		437 : 0.1
+state 358 XrayReport0
+	action 0
+		438 : 0.1
+		439 : 0.8
+		440 : 0.1
+state 359 XrayReport1
+	action 0
+		438 : 0.1
+		439 : 0.8
+		440 : 0.1
+state 360 XrayReport2
+	action 0
+		438 : 0.1
+		439 : 0.8
+		440 : 0.1
+state 361 XrayReport3
+	action 0
+		438 : 0.1
+		439 : 0.8
+		440 : 0.1
+state 362 XrayReport4
+	action 0
+		438 : 0.1
+		439 : 0.8
+		440 : 0.1
+state 363 XrayReport0
+	action 0
+		441 : 0.8
+		442 : 0.2
+state 364 XrayReport1
+	action 0
+		441 : 0.8
+		442 : 0.2
+state 365 XrayReport2
+	action 0
+		441 : 0.8
+		442 : 0.2
+state 366 XrayReport3
+	action 0
+		441 : 0.8
+		442 : 0.2
+state 367 XrayReport4
+	action 0
+		441 : 0.8
+		442 : 0.2
+state 368 XrayReport0
+	action 0
+		443 : 0.8
+		444 : 0.2
+state 369 XrayReport1
+	action 0
+		443 : 0.8
+		444 : 0.2
+state 370 XrayReport2
+	action 0
+		443 : 0.8
+		444 : 0.2
+state 371 XrayReport3
+	action 0
+		443 : 0.8
+		444 : 0.2
+state 372 XrayReport4
+	action 0
+		443 : 0.8
+		444 : 0.2
+state 373 XrayReport0
+	action 0
+		445 : 0.8
+		446 : 0.2
+state 374 XrayReport1
+	action 0
+		445 : 0.8
+		446 : 0.2
+state 375 XrayReport2
+	action 0
+		445 : 0.8
+		446 : 0.2
+state 376 XrayReport3
+	action 0
+		445 : 0.8
+		446 : 0.2
+state 377 XrayReport4
+	action 0
+		445 : 0.8
+		446 : 0.2
+state 378 XrayReport0
+	action 0
+		447 : 1
+state 379 XrayReport1
+	action 0
+		447 : 1
+state 380 XrayReport2
+	action 0
+		447 : 1
+state 381 XrayReport3
+	action 0
+		447 : 1
+state 382 XrayReport4
+	action 0
+		447 : 1
+state 383 XrayReport0
+	action 0
+		448 : 1
+state 384 XrayReport1
+	action 0
+		448 : 1
+state 385 XrayReport2
+	action 0
+		448 : 1
+state 386 XrayReport3
+	action 0
+		448 : 1
+state 387 XrayReport4
+	action 0
+		448 : 1
+state 388 XrayReport0
+	action 0
+		449 : 1
+state 389 XrayReport1
+	action 0
+		449 : 1
+state 390 XrayReport2
+	action 0
+		449 : 1
+state 391 XrayReport3
+	action 0
+		449 : 1
+state 392 XrayReport4
+	action 0
+		449 : 1
+state 393 XrayReport0
+	action 0
+		450 : 0.33
+		451 : 0.33
+		452 : 0.34
+state 394 XrayReport1
+	action 0
+		450 : 0.33
+		451 : 0.33
+		452 : 0.34
+state 395 XrayReport2
+	action 0
+		450 : 0.33
+		451 : 0.33
+		452 : 0.34
+state 396 XrayReport3
+	action 0
+		450 : 0.33
+		451 : 0.33
+		452 : 0.34
+state 397 XrayReport4
+	action 0
+		450 : 0.33
+		451 : 0.33
+		452 : 0.34
+state 398 XrayReport0
+	action 0
+		453 : 0.33
+		454 : 0.33
+		455 : 0.34
+state 399 XrayReport1
+	action 0
+		453 : 0.33
+		454 : 0.33
+		455 : 0.34
+state 400 XrayReport2
+	action 0
+		453 : 0.33
+		454 : 0.33
+		455 : 0.34
+state 401 XrayReport3
+	action 0
+		453 : 0.33
+		454 : 0.33
+		455 : 0.34
+state 402 XrayReport4
+	action 0
+		453 : 0.33
+		454 : 0.33
+		455 : 0.34
+state 403 XrayReport0
+	action 0
+		456 : 0.33
+		457 : 0.33
+		458 : 0.34
+state 404 XrayReport1
+	action 0
+		456 : 0.33
+		457 : 0.33
+		458 : 0.34
+state 405 XrayReport2
+	action 0
+		456 : 0.33
+		457 : 0.33
+		458 : 0.34
+state 406 XrayReport3
+	action 0
+		456 : 0.33
+		457 : 0.33
+		458 : 0.34
+state 407 XrayReport4
+	action 0
+		456 : 0.33
+		457 : 0.33
+		458 : 0.34
+state 408 XrayReport0
+	action 0
+		459 : 0.2
+		460 : 0.4
+		461 : 0.4
+state 409 XrayReport1
+	action 0
+		459 : 0.2
+		460 : 0.4
+		461 : 0.4
+state 410 XrayReport2
+	action 0
+		459 : 0.2
+		460 : 0.4
+		461 : 0.4
+state 411 XrayReport3
+	action 0
+		459 : 0.2
+		460 : 0.4
+		461 : 0.4
+state 412 XrayReport4
+	action 0
+		459 : 0.2
+		460 : 0.4
+		461 : 0.4
+state 413 XrayReport0
+	action 0
+		462 : 0.2
+		463 : 0.4
+		464 : 0.4
+state 414 XrayReport1
+	action 0
+		462 : 0.2
+		463 : 0.4
+		464 : 0.4
+state 415 XrayReport2
+	action 0
+		462 : 0.2
+		463 : 0.4
+		464 : 0.4
+state 416 XrayReport3
+	action 0
+		462 : 0.2
+		463 : 0.4
+		464 : 0.4
+state 417 XrayReport4
+	action 0
+		462 : 0.2
+		463 : 0.4
+		464 : 0.4
+state 418 XrayReport0
+	action 0
+		465 : 0.2
+		466 : 0.4
+		467 : 0.4
+state 419 XrayReport1
+	action 0
+		465 : 0.2
+		466 : 0.4
+		467 : 0.4
+state 420 XrayReport2
+	action 0
+		465 : 0.2
+		466 : 0.4
+		467 : 0.4
+state 421 XrayReport3
+	action 0
+		465 : 0.2
+		466 : 0.4
+		467 : 0.4
+state 422 XrayReport4
+	action 0
+		465 : 0.2
+		466 : 0.4
+		467 : 0.4
+state 423 DuctFlow0
+	action 0
+		468 : 0.4
+		469 : 0.43
+		470 : 0.15
+		471 : 0.02
+state 424 DuctFlow1
+	action 0
+		472 : 0.4
+		473 : 0.43
+		474 : 0.15
+		475 : 0.02
+state 425 DuctFlow2
+	action 0
+		476 : 0.4
+		477 : 0.43
+		478 : 0.15
+		479 : 0.02
+state 426 DuctFlow0
+	action 0
+		480 : 0.4
+		481 : 0.43
+		482 : 0.15
+		483 : 0.02
+state 427 DuctFlow1
+	action 0
+		484 : 0.4
+		485 : 0.43
+		486 : 0.15
+		487 : 0.02
+state 428 DuctFlow2
+	action 0
+		488 : 0.4
+		489 : 0.43
+		490 : 0.15
+		491 : 0.02
+state 429 DuctFlow0
+	action 0
+		492 : 0.4
+		493 : 0.43
+		494 : 0.15
+		495 : 0.02
+state 430 DuctFlow1
+	action 0
+		496 : 0.4
+		497 : 0.43
+		498 : 0.15
+		499 : 0.02
+state 431 DuctFlow2
+	action 0
+		500 : 0.4
+		501 : 0.43
+		502 : 0.15
+		503 : 0.02
+state 432 DuctFlow0
+	action 0
+		468 : 0.02
+		469 : 0.09
+		470 : 0.09
+		471 : 0.8
+state 433 DuctFlow1
+	action 0
+		472 : 0.02
+		473 : 0.09
+		474 : 0.09
+		475 : 0.8
+state 434 DuctFlow2
+	action 0
+		476 : 0.02
+		477 : 0.09
+		478 : 0.09
+		479 : 0.8
+state 435 DuctFlow0
+	action 0
+		480 : 0.02
+		481 : 0.09
+		482 : 0.09
+		483 : 0.8
+state 436 DuctFlow1
+	action 0
+		484 : 0.02
+		485 : 0.09
+		486 : 0.09
+		487 : 0.8
+state 437 DuctFlow2
+	action 0
+		488 : 0.02
+		489 : 0.09
+		490 : 0.09
+		491 : 0.8
+state 438 DuctFlow0
+	action 0
+		492 : 0.02
+		493 : 0.09
+		494 : 0.09
+		495 : 0.8
+state 439 DuctFlow1
+	action 0
+		496 : 0.02
+		497 : 0.09
+		498 : 0.09
+		499 : 0.8
+state 440 DuctFlow2
+	action 0
+		500 : 0.02
+		501 : 0.09
+		502 : 0.09
+		503 : 0.8
+state 441 DuctFlow0
+	action 0
+		468 : 0.02
+		469 : 0.16
+		470 : 0.8
+		471 : 0.02
+state 442 DuctFlow1
+	action 0
+		472 : 0.02
+		473 : 0.16
+		474 : 0.8
+		475 : 0.02
+state 443 DuctFlow0
+	action 0
+		480 : 0.02
+		481 : 0.16
+		482 : 0.8
+		483 : 0.02
+state 444 DuctFlow1
+	action 0
+		484 : 0.02
+		485 : 0.16
+		486 : 0.8
+		487 : 0.02
+state 445 DuctFlow0
+	action 0
+		492 : 0.02
+		493 : 0.16
+		494 : 0.8
+		495 : 0.02
+state 446 DuctFlow1
+	action 0
+		496 : 0.02
+		497 : 0.16
+		498 : 0.8
+		499 : 0.02
+state 447 DuctFlow0
+	action 0
+		468 : 0.01
+		469 : 0.02
+		470 : 0.95
+		471 : 0.02
+state 448 DuctFlow0
+	action 0
+		480 : 0.01
+		481 : 0.02
+		482 : 0.95
+		483 : 0.02
+state 449 DuctFlow0
+	action 0
+		492 : 0.01
+		493 : 0.02
+		494 : 0.95
+		495 : 0.02
+state 450 DuctFlow0
+	action 0
+		468 : 0.01
+		469 : 0.03
+		470 : 0.95
+		471 : 0.01
+state 451 DuctFlow1
+	action 0
+		472 : 0.01
+		473 : 0.03
+		474 : 0.95
+		475 : 0.01
+state 452 DuctFlow2
+	action 0
+		476 : 0.01
+		477 : 0.03
+		478 : 0.95
+		479 : 0.01
+state 453 DuctFlow0
+	action 0
+		480 : 0.01
+		481 : 0.03
+		482 : 0.95
+		483 : 0.01
+state 454 DuctFlow1
+	action 0
+		484 : 0.01
+		485 : 0.03
+		486 : 0.95
+		487 : 0.01
+state 455 DuctFlow2
+	action 0
+		488 : 0.01
+		489 : 0.03
+		490 : 0.95
+		491 : 0.01
+state 456 DuctFlow0
+	action 0
+		492 : 0.01
+		493 : 0.03
+		494 : 0.95
+		495 : 0.01
+state 457 DuctFlow1
+	action 0
+		496 : 0.01
+		497 : 0.03
+		498 : 0.95
+		499 : 0.01
+state 458 DuctFlow2
+	action 0
+		500 : 0.01
+		501 : 0.03
+		502 : 0.95
+		503 : 0.01
+state 459 DuctFlow0
+	action 0
+		468 : 0.4
+		469 : 0.53
+		470 : 0.05
+		471 : 0.02
+state 460 DuctFlow1
+	action 0
+		472 : 0.4
+		473 : 0.53
+		474 : 0.05
+		475 : 0.02
+state 461 DuctFlow2
+	action 0
+		476 : 0.4
+		477 : 0.53
+		478 : 0.05
+		479 : 0.02
+state 462 DuctFlow0
+	action 0
+		480 : 0.4
+		481 : 0.53
+		482 : 0.05
+		483 : 0.02
+state 463 DuctFlow1
+	action 0
+		484 : 0.4
+		485 : 0.53
+		486 : 0.05
+		487 : 0.02
+state 464 DuctFlow2
+	action 0
+		488 : 0.4
+		489 : 0.53
+		490 : 0.05
+		491 : 0.02
+state 465 DuctFlow0
+	action 0
+		492 : 0.4
+		493 : 0.53
+		494 : 0.05
+		495 : 0.02
+state 466 DuctFlow1
+	action 0
+		496 : 0.4
+		497 : 0.53
+		498 : 0.05
+		499 : 0.02
+state 467 DuctFlow2
+	action 0
+		500 : 0.4
+		501 : 0.53
+		502 : 0.05
+		503 : 0.02
+state 468 CardiacMixing0
+	action 0
+		504 : 0.95
+		505 : 0.05
+state 469 CardiacMixing1
+	action 0
+		506 : 0.95
+		507 : 0.05
+state 470 CardiacMixing2
+	action 0
+		508 : 0.95
+		509 : 0.05
+state 471 CardiacMixing3
+	action 0
+		510 : 0.95
+		511 : 0.05
+state 472 CardiacMixing0
+	action 0
+		504 : 0.95
+		505 : 0.05
+state 473 CardiacMixing1
+	action 0
+		506 : 0.95
+		507 : 0.05
+state 474 CardiacMixing2
+	action 0
+		508 : 0.95
+		509 : 0.05
+state 475 CardiacMixing3
+	action 0
+		510 : 0.95
+		511 : 0.05
+state 476 CardiacMixing0
+	action 0
+		504 : 0.05
+		505 : 0.95
+state 477 CardiacMixing1
+	action 0
+		506 : 0.5
+		507 : 0.5
+state 478 CardiacMixing2
+	action 0
+		508 : 0.95
+		509 : 0.05
+state 479 CardiacMixing3
+	action 0
+		510 : 0.5
+		511 : 0.5
+state 480 CardiacMixing0
+	action 0
+		512 : 0.95
+		513 : 0.05
+state 481 CardiacMixing1
+	action 0
+		514 : 0.95
+		515 : 0.05
+state 482 CardiacMixing2
+	action 0
+		516 : 0.95
+		517 : 0.05
+state 483 CardiacMixing3
+	action 0
+		518 : 0.95
+		519 : 0.05
+state 484 CardiacMixing0
+	action 0
+		512 : 0.95
+		513 : 0.05
+state 485 CardiacMixing1
+	action 0
+		514 : 0.95
+		515 : 0.05
+state 486 CardiacMixing2
+	action 0
+		516 : 0.95
+		517 : 0.05
+state 487 CardiacMixing3
+	action 0
+		518 : 0.95
+		519 : 0.05
+state 488 CardiacMixing0
+	action 0
+		512 : 0.05
+		513 : 0.95
+state 489 CardiacMixing1
+	action 0
+		514 : 0.5
+		515 : 0.5
+state 490 CardiacMixing2
+	action 0
+		516 : 0.95
+		517 : 0.05
+state 491 CardiacMixing3
+	action 0
+		518 : 0.5
+		519 : 0.5
+state 492 CardiacMixing0
+	action 0
+		520 : 0.95
+		521 : 0.05
+state 493 CardiacMixing1
+	action 0
+		522 : 0.95
+		523 : 0.05
+state 494 CardiacMixing2
+	action 0
+		524 : 0.95
+		525 : 0.05
+state 495 CardiacMixing3
+	action 0
+		526 : 0.95
+		527 : 0.05
+state 496 CardiacMixing0
+	action 0
+		520 : 0.95
+		521 : 0.05
+state 497 CardiacMixing1
+	action 0
+		522 : 0.95
+		523 : 0.05
+state 498 CardiacMixing2
+	action 0
+		524 : 0.95
+		525 : 0.05
+state 499 CardiacMixing3
+	action 0
+		526 : 0.95
+		527 : 0.05
+state 500 CardiacMixing0
+	action 0
+		520 : 0.05
+		521 : 0.95
+state 501 CardiacMixing1
+	action 0
+		522 : 0.5
+		523 : 0.5
+state 502 CardiacMixing2
+	action 0
+		524 : 0.95
+		525 : 0.05
+state 503 CardiacMixing3
+	action 0
+		526 : 0.5
+		527 : 0.5
+state 504 HypDistrib0
+	action 0
+		528 : 0.93
+		529 : 0.05
+		530 : 0.02
+state 505 HypDistrib1
+	action 0
+		531 : 0.93
+		532 : 0.05
+		533 : 0.02
+state 506 HypDistrib0
+	action 0
+		528 : 0.1
+		529 : 0.8
+		530 : 0.1
+state 507 HypDistrib1
+	action 0
+		531 : 0.1
+		532 : 0.8
+		533 : 0.1
+state 508 HypDistrib0
+	action 0
+		528 : 0.1
+		529 : 0.7
+		530 : 0.2
+state 509 HypDistrib1
+	action 0
+		531 : 0.1
+		532 : 0.7
+		533 : 0.2
+state 510 HypDistrib0
+	action 0
+		528 : 0.02
+		529 : 0.18
+		530 : 0.8
+state 511 HypDistrib1
+	action 0
+		531 : 0.02
+		532 : 0.18
+		533 : 0.8
+state 512 HypDistrib0
+	action 0
+		534 : 0.15
+		535 : 0.8
+		536 : 0.05
+state 513 HypDistrib1
+	action 0
+		537 : 0.15
+		538 : 0.8
+		539 : 0.05
+state 514 HypDistrib0
+	action 0
+		534 : 0.1
+		535 : 0.75
+		536 : 0.15
+state 515 HypDistrib1
+	action 0
+		537 : 0.1
+		538 : 0.75
+		539 : 0.15
+state 516 HypDistrib0
+	action 0
+		534 : 0.05
+		535 : 0.65
+		536 : 0.3
+state 517 HypDistrib1
+	action 0
+		537 : 0.05
+		538 : 0.65
+		539 : 0.3
+state 518 HypDistrib0
+	action 0
+		534 : 0.1
+		535 : 0.3
+		536 : 0.6
+state 519 HypDistrib1
+	action 0
+		537 : 0.1
+		538 : 0.3
+		539 : 0.6
+state 520 HypDistrib0
+	action 0
+		540 : 0.7
+		541 : 0.2
+		542 : 0.1
+state 521 HypDistrib1
+	action 0
+		543 : 0.7
+		544 : 0.2
+		545 : 0.1
+state 522 HypDistrib0
+	action 0
+		540 : 0.1
+		541 : 0.65
+		542 : 0.25
+state 523 HypDistrib1
+	action 0
+		543 : 0.1
+		544 : 0.65
+		545 : 0.25
+state 524 HypDistrib0
+	action 0
+		540 : 0.1
+		541 : 0.5
+		542 : 0.4
+state 525 HypDistrib1
+	action 0
+		543 : 0.1
+		544 : 0.5
+		545 : 0.4
+state 526 HypDistrib0
+	action 0
+		540 : 0.02
+		541 : 0.18
+		542 : 0.8
+state 527 HypDistrib1
+	action 0
+		543 : 0.02
+		544 : 0.18
+		545 : 0.8
+state 528 HypoxiaInO20
+	action 0
+		546 : 0.1
+		547 : 0.3
+		548 : 0.6
+state 529 HypoxiaInO21
+	action 0
+		549 : 0.3
+		550 : 0.6
+		551 : 0.1
+state 530 HypoxiaInO22
+	action 0
+		552 : 0.5
+		553 : 0.4
+		554 : 0.1
+state 531 HypoxiaInO20
+	action 0
+		546 : 0.4
+		547 : 0.5
+		548 : 0.1
+state 532 HypoxiaInO21
+	action 0
+		549 : 0.5
+		550 : 0.45
+		551 : 0.05
+state 533 HypoxiaInO22
+	action 0
+		552 : 0.6
+		553 : 0.35
+		554 : 0.05
+state 534 HypoxiaInO20
+	action 0
+		555 : 0.1
+		556 : 0.3
+		557 : 0.6
+state 535 HypoxiaInO21
+	action 0
+		558 : 0.3
+		559 : 0.6
+		560 : 0.1
+state 536 HypoxiaInO22
+	action 0
+		561 : 0.5
+		562 : 0.4
+		563 : 0.1
+state 537 HypoxiaInO20
+	action 0
+		555 : 0.4
+		556 : 0.5
+		557 : 0.1
+state 538 HypoxiaInO21
+	action 0
+		558 : 0.5
+		559 : 0.45
+		560 : 0.05
+state 539 HypoxiaInO22
+	action 0
+		561 : 0.6
+		562 : 0.35
+		563 : 0.05
+state 540 HypoxiaInO20
+	action 0
+		564 : 0.1
+		565 : 0.3
+		566 : 0.6
+state 541 HypoxiaInO21
+	action 0
+		567 : 0.3
+		568 : 0.6
+		569 : 0.1
+state 542 HypoxiaInO22
+	action 0
+		570 : 0.5
+		571 : 0.4
+		572 : 0.1
+state 543 HypoxiaInO20
+	action 0
+		564 : 0.4
+		565 : 0.5
+		566 : 0.1
+state 544 HypoxiaInO21
+	action 0
+		567 : 0.5
+		568 : 0.45
+		569 : 0.05
+state 545 HypoxiaInO22
+	action 0
+		570 : 0.6
+		571 : 0.35
+		572 : 0.05
+state 546 LowerBodyO20
+	action 0
+		573 : 0.1
+		574 : 0.3
+		575 : 0.6
+state 547 LowerBodyO21
+	action 0
+		573 : 0.1
+		574 : 0.3
+		575 : 0.6
+state 548 LowerBodyO22
+	action 0
+		573 : 0.1
+		574 : 0.3
+		575 : 0.6
+state 549 LowerBodyO20
+	action 0
+		573 : 0.3
+		574 : 0.6
+		575 : 0.1
+state 550 LowerBodyO21
+	action 0
+		573 : 0.3
+		574 : 0.6
+		575 : 0.1
+state 551 LowerBodyO22
+	action 0
+		573 : 0.3
+		574 : 0.6
+		575 : 0.1
+state 552 LowerBodyO20
+	action 0
+		573 : 0.5
+		574 : 0.4
+		575 : 0.1
+state 553 LowerBodyO21
+	action 0
+		573 : 0.5
+		574 : 0.4
+		575 : 0.1
+state 554 LowerBodyO22
+	action 0
+		573 : 0.5
+		574 : 0.4
+		575 : 0.1
+state 555 LowerBodyO20
+	action 0
+		576 : 0.1
+		577 : 0.3
+		578 : 0.6
+state 556 LowerBodyO21
+	action 0
+		576 : 0.1
+		577 : 0.3
+		578 : 0.6
+state 557 LowerBodyO22
+	action 0
+		576 : 0.1
+		577 : 0.3
+		578 : 0.6
+state 558 LowerBodyO20
+	action 0
+		576 : 0.3
+		577 : 0.6
+		578 : 0.1
+state 559 LowerBodyO21
+	action 0
+		576 : 0.3
+		577 : 0.6
+		578 : 0.1
+state 560 LowerBodyO22
+	action 0
+		576 : 0.3
+		577 : 0.6
+		578 : 0.1
+state 561 LowerBodyO20
+	action 0
+		576 : 0.5
+		577 : 0.4
+		578 : 0.1
+state 562 LowerBodyO21
+	action 0
+		576 : 0.5
+		577 : 0.4
+		578 : 0.1
+state 563 LowerBodyO22
+	action 0
+		576 : 0.5
+		577 : 0.4
+		578 : 0.1
+state 564 LowerBodyO20
+	action 0
+		579 : 0.1
+		580 : 0.3
+		581 : 0.6
+state 565 LowerBodyO21
+	action 0
+		579 : 0.1
+		580 : 0.3
+		581 : 0.6
+state 566 LowerBodyO22
+	action 0
+		579 : 0.1
+		580 : 0.3
+		581 : 0.6
+state 567 LowerBodyO20
+	action 0
+		579 : 0.3
+		580 : 0.6
+		581 : 0.1
+state 568 LowerBodyO21
+	action 0
+		579 : 0.3
+		580 : 0.6
+		581 : 0.1
+state 569 LowerBodyO22
+	action 0
+		579 : 0.3
+		580 : 0.6
+		581 : 0.1
+state 570 LowerBodyO20
+	action 0
+		579 : 0.5
+		580 : 0.4
+		581 : 0.1
+state 571 LowerBodyO21
+	action 0
+		579 : 0.5
+		580 : 0.4
+		581 : 0.1
+state 572 LowerBodyO22
+	action 0
+		579 : 0.5
+		580 : 0.4
+		581 : 0.1
+state 573 RUQO20
+	action 0
+		582 : 0.8
+		583 : 0.1
+		584 : 0.1
+state 574 RUQO21
+	action 0
+		582 : 0.8
+		583 : 0.1
+		584 : 0.1
+state 575 RUQO22
+	action 0
+		582 : 0.8
+		583 : 0.1
+		584 : 0.1
+state 576 RUQO20
+	action 0
+		582 : 0.65
+		583 : 0.05
+		584 : 0.3
+state 577 RUQO21
+	action 0
+		582 : 0.65
+		583 : 0.05
+		584 : 0.3
+state 578 RUQO22
+	action 0
+		582 : 0.65
+		583 : 0.05
+		584 : 0.3
+state 579 RUQO20
+	action 0
+		582 : 0.45
+		583 : 0.05
+		584 : 0.5
+state 580 RUQO21
+	action 0
+		582 : 0.45
+		583 : 0.05
+		584 : 0.5
+state 581 RUQO22
+	action 0
+		582 : 0.45
+		583 : 0.05
+		584 : 0.5
+state 582 CO20
+	action 0
+		585 : 0.9
+		586 : 0.1
+state 583 CO21
+	action 0
+		585 : 0.9
+		586 : 0.1
+state 584 CO22
+	action 0
+		585 : 0.1
+		586 : 0.9
+state 585 CO2Report0 deadlock
+	action 0
+		585 : 1
+state 586 CO2Report1 deadlock
+	action 0
+		586 : 1

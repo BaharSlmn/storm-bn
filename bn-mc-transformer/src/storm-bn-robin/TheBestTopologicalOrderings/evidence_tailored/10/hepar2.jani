@@ -1,0 +1,5344 @@
+{
+	"jani-version": 1,
+	"name": "hepar2.jani",
+	"type": "dtmc",
+	"features": [ "derived-operators" ],
+"variables": [
+	{
+	"name": "alcoholism",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "alcoholism0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "alcoholism1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "vh_amn",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "vh_amn0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "vh_amn1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "hospital",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "hospital0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "hospital1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "surgery",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "surgery0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "surgery1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "gallstones",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "gallstones0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "gallstones1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "choledocholithotomy",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "choledocholithotomy0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "choledocholithotomy1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "injections",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "injections0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "injections1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "transfusion",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "transfusion0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "transfusion1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "ChHepatitis",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 2
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "ChHepatitis0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "ChHepatitis1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "ChHepatitis2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "sex",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "sex0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "sex1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "age",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 3
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "age0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "age1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "age2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "age3",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "PBC",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "PBC0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "PBC1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "fibrosis",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "fibrosis0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "fibrosis1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "diabetes",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "diabetes0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "diabetes1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "obesity",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "obesity0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "obesity1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "Steatosis",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "Steatosis0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Steatosis1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "Cirrhosis",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 2
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "Cirrhosis0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Cirrhosis1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Cirrhosis2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "Hyperbilirubinemia",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "Hyperbilirubinemia0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Hyperbilirubinemia1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "flatulence",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "flatulence0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "flatulence1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "alcohol",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "alcohol0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "alcohol1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "encephalopathy",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "encephalopathy0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "encephalopathy1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "urea",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 2
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "urea0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "urea1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "urea2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "density",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "density0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "density1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "palms",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "palms0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "palms1",
+		"transient": true,
+		"type": "bool"
+	}
+],
+"properties": [
+],
+"automata": [
+{
+	"name": "hepar2",
+	"locations": [
+		{
+		"name": "loc0"
+		},
+		{
+		"name": "loc1",
+		"transient-values": [
+		{
+			"ref": "hospital0",
+			"value": {
+				"op": "=",
+				"left": "hospital",
+				"right": 0
+			}
+		},
+		{
+			"ref": "hospital1",
+			"value": {
+				"op": "=",
+				"left": "hospital",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc2",
+		"transient-values": [
+		{
+			"ref": "gallstones0",
+			"value": {
+				"op": "=",
+				"left": "gallstones",
+				"right": 0
+			}
+		},
+		{
+			"ref": "gallstones1",
+			"value": {
+				"op": "=",
+				"left": "gallstones",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc3",
+		"transient-values": [
+		{
+			"ref": "flatulence0",
+			"value": {
+				"op": "=",
+				"left": "flatulence",
+				"right": 0
+			}
+		},
+		{
+			"ref": "flatulence1",
+			"value": {
+				"op": "=",
+				"left": "flatulence",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc4",
+		"transient-values": [
+		{
+			"ref": "choledocholithotomy0",
+			"value": {
+				"op": "=",
+				"left": "choledocholithotomy",
+				"right": 0
+			}
+		},
+		{
+			"ref": "choledocholithotomy1",
+			"value": {
+				"op": "=",
+				"left": "choledocholithotomy",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc5",
+		"transient-values": [
+		{
+			"ref": "surgery0",
+			"value": {
+				"op": "=",
+				"left": "surgery",
+				"right": 0
+			}
+		},
+		{
+			"ref": "surgery1",
+			"value": {
+				"op": "=",
+				"left": "surgery",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc6",
+		"transient-values": [
+		{
+			"ref": "injections0",
+			"value": {
+				"op": "=",
+				"left": "injections",
+				"right": 0
+			}
+		},
+		{
+			"ref": "injections1",
+			"value": {
+				"op": "=",
+				"left": "injections",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc7",
+		"transient-values": [
+		{
+			"ref": "transfusion0",
+			"value": {
+				"op": "=",
+				"left": "transfusion",
+				"right": 0
+			}
+		},
+		{
+			"ref": "transfusion1",
+			"value": {
+				"op": "=",
+				"left": "transfusion",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc8",
+		"transient-values": [
+		{
+			"ref": "vh_amn0",
+			"value": {
+				"op": "=",
+				"left": "vh_amn",
+				"right": 0
+			}
+		},
+		{
+			"ref": "vh_amn1",
+			"value": {
+				"op": "=",
+				"left": "vh_amn",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc9",
+		"transient-values": [
+		{
+			"ref": "ChHepatitis0",
+			"value": {
+				"op": "=",
+				"left": "ChHepatitis",
+				"right": 0
+			}
+		},
+		{
+			"ref": "ChHepatitis1",
+			"value": {
+				"op": "=",
+				"left": "ChHepatitis",
+				"right": 1
+			}
+		},
+		{
+			"ref": "ChHepatitis2",
+			"value": {
+				"op": "=",
+				"left": "ChHepatitis",
+				"right": 2
+			}
+		}
+		]
+		},
+		{
+		"name": "loc10",
+		"transient-values": [
+		{
+			"ref": "sex0",
+			"value": {
+				"op": "=",
+				"left": "sex",
+				"right": 0
+			}
+		},
+		{
+			"ref": "sex1",
+			"value": {
+				"op": "=",
+				"left": "sex",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc11",
+		"transient-values": [
+		{
+			"ref": "age0",
+			"value": {
+				"op": "=",
+				"left": "age",
+				"right": 0
+			}
+		},
+		{
+			"ref": "age1",
+			"value": {
+				"op": "=",
+				"left": "age",
+				"right": 1
+			}
+		},
+		{
+			"ref": "age2",
+			"value": {
+				"op": "=",
+				"left": "age",
+				"right": 2
+			}
+		},
+		{
+			"ref": "age3",
+			"value": {
+				"op": "=",
+				"left": "age",
+				"right": 3
+			}
+		}
+		]
+		},
+		{
+		"name": "loc12",
+		"transient-values": [
+		{
+			"ref": "PBC0",
+			"value": {
+				"op": "=",
+				"left": "PBC",
+				"right": 0
+			}
+		},
+		{
+			"ref": "PBC1",
+			"value": {
+				"op": "=",
+				"left": "PBC",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc13",
+		"transient-values": [
+		{
+			"ref": "Hyperbilirubinemia0",
+			"value": {
+				"op": "=",
+				"left": "Hyperbilirubinemia",
+				"right": 0
+			}
+		},
+		{
+			"ref": "Hyperbilirubinemia1",
+			"value": {
+				"op": "=",
+				"left": "Hyperbilirubinemia",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc14",
+		"transient-values": [
+		{
+			"ref": "alcoholism0",
+			"value": {
+				"op": "=",
+				"left": "alcoholism",
+				"right": 0
+			}
+		},
+		{
+			"ref": "alcoholism1",
+			"value": {
+				"op": "=",
+				"left": "alcoholism",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc15",
+		"transient-values": [
+		{
+			"ref": "diabetes0",
+			"value": {
+				"op": "=",
+				"left": "diabetes",
+				"right": 0
+			}
+		},
+		{
+			"ref": "diabetes1",
+			"value": {
+				"op": "=",
+				"left": "diabetes",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc16",
+		"transient-values": [
+		{
+			"ref": "obesity0",
+			"value": {
+				"op": "=",
+				"left": "obesity",
+				"right": 0
+			}
+		},
+		{
+			"ref": "obesity1",
+			"value": {
+				"op": "=",
+				"left": "obesity",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc17",
+		"transient-values": [
+		{
+			"ref": "Steatosis0",
+			"value": {
+				"op": "=",
+				"left": "Steatosis",
+				"right": 0
+			}
+		},
+		{
+			"ref": "Steatosis1",
+			"value": {
+				"op": "=",
+				"left": "Steatosis",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc18",
+		"transient-values": [
+		{
+			"ref": "fibrosis0",
+			"value": {
+				"op": "=",
+				"left": "fibrosis",
+				"right": 0
+			}
+		},
+		{
+			"ref": "fibrosis1",
+			"value": {
+				"op": "=",
+				"left": "fibrosis",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc19",
+		"transient-values": [
+		{
+			"ref": "Cirrhosis0",
+			"value": {
+				"op": "=",
+				"left": "Cirrhosis",
+				"right": 0
+			}
+		},
+		{
+			"ref": "Cirrhosis1",
+			"value": {
+				"op": "=",
+				"left": "Cirrhosis",
+				"right": 1
+			}
+		},
+		{
+			"ref": "Cirrhosis2",
+			"value": {
+				"op": "=",
+				"left": "Cirrhosis",
+				"right": 2
+			}
+		}
+		]
+		},
+		{
+		"name": "loc20",
+		"transient-values": [
+		{
+			"ref": "alcohol0",
+			"value": {
+				"op": "=",
+				"left": "alcohol",
+				"right": 0
+			}
+		},
+		{
+			"ref": "alcohol1",
+			"value": {
+				"op": "=",
+				"left": "alcohol",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc21",
+		"transient-values": [
+		{
+			"ref": "palms0",
+			"value": {
+				"op": "=",
+				"left": "palms",
+				"right": 0
+			}
+		},
+		{
+			"ref": "palms1",
+			"value": {
+				"op": "=",
+				"left": "palms",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc22",
+		"transient-values": [
+		{
+			"ref": "encephalopathy0",
+			"value": {
+				"op": "=",
+				"left": "encephalopathy",
+				"right": 0
+			}
+		},
+		{
+			"ref": "encephalopathy1",
+			"value": {
+				"op": "=",
+				"left": "encephalopathy",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc23",
+		"transient-values": [
+		{
+			"ref": "density0",
+			"value": {
+				"op": "=",
+				"left": "density",
+				"right": 0
+			}
+		},
+		{
+			"ref": "density1",
+			"value": {
+				"op": "=",
+				"left": "density",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc24",
+		"transient-values": [
+		{
+			"ref": "urea0",
+			"value": {
+				"op": "=",
+				"left": "urea",
+				"right": 0
+			}
+		},
+		{
+			"ref": "urea1",
+			"value": {
+				"op": "=",
+				"left": "urea",
+				"right": 1
+			}
+		},
+		{
+			"ref": "urea2",
+			"value": {
+				"op": "=",
+				"left": "urea",
+				"right": 2
+			}
+		}
+		]
+		}
+],
+	"initial-locations": ["loc0"],
+	"edges": [
+	{
+		"location": "loc0",
+		"destinations": [
+		{
+			"location": "loc1",
+			"probability": {"exp": 0.5350501},
+			"assignments": [
+			{
+				"ref": "hospital",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc1",
+			"probability": {"exp": 0.4649499},
+			"assignments": [
+			{
+				"ref": "hospital",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc1",
+		"destinations": [
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.1530758},
+			"assignments": [
+			{
+				"ref": "gallstones",
+				"value": 0
+			},
+			{
+				"ref": "hospital",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.8469242},
+			"assignments": [
+			{
+				"ref": "gallstones",
+				"value": 1
+			},
+			{
+				"ref": "hospital",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "gallstones",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.3925234},
+			"assignments": [
+			{
+				"ref": "flatulence",
+				"value": 0
+			},
+			{
+				"ref": "obesity",
+				"value": -1
+			},
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.6074766},
+			"assignments": [
+			{
+				"ref": "flatulence",
+				"value": -1
+			},
+			{
+				"ref": "obesity",
+				"value": -1
+			},
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": -1
+			},
+			{
+				"ref": "gallstones",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "gallstones",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.4307432},
+			"assignments": [
+			{
+				"ref": "flatulence",
+				"value": 0
+			},
+			{
+				"ref": "obesity",
+				"value": -1
+			},
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.5692568},
+			"assignments": [
+			{
+				"ref": "flatulence",
+				"value": -1
+			},
+			{
+				"ref": "obesity",
+				"value": -1
+			},
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": -1
+			},
+			{
+				"ref": "gallstones",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "gallstones",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.7102804},
+			"assignments": [
+			{
+				"ref": "choledocholithotomy",
+				"value": 0
+			},
+			{
+				"ref": "flatulence",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.2897196},
+			"assignments": [
+			{
+				"ref": "choledocholithotomy",
+				"value": 1
+			},
+			{
+				"ref": "flatulence",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "gallstones",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.03716216},
+			"assignments": [
+			{
+				"ref": "choledocholithotomy",
+				"value": 0
+			},
+			{
+				"ref": "flatulence",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.96283784},
+			"assignments": [
+			{
+				"ref": "choledocholithotomy",
+				"value": 1
+			},
+			{
+				"ref": "flatulence",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc4",
+		"destinations": [
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.4234621},
+			"assignments": [
+			{
+				"ref": "surgery",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.5765379},
+			"assignments": [
+			{
+				"ref": "surgery",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "choledocholithotomy",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "surgery",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "hospital",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "injections",
+				"value": 0
+			},
+			{
+				"ref": "surgery",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "injections",
+				"value": -1
+			},
+			{
+				"ref": "surgery",
+				"value": -1
+			},
+			{
+				"ref": "gallstones",
+				"value": -1
+			},
+			{
+				"ref": "choledocholithotomy",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "choledocholithotomy",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "surgery",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "hospital",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.375},
+			"assignments": [
+			{
+				"ref": "injections",
+				"value": 0
+			},
+			{
+				"ref": "surgery",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.625},
+			"assignments": [
+			{
+				"ref": "injections",
+				"value": -1
+			},
+			{
+				"ref": "surgery",
+				"value": -1
+			},
+			{
+				"ref": "gallstones",
+				"value": -1
+			},
+			{
+				"ref": "choledocholithotomy",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "choledocholithotomy",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "surgery",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "hospital",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.8333333},
+			"assignments": [
+			{
+				"ref": "injections",
+				"value": 0
+			},
+			{
+				"ref": "surgery",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.1666667},
+			"assignments": [
+			{
+				"ref": "injections",
+				"value": -1
+			},
+			{
+				"ref": "surgery",
+				"value": -1
+			},
+			{
+				"ref": "gallstones",
+				"value": -1
+			},
+			{
+				"ref": "choledocholithotomy",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "choledocholithotomy",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "surgery",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "hospital",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.01098901},
+			"assignments": [
+			{
+				"ref": "injections",
+				"value": 0
+			},
+			{
+				"ref": "surgery",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.98901099},
+			"assignments": [
+			{
+				"ref": "injections",
+				"value": -1
+			},
+			{
+				"ref": "surgery",
+				"value": -1
+			},
+			{
+				"ref": "gallstones",
+				"value": -1
+			},
+			{
+				"ref": "choledocholithotomy",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "choledocholithotomy",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "surgery",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "hospital",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.715847},
+			"assignments": [
+			{
+				"ref": "injections",
+				"value": 0
+			},
+			{
+				"ref": "surgery",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.284153},
+			"assignments": [
+			{
+				"ref": "injections",
+				"value": -1
+			},
+			{
+				"ref": "surgery",
+				"value": -1
+			},
+			{
+				"ref": "gallstones",
+				"value": -1
+			},
+			{
+				"ref": "choledocholithotomy",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "choledocholithotomy",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "surgery",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "hospital",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.2333333},
+			"assignments": [
+			{
+				"ref": "injections",
+				"value": 0
+			},
+			{
+				"ref": "surgery",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.7666667},
+			"assignments": [
+			{
+				"ref": "injections",
+				"value": -1
+			},
+			{
+				"ref": "surgery",
+				"value": -1
+			},
+			{
+				"ref": "gallstones",
+				"value": -1
+			},
+			{
+				"ref": "choledocholithotomy",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "choledocholithotomy",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "surgery",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "hospital",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.4818182},
+			"assignments": [
+			{
+				"ref": "injections",
+				"value": 0
+			},
+			{
+				"ref": "surgery",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.5181818},
+			"assignments": [
+			{
+				"ref": "injections",
+				"value": -1
+			},
+			{
+				"ref": "surgery",
+				"value": -1
+			},
+			{
+				"ref": "gallstones",
+				"value": -1
+			},
+			{
+				"ref": "choledocholithotomy",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "choledocholithotomy",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "surgery",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "hospital",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.0647482},
+			"assignments": [
+			{
+				"ref": "injections",
+				"value": 0
+			},
+			{
+				"ref": "surgery",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.9352518},
+			"assignments": [
+			{
+				"ref": "injections",
+				"value": -1
+			},
+			{
+				"ref": "surgery",
+				"value": -1
+			},
+			{
+				"ref": "gallstones",
+				"value": -1
+			},
+			{
+				"ref": "choledocholithotomy",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "choledocholithotomy",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "surgery",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "hospital",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.3333333},
+			"assignments": [
+			{
+				"ref": "transfusion",
+				"value": 0
+			},
+			{
+				"ref": "injections",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.6666667},
+			"assignments": [
+			{
+				"ref": "transfusion",
+				"value": 1
+			},
+			{
+				"ref": "injections",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "choledocholithotomy",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "surgery",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "hospital",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.125},
+			"assignments": [
+			{
+				"ref": "transfusion",
+				"value": 0
+			},
+			{
+				"ref": "injections",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.875},
+			"assignments": [
+			{
+				"ref": "transfusion",
+				"value": 1
+			},
+			{
+				"ref": "injections",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "choledocholithotomy",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "surgery",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "hospital",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.1666667},
+			"assignments": [
+			{
+				"ref": "transfusion",
+				"value": 0
+			},
+			{
+				"ref": "injections",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.8333333},
+			"assignments": [
+			{
+				"ref": "transfusion",
+				"value": 1
+			},
+			{
+				"ref": "injections",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "choledocholithotomy",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "surgery",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "hospital",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01098901},
+			"assignments": [
+			{
+				"ref": "transfusion",
+				"value": 0
+			},
+			{
+				"ref": "injections",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.98901099},
+			"assignments": [
+			{
+				"ref": "transfusion",
+				"value": 1
+			},
+			{
+				"ref": "injections",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "choledocholithotomy",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "surgery",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "hospital",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.2896175},
+			"assignments": [
+			{
+				"ref": "transfusion",
+				"value": 0
+			},
+			{
+				"ref": "injections",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.7103825},
+			"assignments": [
+			{
+				"ref": "transfusion",
+				"value": 1
+			},
+			{
+				"ref": "injections",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "choledocholithotomy",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "surgery",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "hospital",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "transfusion",
+				"value": 0
+			},
+			{
+				"ref": "injections",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "transfusion",
+				"value": 1
+			},
+			{
+				"ref": "injections",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "choledocholithotomy",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "surgery",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "hospital",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.1181818},
+			"assignments": [
+			{
+				"ref": "transfusion",
+				"value": 0
+			},
+			{
+				"ref": "injections",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.8818182},
+			"assignments": [
+			{
+				"ref": "transfusion",
+				"value": 1
+			},
+			{
+				"ref": "injections",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "choledocholithotomy",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "surgery",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "hospital",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01079137},
+			"assignments": [
+			{
+				"ref": "transfusion",
+				"value": 0
+			},
+			{
+				"ref": "injections",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.98920863},
+			"assignments": [
+			{
+				"ref": "transfusion",
+				"value": 1
+			},
+			{
+				"ref": "injections",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.1731044},
+			"assignments": [
+			{
+				"ref": "vh_amn",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.8268956},
+			"assignments": [
+			{
+				"ref": "vh_amn",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "injections",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "vh_amn",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "transfusion",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.2094241},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.0052356},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.7853403},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 2
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "injections",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "vh_amn",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "transfusion",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.15384615},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.05128205},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.7948718},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 2
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "injections",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "vh_amn",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "transfusion",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.06},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.06},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.88},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 2
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "injections",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "vh_amn",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "transfusion",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.07692308},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.00591716},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.91715976},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 2
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "injections",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "vh_amn",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "transfusion",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.4615385},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.3076923},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.2307692},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 2
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "injections",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "vh_amn",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "transfusion",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.24},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.14},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.62},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 2
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "injections",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "vh_amn",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "transfusion",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.13043478},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.04347826},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.82608696},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 2
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "injections",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "vh_amn",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "transfusion",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.13095238},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.05357143},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.81547619},
+			"assignments": [
+			{
+				"ref": "ChHepatitis",
+				"value": 2
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc9",
+		"destinations": [
+		{
+			"location": "loc10",
+			"probability": {"exp": 0.5979971},
+			"assignments": [
+			{
+				"ref": "sex",
+				"value": 0
+			},
+			{
+				"ref": "gallstones",
+				"value": -1
+			},
+			{
+				"ref": "choledocholithotomy",
+				"value": -1
+			},
+			{
+				"ref": "transfusion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.4020029},
+			"assignments": [
+			{
+				"ref": "sex",
+				"value": -1
+			},
+			{
+				"ref": "gallstones",
+				"value": -1
+			},
+			{
+				"ref": "choledocholithotomy",
+				"value": -1
+			},
+			{
+				"ref": "transfusion",
+				"value": -1
+			},
+			{
+				"ref": "vh_amn",
+				"value": -1
+			},
+			{
+				"ref": "ChHepatitis",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.07725322},
+			"assignments": [
+			{
+				"ref": "age",
+				"value": 0
+			},
+			{
+				"ref": "sex",
+				"value": -1
+			},
+			{
+				"ref": "vh_amn",
+				"value": -1
+			},
+			{
+				"ref": "ChHepatitis",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.38769671},
+			"assignments": [
+			{
+				"ref": "age",
+				"value": 1
+			},
+			{
+				"ref": "sex",
+				"value": -1
+			},
+			{
+				"ref": "vh_amn",
+				"value": -1
+			},
+			{
+				"ref": "ChHepatitis",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.39771102},
+			"assignments": [
+			{
+				"ref": "age",
+				"value": 2
+			},
+			{
+				"ref": "sex",
+				"value": -1
+			},
+			{
+				"ref": "vh_amn",
+				"value": -1
+			},
+			{
+				"ref": "ChHepatitis",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.13733905},
+			"assignments": [
+			{
+				"ref": "age",
+				"value": 3
+			},
+			{
+				"ref": "sex",
+				"value": -1
+			},
+			{
+				"ref": "vh_amn",
+				"value": -1
+			},
+			{
+				"ref": "ChHepatitis",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc11",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "age",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "sex",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.6571429},
+			"assignments": [
+			{
+				"ref": "PBC",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.3428571},
+			"assignments": [
+			{
+				"ref": "PBC",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc11",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "age",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "sex",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.3684211},
+			"assignments": [
+			{
+				"ref": "PBC",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.6315789},
+			"assignments": [
+			{
+				"ref": "PBC",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc11",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "age",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "sex",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.700565},
+			"assignments": [
+			{
+				"ref": "PBC",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.299435},
+			"assignments": [
+			{
+				"ref": "PBC",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc11",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "age",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "sex",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.08510638},
+			"assignments": [
+			{
+				"ref": "PBC",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.91489362},
+			"assignments": [
+			{
+				"ref": "PBC",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc11",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "age",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "sex",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.6149425},
+			"assignments": [
+			{
+				"ref": "PBC",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.3850575},
+			"assignments": [
+			{
+				"ref": "PBC",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc11",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "age",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "sex",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.06730769},
+			"assignments": [
+			{
+				"ref": "PBC",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.93269231},
+			"assignments": [
+			{
+				"ref": "PBC",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc11",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "age",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "sex",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.125},
+			"assignments": [
+			{
+				"ref": "PBC",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.875},
+			"assignments": [
+			{
+				"ref": "PBC",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc11",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "age",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "sex",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.00156006},
+			"assignments": [
+			{
+				"ref": "PBC",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.99843994},
+			"assignments": [
+			{
+				"ref": "PBC",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc12",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "sex",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "age",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc13",
+			"probability": {"exp": 0.002849},
+			"assignments": [
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": 0
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.997151},
+			"assignments": [
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": -1
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			},
+			{
+				"ref": "age",
+				"value": -1
+			},
+			{
+				"ref": "PBC",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc12",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "sex",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "age",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc13",
+			"probability": {"exp": 0.01129944},
+			"assignments": [
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": 0
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.98870056},
+			"assignments": [
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": -1
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			},
+			{
+				"ref": "age",
+				"value": -1
+			},
+			{
+				"ref": "PBC",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc12",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "sex",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "age",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc13",
+			"probability": {"exp": 0.04597701},
+			"assignments": [
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": 0
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.95402299},
+			"assignments": [
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": -1
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			},
+			{
+				"ref": "age",
+				"value": -1
+			},
+			{
+				"ref": "PBC",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc12",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "sex",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "age",
+				"right": 3
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc13",
+			"probability": {"exp": 0.21875},
+			"assignments": [
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": 0
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.78125},
+			"assignments": [
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": -1
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			},
+			{
+				"ref": "age",
+				"value": -1
+			},
+			{
+				"ref": "PBC",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc12",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "sex",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "age",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc13",
+			"probability": {"exp": 0.0052356},
+			"assignments": [
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": 0
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.9947644},
+			"assignments": [
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": -1
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			},
+			{
+				"ref": "age",
+				"value": -1
+			},
+			{
+				"ref": "PBC",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc12",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "sex",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "age",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc13",
+			"probability": {"exp": 0.0212766},
+			"assignments": [
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": 0
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.9787234},
+			"assignments": [
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": -1
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			},
+			{
+				"ref": "age",
+				"value": -1
+			},
+			{
+				"ref": "PBC",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc12",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "sex",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "age",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc13",
+			"probability": {"exp": 0.07692308},
+			"assignments": [
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": 0
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.92307692},
+			"assignments": [
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": -1
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			},
+			{
+				"ref": "age",
+				"value": -1
+			},
+			{
+				"ref": "PBC",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc12",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "sex",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "age",
+				"right": 3
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc13",
+			"probability": {"exp": 0.453125},
+			"assignments": [
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": 0
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.546875},
+			"assignments": [
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": -1
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			},
+			{
+				"ref": "age",
+				"value": -1
+			},
+			{
+				"ref": "PBC",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc13",
+		"destinations": [
+		{
+			"location": "loc14",
+			"probability": {"exp": 0.1359084},
+			"assignments": [
+			{
+				"ref": "alcoholism",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc14",
+			"probability": {"exp": 0.8640916},
+			"assignments": [
+			{
+				"ref": "alcoholism",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc14",
+		"destinations": [
+		{
+			"location": "loc15",
+			"probability": {"exp": 0.03576538},
+			"assignments": [
+			{
+				"ref": "diabetes",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc15",
+			"probability": {"exp": 0.96423462},
+			"assignments": [
+			{
+				"ref": "diabetes",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc15",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "diabetes",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc16",
+			"probability": {"exp": 0.24},
+			"assignments": [
+			{
+				"ref": "obesity",
+				"value": 0
+			},
+			{
+				"ref": "diabetes",
+				"value": -1
+			},
+			{
+				"ref": "age",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc16",
+			"probability": {"exp": 0.76},
+			"assignments": [
+			{
+				"ref": "obesity",
+				"value": 1
+			},
+			{
+				"ref": "diabetes",
+				"value": -1
+			},
+			{
+				"ref": "age",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc15",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "diabetes",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc16",
+			"probability": {"exp": 0.06231454},
+			"assignments": [
+			{
+				"ref": "obesity",
+				"value": 0
+			},
+			{
+				"ref": "diabetes",
+				"value": -1
+			},
+			{
+				"ref": "age",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc16",
+			"probability": {"exp": 0.93768546},
+			"assignments": [
+			{
+				"ref": "obesity",
+				"value": 1
+			},
+			{
+				"ref": "diabetes",
+				"value": -1
+			},
+			{
+				"ref": "age",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc16",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "alcoholism",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "obesity",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc17",
+			"probability": {"exp": 0.3636364},
+			"assignments": [
+			{
+				"ref": "Steatosis",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc17",
+			"probability": {"exp": 0.6363636},
+			"assignments": [
+			{
+				"ref": "Steatosis",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc16",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "alcoholism",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "obesity",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc17",
+			"probability": {"exp": 0.2380952},
+			"assignments": [
+			{
+				"ref": "Steatosis",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc17",
+			"probability": {"exp": 0.7619048},
+			"assignments": [
+			{
+				"ref": "Steatosis",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc16",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "alcoholism",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "obesity",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc17",
+			"probability": {"exp": 0.1891892},
+			"assignments": [
+			{
+				"ref": "Steatosis",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc17",
+			"probability": {"exp": 0.8108108},
+			"assignments": [
+			{
+				"ref": "Steatosis",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc16",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "alcoholism",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "obesity",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc17",
+			"probability": {"exp": 0.06349206},
+			"assignments": [
+			{
+				"ref": "Steatosis",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc17",
+			"probability": {"exp": 0.93650794},
+			"assignments": [
+			{
+				"ref": "Steatosis",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc17",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "ChHepatitis",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc18",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "fibrosis",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc18",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "fibrosis",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc17",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "ChHepatitis",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc18",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "fibrosis",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc18",
+			"probability": {"exp": 0.95},
+			"assignments": [
+			{
+				"ref": "fibrosis",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc17",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "ChHepatitis",
+				"right": 2
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc18",
+			"probability": {"exp": 0.001},
+			"assignments": [
+			{
+				"ref": "fibrosis",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc18",
+			"probability": {"exp": 0.999},
+			"assignments": [
+			{
+				"ref": "fibrosis",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc18",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Steatosis",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "fibrosis",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc19",
+			"probability": {"exp": 0.56},
+			"assignments": [
+			{
+				"ref": "Cirrhosis",
+				"value": 0
+			},
+			{
+				"ref": "Steatosis",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc19",
+			"probability": {"exp": 0.24},
+			"assignments": [
+			{
+				"ref": "Cirrhosis",
+				"value": 1
+			},
+			{
+				"ref": "Steatosis",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc19",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "Cirrhosis",
+				"value": 2
+			},
+			{
+				"ref": "Steatosis",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc18",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Steatosis",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "fibrosis",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc19",
+			"probability": {"exp": 0.35},
+			"assignments": [
+			{
+				"ref": "Cirrhosis",
+				"value": 0
+			},
+			{
+				"ref": "Steatosis",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc19",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "Cirrhosis",
+				"value": 1
+			},
+			{
+				"ref": "Steatosis",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc19",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "Cirrhosis",
+				"value": 2
+			},
+			{
+				"ref": "Steatosis",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc18",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Steatosis",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "fibrosis",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc19",
+			"probability": {"exp": 0.49},
+			"assignments": [
+			{
+				"ref": "Cirrhosis",
+				"value": 0
+			},
+			{
+				"ref": "Steatosis",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc19",
+			"probability": {"exp": 0.21},
+			"assignments": [
+			{
+				"ref": "Cirrhosis",
+				"value": 1
+			},
+			{
+				"ref": "Steatosis",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc19",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "Cirrhosis",
+				"value": 2
+			},
+			{
+				"ref": "Steatosis",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc18",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Steatosis",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "fibrosis",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc19",
+			"probability": {"exp": 0.001},
+			"assignments": [
+			{
+				"ref": "Cirrhosis",
+				"value": 0
+			},
+			{
+				"ref": "Steatosis",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc19",
+			"probability": {"exp": 0.001},
+			"assignments": [
+			{
+				"ref": "Cirrhosis",
+				"value": 1
+			},
+			{
+				"ref": "Steatosis",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc19",
+			"probability": {"exp": 0.998},
+			"assignments": [
+			{
+				"ref": "Cirrhosis",
+				"value": 2
+			},
+			{
+				"ref": "Steatosis",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc19",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Cirrhosis",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc20",
+			"probability": {"exp": 0.2068966},
+			"assignments": [
+			{
+				"ref": "alcohol",
+				"value": 0
+			},
+			{
+				"ref": "fibrosis",
+				"value": -1
+			},
+			{
+				"ref": "PBC",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.7931034},
+			"assignments": [
+			{
+				"ref": "alcohol",
+				"value": -1
+			},
+			{
+				"ref": "fibrosis",
+				"value": -1
+			},
+			{
+				"ref": "PBC",
+				"value": -1
+			},
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			},
+			{
+				"ref": "obesity",
+				"value": -1
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc19",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Cirrhosis",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc20",
+			"probability": {"exp": 0.2258064},
+			"assignments": [
+			{
+				"ref": "alcohol",
+				"value": 0
+			},
+			{
+				"ref": "fibrosis",
+				"value": -1
+			},
+			{
+				"ref": "PBC",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.7741936},
+			"assignments": [
+			{
+				"ref": "alcohol",
+				"value": -1
+			},
+			{
+				"ref": "fibrosis",
+				"value": -1
+			},
+			{
+				"ref": "PBC",
+				"value": -1
+			},
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			},
+			{
+				"ref": "obesity",
+				"value": -1
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc19",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Cirrhosis",
+				"right": 2
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc20",
+			"probability": {"exp": 0.1114754},
+			"assignments": [
+			{
+				"ref": "alcohol",
+				"value": 0
+			},
+			{
+				"ref": "fibrosis",
+				"value": -1
+			},
+			{
+				"ref": "PBC",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.8885246},
+			"assignments": [
+			{
+				"ref": "alcohol",
+				"value": -1
+			},
+			{
+				"ref": "fibrosis",
+				"value": -1
+			},
+			{
+				"ref": "PBC",
+				"value": -1
+			},
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			},
+			{
+				"ref": "obesity",
+				"value": -1
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc20",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Cirrhosis",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc21",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "palms",
+				"value": 0
+			},
+			{
+				"ref": "alcohol",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "palms",
+				"value": -1
+			},
+			{
+				"ref": "alcohol",
+				"value": -1
+			},
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			},
+			{
+				"ref": "obesity",
+				"value": -1
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc20",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Cirrhosis",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc21",
+			"probability": {"exp": 0.2903226},
+			"assignments": [
+			{
+				"ref": "palms",
+				"value": 0
+			},
+			{
+				"ref": "alcohol",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.7096774},
+			"assignments": [
+			{
+				"ref": "palms",
+				"value": -1
+			},
+			{
+				"ref": "alcohol",
+				"value": -1
+			},
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			},
+			{
+				"ref": "obesity",
+				"value": -1
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc20",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Cirrhosis",
+				"right": 2
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc21",
+			"probability": {"exp": 0.1409836},
+			"assignments": [
+			{
+				"ref": "palms",
+				"value": 0
+			},
+			{
+				"ref": "alcohol",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.8590164},
+			"assignments": [
+			{
+				"ref": "palms",
+				"value": -1
+			},
+			{
+				"ref": "alcohol",
+				"value": -1
+			},
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			},
+			{
+				"ref": "obesity",
+				"value": -1
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc21",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "PBC",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Cirrhosis",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc22",
+			"probability": {"exp": 0.05325444},
+			"assignments": [
+			{
+				"ref": "encephalopathy",
+				"value": 0
+			},
+			{
+				"ref": "palms",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc22",
+			"probability": {"exp": 0.94674556},
+			"assignments": [
+			{
+				"ref": "encephalopathy",
+				"value": 1
+			},
+			{
+				"ref": "palms",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc21",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "PBC",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Cirrhosis",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc22",
+			"probability": {"exp": 0.04891304},
+			"assignments": [
+			{
+				"ref": "encephalopathy",
+				"value": 0
+			},
+			{
+				"ref": "palms",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc22",
+			"probability": {"exp": 0.95108696},
+			"assignments": [
+			{
+				"ref": "encephalopathy",
+				"value": 1
+			},
+			{
+				"ref": "palms",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc21",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "PBC",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Cirrhosis",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc22",
+			"probability": {"exp": 0.05357143},
+			"assignments": [
+			{
+				"ref": "encephalopathy",
+				"value": 0
+			},
+			{
+				"ref": "palms",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc22",
+			"probability": {"exp": 0.94642857},
+			"assignments": [
+			{
+				"ref": "encephalopathy",
+				"value": 1
+			},
+			{
+				"ref": "palms",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc21",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "PBC",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Cirrhosis",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc22",
+			"probability": {"exp": 0.05172414},
+			"assignments": [
+			{
+				"ref": "encephalopathy",
+				"value": 0
+			},
+			{
+				"ref": "palms",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc22",
+			"probability": {"exp": 0.94827586},
+			"assignments": [
+			{
+				"ref": "encephalopathy",
+				"value": 1
+			},
+			{
+				"ref": "palms",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc21",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "PBC",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Cirrhosis",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc22",
+			"probability": {"exp": 0.00321543},
+			"assignments": [
+			{
+				"ref": "encephalopathy",
+				"value": 0
+			},
+			{
+				"ref": "palms",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc22",
+			"probability": {"exp": 0.99678457},
+			"assignments": [
+			{
+				"ref": "encephalopathy",
+				"value": 1
+			},
+			{
+				"ref": "palms",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc21",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "PBC",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Cirrhosis",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc22",
+			"probability": {"exp": 0.01515152},
+			"assignments": [
+			{
+				"ref": "encephalopathy",
+				"value": 0
+			},
+			{
+				"ref": "palms",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc22",
+			"probability": {"exp": 0.98484848},
+			"assignments": [
+			{
+				"ref": "encephalopathy",
+				"value": 1
+			},
+			{
+				"ref": "palms",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc22",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "encephalopathy",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc23",
+			"probability": {"exp": 0.7391304},
+			"assignments": [
+			{
+				"ref": "density",
+				"value": 0
+			},
+			{
+				"ref": "encephalopathy",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.2608696},
+			"assignments": [
+			{
+				"ref": "density",
+				"value": -1
+			},
+			{
+				"ref": "encephalopathy",
+				"value": -1
+			},
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			},
+			{
+				"ref": "obesity",
+				"value": -1
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc22",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "encephalopathy",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc23",
+			"probability": {"exp": 0.3772189},
+			"assignments": [
+			{
+				"ref": "density",
+				"value": 0
+			},
+			{
+				"ref": "encephalopathy",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.6227811},
+			"assignments": [
+			{
+				"ref": "density",
+				"value": -1
+			},
+			{
+				"ref": "encephalopathy",
+				"value": -1
+			},
+			{
+				"ref": "Hyperbilirubinemia",
+				"value": -1
+			},
+			{
+				"ref": "alcoholism",
+				"value": -1
+			},
+			{
+				"ref": "obesity",
+				"value": -1
+			},
+			{
+				"ref": "Cirrhosis",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc23",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "encephalopathy",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc24",
+			"probability": {"exp": 0.2173913},
+			"assignments": [
+			{
+				"ref": "urea",
+				"value": 0
+			},
+			{
+				"ref": "density",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc24",
+			"probability": {"exp": 0.1304348},
+			"assignments": [
+			{
+				"ref": "urea",
+				"value": 1
+			},
+			{
+				"ref": "density",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc24",
+			"probability": {"exp": 0.6521739},
+			"assignments": [
+			{
+				"ref": "urea",
+				"value": 2
+			},
+			{
+				"ref": "density",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc23",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "encephalopathy",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc24",
+			"probability": {"exp": 0.03550296},
+			"assignments": [
+			{
+				"ref": "urea",
+				"value": 0
+			},
+			{
+				"ref": "density",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc24",
+			"probability": {"exp": 0.06508876},
+			"assignments": [
+			{
+				"ref": "urea",
+				"value": 1
+			},
+			{
+				"ref": "density",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc24",
+			"probability": {"exp": 0.89940828},
+			"assignments": [
+			{
+				"ref": "urea",
+				"value": 2
+			},
+			{
+				"ref": "density",
+				"value": -1
+			}
+			]
+		}
+		]
+	}
+	]
+}
+],
+"system": {
+	"elements": [ {"automaton": "hepar2"} ]
+}
+}

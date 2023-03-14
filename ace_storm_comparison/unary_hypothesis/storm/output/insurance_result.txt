@@ -1,0 +1,203 @@
+Storm 1.6.4 (dev)
+
+Date: Thu Apr 28 12:33:36 2022
+Command line arguments: --jani storm/jani_files/insurance.jani --expvisittimes --build-all-labels
+Current working directory: /home/hans/Desktop/private/ace_storm_comparison/unary_hypothesis
+
+Time for model input parsing: 0.032s.
+
+Time for model construction: 0.260s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	22740
+Transitions: 	71074
+Reward Models:  none
+State Labels: 	91 labels
+   * ThisCarDam3 -> 90 item(s)
+   * ThisCarDam1 -> 90 item(s)
+   * ThisCarCost2 -> 12 item(s)
+   * ThisCarCost1 -> 12 item(s)
+   * ThisCarCost0 -> 12 item(s)
+   * Theft0 -> 372 item(s)
+   * SocioEcon3 -> 3 item(s)
+   * SocioEcon2 -> 3 item(s)
+   * SocioEcon0 -> 3 item(s)
+   * ThisCarDam2 -> 90 item(s)
+   * SeniorTrain1 -> 48 item(s)
+   * SocioEcon1 -> 3 item(s)
+   * SeniorTrain0 -> 16 item(s)
+   * Theft1 -> 372 item(s)
+   * RuggedAuto1 -> 240 item(s)
+   * RiskAversion3 -> 12 item(s)
+   * RiskAversion2 -> 12 item(s)
+   * RiskAversion1 -> 12 item(s)
+   * RiskAversion0 -> 12 item(s)
+   * PropCost1 -> 4 item(s)
+   * PropCost0 -> 4 item(s)
+   * OtherCarCost3 -> 12 item(s)
+   * DrivQuality0 -> 48 item(s)
+   * DrivHist2 -> 144 item(s)
+   * DrivHist1 -> 144 item(s)
+   * VehicleYear1 -> 288 item(s)
+   * DrivHist0 -> 144 item(s)
+   * deadlock -> 4 item(s)
+   * DrivQuality1 -> 48 item(s)
+   * CarValue3 -> 480 item(s)
+   * PropCost3 -> 4 item(s)
+   * CarValue2 -> 768 item(s)
+   * CarValue1 -> 768 item(s)
+   * Cushioning2 -> 360 item(s)
+   * Age2 -> 1 item(s)
+   * AntiTheft1 -> 144 item(s)
+   * AntiTheft0 -> 144 item(s)
+   * Antilock0 -> 576 item(s)
+   * DrivingSkill2 -> 48 item(s)
+   * Accident1 -> 960 item(s)
+   * ILiCost1 -> 1 item(s)
+   * RuggedAuto0 -> 240 item(s)
+   * Cushioning1 -> 240 item(s)
+   * ThisCarDam0 -> 120 item(s)
+   * Cushioning3 -> 240 item(s)
+   * Accident3 -> 960 item(s)
+   * PropCost2 -> 4 item(s)
+   * Cushioning0 -> 240 item(s)
+   * Accident2 -> 960 item(s)
+   * Antilock1 -> 720 item(s)
+   * VehicleYear0 -> 288 item(s)
+   * Airbag1 -> 480 item(s)
+   * ThisCarCost3 -> 12 item(s)
+   * DrivQuality2 -> 48 item(s)
+   * init -> 1 item(s)
+   * MakeModel0 -> 144 item(s)
+   * DrivingSkill0 -> 48 item(s)
+   * MedCost2 -> 90 item(s)
+   * Age1 -> 1 item(s)
+   * Age0 -> 1 item(s)
+   * DrivingSkill1 -> 48 item(s)
+   * GoodStudent1 -> 12 item(s)
+   * ILiCost0 -> 1 item(s)
+   * MakeModel4 -> 144 item(s)
+   * HomeBase0 -> 576 item(s)
+   * ILiCost3 -> 1 item(s)
+   * MedCost3 -> 90 item(s)
+   * RuggedAuto2 -> 240 item(s)
+   * HomeBase2 -> 576 item(s)
+   * Accident0 -> 960 item(s)
+   * CarValue4 -> 384 item(s)
+   * HomeBase3 -> 576 item(s)
+   * GoodStudent0 -> 4 item(s)
+   * ILiCost2 -> 1 item(s)
+   * MakeModel1 -> 144 item(s)
+   * Mileage2 -> 1296 item(s)
+   * MakeModel3 -> 144 item(s)
+   * MedCost1 -> 90 item(s)
+   * MakeModel2 -> 144 item(s)
+   * Mileage3 -> 1296 item(s)
+   * CarValue0 -> 576 item(s)
+   * HomeBase1 -> 576 item(s)
+   * MedCost0 -> 120 item(s)
+   * Airbag0 -> 744 item(s)
+   * Mileage0 -> 1296 item(s)
+   * Mileage1 -> 1296 item(s)
+   * OtherCar0 -> 12 item(s)
+   * OtherCar1 -> 12 item(s)
+   * OtherCarCost0 -> 16 item(s)
+   * OtherCarCost1 -> 12 item(s)
+   * OtherCarCost2 -> 12 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+Accumulated values for labels:
+	Accident0: 0.7158958153
+	Accident1: 0.08850969462
+	Accident2: 0.08032951972
+	Accident3: 0.1152649704
+	Age0: 0.2
+	Age1: 0.6
+	Age2: 0.2
+	Airbag0: 0.4325185
+	Airbag1: 0.5674815
+	AntiTheft0: 0.4189425734
+	AntiTheft1: 0.5810574266
+	Antilock0: 0.20082819
+	Antilock1: 0.79917181
+	CarValue0: 0.4257561597
+	CarValue1: 0.2334374183
+	CarValue2: 0.2425790226
+	CarValue3: 0.0948174002
+	CarValue4: 0.0034099992
+	Cushioning0: 0.328636955
+	Cushioning1: 0.255445675
+	Cushioning2: 0.254586965
+	Cushioning3: 0.161330405
+	DrivHist0: 0.5768135185
+	DrivHist1: 0.1191029949
+	DrivHist2: 0.3040834866
+	DrivQuality0: 0.3714480953
+	DrivQuality1: 0.4433731008
+	DrivQuality2: 0.1851788039
+	DrivingSkill0: 0.3248999946
+	DrivingSkill1: 0.5617000018
+	DrivingSkill2: 0.1134000036
+	GoodStudent0: 0.0438
+	GoodStudent1: 0.9562
+	HomeBase0: 0.261762546
+	HomeBase1: 0.3838654388
+	HomeBase2: 0.2428904556
+	HomeBase3: 0.1114815595
+	ILiCost0: inf
+	ILiCost1: inf
+	ILiCost2: inf
+	ILiCost3: inf
+	MakeModel0: 0.141
+	MakeModel1: 0.3766
+	MakeModel2: 0.3819
+	MakeModel3: 0.0985
+	MakeModel4: 0.002
+	MedCost0: 0.9280800828
+	MedCost1: 0.03263379809
+	MedCost2: 0.02279903912
+	MedCost3: 0.01648708
+	Mileage0: 0.1
+	Mileage1: 0.4
+	Mileage2: 0.4
+	Mileage3: 0.1
+	OtherCar0: 0.6965
+	OtherCar1: 0.3035
+	OtherCarCost0: 0.8611865683
+	OtherCarCost1: 0.07096778826
+	OtherCarCost2: 0.06783476259
+	OtherCarCost3: 1.088079824e-05
+	PropCost0: 0.5629455909
+	PropCost1: 0.3151875948
+	PropCost2: 0.1050702943
+	PropCost3: 0.01679652005
+	RiskAversion0: 0.015
+	RiskAversion1: 0.2592
+	RiskAversion2: 0.4812
+	RiskAversion3: 0.2446
+	RuggedAuto0: 0.4923605
+	RuggedAuto1: 0.3499215
+	RuggedAuto2: 0.157718
+	SeniorTrain0: 0.117000018
+	SeniorTrain1: 0.882999982
+	SocioEcon0: 0.42
+	SocioEcon1: 0.36
+	SocioEcon2: 0.21
+	SocioEcon3: 0.01
+	Theft0: 0.001233889173
+	Theft1: 0.9987661108
+	ThisCarCost0: 0.8233803246
+	ThisCarCost1: 0.1260704382
+	ThisCarCost2: 0.05007102234
+	ThisCarCost3: 0.0004782148947
+	ThisCarDam0: 0.7336468349
+	ThisCarDam1: 0.08031996035
+	ThisCarDam2: 0.0638124841
+	ThisCarDam3: 0.1222207207
+	VehicleYear0: 0.348
+	VehicleYear1: 0.652
+	deadlock: inf
+	init: 1
+Result: [2.459585363e-18, inf] (range)
+Time for model checking: 0.010s.

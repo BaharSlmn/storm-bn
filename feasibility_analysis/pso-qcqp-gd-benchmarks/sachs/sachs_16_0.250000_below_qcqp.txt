@@ -1,0 +1,28 @@
+{}
+DTMC
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID
+Academic license - for non-commercial use only - registered to hans.vrapi@rwth-aachen.de
+Solving...
+Academic license - for non-commercial use only - registered to hans.vrapi@rwth-aachen.de
+Solving...
+Academic license - for non-commercial use only - registered to hans.vrapi@rwth-aachen.de
+Solving...
+Academic license - for non-commercial use only - registered to hans.vrapi@rwth-aachen.de
+Solving...
+Academic license - for non-commercial use only - registered to hans.vrapi@rwth-aachen.de
+Solving...
+Academic license - for non-commercial use only - registered to hans.vrapi@rwth-aachen.de
+Solving...
+Academic license - for non-commercial use only - registered to hans.vrapi@rwth-aachen.de
+Qcqp: 0.23769711503565505: Mc: 0.23769709744766554
+iterations =5
+solver time=0.015157222747802734
+encoding time=0.33907175064086914
+iterate time=0.0
+inner part = 0.004599571228027344s (0.28255902513328257)
+adding constraints = 0.0s
+Point found: {p4:5902958103587057/590295810358705651712;p7:5902958103587057/590295810358705651712;p2:5902958103587057/590295810358705651712;p5:5902958103587057/590295810358705651712;p8:5902958103587057/590295810358705651712;p9:2961284645224201/295147905179352825856;p12:5911780444313625/590295810358705651712;p15:5913611275669121/590295810358705651712;p10:5927158921578633/590295810358705651712;p13:184656344525271/18446744073709551616;p11:5913773585241435/590295810358705651712;p14:1478325326987257/147573952589676412928;p0:5902958103587057/590295810358705651712;p3:5902958103587057/590295810358705651712;p6:5902958103587057/590295810358705651712;p1:5902958103587057/590295810358705651712}: 1070492559492355/4503599627370496 (approx. 0.23769709744766554)
+This procedure took 0.3837101459503174s (from start: 0.38948655128479004s)
+Warning: environment still referenced so free is deferred (Continue to use WLS)

@@ -1,0 +1,1 @@
+storm-pars -drn storm/drn_files/pn/hailfinder_380.drn --prop "P=? [F(\"R5Fcst1\")]" --bisimulation

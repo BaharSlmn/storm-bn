@@ -1,0 +1,26 @@
+{
+	"jani-version": 1,
+	"name": "hans.jani",
+	"type": "dtmc",
+	"features": [ "derived-operators" ],
+"variables": [
+],
+"properties": [
+],
+"automata": [
+{
+	"name": "hans",
+	"locations": [
+		{
+		"name": "loc0"
+		},
+],
+	"initial-locations": ["loc0"],
+	"edges": [
+	]
+}
+],
+"system": {
+	"elements": [ {"automaton": "hans"} ]
+}
+}

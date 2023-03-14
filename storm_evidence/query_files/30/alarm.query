@@ -1,0 +1,1 @@
+storm --jani jani_files/30/alarm.jani --prop "P=? [G(CVP=0 | CVP=-1)]"

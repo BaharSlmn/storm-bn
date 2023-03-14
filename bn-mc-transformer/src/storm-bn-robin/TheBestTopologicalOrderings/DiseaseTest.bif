@@ -1,0 +1,14 @@
+network DiseaseTest {
+}
+variable Disease {
+  type discrete [ 2 ] { absent, present };
+}
+variable Test {
+  type discrete [ 2 ] { negative, positive };
+}
+probability ( Disease ){
+  table 0.999, 0.001;
+}
+probability ( Test | Disease  ){
+  table 0.95, 0.05, 0.02, 0.98;
+}

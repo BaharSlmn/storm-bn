@@ -1,0 +1,23 @@
+Network name = water
+
+
+Time for Sensitivity Analysis: 0.05538320541381836s
+
+
+Parameter node = CKNI_12_15
+Parameter entry = [CKNI_12_0020_MG_L,CKNI_12_1520_MG_L]
+Hypothesis = CBODD_12_4515_MG_L
+Evidence = default
+
+
+Parameter value = 0.48
+Sensitivity value = 0.010942622183763724
+P(Abnormal | e) = 0.02833044812806283
+Alpha = 0.010942622183763724
+Beta = 0.02307798947985624
+Delta = 1.0
+Gamma = 0.0
+
+
+Eval(0.2) = 0.025266513916608987
+Eval'(0.2) = 0.010942622183763724

@@ -1,0 +1,125 @@
+Storm-pars 1.6.4
+
+Date: Fri Apr 22 12:40:30 2022
+Command line arguments: -drn storm/drn_files/p1/insurance.drn --prop 'P=? [F("PropCost0")]' --bisimulation
+Current working directory: /experiments/bayesserver_storm_comparison
+
+Time for model construction: 3.327s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	22740
+Transitions: 	71074
+Reward Models:  none
+State Labels: 	91 labels
+   * ILiCost1 -> 1 item(s)
+   * ILiCost0 -> 1 item(s)
+   * PropCost1 -> 4 item(s)
+   * PropCost0 -> 4 item(s)
+   * OtherCarCost3 -> 12 item(s)
+   * OtherCarCost2 -> 12 item(s)
+   * OtherCarCost1 -> 12 item(s)
+   * OtherCarCost0 -> 16 item(s)
+   * ThisCarCost2 -> 12 item(s)
+   * ThisCarCost1 -> 12 item(s)
+   * ThisCarCost0 -> 12 item(s)
+   * ThisCarDam3 -> 90 item(s)
+   * ThisCarDam1 -> 90 item(s)
+   * ILiCost3 -> 1 item(s)
+   * MedCost3 -> 90 item(s)
+   * MedCost1 -> 90 item(s)
+   * ThisCarDam0 -> 120 item(s)
+   * Cushioning3 -> 240 item(s)
+   * Cushioning2 -> 360 item(s)
+   * Cushioning1 -> 240 item(s)
+   * RuggedAuto0 -> 240 item(s)
+   * deadlock -> 4 item(s)
+   * DrivQuality1 -> 48 item(s)
+   * AntiTheft1 -> 144 item(s)
+   * AntiTheft0 -> 144 item(s)
+   * Age2 -> 1 item(s)
+   * Antilock0 -> 576 item(s)
+   * DrivHist2 -> 144 item(s)
+   * ILiCost2 -> 1 item(s)
+   * GoodStudent0 -> 4 item(s)
+   * DrivingSkill2 -> 48 item(s)
+   * Mileage1 -> 1296 item(s)
+   * ThisCarDam2 -> 90 item(s)
+   * SeniorTrain1 -> 48 item(s)
+   * Accident1 -> 960 item(s)
+   * RiskAversion2 -> 12 item(s)
+   * Theft0 -> 372 item(s)
+   * RiskAversion1 -> 12 item(s)
+   * RiskAversion0 -> 12 item(s)
+   * Accident3 -> 960 item(s)
+   * SeniorTrain0 -> 16 item(s)
+   * SocioEcon1 -> 3 item(s)
+   * DrivHist1 -> 144 item(s)
+   * OtherCar0 -> 12 item(s)
+   * SocioEcon0 -> 3 item(s)
+   * RiskAversion3 -> 12 item(s)
+   * DrivingSkill1 -> 48 item(s)
+   * Age0 -> 1 item(s)
+   * Antilock1 -> 720 item(s)
+   * GoodStudent1 -> 12 item(s)
+   * MakeModel4 -> 144 item(s)
+   * ThisCarCost3 -> 12 item(s)
+   * DrivQuality2 -> 48 item(s)
+   * init -> 1 item(s)
+   * MakeModel0 -> 144 item(s)
+   * Age1 -> 1 item(s)
+   * MedCost2 -> 90 item(s)
+   * DrivingSkill0 -> 48 item(s)
+   * SocioEcon2 -> 3 item(s)
+   * SocioEcon3 -> 3 item(s)
+   * OtherCar1 -> 12 item(s)
+   * DrivQuality0 -> 48 item(s)
+   * DrivHist0 -> 144 item(s)
+   * VehicleYear1 -> 288 item(s)
+   * HomeBase0 -> 576 item(s)
+   * RuggedAuto2 -> 240 item(s)
+   * HomeBase2 -> 576 item(s)
+   * MakeModel1 -> 144 item(s)
+   * Mileage2 -> 1296 item(s)
+   * MakeModel3 -> 144 item(s)
+   * MakeModel2 -> 144 item(s)
+   * Mileage3 -> 1296 item(s)
+   * PropCost2 -> 4 item(s)
+   * Cushioning0 -> 240 item(s)
+   * Accident2 -> 960 item(s)
+   * CarValue1 -> 768 item(s)
+   * PropCost3 -> 4 item(s)
+   * CarValue2 -> 768 item(s)
+   * CarValue3 -> 480 item(s)
+   * Accident0 -> 960 item(s)
+   * HomeBase3 -> 576 item(s)
+   * CarValue4 -> 384 item(s)
+   * MedCost0 -> 120 item(s)
+   * HomeBase1 -> 576 item(s)
+   * CarValue0 -> 576 item(s)
+   * RuggedAuto1 -> 240 item(s)
+   * Theft1 -> 372 item(s)
+   * Mileage0 -> 1296 item(s)
+   * Airbag0 -> 744 item(s)
+   * VehicleYear0 -> 288 item(s)
+   * Airbag1 -> 480 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.062s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	4075
+Transitions: 	12561
+Reward Models:  none
+State Labels: 	2 labels
+   * init -> 1 item(s)
+   * PropCost0 -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F "PropCost0"] ...
+Result (initial states): (590225693118613463792864898827987174836877375982714884480000*p0+5452388200893053907193961768704991654458063283137162901566833)/(10000000000000000000000000000000000000000000000000000000000000)
+Time for model checking: 0.023s.
+

@@ -1,0 +1,16 @@
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+add_custom_target(binaries)
+
+add_subdirectory(storm)
+add_subdirectory(storm-bn)
+add_subdirectory(storm-bn-cli)
+add_subdirectory(storm-bn-robin)
+add_subdirectory(storm-bn-robin-cli)
+add_subdirectory(storm-counterexamples)
+add_subdirectory(storm-parsers)
+add_subdirectory(storm-version-info)
+add_subdirectory(storm-cli-utilities)
+set(STORM_TARGETS ${STORM_TARGETS} PARENT_SCOPE)

@@ -1,0 +1,25 @@
+Storm 1.6.4
+
+Date: Wed Jun  8 15:08:51 2022
+Command line arguments: --jani jani_files/1/child.jani --prop 'P=? [G(XrayReport=0 | XrayReport=-1)]'
+Current working directory: /home/hans/Desktop/Storm-bn/storm_evidence
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.028s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	64
+Transitions: 	197
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 5 item(s)
+   * init -> 1 item(s)
+   * ((XrayReport = 0) | (XrayReport = -(1))) -> 60 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [G ((XrayReport = 0) | (XrayReport = -(1)))] ...
+Result (for initial states): 0.2364206933
+Time for model checking: 0.000s.

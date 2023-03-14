@@ -1,0 +1,15 @@
+Pr(e) = 1.0
+Network : ace/net_files/earthquake.net
+Network Read Time (ms) : 114.327242
+Number of Evidence Sets : 1
+AC :
+  Nodes : 67
+  Edges : 82
+  Total Initialization Time (ms) : 8.940463
+  Total Inference Time (ms) : 0.619634
+  Minimum Inference Time (ms) : 0.619634
+  Maximum Inference Time (ms) : 0.619634
+  Median Inference Time (ms) : 0.619634
+  Mean Inference Time (ms) : 0.619634
+  Standard Deviation Inference Time (ms) : 0.0
+

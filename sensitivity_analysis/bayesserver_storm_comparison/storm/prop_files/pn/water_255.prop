@@ -1,0 +1,1 @@
+storm-pars -drn storm/drn_files/pn/water_255.drn --prop "P=? [F(\"C_NI_12_451\"|\"CKNI_12_451\"|\"CNON_12_451\"|\"CKNN_12_451\"|\"CBODN_12_451\"|\"CNOD_12_451\"|\"CKND_12_451\"|\"CBODD_12_451\")]" --bisimulation

@@ -1,0 +1,15 @@
+Pr(e) = 0.9999999999764515
+Network : ace/net_files/insurance.net
+Network Read Time (ms) : 127.57598499999999
+Number of Evidence Sets : 1
+AC :
+  Nodes : 42440
+  Edges : 84464
+  Total Initialization Time (ms) : 103.847287
+  Total Inference Time (ms) : 11.57596
+  Minimum Inference Time (ms) : 11.57596
+  Maximum Inference Time (ms) : 11.57596
+  Median Inference Time (ms) : 11.57596
+  Mean Inference Time (ms) : 11.57596
+  Standard Deviation Inference Time (ms) : 0.0
+

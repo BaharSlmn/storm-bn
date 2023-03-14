@@ -1,0 +1,1 @@
+storm --jani jani_files/no_evidence/andes.jani --prop "P=? [F(NEED36=1|SNode_67=1|FIND49=1|GRAV2=1|SNode_88=1|GOAL_109=1|GOAL_111=1|SUM75=1|GOAL_114=1|GOAL_146=1|INCLINE51=1|SNode_119=1)]"

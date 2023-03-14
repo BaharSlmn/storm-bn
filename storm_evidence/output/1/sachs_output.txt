@@ -1,0 +1,25 @@
+Storm 1.6.4
+
+Date: Wed Jun  8 15:08:54 2022
+Command line arguments: --jani jani_files/1/sachs.jani --prop 'P=? [G(P38=0 | P38=-1)]'
+Current working directory: /home/hans/Desktop/Storm-bn/storm_evidence
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.019s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	25
+Transitions: 	60
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 3 item(s)
+   * init -> 1 item(s)
+   * ((P38 = 0) | (P38 = -(1))) -> 23 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [G ((P38 = 0) | (P38 = -(1)))] ...
+Result (for initial states): 0.7761276692
+Time for model checking: 0.000s.

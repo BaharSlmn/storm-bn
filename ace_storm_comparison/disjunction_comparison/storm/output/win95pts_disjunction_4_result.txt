@@ -1,0 +1,25 @@
+Storm 1.6.4
+
+Date: Tue Apr 26 11:05:10 2022
+Command line arguments: --jani storm/win95pts/win95pts.jani --prop 'P=? [F((REPEAT=1|PrtIcon=0|FntInstlltn=0|TTOK=1))]'
+Current working directory: /experiments/ace_storm_comparison/disjunction_comparison
+
+Time for model input parsing: 0.058s.
+
+Time for model construction: 0.151s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	9927
+Transitions: 	17558
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 2 item(s)
+   * init -> 1 item(s)
+   * ((((REPEAT = 1) | (PrtIcon = 0)) | (FntInstlltn = 0)) | (TTOK = 1)) -> 356 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F ((((REPEAT = 1) | (PrtIcon = 0)) | (FntInstlltn = 0)) | (TTOK = 1))] ...
+Result (for initial states): 0.9997011359
+Time for model checking: 0.005s.

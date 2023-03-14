@@ -1,0 +1,206 @@
+{
+	"jani-version": 1,
+	"name": "hepar2.jani",
+	"type": "dtmc",
+	"features": [ "derived-operators" ],
+"variables": [
+	{
+	"name": "age",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 3
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "age_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "age_1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "age_2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "age_3",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "diabetes",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "diabetes_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "diabetes_1",
+		"transient": true,
+		"type": "bool"
+	}
+],
+"properties": [
+],
+"automata": [
+{
+	"name": "hepar2",
+	"locations": [
+		{
+		"name": "loc0"
+		},
+		{
+		"name": "loc1",
+		"transient-values": [
+		{
+			"ref": "age_0",
+			"value": {
+				"op": "=",
+				"left": "age",
+				"right": 0
+			}
+		},
+		{
+			"ref": "age_1",
+			"value": {
+				"op": "=",
+				"left": "age",
+				"right": 1
+			}
+		},
+		{
+			"ref": "age_2",
+			"value": {
+				"op": "=",
+				"left": "age",
+				"right": 2
+			}
+		},
+		{
+			"ref": "age_3",
+			"value": {
+				"op": "=",
+				"left": "age",
+				"right": 3
+			}
+		}
+		]
+		},
+		{
+		"name": "loc2",
+		"transient-values": [
+		{
+			"ref": "diabetes_0",
+			"value": {
+				"op": "=",
+				"left": "diabetes",
+				"right": 0
+			}
+		},
+		{
+			"ref": "diabetes_1",
+			"value": {
+				"op": "=",
+				"left": "diabetes",
+				"right": 1
+			}
+		}
+		]
+		}
+],
+	"initial-locations": ["loc0"],
+	"edges": [
+	{
+		"location": "loc0",
+		"destinations": [
+		{
+			"location": "loc1",
+			"probability": {"exp": 0.07725322},
+			"assignments": [
+			{
+				"ref": "age",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.38769671},
+			"assignments": [
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.39771102},
+			"assignments": [
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.13733905},
+			"assignments": [
+			]
+		}
+		]
+	},
+	{
+		"location": "loc1",
+		"destinations": [
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.03576538},
+			"assignments": [
+			{
+				"ref": "diabetes",
+				"value": 0
+			},
+			{
+				"ref": "age",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.96423462},
+			"assignments": [
+			{
+				"ref": "diabetes",
+				"value": 1
+			},
+			{
+				"ref": "age",
+				"value": -1
+			}
+			]
+		}
+		]
+	}
+	]
+}
+],
+"system": {
+	"elements": [ {"automaton": "hepar2"} ]
+}
+}

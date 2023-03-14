@@ -1,0 +1,1 @@
+storm-pars -drn  storm/drn_files/p1/cancer.drn --prop "P=? [F(\"Dyspnoea0\")]" --bisimulation

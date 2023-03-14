@@ -1,0 +1,15 @@
+Pr(e) = 0.9999999999999998
+Network : ace/net_files/child.net
+Network Read Time (ms) : 128.306342
+Number of Evidence Sets : 1
+AC :
+  Nodes : 1237
+  Edges : 2268
+  Total Initialization Time (ms) : 25.029539999999997
+  Total Inference Time (ms) : 1.131651
+  Minimum Inference Time (ms) : 1.131651
+  Maximum Inference Time (ms) : 1.131651
+  Median Inference Time (ms) : 1.131651
+  Mean Inference Time (ms) : 1.131651
+  Standard Deviation Inference Time (ms) : 0.0
+

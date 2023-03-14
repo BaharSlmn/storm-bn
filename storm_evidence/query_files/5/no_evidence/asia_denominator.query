@@ -1,0 +1,1 @@
+storm --jani jani_files/no_evidence/asia.jani --prop "P=? [F(smoke=1)]"

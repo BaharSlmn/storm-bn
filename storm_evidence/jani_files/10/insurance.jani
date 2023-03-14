@@ -1,0 +1,11570 @@
+{
+	"jani-version": 1,
+	"name": "insurance.jani",
+	"type": "dtmc",
+	"features": [ "derived-operators" ],
+"variables": [
+	{
+	"name": "Age",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 2
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "Age_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Age_1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Age_2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "SocioEcon",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 3
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "SocioEcon_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "SocioEcon_1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "SocioEcon_2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "SocioEcon_3",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "RiskAversion",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 3
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "RiskAversion_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "RiskAversion_1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "RiskAversion_2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "RiskAversion_3",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "VehicleYear",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "VehicleYear_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "VehicleYear_1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "RuggedAuto",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 2
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "RuggedAuto_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "RuggedAuto_1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "RuggedAuto_2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "Accident",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 3
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "Accident_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Accident_1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Accident_2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Accident_3",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "MakeModel",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 4
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "MakeModel_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "MakeModel_1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "MakeModel_2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "MakeModel_3",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "MakeModel_4",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "DrivQuality",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 2
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "DrivQuality_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "DrivQuality_1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "DrivQuality_2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "Mileage",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 3
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "Mileage_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Mileage_1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Mileage_2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Mileage_3",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "Antilock",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "Antilock_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Antilock_1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "DrivingSkill",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 2
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "DrivingSkill_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "DrivingSkill_1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "DrivingSkill_2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "SeniorTrain",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "SeniorTrain_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "SeniorTrain_1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "OtherCarCost",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 3
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "OtherCarCost_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "OtherCarCost_1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "OtherCarCost_2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "OtherCarCost_3",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "ILiCost",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 3
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "ILiCost_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "ILiCost_1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "ILiCost_2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "ILiCost_3",
+		"transient": true,
+		"type": "bool"
+	}
+],
+"properties": [
+],
+"automata": [
+{
+	"name": "insurance",
+	"locations": [
+		{
+		"name": "loc0"
+		},
+		{
+		"name": "loc1",
+		"transient-values": [
+		{
+			"ref": "Age_0",
+			"value": {
+				"op": "=",
+				"left": "Age",
+				"right": 0
+			}
+		},
+		{
+			"ref": "Age_1",
+			"value": {
+				"op": "=",
+				"left": "Age",
+				"right": 1
+			}
+		},
+		{
+			"ref": "Age_2",
+			"value": {
+				"op": "=",
+				"left": "Age",
+				"right": 2
+			}
+		}
+		]
+		},
+		{
+		"name": "loc2",
+		"transient-values": [
+		{
+			"ref": "SocioEcon_0",
+			"value": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 0
+			}
+		},
+		{
+			"ref": "SocioEcon_1",
+			"value": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 1
+			}
+		},
+		{
+			"ref": "SocioEcon_2",
+			"value": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 2
+			}
+		},
+		{
+			"ref": "SocioEcon_3",
+			"value": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 3
+			}
+		}
+		]
+		},
+		{
+		"name": "loc3",
+		"transient-values": [
+		{
+			"ref": "RiskAversion_0",
+			"value": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 0
+			}
+		},
+		{
+			"ref": "RiskAversion_1",
+			"value": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 1
+			}
+		},
+		{
+			"ref": "RiskAversion_2",
+			"value": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 2
+			}
+		},
+		{
+			"ref": "RiskAversion_3",
+			"value": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 3
+			}
+		}
+		]
+		},
+		{
+		"name": "loc4",
+		"transient-values": [
+		{
+			"ref": "SeniorTrain_0",
+			"value": {
+				"op": "=",
+				"left": "SeniorTrain",
+				"right": 0
+			}
+		},
+		{
+			"ref": "SeniorTrain_1",
+			"value": {
+				"op": "=",
+				"left": "SeniorTrain",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc5",
+		"transient-values": [
+		{
+			"ref": "DrivingSkill_0",
+			"value": {
+				"op": "=",
+				"left": "DrivingSkill",
+				"right": 0
+			}
+		},
+		{
+			"ref": "DrivingSkill_1",
+			"value": {
+				"op": "=",
+				"left": "DrivingSkill",
+				"right": 1
+			}
+		},
+		{
+			"ref": "DrivingSkill_2",
+			"value": {
+				"op": "=",
+				"left": "DrivingSkill",
+				"right": 2
+			}
+		}
+		]
+		},
+		{
+		"name": "loc6",
+		"transient-values": [
+		{
+			"ref": "DrivQuality_0",
+			"value": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 0
+			}
+		},
+		{
+			"ref": "DrivQuality_1",
+			"value": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 1
+			}
+		},
+		{
+			"ref": "DrivQuality_2",
+			"value": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 2
+			}
+		}
+		]
+		},
+		{
+		"name": "loc7",
+		"transient-values": [
+		{
+			"ref": "VehicleYear_0",
+			"value": {
+				"op": "=",
+				"left": "VehicleYear",
+				"right": 0
+			}
+		},
+		{
+			"ref": "VehicleYear_1",
+			"value": {
+				"op": "=",
+				"left": "VehicleYear",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc8",
+		"transient-values": [
+		{
+			"ref": "MakeModel_0",
+			"value": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 0
+			}
+		},
+		{
+			"ref": "MakeModel_1",
+			"value": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 1
+			}
+		},
+		{
+			"ref": "MakeModel_2",
+			"value": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 2
+			}
+		},
+		{
+			"ref": "MakeModel_3",
+			"value": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 3
+			}
+		},
+		{
+			"ref": "MakeModel_4",
+			"value": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 4
+			}
+		}
+		]
+		},
+		{
+		"name": "loc9",
+		"transient-values": [
+		{
+			"ref": "Antilock_0",
+			"value": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 0
+			}
+		},
+		{
+			"ref": "Antilock_1",
+			"value": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc10",
+		"transient-values": [
+		{
+			"ref": "Mileage_0",
+			"value": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 0
+			}
+		},
+		{
+			"ref": "Mileage_1",
+			"value": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 1
+			}
+		},
+		{
+			"ref": "Mileage_2",
+			"value": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 2
+			}
+		},
+		{
+			"ref": "Mileage_3",
+			"value": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 3
+			}
+		}
+		]
+		},
+		{
+		"name": "loc11",
+		"transient-values": [
+		{
+			"ref": "Accident_0",
+			"value": {
+				"op": "=",
+				"left": "Accident",
+				"right": 0
+			}
+		},
+		{
+			"ref": "Accident_1",
+			"value": {
+				"op": "=",
+				"left": "Accident",
+				"right": 1
+			}
+		},
+		{
+			"ref": "Accident_2",
+			"value": {
+				"op": "=",
+				"left": "Accident",
+				"right": 2
+			}
+		},
+		{
+			"ref": "Accident_3",
+			"value": {
+				"op": "=",
+				"left": "Accident",
+				"right": 3
+			}
+		}
+		]
+		},
+		{
+		"name": "loc12",
+		"transient-values": [
+		{
+			"ref": "RuggedAuto_0",
+			"value": {
+				"op": "=",
+				"left": "RuggedAuto",
+				"right": 0
+			}
+		},
+		{
+			"ref": "RuggedAuto_1",
+			"value": {
+				"op": "=",
+				"left": "RuggedAuto",
+				"right": 1
+			}
+		},
+		{
+			"ref": "RuggedAuto_2",
+			"value": {
+				"op": "=",
+				"left": "RuggedAuto",
+				"right": 2
+			}
+		}
+		]
+		},
+		{
+		"name": "loc13",
+		"transient-values": [
+		{
+			"ref": "OtherCarCost_0",
+			"value": {
+				"op": "=",
+				"left": "OtherCarCost",
+				"right": 0
+			}
+		},
+		{
+			"ref": "OtherCarCost_1",
+			"value": {
+				"op": "=",
+				"left": "OtherCarCost",
+				"right": 1
+			}
+		},
+		{
+			"ref": "OtherCarCost_2",
+			"value": {
+				"op": "=",
+				"left": "OtherCarCost",
+				"right": 2
+			}
+		},
+		{
+			"ref": "OtherCarCost_3",
+			"value": {
+				"op": "=",
+				"left": "OtherCarCost",
+				"right": 3
+			}
+		}
+		]
+		},
+		{
+		"name": "loc14",
+		"transient-values": [
+		{
+			"ref": "ILiCost_0",
+			"value": {
+				"op": "=",
+				"left": "ILiCost",
+				"right": 0
+			}
+		},
+		{
+			"ref": "ILiCost_1",
+			"value": {
+				"op": "=",
+				"left": "ILiCost",
+				"right": 1
+			}
+		},
+		{
+			"ref": "ILiCost_2",
+			"value": {
+				"op": "=",
+				"left": "ILiCost",
+				"right": 2
+			}
+		},
+		{
+			"ref": "ILiCost_3",
+			"value": {
+				"op": "=",
+				"left": "ILiCost",
+				"right": 3
+			}
+		}
+		]
+		}
+],
+	"initial-locations": ["loc0"],
+	"edges": [
+	{
+		"location": "loc0",
+		"destinations": [
+		{
+			"location": "loc1",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "Age",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc1",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "Age",
+				"value": 1
+			}
+			]
+		},
+		{
+			"location": "loc1",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "Age",
+				"value": 2
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc1",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Age",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "SocioEcon",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "SocioEcon",
+				"value": 1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.19},
+			"assignments": [
+			{
+				"ref": "SocioEcon",
+				"value": 2
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "SocioEcon",
+				"value": 3
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc1",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Age",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "SocioEcon",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "SocioEcon",
+				"value": 1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.19},
+			"assignments": [
+			{
+				"ref": "SocioEcon",
+				"value": 2
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "SocioEcon",
+				"value": 3
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc1",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Age",
+				"right": 2
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "SocioEcon",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "SocioEcon",
+				"value": 1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.29},
+			"assignments": [
+			{
+				"ref": "SocioEcon",
+				"value": 2
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "SocioEcon",
+				"value": 3
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.58},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.015},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.285},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.09},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.38},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.015},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.185},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.04},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.35},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.48},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.015},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.285},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.09},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.58},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.015},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.285},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.09},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 1},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 1},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 1e-06},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.999999},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 1},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 1},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 1e-06},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.999999},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 1},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 1},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 1},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 1},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "SeniorTrain",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc4",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "SeniorTrain",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "DrivingSkill",
+				"value": 0
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SeniorTrain",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.45},
+			"assignments": [
+			{
+				"ref": "DrivingSkill",
+				"value": 1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SeniorTrain",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "DrivingSkill",
+				"value": 2
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SeniorTrain",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc4",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "SeniorTrain",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "DrivingSkill",
+				"value": 0
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SeniorTrain",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "DrivingSkill",
+				"value": 1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SeniorTrain",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "DrivingSkill",
+				"value": 2
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SeniorTrain",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc4",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "SeniorTrain",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "DrivingSkill",
+				"value": 0
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SeniorTrain",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "DrivingSkill",
+				"value": 1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SeniorTrain",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "DrivingSkill",
+				"value": 2
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SeniorTrain",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc4",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "SeniorTrain",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "DrivingSkill",
+				"value": 0
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SeniorTrain",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.45},
+			"assignments": [
+			{
+				"ref": "DrivingSkill",
+				"value": 1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SeniorTrain",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "DrivingSkill",
+				"value": 2
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SeniorTrain",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc4",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "SeniorTrain",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "DrivingSkill",
+				"value": 0
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SeniorTrain",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "DrivingSkill",
+				"value": 1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SeniorTrain",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "DrivingSkill",
+				"value": 2
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SeniorTrain",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc4",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "SeniorTrain",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Age",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "DrivingSkill",
+				"value": 0
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SeniorTrain",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "DrivingSkill",
+				"value": 1
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SeniorTrain",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "DrivingSkill",
+				"value": 2
+			},
+			{
+				"ref": "Age",
+				"value": -1
+			},
+			{
+				"ref": "SeniorTrain",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "DrivingSkill",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 1},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 0
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 1
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 2
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "DrivingSkill",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 0
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 1
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 2
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "DrivingSkill",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 0
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 1
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 2
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "DrivingSkill",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 1},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 0
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 1
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 2
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "DrivingSkill",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 0
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 1
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 2
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "DrivingSkill",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 0
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 1
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.98},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 2
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "DrivingSkill",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 1},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 0
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 1
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 2
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "DrivingSkill",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 0
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 1},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 1
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 2
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "DrivingSkill",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 0
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 1
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 1},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 2
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "DrivingSkill",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 1},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 0
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 1
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 2
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "DrivingSkill",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 0
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 1
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 2
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "DrivingSkill",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 0
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 1
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 1},
+			"assignments": [
+			{
+				"ref": "DrivQuality",
+				"value": 2
+			},
+			{
+				"ref": "DrivingSkill",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.85},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 3
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.85},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 3
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.85},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 3
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.85},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 3
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "VehicleYear",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 0
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 2
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 3
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 4
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 0
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.65},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 2
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 3
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 4
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 0
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 2
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.45},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 3
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 4
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 3
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 0
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.09},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 2
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 3
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 4
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 0
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 2
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 3
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 4
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 0
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.65},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 2
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 3
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 4
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 0
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 2
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.45},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 3
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 4
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 3
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 0
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.09},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 2
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 3
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 4
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 0
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 2
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 3
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 4
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 0
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.65},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 2
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 3
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 4
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 0
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 2
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.45},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 3
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 4
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 3
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 0
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.09},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 2
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 3
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 4
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 0
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 2
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 3
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 4
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 0
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.65},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 2
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 3
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 4
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 0
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 2
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.45},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 3
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 4
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RiskAversion",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "SocioEcon",
+				"right": 3
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 0
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 1
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.09},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 2
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 3
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "MakeModel",
+				"value": 4
+			},
+			{
+				"ref": "SocioEcon",
+				"value": -1
+			},
+			{
+				"ref": "RiskAversion",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VehicleYear",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "Antilock",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "Antilock",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VehicleYear",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.001},
+			"assignments": [
+			{
+				"ref": "Antilock",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.999},
+			"assignments": [
+			{
+				"ref": "Antilock",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VehicleYear",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "Antilock",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "Antilock",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VehicleYear",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 3
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.99},
+			"assignments": [
+			{
+				"ref": "Antilock",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "Antilock",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VehicleYear",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 4
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.99},
+			"assignments": [
+			{
+				"ref": "Antilock",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "Antilock",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VehicleYear",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "Antilock",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "Antilock",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VehicleYear",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "Antilock",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 1},
+			"assignments": [
+			{
+				"ref": "Antilock",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VehicleYear",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "Antilock",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 1},
+			"assignments": [
+			{
+				"ref": "Antilock",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VehicleYear",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 3
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "Antilock",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "Antilock",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VehicleYear",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 4
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "Antilock",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.85},
+			"assignments": [
+			{
+				"ref": "Antilock",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc9",
+		"destinations": [
+		{
+			"location": "loc10",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "Mileage",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.07},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.03},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.99},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.007},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.002},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.001},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.98},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.005},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.005},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.98},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.005},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.005},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.96},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.015},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.005},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.007},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.003},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.95},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.03},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.015},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.005},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.95},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.03},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.94},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.03},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 2
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.999},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.0007},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.0002},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.0001},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 2
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.995},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.003},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.001},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.001},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 2
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.995},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.003},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.001},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.001},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 2
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.99},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.007},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.002},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.001},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 2
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.99},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.007},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.002},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.001},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 2
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.98},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.005},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.005},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 2
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.985},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.003},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.002},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "DrivQuality",
+				"right": 2
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Mileage",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "Antilock",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.98},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 0
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 1
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.007},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 2
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.003},
+			"assignments": [
+			{
+				"ref": "Accident",
+				"value": 3
+			},
+			{
+				"ref": "Antilock",
+				"value": -1
+			},
+			{
+				"ref": "Mileage",
+				"value": -1
+			},
+			{
+				"ref": "DrivQuality",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc11",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VehicleYear",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.95},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 0
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.04},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 1
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 2
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc11",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VehicleYear",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 0
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 1
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 2
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc11",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VehicleYear",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 0
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 1
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 2
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc11",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VehicleYear",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 3
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 0
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 1
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 2
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc11",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VehicleYear",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 4
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 0
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.55},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 1
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 2
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc11",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VehicleYear",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.95},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 0
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.04},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 1
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 2
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc11",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VehicleYear",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 0
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 1
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 2
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc11",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VehicleYear",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 0
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.55},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 1
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 2
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc11",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VehicleYear",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 3
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 0
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 1
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 2
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc11",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VehicleYear",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "MakeModel",
+				"right": 4
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 0
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.55},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 1
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "RuggedAuto",
+				"value": 2
+			},
+			{
+				"ref": "MakeModel",
+				"value": -1
+			},
+			{
+				"ref": "VehicleYear",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc12",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RuggedAuto",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Accident",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc13",
+			"probability": {"exp": 1},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": 0
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc12",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RuggedAuto",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Accident",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc13",
+			"probability": {"exp": 0.99},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": 0
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.005},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.00499},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 1e-05},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc12",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RuggedAuto",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Accident",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc13",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": 0
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.19998},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 2e-05},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc12",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RuggedAuto",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Accident",
+				"right": 3
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc13",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": 0
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.39996},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 4e-05},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc12",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RuggedAuto",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Accident",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc13",
+			"probability": {"exp": 1},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": 0
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc12",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RuggedAuto",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Accident",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc13",
+			"probability": {"exp": 0.9799657},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": 0
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.00999965},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.009984651},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 4.999825e-05},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc12",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RuggedAuto",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Accident",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc13",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": 0
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.29997},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 3e-05},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc12",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RuggedAuto",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Accident",
+				"right": 3
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc13",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": 0
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.39994},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 6e-05},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc12",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RuggedAuto",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "Accident",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc13",
+			"probability": {"exp": 1},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": 0
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc12",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RuggedAuto",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "Accident",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc13",
+			"probability": {"exp": 0.95},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": 0
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.03},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.01998},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 2e-05},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc12",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RuggedAuto",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "Accident",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc13",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": 0
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.29996},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 4e-05},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc12",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "RuggedAuto",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "Accident",
+				"right": 3
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc13",
+			"probability": {"exp": 0.005},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": 0
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.55},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.4449},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.0001},
+			"assignments": [
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "RuggedAuto",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc13",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Accident",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc14",
+			"probability": {"exp": 1},
+			"assignments": [
+			{
+				"ref": "ILiCost",
+				"value": 0
+			},
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc14",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "ILiCost",
+				"value": 1
+			},
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc14",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "ILiCost",
+				"value": 2
+			},
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc14",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "ILiCost",
+				"value": 3
+			},
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc13",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Accident",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc14",
+			"probability": {"exp": 0.999},
+			"assignments": [
+			{
+				"ref": "ILiCost",
+				"value": 0
+			},
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc14",
+			"probability": {"exp": 0.000998},
+			"assignments": [
+			{
+				"ref": "ILiCost",
+				"value": 1
+			},
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc14",
+			"probability": {"exp": 1e-06},
+			"assignments": [
+			{
+				"ref": "ILiCost",
+				"value": 2
+			},
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc14",
+			"probability": {"exp": 1e-06},
+			"assignments": [
+			{
+				"ref": "ILiCost",
+				"value": 3
+			},
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc13",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Accident",
+				"right": 2
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc14",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "ILiCost",
+				"value": 0
+			},
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc14",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "ILiCost",
+				"value": 1
+			},
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc14",
+			"probability": {"exp": 0.03},
+			"assignments": [
+			{
+				"ref": "ILiCost",
+				"value": 2
+			},
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc14",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "ILiCost",
+				"value": 3
+			},
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc13",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Accident",
+				"right": 3
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc14",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "ILiCost",
+				"value": 0
+			},
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc14",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "ILiCost",
+				"value": 1
+			},
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc14",
+			"probability": {"exp": 0.06},
+			"assignments": [
+			{
+				"ref": "ILiCost",
+				"value": 2
+			},
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc14",
+			"probability": {"exp": 0.04},
+			"assignments": [
+			{
+				"ref": "ILiCost",
+				"value": 3
+			},
+			{
+				"ref": "OtherCarCost",
+				"value": -1
+			},
+			{
+				"ref": "Accident",
+				"value": -1
+			}
+			]
+		}
+		]
+	}
+	]
+}
+],
+"system": {
+	"elements": [ {"automaton": "insurance"} ]
+}
+}

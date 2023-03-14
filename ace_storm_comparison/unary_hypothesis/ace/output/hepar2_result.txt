@@ -1,0 +1,15 @@
+Pr(e) = 1.0000000182479478
+Network : ace/net_files/hepar2.net
+Network Read Time (ms) : 137.206404
+Number of Evidence Sets : 1
+AC :
+  Nodes : 7705
+  Edges : 11982
+  Total Initialization Time (ms) : 74.74792699999999
+  Total Inference Time (ms) : 3.4639599999999997
+  Minimum Inference Time (ms) : 3.4639599999999997
+  Maximum Inference Time (ms) : 3.4639599999999997
+  Median Inference Time (ms) : 3.4639599999999997
+  Mean Inference Time (ms) : 3.4639599999999997
+  Standard Deviation Inference Time (ms) : 0.0
+

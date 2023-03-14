@@ -1,0 +1,25 @@
+Storm 1.6.4
+
+Date: Wed Jun  8 15:08:51 2022
+Command line arguments: --jani jani_files/no_evidence/child.jani --prop 'P=? [F(LowerBodyO2=1|LowerBodyO2=2|CO2=1|CO2=2)]'
+Current working directory: /home/hans/Desktop/Storm-bn/storm_evidence
+
+Time for model input parsing: 0.010s.
+
+Time for model construction: 0.036s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	1450
+Transitions: 	4184
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 4 item(s)
+   * init -> 1 item(s)
+   * ((((LowerBodyO2 = 1) | (LowerBodyO2 = 2)) | (CO2 = 1)) | (CO2 = 2)) -> 220 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F ((((LowerBodyO2 = 1) | (LowerBodyO2 = 2)) | (CO2 = 1)) | (CO2 = 2))] ...
+Result (for initial states): 0.7338029531
+Time for model checking: 0.000s.

@@ -1,0 +1,522 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BayesServer.Optimization</name>
+    </assembly>
+    <members>
+        <member name="T:BayesServer.Optimization.DesignEvidenceKind">
+            <summary>
+            The type of evidence the optimizer should use.
+            </summary>
+        </member>
+        <member name="F:BayesServer.Optimization.DesignEvidenceKind.Hard">
+            <summary>
+            Evidence is set on a single discrete state.
+            </summary>
+        </member>
+        <member name="F:BayesServer.Optimization.DesignEvidenceKind.Soft">
+            <summary>
+            Soft/virtual evidence can be set on a discrete variable.
+            </summary>
+        </member>
+        <member name="T:BayesServer.Optimization.DesignState">
+            <summary>
+            An input to the optimization algorithm.
+            </summary>
+        </member>
+        <member name="E:BayesServer.Optimization.DesignState.PropertyChanged">
+            <inheritdoc />
+        </member>
+        <member name="M:BayesServer.Optimization.DesignState.#ctor(BayesServer.State,System.Nullable{System.Double},System.Nullable{System.Double})">
+            <summary>
+            Initializes a new instance of the <see cref="T:BayesServer.Optization.DesignState"/> class.
+            </summary>
+            <param name="state">The state these options refer to.</param>
+            <param name="lowerBound">Lower bound during optimization.</param>
+            <param name="upperBound">Upper bound during optimization.</param>
+        </member>
+        <member name="P:BayesServer.Optimization.DesignState.State">
+            <summary>
+            Gets the state these options refer to.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.DesignState.LowerBound">
+            <summary>
+            The minimum value allowed for this variable/state during the optimization process.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.DesignState.UpperBound">
+            <summary>
+            The maximum value allowed for this variable/state during the optimization process.
+            </summary>
+        </member>
+        <member name="T:BayesServer.Optimization.DesignVariable">
+            <summary>
+            Specifies on or more inputs to the optimization algorithm.
+            </summary>
+        </member>
+        <member name="E:BayesServer.Optimization.DesignVariable.PropertyChanged">
+            <inheritdoc />
+        </member>
+        <member name="M:BayesServer.Optimization.DesignVariable.#ctor(BayesServer.Variable,System.Nullable{System.Double},System.Nullable{System.Double},System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BayesServer.Optization.DesignVariable"/> class, automatically generating the necessary design states.
+            </summary>
+            <param name="variable">The optimizer input variable.</param>
+            <param name="lowerBound">Optional lower bound for the variable value if continuous, or the variable states if discrete.</param>
+            <param name="upperBound">Optional upper bound for the variable value if continuous, or the variable states if discrete.</param>
+            <param name="allowMissing">Determines whether the algorithm is allowed to consider having no evidence set on this variable.</param>
+        </member>
+        <member name="M:BayesServer.Optimization.DesignVariable.#ctor(BayesServer.Variable,System.Nullable{System.Double},System.Nullable{System.Double},System.Boolean,BayesServer.Inference.InterventionType)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BayesServer.Optimization.DesignVariable"/> class, automatically generating the necessary design states.
+            </summary>
+            <param name="variable">The optimizer input variable.</param>
+            <param name="lowerBound">Optional lower bound for the variable value if continuous, or the variable states if discrete.</param>
+            <param name="upperBound">Optional upper bound for the variable value if continuous, or the variable states if discrete.</param>
+            <param name="allowMissing">Determines whether the algorithm is allowed to consider having no evidence set on this variable.</param>
+            <param name="interventionType">Determines whether the evidence should be an intervention or not.</param>
+        </member>
+        <member name="M:BayesServer.Optimization.DesignVariable.#ctor(BayesServer.Variable,System.Collections.Generic.IList{BayesServer.Optimization.DesignState},System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BayesServer.Optimization.DesignVariable"/> class.
+            </summary>
+            <param name="variable">The optimizer input variable.</param>
+            <param name="designStates">Options for each variable state.</param>
+            <param name="allowMissing">Determines whether the algorithm is allowed to consider having no evidence set on this variable.</param>
+        </member>
+        <member name="M:BayesServer.Optimization.DesignVariable.#ctor(BayesServer.Variable,System.Collections.Generic.IList{BayesServer.Optimization.DesignState},BayesServer.Optimization.DesignEvidenceKind,System.Boolean,BayesServer.Inference.InterventionType)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BayesServer.Optimization.DesignVariable"/> class.
+            </summary>
+            <param name="variable">The optimizer input variable.</param>
+            <param name="designStates">Options for each variable state.</param>
+            <param name="evidenceKind">Determines whether to consider hard or soft evidence.</param>
+            <param name="allowMissing">Determines whether the algorithm is allowed to consider having no evidence set on this variable.</param>
+            <param name="interventionType">Determines whether the evidence should be an intervention or not.</param>
+        </member>
+        <member name="P:BayesServer.Optimization.DesignVariable.EvidenceKind">
+            <summary>
+            Determines whether the optimizer uses hard or soft/virtual evidence for this variable.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.DesignVariable.Variable">
+            <summary>
+            Gets the variable these options refer to.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.DesignVariable.InterventionType">
+            <summary>
+            Determines the evidence intervention type for this variable.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.DesignVariable.DesignStates">
+            <summary>
+            Gets the design states, one for each state in the variable.  Note that continuous and function variables have a single state.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.DesignVariable.AllowMissing">
+            <summary>
+            Determines whether the optimizer can consider missing values (evidence not set) on this variable.
+            </summary>
+        </member>
+        <member name="T:BayesServer.Optimization.Genetic.GeneticOptimizer">
+            <summary>
+            A genetic algorithm optimizer.  Does not guarantee optimum solutions are found, but can handle discrete/continuous/functions and non-linear problems.
+            </summary>
+        </member>
+        <member name="M:BayesServer.Optimization.Genetic.GeneticOptimizer.Optimize(BayesServer.Network,BayesServer.Optimization.Objective,System.Collections.Generic.IList{BayesServer.Optimization.DesignVariable},BayesServer.Inference.IEvidence,BayesServer.Optimization.IOptimizerOptions)">
+            <inheritdoc />
+        </member>
+        <member name="T:BayesServer.Optimization.Genetic.GeneticOptimizerOptions">
+            <summary>
+            Options governing the behaviour of the <see cref="T:BayesServer.Optimization.Genetic.GeneticOptimizer"/> algorithm.
+            </summary>
+        </member>
+        <member name="T:BayesServer.Optimization.Genetic.GeneticOptimizerOutput">
+            <summary>
+            Contains the results from the genetic optimization algorithm.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticOptimizerOutput.Warnings">
+            <inheritdoc />
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticOptimizerOutput.ObjectiveValue">
+            <inheritdoc />
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticOptimizerOutput.Evidence">
+            <inheritdoc />
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticOptimizerOutput.QueryCount">
+            <summary>
+            Gets the number of call made to the inference engine(s) during optimization.
+            </summary>
+        </member>
+        <member name="T:BayesServer.Optimization.Genetic.GeneticOptimizerProgressInfo">
+            <summary>
+            Contains progress information sent from the genetic optimization algorithm.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticOptimizerProgressInfo.ObjectiveValue">
+            <inheritdoc />
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticOptimizerProgressInfo.QueryCount">
+            <inheritdoc />
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticOptimizerProgressInfo.Evidence">
+            <inheritdoc />
+        </member>
+        <member name="T:BayesServer.Optimization.Genetic.GeneticOptionsBase">
+            <summary>
+            Base class for common Genetic algorithm options.
+            </summary>
+        </member>
+        <member name="E:BayesServer.Optimization.Genetic.GeneticOptionsBase.PropertyChanged">
+            <inheritdoc />
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticOptionsBase.Termination">
+            <summary>
+            Termination options.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticOptionsBase.CrossoverProbability">
+            <summary>
+            The probability of parents being crossed. Must be in the range [0,1].
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticOptionsBase.MutationProbability">
+            <summary>
+            The probability of genes being mutated. Must be in the range [0,1].
+            </summary>
+        </member>
+        <member name="M:BayesServer.Optimization.Genetic.GeneticOptionsBase.RaisePropertyChanged(System.String)">
+            <summary>
+            Raises a PropertyChanged event.
+            </summary>
+            <param name="name">The name of the property that has changed.</param>
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticOptionsBase.QueryDistributions">
+            <inheritdoc />
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticOptionsBase.MaximumConcurrency">
+            <inheritdoc />
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticOptionsBase.PopulationSize">
+            <summary>
+            Gets or sets the number of chromosomes in each generation.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticOptionsBase.Seed">
+            <summary>
+            The seed for the random number generator used by the Genetic Algorithm.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticOptionsBase.QueryFunctions">
+            <inheritdoc />
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticOptionsBase.InferenceFactory">
+            <summary>
+            Used to create one or more inference engines, used by the algorithm to determine the fitness of possible solutions.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticOptionsBase.Cancellation">
+            <inheritdoc />
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticOptionsBase.Stopping">
+            <inheritdoc />
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticOptionsBase.QueryLogLikelihood">
+            <inheritdoc />
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticOptionsBase.Progress">
+            <summary>
+            Gets of sets the instance implementing <see cref="T:BayesServer.Optimization.IOptimizerProgress"/>, used for progress notifications.
+            </summary>
+            <seealso cref="T:BayesServer.Optimization.IOptimizerProgress"/>
+        </member>
+        <member name="T:BayesServer.Optimization.Genetic.GeneticSimplification">
+            <summary>
+            An algorithm that attempts to simply the evidence found by an optimizer.
+            </summary>
+        </member>
+        <member name="M:BayesServer.Optimization.Genetic.GeneticSimplification.Optimize(BayesServer.Network,BayesServer.Optimization.Objective,System.Collections.Generic.IList{BayesServer.Optimization.DesignVariable},BayesServer.Inference.IEvidence,BayesServer.Optimization.IOptimizerOptions)">
+            <inheritdoc />
+        </member>
+        <member name="T:BayesServer.Optimization.Genetic.GeneticSimplificationOptions">
+            <summary>
+            Options for the genetic simplifcation algorithm.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticSimplificationOptions.EvidenceToSimplify">
+            <summary>
+            The evidence from a previous optimization.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticSimplificationOptions.SimplifyTolerance">
+            <summary>
+            This is a non negative number which determines whether a simplified solution is close enough to the best found.  A solution is deemed similar if the relative difference between
+            the objectives is no greater than this value.
+            </summary>  
+        </member>
+        <member name="T:BayesServer.Optimization.Genetic.GeneticSimplificationOutput">
+            <summary>
+            Contains the results from the genetic simplifcation algorithm.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticSimplificationOutput.Warnings">
+            <inheritdoc />
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticSimplificationOutput.ObjectiveValue">
+            <inheritdoc />
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticSimplificationOutput.Evidence">
+            <inheritdoc />
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticSimplificationOutput.QueryCount">
+            <summary>
+            Gets the number of call made to the inference engine(s) during optimization.
+            </summary>
+        </member>
+        <member name="T:BayesServer.Optimization.Genetic.GeneticTerminationOptions">
+            <summary>
+            Termination options for the genetic optimization algorithm.
+            </summary>
+        </member>
+        <member name="E:BayesServer.Optimization.Genetic.GeneticTerminationOptions.PropertyChanged">
+            <inheritdoc />
+        </member>
+        <member name="P:BayesServer.Optimization.Genetic.GeneticTerminationOptions.StagnationCount">
+            <summary>
+            Gets or sets the number of generations with equal objective values that are evaluated before the optimizer terminates.
+            </summary>
+        </member>
+        <member name="M:BayesServer.Optimization.Genetic.GeneticTerminationOptions.ToString">
+            <inheritdoc />
+        </member>
+        <member name="T:BayesServer.Optimization.IOptimizer">
+            <summary>
+            Interface required by optimization algorithms.
+            </summary>
+        </member>
+        <member name="M:BayesServer.Optimization.IOptimizer.Optimize(BayesServer.Network,BayesServer.Optimization.Objective,System.Collections.Generic.IList{BayesServer.Optimization.DesignVariable},BayesServer.Inference.IEvidence,BayesServer.Optimization.IOptimizerOptions)">
+            <summary>
+            Perform optimization of an objective (target).
+            </summary>
+            <param name="network">The Bayesian network.</param>
+            <param name="objective">The objective (target) to optimize.</param>
+            <param name="designVariables">The inputs to the optimizer and their settings.</param>
+            <param name="fixedEvidence">Optional evidence that should be fixed during optimization.</param>
+            <param name="options">Options for the optimization algorithm.</param>
+            <returns></returns>
+        </member>
+        <member name="T:BayesServer.Optimization.IOptimizerOptions">
+            <summary>
+            Optimizer options that are common across all algorithms.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.IOptimizerOptions.QueryDistributions">
+            <summary>
+            Determines which additional queries, if any, should be calculated by the inference engine when evaluating the fitness of a solution.  For example, additional queries maybe reference by function nodes.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.IOptimizerOptions.QueryFunctions">
+            <summary>
+            Determines which additional functions, if any, should be calculated by the inference engine when evaluating the fitness of a solution.  For example, functions that are referenced by a function node optimization target/objective.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.IOptimizerOptions.QueryLogLikelihood">
+            <summary>
+            Determines whether the log-likelihood should be calculated by the inference engine when evaluating the fitness of a solution.  For example, the log-likelihood maybe reference by function nodes.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.IOptimizerOptions.InferenceFactory">
+            <summary>
+            Creates one or more inference engines used by the optimization algorithm.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.IOptimizerOptions.Progress">
+            <summary>
+            Gets of sets the instance implementing <see cref="T:BayesServer.Optimization.IOptimizerProgress"/>, used for progress notifications.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.IOptimizerOptions.Cancellation">
+            <summary>
+            Gets of sets the instance implementing <see cref="T:BayesServer.ICancellation"/>, used for cancellation.
+            </summary>
+            <seealso cref="T:BayesServer.ICancellation"/>
+        </member>
+        <member name="P:BayesServer.Optimization.IOptimizerOptions.MaximumConcurrency">
+            <summary>
+            Gets or sets the maximum number of inference engines used during
+            optimization.
+            </summary>
+            <remarks>
+            During optimization, multiple inference engines may be used in parallel.  However
+            each inference engine has its own memory requirements for inference, and so this
+            parameter allows the number to be limited, to avoid excessive memory consumption.
+            The amount of memory used per inference engine, depends on the <see cref="T:BayesServer.Network"/>
+            and also the evidence.
+            </remarks>
+        </member>
+        <member name="P:BayesServer.Optimization.IOptimizerOptions.Stopping">
+            <summary>
+            Gets or sets the instance implementing <see cref="T:BayesServer.IStop"/> used for early stopping.
+            </summary>
+            <remarks>
+            Stopping is different to cancellation, as stopping will still return an objective value from the
+            optimization process, albeit having performed fewer iterations.
+            </remarks>
+            <value>The instance used for stopping.</value>
+        </member>
+        <member name="T:BayesServer.Optimization.IOptimizerOutput">
+            <summary>
+            Contains output common to optimization algorithms.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.IOptimizerOutput.Warnings">
+            <summary>
+            Contains any warnings generated by optimization algorithms.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.IOptimizerOutput.ObjectiveValue">
+            <summary>
+            The objective value.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.IOptimizerOutput.Evidence">
+            <summary>
+            The evidence required to produce the optimized objective value.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.IOptimizerOutput.QueryCount">
+            <summary>
+            The number of queries to inference engines performed during optimization.
+            </summary>
+        </member>
+        <member name="T:BayesServer.Optimization.IOptimizerProgress">
+            <summary>
+            Interface to provide progress information during optimization.
+            </summary>
+        </member>
+        <member name="M:BayesServer.Optimization.IOptimizerProgress.Update(BayesServer.Optimization.IOptimizerProgressInfo)">
+            <summary>
+            Progress updates from the optimization algorithm.
+            </summary>
+            <param name="info">Contains progress information from the optimization algorithm.</param>
+        </member>
+        <member name="T:BayesServer.Optimization.IOptimizerProgressInfo">
+            <summary>
+            Interface to provide progress information during optimization.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.IOptimizerProgressInfo.ObjectiveValue">
+            <summary>
+            Gets the optimized objective (target) value.
+            </summary>
+            <remarks>
+            Value can potentially be null, if all solution are currently invalid (e.g. inconsistent evidence)
+            </remarks>
+        </member>
+        <member name="P:BayesServer.Optimization.IOptimizerProgressInfo.QueryCount">
+            <summary>
+            Gets the number of calls made to inference engines during optimization.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.IOptimizerProgressInfo.Evidence">
+            <summary>
+            Gets the evidence for the objective value.
+            </summary>
+        </member>
+        <member name="T:BayesServer.Optimization.Objective">
+            <summary>
+            Defines the target variable or state that you wish to maximize or minimize.  Can be a function.
+            </summary>
+        </member>
+        <member name="M:BayesServer.Optimization.Objective.#ctor(BayesServer.Variable,BayesServer.Optimization.ObjectiveKind)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BayesServer.Optimization.Objective."/> class.
+            </summary>
+            <param name="variable">The variable to optimize.  Can be discrete, continuous or a function.</param>
+            <param name="kind">The type of optimization to carry out.  e.g. Minimize or maximize.</param>
+        </member>
+        <member name="M:BayesServer.Optimization.Objective.#ctor(BayesServer.State,BayesServer.Optimization.ObjectiveKind)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BayesServer.Optimization.Objective."/> class.
+            </summary>
+            <param name="state">The discrete state to optimize.</param>
+            <param name="kind">The type of optimization to carry out.  e.g. Minimize or maximize.</param>
+        </member>
+        <member name="M:BayesServer.Optimization.Objective.#ctor(BayesServer.Variable,BayesServer.Optimization.ObjectiveKind,System.Nullable{System.Double})">
+            <summary>
+            Initializes a new instance of the <see cref="T:BayesServer.Optimization.Objective."/> class.
+            </summary>
+            <param name="variable">The variable to optimize.  Can be discrete, continuous or a function.</param>
+            <param name="kind">The type of optimization to carry out.  e.g. Minimize, maximize or Target.</param>
+            <param name="value">The target value when objective kind is Target.</param>
+        </member>
+        <member name="M:BayesServer.Optimization.Objective.#ctor(BayesServer.State,BayesServer.Optimization.ObjectiveKind,System.Nullable{System.Double})">
+            <summary>
+            Initializes a new instance of the <see cref="T:BayesServer.Optimization.Objective."/> class.
+            </summary>
+            <param name="state">The discrete state to optimize.</param>
+            <param name="kind">The type of optimization to carry out.  e.g. Minimize, maximize or Target.</param>
+            <param name="value">The target value when objective kind is Target.</param>
+        </member>
+        <member name="P:BayesServer.Optimization.Objective.State">
+            <summary>
+            Gets the state being optimized.  Note that continuous and function variables have a single state.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.Objective.Variable">
+            <summary>
+            Gets the variable being optimized.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.Objective.Kind">
+            <summary>
+            Gets the kind of optimization to carry out.  e.g. Maximize/Minimize.
+            </summary>
+        </member>
+        <member name="P:BayesServer.Optimization.Objective.Value">
+            <summary>
+            Gets or sets the objective target value.  Only valid when <see cref="P:BayesServer.Optimization.Objective.Kind"/> is set to Target.
+            </summary>
+        </member>
+        <member name="T:BayesServer.Optimization.ObjectiveKind">
+            <summary>
+            The type of optimization to carry out, such as Minimization or Maximization.
+            </summary>
+        </member>
+        <member name="F:BayesServer.Optimization.ObjectiveKind.Minimize">
+            <summary>
+            The optimization target should be minimized.
+            </summary>
+        </member>
+        <member name="F:BayesServer.Optimization.ObjectiveKind.Maximize">
+            <summary>
+            The optimization target should be maximized.
+            </summary>
+        </member>
+        <member name="F:BayesServer.Optimization.ObjectiveKind.Target">
+            <summary>
+            The objective should be as close to a target value as possible
+            </summary>
+        </member>
+        <member name="T:BayesServer.Optimization.OptimizationWarning">
+            <summary>
+            A warning generated by an optimization algorithm
+            </summary>
+        </member>
+        <member name="M:BayesServer.Optimization.OptimizationWarning.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BayesServer.Optimization.OptimizationWarning"/> class.
+            </summary>
+            <param name="message">The warning message</param>
+        </member>
+        <member name="P:BayesServer.Optimization.OptimizationWarning.Message">
+            <summary>
+            Gets the warning message.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,852 @@
+Storm 1.6.4 (dev)
+
+Date: Wed May  4 11:06:19 2022
+Command line arguments: --jani storm/win95pts/win95pts.jani --engine dd --prop 'P=? [F(DskLocal=0)];P=? [F(DskLocal=1)];P=? [F(DataFile=0)];P=? [F(DataFile=1)];P=? [F(AppOK=0)];P=? [F(AppOK=1)];P=? [F(AppData=0)];P=? [F(AppData=1)];P=? [F(PrtThread=0)];P=? [F(PrtThread=1)];P=? [F(EMFOK=0)];P=? [F(EMFOK=1)];P=? [F(PrtSpool=0)];P=? [F(PrtSpool=1)];P=? [F(GDIIN=0)];P=? [F(GDIIN=1)];P=? [F(AppDtGnTm=0)];P=? [F(AppDtGnTm=1)];P=? [F(PrntPrcssTm=0)];P=? [F(PrntPrcssTm=1)];P=? [F(HrglssDrtnAftrPrnt=0)];P=? [F(HrglssDrtnAftrPrnt=1)];P=? [F(PrtMem=0)];P=? [F(PrtMem=1)];P=? [F(DeskPrntSpd=0)];P=? [F(DeskPrntSpd=1)];P=? [F(PrtStatMem=0)];P=? [F(PrtStatMem=1)];P=? [F(NtwrkCnfg=0)];P=? [F(NtwrkCnfg=1)];P=? [F(PrtQueue=0)];P=? [F(PrtQueue=1)];P=? [F(NtSpd=0)];P=? [F(NtSpd=1)];P=? [F(NetPrint=0)];P=? [F(NetPrint=1)];P=? [F(Problem2=0)];P=? [F(Problem2=1)];P=? [F(PrtDriver=0)];P=? [F(PrtDriver=1)];P=? [F(DrvSet=0)];P=? [F(DrvSet=1)];P=? [F(DrvOK=0)];P=? [F(DrvOK=1)];P=? [F(GDIOUT=0)];P=? [F(GDIOUT=1)];P=? [F(PrtSel=0)];P=? [F(PrtSel=1)];P=? [F(PrtDataOut=0)];P=? [F(PrtDataOut=1)];P=? [F(PrtFile=0)];P=? [F(PrtFile=1)];P=? [F(CblPrtHrdwrOK=0)];P=? [F(CblPrtHrdwrOK=1)];P=? [F(LclGrbld=0)];P=? [F(LclGrbld=1)];P=? [F(NtGrbld=0)];P=? [F(NtGrbld=1)];P=? [F(GrbldOtpt=0)];P=? [F(GrbldOtpt=1)];P=? [F(REPEAT=0)];P=? [F(REPEAT=1)];P=? [F(PTROFFLINE=0)];P=? [F(PTROFFLINE=1)];P=? [F(PrtIcon=0)];P=? [F(PrtIcon=1)];P=? [F(PrtPath=0)];P=? [F(PrtPath=1)];P=? [F(PrtMpTPth=0)];P=? [F(PrtMpTPth=1)];P=? [F(DS_NTOK=0)];P=? [F(DS_NTOK=1)];P=? [F(NetOK=0)];P=? [F(NetOK=1)];P=? [F(PrtPort=0)];P=? [F(PrtPort=1)];P=? [F(PrtCbl=0)];P=? [F(PrtCbl=1)];P=? [F(DS_LCLOK=0)];P=? [F(DS_LCLOK=1)];P=? [F(LclOK=0)];P=? [F(LclOK=1)];P=? [F(DSApplctn=0)];P=? [F(DSApplctn=1)];P=? [F(PC2PRT=0)];P=? [F(PC2PRT=1)];P=? [F(PrtPaper=0)];P=? [F(PrtPaper=1)];P=? [F(PrtStatPaper=0)];P=? [F(PrtStatPaper=1)];P=? [F(PrtOn=0)];P=? [F(PrtOn=1)];P=? [F(PrtStatOff=0)];P=? [F(PrtStatOff=1)];P=? [F(TnrSpply=0)];P=? [F(TnrSpply=1)];P=? [F(FllCrrptdBffr=0)];P=? [F(FllCrrptdBffr=1)];P=? [F(PrtTimeOut=0)];P=? [F(PrtTimeOut=1)];P=? [F(PrtData=0)];P=? [F(PrtData=1)];P=? [F(Problem1=0)];P=? [F(Problem1=1)];P=? [F(PrtStatToner=0)];P=? [F(PrtStatToner=1)];P=? [F(EPSGrphc=0)];P=? [F(EPSGrphc=1)];P=? [F(GrphcsRltdDrvrSttngs=0)];P=? [F(GrphcsRltdDrvrSttngs=1)];P=? [F(NnPSGrphc=0)];P=? [F(NnPSGrphc=1)];P=? [F(PSGRAPHIC=0)];P=? [F(PSGRAPHIC=1)];P=? [F(PrtPScript=0)];P=? [F(PrtPScript=1)];P=? [F(Problem4=0)];P=? [F(Problem4=1)];P=? [F(AvlblVrtlMmry=0)];P=? [F(AvlblVrtlMmry=1)];P=? [F(TstpsTxt=0)];P=? [F(TstpsTxt=1)];P=? [F(GrbldPS=0)];P=? [F(GrbldPS=1)];P=? [F(Problem6=0)];P=? [F(Problem6=1)];P=? [F(PSERRMEM=0)];P=? [F(PSERRMEM=1)];P=? [F(PrntngArOK=0)];P=? [F(PrntngArOK=1)];P=? [F(PgOrnttnOK=0)];P=? [F(PgOrnttnOK=1)];P=? [F(CmpltPgPrntd=0)];P=? [F(CmpltPgPrntd=1)];P=? [F(IncmpltPS=0)];P=? [F(IncmpltPS=1)];P=? [F(Problem3=0)];P=? [F(Problem3=1)];P=? [F(FntInstlltn=0)];P=? [F(FntInstlltn=1)];P=? [F(ScrnFntNtPrntrFnt=0)];P=? [F(ScrnFntNtPrntrFnt=1)];P=? [F(NnTTOK=0)];P=? [F(NnTTOK=1)];P=? [F(PrntrAccptsTrtyp=0)];P=? [F(PrntrAccptsTrtyp=1)];P=? [F(TTOK=0)];P=? [F(TTOK=1)];P=? [F(TrTypFnts=0)];P=? [F(TrTypFnts=1)];P=? [F(Problem5=0)];P=? [F(Problem5=1)];'
+Current working directory: /home/hans/Desktop/private/psdd_storm_comparison
+
+Time for model input parsing: 0.068s.
+
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1399): Destination does not have any effect.
+Time for model construction: 10.841s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (symbolic)
+States: 	9947 (7361 nodes)
+Transitions: 	17948 (37923 nodes)
+Reward Models:  none
+Variables: 	rows: 77 meta variables (159 DD variables), columns: 77 meta variables (159 DD variables)
+Labels: 	2
+   * deadlock -> 2 state(s) (161 nodes)
+   * init -> 1 state(s) (160 nodes)
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F (DskLocal = 0)] ...
+Result (for initial states): 0.97
+Time for model checking: 0.035s.
+
+Model checking property "2": P=? [F (DskLocal = 1)] ...
+Result (for initial states): 0.03
+Time for model checking: 0.006s.
+
+Model checking property "3": P=? [F (DataFile = 0)] ...
+Result (for initial states): 0.995
+Time for model checking: 0.007s.
+
+Model checking property "4": P=? [F (DataFile = 1)] ...
+Result (for initial states): 0.005
+Time for model checking: 0.006s.
+
+Model checking property "5": P=? [F (AppOK = 0)] ...
+Result (for initial states): 0.995
+Time for model checking: 0.007s.
+
+Model checking property "6": P=? [F (AppOK = 1)] ...
+Result (for initial states): 0.005
+Time for model checking: 0.006s.
+
+Model checking property "7": P=? [F (AppData = 0)] ...
+Result (for initial states): 0.9899384975
+Time for model checking: 0.010s.
+
+Model checking property "8": P=? [F (AppData = 1)] ...
+Result (for initial states): 0.0100615025
+Time for model checking: 0.009s.
+
+Model checking property "9": P=? [F (PrtThread = 0)] ...
+Result (for initial states): 0.9999
+Time for model checking: 0.010s.
+
+Model checking property "10": P=? [F (PrtThread = 1)] ...
+Result (for initial states): 0.0001
+Time for model checking: 0.009s.
+
+Model checking property "11": P=? [F (EMFOK = 0)] ...
+Result (for initial states): 0.9516764401
+Time for model checking: 0.016s.
+
+Model checking property "12": P=? [F (EMFOK = 1)] ...
+Result (for initial states): 0.04832355987
+Time for model checking: 0.017s.
+
+Model checking property "13": P=? [F (PrtSpool = 0)] ...
+Result (for initial states): 0.95
+Time for model checking: 0.015s.
+
+Model checking property "14": P=? [F (PrtSpool = 1)] ...
+Result (for initial states): 0.05
+Time for model checking: 0.014s.
+
+Model checking property "15": P=? [F (GDIIN = 0)] ...
+Result (for initial states): 0.9525186283
+Time for model checking: 0.016s.
+
+Model checking property "16": P=? [F (GDIIN = 1)] ...
+Result (for initial states): 0.04748137173
+Time for model checking: 0.015s.
+
+Model checking property "17": P=? [F (AppDtGnTm = 0)] ...
+Result (for initial states): 0.9995000005
+Time for model checking: 0.015s.
+
+Model checking property "18": P=? [F (AppDtGnTm = 1)] ...
+Result (for initial states): 0.0004999995
+Time for model checking: 0.015s.
+
+Model checking property "19": P=? [F (PrntPrcssTm = 0)] ...
+Result (for initial states): 0.9905000095
+Time for model checking: 0.018s.
+
+Model checking property "20": P=? [F (PrntPrcssTm = 1)] ...
+Result (for initial states): 0.0094999905
+Time for model checking: 0.016s.
+
+Model checking property "21": P=? [F (HrglssDrtnAftrPrnt = 0)] ...
+Result (for initial states): 0.9895550004
+Time for model checking: 0.020s.
+
+Model checking property "22": P=? [F (HrglssDrtnAftrPrnt = 1)] ...
+Result (for initial states): 0.01044499955
+Time for model checking: 0.026s.
+
+Model checking property "23": P=? [F (PrtMem = 0)] ...
+Result (for initial states): 0.95
+Time for model checking: 0.026s.
+
+Model checking property "24": P=? [F (PrtMem = 1)] ...
+Result (for initial states): 0.05
+Time for model checking: 0.019s.
+
+Model checking property "25": P=? [F (DeskPrntSpd = 0)] ...
+Result (for initial states): 0.9521940187
+Time for model checking: 0.025s.
+
+Model checking property "26": P=? [F (DeskPrntSpd = 1)] ...
+Result (for initial states): 0.04780598133
+Time for model checking: 0.022s.
+
+Model checking property "27": P=? [F (PrtStatMem = 0)] ...
+Result (for initial states): 0.9590500095
+Time for model checking: 0.027s.
+
+Model checking property "28": P=? [F (PrtStatMem = 1)] ...
+Result (for initial states): 0.0409499905
+Time for model checking: 0.027s.
+
+Model checking property "29": P=? [F (NtwrkCnfg = 0)] ...
+Result (for initial states): 0.98
+Time for model checking: 0.026s.
+
+Model checking property "30": P=? [F (NtwrkCnfg = 1)] ...
+Result (for initial states): 0.02
+Time for model checking: 0.021s.
+
+Model checking property "31": P=? [F (PrtQueue = 0)] ...
+Result (for initial states): 0.99
+Time for model checking: 0.034s.
+
+Model checking property "32": P=? [F (PrtQueue = 1)] ...
+Result (for initial states): 0.01
+Time for model checking: 0.020s.
+
+Model checking property "33": P=? [F (NtSpd = 0)] ...
+Result (for initial states): 0.9307485918
+Time for model checking: 0.028s.
+
+Model checking property "34": P=? [F (NtSpd = 1)] ...
+Result (for initial states): 0.06925140823
+Time for model checking: 0.029s.
+
+Model checking property "35": P=? [F (NetPrint = 0)] ...
+Result (for initial states): 0.8
+Time for model checking: 0.030s.
+
+Model checking property "36": P=? [F (NetPrint = 1)] ...
+Result (for initial states): 0.2
+Time for model checking: 0.025s.
+
+Model checking property "37": P=? [F (Problem2 = 0)] ...
+Result (for initial states): 0.9479049333
+Time for model checking: 0.032s.
+
+Model checking property "38": P=? [F (Problem2 = 1)] ...
+Result (for initial states): 0.05209506671
+Time for model checking: 0.030s.
+
+Model checking property "39": P=? [F (PrtDriver = 0)] ...
+Result (for initial states): 0.9
+Time for model checking: 0.030s.
+
+Model checking property "40": P=? [F (PrtDriver = 1)] ...
+Result (for initial states): 0.1
+Time for model checking: 0.027s.
+
+Model checking property "41": P=? [F (DrvSet = 0)] ...
+Result (for initial states): 0.99
+Time for model checking: 0.022s.
+
+Model checking property "42": P=? [F (DrvSet = 1)] ...
+Result (for initial states): 0.01
+Time for model checking: 0.021s.
+
+Model checking property "43": P=? [F (DrvOK = 0)] ...
+Result (for initial states): 0.99
+Time for model checking: 0.020s.
+
+Model checking property "44": P=? [F (DrvOK = 1)] ...
+Result (for initial states): 0.01
+Time for model checking: 0.019s.
+
+Model checking property "45": P=? [F (GDIOUT = 0)] ...
+Result (for initial states): 0.8584545234
+Time for model checking: 0.040s.
+
+Model checking property "46": P=? [F (GDIOUT = 1)] ...
+Result (for initial states): 0.1415454766
+Time for model checking: 0.036s.
+
+Model checking property "47": P=? [F (PrtSel = 0)] ...
+Result (for initial states): 0.99
+Time for model checking: 0.022s.
+
+Model checking property "48": P=? [F (PrtSel = 1)] ...
+Result (for initial states): 0.01
+Time for model checking: 0.021s.
+
+Model checking property "49": P=? [F (PrtDataOut = 0)] ...
+Result (for initial states): 0.8420790057
+Time for model checking: 0.040s.
+
+Model checking property "50": P=? [F (PrtDataOut = 1)] ...
+Result (for initial states): 0.1579209943
+Time for model checking: 0.048s.
+
+Model checking property "51": P=? [F (PrtFile = 0)] ...
+Result (for initial states): 0.7052474034
+Time for model checking: 0.043s.
+
+Model checking property "52": P=? [F (PrtFile = 1)] ...
+Result (for initial states): 0.2947525966
+Time for model checking: 0.042s.
+
+Model checking property "53": P=? [F (CblPrtHrdwrOK = 0)] ...
+Result (for initial states): 0.99
+Time for model checking: 0.026s.
+
+Model checking property "54": P=? [F (CblPrtHrdwrOK = 1)] ...
+Result (for initial states): 0.01
+Time for model checking: 0.024s.
+
+Model checking property "55": P=? [F (LclGrbld = 0)] ...
+Result (for initial states): 0.8904852637
+Time for model checking: 0.049s.
+
+Model checking property "56": P=? [F (LclGrbld = 1)] ...
+Result (for initial states): 0.1095147363
+Time for model checking: 0.046s.
+
+Model checking property "57": P=? [F (NtGrbld = 0)] ...
+Result (for initial states): 0.8890426184
+Time for model checking: 0.076s.
+
+Model checking property "58": P=? [F (NtGrbld = 1)] ...
+Result (for initial states): 0.1109573816
+Time for model checking: 0.064s.
+
+Model checking property "59": P=? [F (GrbldOtpt = 0)] ...
+Result (for initial states): 0.8901967346
+Time for model checking: 0.067s.
+
+Model checking property "60": P=? [F (GrbldOtpt = 1)] ...
+Result (for initial states): 0.1098032654
+Time for model checking: 0.057s.
+
+Model checking property "61": P=? [F (REPEAT = 0)] ...
+Result (for initial states): 0.9851
+Time for model checking: 0.045s.
+
+Model checking property "62": P=? [F (REPEAT = 1)] ...
+Result (for initial states): 0.0149
+Time for model checking: 0.036s.
+
+Model checking property "63": P=? [F (PTROFFLINE = 0)] ...
+Result (for initial states): 0.7
+Time for model checking: 0.039s.
+
+Model checking property "64": P=? [F (PTROFFLINE = 1)] ...
+Result (for initial states): 0.3
+Time for model checking: 0.039s.
+
+Model checking property "65": P=? [F (PrtIcon = 0)] ...
+Result (for initial states): 0.8982314
+Time for model checking: 0.047s.
+
+Model checking property "66": P=? [F (PrtIcon = 1)] ...
+Result (for initial states): 0.1017686
+Time for model checking: 0.046s.
+
+Model checking property "67": P=? [F (PrtPath = 0)] ...
+Result (for initial states): 0.97
+Time for model checking: 0.043s.
+
+Model checking property "68": P=? [F (PrtPath = 1)] ...
+Result (for initial states): 0.03
+Time for model checking: 0.043s.
+
+Model checking property "69": P=? [F (PrtMpTPth = 0)] ...
+Result (for initial states): 0.8
+Time for model checking: 0.049s.
+
+Model checking property "70": P=? [F (PrtMpTPth = 1)] ...
+Result (for initial states): 0.2
+Time for model checking: 0.048s.
+
+Model checking property "71": P=? [F (DS_NTOK = 0)] ...
+Result (for initial states): 0.5653655188
+Time for model checking: 0.058s.
+
+Model checking property "72": P=? [F (DS_NTOK = 1)] ...
+Result (for initial states): 0.4346344812
+Time for model checking: 0.066s.
+
+Model checking property "73": P=? [F (NetOK = 0)] ...
+Result (for initial states): 0.6677438
+Time for model checking: 0.058s.
+
+Model checking property "74": P=? [F (NetOK = 1)] ...
+Result (for initial states): 0.3322562
+Time for model checking: 0.066s.
+
+Model checking property "75": P=? [F (PrtPort = 0)] ...
+Result (for initial states): 0.99
+Time for model checking: 0.065s.
+
+Model checking property "76": P=? [F (PrtPort = 1)] ...
+Result (for initial states): 0.01
+Time for model checking: 0.045s.
+
+Model checking property "77": P=? [F (PrtCbl = 0)] ...
+Result (for initial states): 0.98
+Time for model checking: 0.068s.
+
+Model checking property "78": P=? [F (PrtCbl = 1)] ...
+Result (for initial states): 0.02
+Time for model checking: 0.050s.
+
+Model checking property "79": P=? [F (DS_LCLOK = 0)] ...
+Result (for initial states): 0.9532050201
+Time for model checking: 0.078s.
+
+Model checking property "80": P=? [F (DS_LCLOK = 1)] ...
+Result (for initial states): 0.04679497991
+Time for model checking: 0.073s.
+
+Model checking property "81": P=? [F (LclOK = 0)] ...
+Result (for initial states): 0.959882522
+Time for model checking: 0.063s.
+
+Model checking property "82": P=? [F (LclOK = 1)] ...
+Result (for initial states): 0.040117478
+Time for model checking: 0.058s.
+
+Model checking property "83": P=? [F (DSApplctn = 0)] ...
+Result (for initial states): 0.15
+Time for model checking: 0.061s.
+
+Model checking property "84": P=? [F (DSApplctn = 1)] ...
+Result (for initial states): 0.85
+Time for model checking: 0.055s.
+
+Model checking property "85": P=? [F (PC2PRT = 0)] ...
+Result (for initial states): 0.7765772894
+Time for model checking: 0.150s.
+
+Model checking property "86": P=? [F (PC2PRT = 1)] ...
+Result (for initial states): 0.2234227106
+Time for model checking: 0.201s.
+
+Model checking property "87": P=? [F (PrtPaper = 0)] ...
+Result (for initial states): 0.98
+Time for model checking: 0.058s.
+
+Model checking property "88": P=? [F (PrtPaper = 1)] ...
+Result (for initial states): 0.02
+Time for model checking: 0.036s.
+
+Model checking property "89": P=? [F (PrtStatPaper = 0)] ...
+Result (for initial states): 0.9790400096
+Time for model checking: 0.059s.
+
+Model checking property "90": P=? [F (PrtStatPaper = 1)] ...
+Result (for initial states): 0.0209599904
+Time for model checking: 0.063s.
+
+Model checking property "91": P=? [F (PrtOn = 0)] ...
+Result (for initial states): 0.9
+Time for model checking: 0.059s.
+
+Model checking property "92": P=? [F (PrtOn = 1)] ...
+Result (for initial states): 0.1
+Time for model checking: 0.066s.
+
+Model checking property "93": P=? [F (PrtStatOff = 0)] ...
+Result (for initial states): 0.892000008
+Time for model checking: 0.059s.
+
+Model checking property "94": P=? [F (PrtStatOff = 1)] ...
+Result (for initial states): 0.107999992
+Time for model checking: 0.068s.
+
+Model checking property "95": P=? [F (TnrSpply = 0)] ...
+Result (for initial states): 0.995
+Time for model checking: 0.065s.
+
+Model checking property "96": P=? [F (TnrSpply = 1)] ...
+Result (for initial states): 0.005
+Time for model checking: 0.054s.
+
+Model checking property "97": P=? [F (FllCrrptdBffr = 0)] ...
+Result (for initial states): 0.85
+Time for model checking: 0.044s.
+
+Model checking property "98": P=? [F (FllCrrptdBffr = 1)] ...
+Result (for initial states): 0.15
+Time for model checking: 0.041s.
+
+Model checking property "99": P=? [F (PrtTimeOut = 0)] ...
+Result (for initial states): 0.94
+Time for model checking: 0.067s.
+
+Model checking property "100": P=? [F (PrtTimeOut = 1)] ...
+Result (for initial states): 0.06
+Time for model checking: 0.064s.
+
+Model checking property "101": P=? [F (PrtData = 0)] ...
+Result (for initial states): 0.572553964
+Time for model checking: 0.173s.
+
+Model checking property "102": P=? [F (PrtData = 1)] ...
+Result (for initial states): 0.427446036
+Time for model checking: 0.208s.
+
+Model checking property "103": P=? [F (Problem1 = 0)] ...
+Result (for initial states): 0.572553964
+Time for model checking: 0.039s.
+
+Model checking property "104": P=? [F (Problem1 = 1)] ...
+Result (for initial states): 0.427446036
+Time for model checking: 0.039s.
+
+Model checking property "105": P=? [F (PrtStatToner = 0)] ...
+Result (for initial states): 0.9940100099
+Time for model checking: 0.111s.
+
+Model checking property "106": P=? [F (PrtStatToner = 1)] ...
+Result (for initial states): 0.0059899901
+Time for model checking: 0.161s.
+
+Model checking property "107": P=? [F (EPSGrphc = 0)] ...
+Result (for initial states): 0.99
+Time for model checking: 0.069s.
+
+Model checking property "108": P=? [F (EPSGrphc = 1)] ...
+Result (for initial states): 0.01
+Time for model checking: 0.048s.
+
+Model checking property "109": P=? [F (GrphcsRltdDrvrSttngs = 0)] ...
+Result (for initial states): 0.95
+Time for model checking: 0.063s.
+
+Model checking property "110": P=? [F (GrphcsRltdDrvrSttngs = 1)] ...
+Result (for initial states): 0.05
+Time for model checking: 0.079s.
+
+Model checking property "111": P=? [F (NnPSGrphc = 0)] ...
+Result (for initial states): 0.910765275
+Time for model checking: 0.079s.
+
+Model checking property "112": P=? [F (NnPSGrphc = 1)] ...
+Result (for initial states): 0.089234725
+Time for model checking: 0.092s.
+
+Model checking property "113": P=? [F (PSGRAPHIC = 0)] ...
+Result (for initial states): 0.919790275
+Time for model checking: 0.074s.
+
+Model checking property "114": P=? [F (PSGRAPHIC = 1)] ...
+Result (for initial states): 0.080209725
+Time for model checking: 0.077s.
+
+Model checking property "115": P=? [F (PrtPScript = 0)] ...
+Result (for initial states): 0.4
+Time for model checking: 0.086s.
+
+Model checking property "116": P=? [F (PrtPScript = 1)] ...
+Result (for initial states): 0.6
+Time for model checking: 0.077s.
+
+Model checking property "117": P=? [F (Problem4 = 0)] ...
+Result (for initial states): 0.085624725
+Time for model checking: 0.095s.
+
+Model checking property "118": P=? [F (Problem4 = 1)] ...
+Result (for initial states): 0.914375275
+Time for model checking: 0.095s.
+
+Model checking property "119": P=? [F (AvlblVrtlMmry = 0)] ...
+Result (for initial states): 0.992
+Time for model checking: 0.077s.
+
+Model checking property "120": P=? [F (AvlblVrtlMmry = 1)] ...
+Result (for initial states): 0.008
+Time for model checking: 0.073s.
+
+Model checking property "121": P=? [F (TstpsTxt = 0)] ...
+Result (for initial states): 0.9916160038
+Time for model checking: 0.080s.
+
+Model checking property "122": P=? [F (TstpsTxt = 1)] ...
+Result (for initial states): 0.00838399616
+Time for model checking: 0.072s.
+
+Model checking property "123": P=? [F (GrbldPS = 0)] ...
+Result (for initial states): 0.8842265312
+Time for model checking: 0.145s.
+
+Model checking property "124": P=? [F (GrbldPS = 1)] ...
+Result (for initial states): 0.1157734688
+Time for model checking: 0.138s.
+
+Model checking property "125": P=? [F (Problem6 = 0)] ...
+Result (for initial states): 0.8842265312
+Time for model checking: 0.048s.
+
+Model checking property "126": P=? [F (Problem6 = 1)] ...
+Result (for initial states): 0.1157734688
+Time for model checking: 0.047s.
+
+Model checking property "127": P=? [F (PSERRMEM = 0)] ...
+Result (for initial states): 0.9924
+Time for model checking: 0.080s.
+
+Model checking property "128": P=? [F (PSERRMEM = 1)] ...
+Result (for initial states): 0.0076
+Time for model checking: 0.091s.
+
+Model checking property "129": P=? [F (PrntngArOK = 0)] ...
+Result (for initial states): 0.98
+Time for model checking: 0.075s.
+
+Model checking property "130": P=? [F (PrntngArOK = 1)] ...
+Result (for initial states): 0.02
+Time for model checking: 0.059s.
+
+Model checking property "131": P=? [F (PgOrnttnOK = 0)] ...
+Result (for initial states): 0.95
+Time for model checking: 0.057s.
+
+Model checking property "132": P=? [F (PgOrnttnOK = 1)] ...
+Result (for initial states): 0.05
+Time for model checking: 0.056s.
+
+Model checking property "133": P=? [F (CmpltPgPrntd = 0)] ...
+Result (for initial states): 0.8940409995
+Time for model checking: 0.098s.
+
+Model checking property "134": P=? [F (CmpltPgPrntd = 1)] ...
+Result (for initial states): 0.1059590005
+Time for model checking: 0.092s.
+
+Model checking property "135": P=? [F (IncmpltPS = 0)] ...
+Result (for initial states): 0.8894582059
+Time for model checking: 0.114s.
+
+Model checking property "136": P=? [F (IncmpltPS = 1)] ...
+Result (for initial states): 0.1105417941
+Time for model checking: 0.132s.
+
+Model checking property "137": P=? [F (Problem3 = 0)] ...
+Result (for initial states): 0.1105417941
+Time for model checking: 0.052s.
+
+Model checking property "138": P=? [F (Problem3 = 1)] ...
+Result (for initial states): 0.8894582059
+Time for model checking: 0.051s.
+
+Model checking property "139": P=? [F (FntInstlltn = 0)] ...
+Result (for initial states): 0.98
+Time for model checking: 0.066s.
+
+Model checking property "140": P=? [F (FntInstlltn = 1)] ...
+Result (for initial states): 0.02
+Time for model checking: 0.056s.
+
+Model checking property "141": P=? [F (ScrnFntNtPrntrFnt = 0)] ...
+Result (for initial states): 0.95
+Time for model checking: 0.057s.
+
+Model checking property "142": P=? [F (ScrnFntNtPrntrFnt = 1)] ...
+Result (for initial states): 0.05
+Time for model checking: 0.056s.
+
+Model checking property "143": P=? [F (NnTTOK = 0)] ...
+Result (for initial states): 0.9075405088
+Time for model checking: 0.092s.
+
+Model checking property "144": P=? [F (NnTTOK = 1)] ...
+Result (for initial states): 0.09245949116
+Time for model checking: 0.087s.
+
+Model checking property "145": P=? [F (PrntrAccptsTrtyp = 0)] ...
+Result (for initial states): 0.9
+Time for model checking: 0.098s.
+
+Model checking property "146": P=? [F (PrntrAccptsTrtyp = 1)] ...
+Result (for initial states): 0.1
+Time for model checking: 0.089s.
+
+Model checking property "147": P=? [F (TTOK = 0)] ...
+Result (for initial states): 0.8571810084
+Time for model checking: 0.097s.
+
+Model checking property "148": P=? [F (TTOK = 1)] ...
+Result (for initial states): 0.1428189916
+Time for model checking: 0.103s.
+
+Model checking property "149": P=? [F (TrTypFnts = 0)] ...
+Result (for initial states): 0.9
+Time for model checking: 0.071s.
+
+Model checking property "150": P=? [F (TrTypFnts = 1)] ...
+Result (for initial states): 0.1
+Time for model checking: 0.057s.
+
+Model checking property "151": P=? [F (Problem5 = 0)] ...
+Result (for initial states): 0.1377830416
+Time for model checking: 0.129s.
+
+Model checking property "152": P=? [F (Problem5 = 1)] ...
+Result (for initial states): 0.8622169584
+Time for model checking: 0.119s.

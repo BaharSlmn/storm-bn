@@ -1,0 +1,1 @@
+storm --jani jani_files/5/alarm.jani --prop "P=? [G(HISTORY=0 | HISTORY=-1)]"

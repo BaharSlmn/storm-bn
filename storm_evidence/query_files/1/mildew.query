@@ -1,0 +1,1 @@
+storm --jani jani_files/1/mildew.jani --prop "P=? [G(meldug_4=0 | meldug_4=-1)]"

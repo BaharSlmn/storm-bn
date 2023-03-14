@@ -1,0 +1,1 @@
+storm --jani jani_files/no_evidence/insurance.jani --prop "P=? [F(HomeBase=1|HomeBase=2|HomeBase=3|Accident=1|Accident=2|Accident=3)]"

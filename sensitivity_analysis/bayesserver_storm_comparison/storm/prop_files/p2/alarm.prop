@@ -1,0 +1,1 @@
+storm-pars -drn storm/drn_files/p2/alarm.drn --prop "P=? [F(\"BP0\")]" --bisimulation

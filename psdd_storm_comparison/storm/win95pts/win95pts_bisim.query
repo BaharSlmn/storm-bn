@@ -1,0 +1,2 @@
+storm --jani storm/win95pts/win95pts.jani --expvisittimes --build-all-labels --bisimulation > storm/output/{network}_bisim_result.txt
+

@@ -1,0 +1,15 @@
+Pr(e) = 0.9999999937767502
+Network : ace/net_files/alarm.net
+Network Read Time (ms) : 130.951321
+Number of Evidence Sets : 1
+AC :
+  Nodes : 1570
+  Edges : 2848
+  Total Initialization Time (ms) : 22.885685
+  Total Inference Time (ms) : 1.51887
+  Minimum Inference Time (ms) : 1.51887
+  Maximum Inference Time (ms) : 1.51887
+  Median Inference Time (ms) : 1.51887
+  Mean Inference Time (ms) : 1.51887
+  Standard Deviation Inference Time (ms) : 0.0
+

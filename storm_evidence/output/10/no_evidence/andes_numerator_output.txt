@@ -1,0 +1,25 @@
+Storm 1.6.4
+
+Date: Wed Jun  8 15:12:15 2022
+Command line arguments: --jani jani_files/no_evidence/andes.jani --prop 'P=? [F(APPLY32=1|SNode_34=1|DISPLACEM0=1|RApp1=1|SNode_42=1|AXIS33=1|WRITE30=1|RESOLVE40=1|SNode_70=1|SNode_65=1|SNode_75=1|VECTOR27=1|SNode_16=1|SNode_21=1|APPLY61=1|GOAL_103=1|SNode_106=1|SNode_152=1|HORIZ53=1|BUGGY54=1|SNode_135=1|SNode_13=1|SNode_151=1|SNode_18=1)]'
+Current working directory: /home/hans/Desktop/Storm-bn/storm_evidence
+
+Time for model input parsing: 0.097s.
+
+Time for model construction: 48.475s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	4602595
+Transitions: 	8644266
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 2 item(s)
+   * init -> 1 item(s)
+   * ((((((((((((((((((((((((APPLY32 = 1) | (SNode_34 = 1)) | (DISPLACEM0 = 1)) | (RApp1 = 1)) | (SNode_42 = 1)) | (AXIS33 = 1)) | (WRITE30 = 1)) | (RESOLVE40 = 1)) | (SNode_70 = 1)) | (SNode_65 = 1)) | (SNode_75 = 1)) | (VECTOR27 = 1)) | (SNode_16 = 1)) | (SNode_21 = 1)) | (APPLY61 = 1)) | (GOAL_103 = 1)) | (SNode_106 = 1)) | (SNode_152 = 1)) | (HORIZ53 = 1)) | (BUGGY54 = 1)) | (SNode_135 = 1)) | (SNode_13 = 1)) | (SNode_151 = 1)) | (SNode_18 = 1)) -> 121858 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F ((((((((((((((((((((((((APPLY32 = 1) | (SNode_34 = 1)) | (DISPLACEM0 = 1)) | (RApp1 = 1)) | (SNode_42 = 1)) | (AXIS33 = 1)) | (WRITE30 = 1)) | (RESOLVE40 = 1)) | (SNode_70 = 1)) | (SNode_65 = 1)) | (SNode_75 = 1)) | (VECTOR27 = 1)) | (SNode_16 = 1)) | (SNode_21 = 1)) | (APPLY61 = 1)) | (GOAL_103 = 1)) | (SNode_106 = 1)) | (SNode_152 = 1)) | (HORIZ53 = 1)) | (BUGGY54 = 1)) | (SNode_135 = 1)) | (SNode_13 = 1)) | (SNode_151 = 1)) | (SNode_18 = 1))] ...
+Result (for initial states): 0.9999999999
+Time for model checking: 3.441s.

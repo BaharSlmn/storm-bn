@@ -1,0 +1,1 @@
+storm-pars -drn storm/drn_files/p2/mildew.drn --prop "P=? [F(\"udbytte0\")]" --bisimulation

@@ -1,0 +1,3083 @@
+{
+	"jani-version": 1,
+	"name": "child.jani",
+	"type": "dtmc",
+	"features": [ "derived-operators" ],
+"variables": [
+	{
+	"name": "BirthAsphyxia",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "BirthAsphyxia_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "BirthAsphyxia_1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "ChestXray",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 4
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "ChestXray_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "ChestXray_1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "ChestXray_2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "ChestXray_3",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "ChestXray_4",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "LVHreport",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "LVHreport_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "LVHreport_1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "XrayReport",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 4
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "XrayReport_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "XrayReport_1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "XrayReport_2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "XrayReport_3",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "XrayReport_4",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "Disease",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 5
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "Disease_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Disease_1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Disease_2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Disease_3",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Disease_4",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Disease_5",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "LVH",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "LVH_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "LVH_1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "LungParench",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 2
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "LungParench_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "LungParench_1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "LungParench_2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "LungFlow",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 2
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "LungFlow_0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "LungFlow_1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "LungFlow_2",
+		"transient": true,
+		"type": "bool"
+	}
+],
+"properties": [
+],
+"automata": [
+{
+	"name": "child",
+	"locations": [
+		{
+		"name": "loc0"
+		},
+		{
+		"name": "loc1",
+		"transient-values": [
+		{
+			"ref": "BirthAsphyxia_0",
+			"value": {
+				"op": "=",
+				"left": "BirthAsphyxia",
+				"right": 0
+			}
+		},
+		{
+			"ref": "BirthAsphyxia_1",
+			"value": {
+				"op": "=",
+				"left": "BirthAsphyxia",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc2",
+		"transient-values": [
+		{
+			"ref": "Disease_0",
+			"value": {
+				"op": "=",
+				"left": "Disease",
+				"right": 0
+			}
+		},
+		{
+			"ref": "Disease_1",
+			"value": {
+				"op": "=",
+				"left": "Disease",
+				"right": 1
+			}
+		},
+		{
+			"ref": "Disease_2",
+			"value": {
+				"op": "=",
+				"left": "Disease",
+				"right": 2
+			}
+		},
+		{
+			"ref": "Disease_3",
+			"value": {
+				"op": "=",
+				"left": "Disease",
+				"right": 3
+			}
+		},
+		{
+			"ref": "Disease_4",
+			"value": {
+				"op": "=",
+				"left": "Disease",
+				"right": 4
+			}
+		},
+		{
+			"ref": "Disease_5",
+			"value": {
+				"op": "=",
+				"left": "Disease",
+				"right": 5
+			}
+		}
+		]
+		},
+		{
+		"name": "loc3",
+		"transient-values": [
+		{
+			"ref": "LVH_0",
+			"value": {
+				"op": "=",
+				"left": "LVH",
+				"right": 0
+			}
+		},
+		{
+			"ref": "LVH_1",
+			"value": {
+				"op": "=",
+				"left": "LVH",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc4",
+		"transient-values": [
+		{
+			"ref": "LVHreport_0",
+			"value": {
+				"op": "=",
+				"left": "LVHreport",
+				"right": 0
+			}
+		},
+		{
+			"ref": "LVHreport_1",
+			"value": {
+				"op": "=",
+				"left": "LVHreport",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc5",
+		"transient-values": [
+		{
+			"ref": "LungParench_0",
+			"value": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 0
+			}
+		},
+		{
+			"ref": "LungParench_1",
+			"value": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 1
+			}
+		},
+		{
+			"ref": "LungParench_2",
+			"value": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 2
+			}
+		}
+		]
+		},
+		{
+		"name": "loc6",
+		"transient-values": [
+		{
+			"ref": "LungFlow_0",
+			"value": {
+				"op": "=",
+				"left": "LungFlow",
+				"right": 0
+			}
+		},
+		{
+			"ref": "LungFlow_1",
+			"value": {
+				"op": "=",
+				"left": "LungFlow",
+				"right": 1
+			}
+		},
+		{
+			"ref": "LungFlow_2",
+			"value": {
+				"op": "=",
+				"left": "LungFlow",
+				"right": 2
+			}
+		}
+		]
+		},
+		{
+		"name": "loc7",
+		"transient-values": [
+		{
+			"ref": "ChestXray_0",
+			"value": {
+				"op": "=",
+				"left": "ChestXray",
+				"right": 0
+			}
+		},
+		{
+			"ref": "ChestXray_1",
+			"value": {
+				"op": "=",
+				"left": "ChestXray",
+				"right": 1
+			}
+		},
+		{
+			"ref": "ChestXray_2",
+			"value": {
+				"op": "=",
+				"left": "ChestXray",
+				"right": 2
+			}
+		},
+		{
+			"ref": "ChestXray_3",
+			"value": {
+				"op": "=",
+				"left": "ChestXray",
+				"right": 3
+			}
+		},
+		{
+			"ref": "ChestXray_4",
+			"value": {
+				"op": "=",
+				"left": "ChestXray",
+				"right": 4
+			}
+		}
+		]
+		},
+		{
+		"name": "loc8",
+		"transient-values": [
+		{
+			"ref": "XrayReport_0",
+			"value": {
+				"op": "=",
+				"left": "XrayReport",
+				"right": 0
+			}
+		},
+		{
+			"ref": "XrayReport_1",
+			"value": {
+				"op": "=",
+				"left": "XrayReport",
+				"right": 1
+			}
+		},
+		{
+			"ref": "XrayReport_2",
+			"value": {
+				"op": "=",
+				"left": "XrayReport",
+				"right": 2
+			}
+		},
+		{
+			"ref": "XrayReport_3",
+			"value": {
+				"op": "=",
+				"left": "XrayReport",
+				"right": 3
+			}
+		},
+		{
+			"ref": "XrayReport_4",
+			"value": {
+				"op": "=",
+				"left": "XrayReport",
+				"right": 4
+			}
+		}
+		]
+		}
+],
+	"initial-locations": ["loc0"],
+	"edges": [
+	{
+		"location": "loc0",
+		"destinations": [
+		{
+			"location": "loc1",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "BirthAsphyxia",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc1",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "BirthAsphyxia",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc1",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "BirthAsphyxia",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": 0
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": 1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.25},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": 2
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": 3
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": 4
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": 5
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc1",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "BirthAsphyxia",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.03061224},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": 0
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.33673469},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": 1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.29591837},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": 2
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.23469388},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": 3
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.05102041},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": 4
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.05102041},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": 5
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 2
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 3
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 4
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.95},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 5
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "LVH",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "LVHreport",
+				"value": 0
+			},
+			{
+				"ref": "LVH",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "LVHreport",
+				"value": -1
+			},
+			{
+				"ref": "LVH",
+				"value": -1
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "LVH",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "LVHreport",
+				"value": 0
+			},
+			{
+				"ref": "LVH",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.95},
+			"assignments": [
+			{
+				"ref": "LVHreport",
+				"value": -1
+			},
+			{
+				"ref": "LVH",
+				"value": -1
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc4",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 0
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 1
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 2
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc4",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 0
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 1
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 2
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc4",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 2
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 0
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 1
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 2
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc4",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 3
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 0
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 1
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 2
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc4",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 4
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 0
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 1
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 2
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc4",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 5
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.03},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 0
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.25},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 1
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.72},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 2
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "LungFlow",
+				"value": 0
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.65},
+			"assignments": [
+			{
+				"ref": "LungFlow",
+				"value": 1
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "LungFlow",
+				"value": 2
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "LungFlow",
+				"value": 0
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "LungFlow",
+				"value": 1
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.75},
+			"assignments": [
+			{
+				"ref": "LungFlow",
+				"value": 2
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 2
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "LungFlow",
+				"value": 0
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "LungFlow",
+				"value": 1
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "LungFlow",
+				"value": 2
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 3
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "LungFlow",
+				"value": 0
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.85},
+			"assignments": [
+			{
+				"ref": "LungFlow",
+				"value": 1
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "LungFlow",
+				"value": 2
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 4
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "LungFlow",
+				"value": 0
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "LungFlow",
+				"value": 1
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "LungFlow",
+				"value": 2
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 5
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "LungFlow",
+				"value": 0
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "LungFlow",
+				"value": 1
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "LungFlow",
+				"value": 2
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "LungFlow",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 0
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.03},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 1
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.03},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 2
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 3
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.03},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 4
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "LungFlow",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 0
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 1
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 2
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 3
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.08},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 4
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "LungFlow",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 0
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 1
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 2
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 3
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 4
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "LungFlow",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.14},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 0
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 1
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 2
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 3
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 4
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "LungFlow",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 0
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.22},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 1
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.08},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 2
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 3
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 4
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "LungFlow",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 0
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 1
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 2
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 3
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 4
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "LungFlow",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 0
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 1
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.79},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 2
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.04},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 3
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 4
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "LungFlow",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 0
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 1
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 2
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 3
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.13},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 4
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "LungFlow",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.24},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 0
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.33},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 1
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.03},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 2
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.34},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 3
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.06},
+			"assignments": [
+			{
+				"ref": "ChestXray",
+				"value": 4
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			},
+			{
+				"ref": "LungFlow",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "ChestXray",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 0
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.06},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 1
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.06},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 2
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 3
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.06},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 4
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "ChestXray",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 0
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 1
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 2
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 3
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.06},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 4
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "ChestXray",
+				"right": 2
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 0
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 1
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 2
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 3
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.06},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 4
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "ChestXray",
+				"right": 3
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.08},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 0
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 1
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 2
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 3
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 4
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "ChestXray",
+				"right": 4
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.08},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 0
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 1
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 2
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 3
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "XrayReport",
+				"value": 4
+			},
+			{
+				"ref": "ChestXray",
+				"value": -1
+			}
+			]
+		}
+		]
+	}
+	]
+}
+],
+"system": {
+	"elements": [ {"automaton": "child"} ]
+}
+}

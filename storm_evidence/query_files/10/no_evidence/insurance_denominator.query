@@ -1,0 +1,1 @@
+storm --jani jani_files/no_evidence/insurance.jani --prop "P=? [F(RiskAversion=1|RiskAversion=2|RiskAversion=3|Mileage=1|Mileage=2|Mileage=3|OtherCarCost=1|OtherCarCost=2|OtherCarCost=3)]"

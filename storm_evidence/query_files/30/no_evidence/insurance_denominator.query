@@ -1,0 +1,1 @@
+storm --jani jani_files/no_evidence/insurance.jani --prop "P=? [F(SocioEcon=1|SocioEcon=2|SocioEcon=3|GoodStudent=1|DrivingSkill=1|DrivingSkill=2|AntiTheft=1|Mileage=1|Mileage=2|Mileage=3|Accident=1|Accident=2|Accident=3|Theft=1|MedCost=1|MedCost=2|MedCost=3|PropCost=1|PropCost=2|PropCost=3)]"

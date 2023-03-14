@@ -1,0 +1,15 @@
+Pr(e) = 1.0
+Network : ace/net_files/hailfinder.net
+Network Read Time (ms) : 150.002212
+Number of Evidence Sets : 1
+AC :
+  Nodes : 8594
+  Edges : 16532
+  Total Initialization Time (ms) : 81.870543
+  Total Inference Time (ms) : 5.8919049999999995
+  Minimum Inference Time (ms) : 5.8919049999999995
+  Maximum Inference Time (ms) : 5.8919049999999995
+  Median Inference Time (ms) : 5.8919049999999995
+  Mean Inference Time (ms) : 5.8919049999999995
+  Standard Deviation Inference Time (ms) : 0.0
+

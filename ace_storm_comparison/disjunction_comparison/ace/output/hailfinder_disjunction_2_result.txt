@@ -1,0 +1,15 @@
+Pr(e) = 1.0000000000000002
+Network : ace/hailfinder/hailfinder_disjunction_2.net
+Network Read Time (ms) : 122.338242
+Number of Evidence Sets : 1
+AC :
+  Nodes : 11349
+  Edges : 22038
+  Total Initialization Time (ms) : 49.184979999999996
+  Total Inference Time (ms) : 4.359634
+  Minimum Inference Time (ms) : 4.359634
+  Maximum Inference Time (ms) : 4.359634
+  Median Inference Time (ms) : 4.359634
+  Mean Inference Time (ms) : 4.359634
+  Standard Deviation Inference Time (ms) : 0.0
+

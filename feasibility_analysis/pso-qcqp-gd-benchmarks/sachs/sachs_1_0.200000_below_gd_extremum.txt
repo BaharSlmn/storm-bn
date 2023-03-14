@@ -1,0 +1,151 @@
+Storm-pars 1.6.4 (dev)
+
+Date: Sat Jan  1 21:13:56 2022
+Command line arguments: --explicit-drn pso-qcqp-gd-benchmarks/sachs/drn_files/sachs_1.drn --prop 'Pmin=? [F("Akt1"|"Jnk1"|"P381"|"PIP21")]
+' --find-extremum
+Current working directory: /Users/bahare/Documents/Experiments/gradient-descent
+
+Time for model construction: 0.007s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	130
+Transitions: 	384
+Reward Models:  none
+State Labels: 	35 labels
+   * init -> 1 item(s)
+   * PIP30 -> 3 item(s)
+   * PKC2 -> 1 item(s)
+   * Raf2 -> 9 item(s)
+   * Plcg2 -> 1 item(s)
+   * Mek2 -> 3 item(s)
+   * PIP32 -> 3 item(s)
+   * PIP31 -> 3 item(s)
+   * Plcg0 -> 1 item(s)
+   * P380 -> 9 item(s)
+   * PIP20 -> 1 item(s)
+   * PIP21 -> 1 item(s)
+   * Plcg1 -> 1 item(s)
+   * Erk2 -> 3 item(s)
+   * PKA0 -> 3 item(s)
+   * PIP22 -> 1 item(s)
+   * PKC0 -> 1 item(s)
+   * Jnk0 -> 9 item(s)
+   * PKC1 -> 1 item(s)
+   * PKA1 -> 3 item(s)
+   * P381 -> 9 item(s)
+   * PKA2 -> 3 item(s)
+   * P382 -> 9 item(s)
+   * Jnk1 -> 9 item(s)
+   * Jnk2 -> 9 item(s)
+   * Akt2 -> 1 item(s)
+   * Raf0 -> 9 item(s)
+   * Raf1 -> 9 item(s)
+   * Mek0 -> 3 item(s)
+   * Akt0 -> 1 item(s)
+   * Mek1 -> 3 item(s)
+   * Erk0 -> 3 item(s)
+   * Erk1 -> 3 item(s)
+   * deadlock -> 3 item(s)
+   * Akt1 -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model simplification: 0.001s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	4
+Transitions: 	7
+Reward Models:  none
+State Labels: 	36 labels
+   * init -> 1 item(s)
+   * PKC1 -> 0 item(s)
+   * PKA1 -> 0 item(s)
+   * P381 -> 1 item(s)
+   * Raf0 -> 0 item(s)
+   * Mek1 -> 0 item(s)
+   * deadlock -> 2 item(s)
+   * Plcg0 -> 0 item(s)
+   * Akt2 -> 1 item(s)
+   * Jnk2 -> 0 item(s)
+   * PKA2 -> 0 item(s)
+   * P382 -> 0 item(s)
+   * PIP30 -> 0 item(s)
+   * Raf2 -> 0 item(s)
+   * PKC2 -> 0 item(s)
+   * Raf1 -> 0 item(s)
+   * PIP22 -> 0 item(s)
+   * PKA0 -> 0 item(s)
+   * PIP21 -> 1 item(s)
+   * Plcg1 -> 0 item(s)
+   * Erk2 -> 0 item(s)
+   * PIP32 -> 0 item(s)
+   * Mek2 -> 0 item(s)
+   * Plcg2 -> 0 item(s)
+   * Jnk1 -> 1 item(s)
+   * Akt0 -> 1 item(s)
+   * Mek0 -> 0 item(s)
+   * PIP31 -> 0 item(s)
+   * P380 -> 0 item(s)
+   * Erk0 -> 1 item(s)
+   * PIP20 -> 0 item(s)
+   * Erk1 -> 0 item(s)
+   * Akt1 -> 1 item(s)
+   * target -> 1 item(s)
+   * PKC0 -> 0 item(s)
+   * Jnk0 -> 0 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.001s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	4
+Transitions: 	7
+Reward Models:  none
+State Labels: 	36 labels
+   * init -> 1 item(s)
+   * PKC1 -> 0 item(s)
+   * PKA1 -> 0 item(s)
+   * P381 -> 1 item(s)
+   * Raf0 -> 0 item(s)
+   * Mek1 -> 0 item(s)
+   * deadlock -> 2 item(s)
+   * Plcg0 -> 0 item(s)
+   * Akt2 -> 1 item(s)
+   * Jnk2 -> 0 item(s)
+   * PKA2 -> 0 item(s)
+   * P382 -> 0 item(s)
+   * PIP30 -> 0 item(s)
+   * Raf2 -> 0 item(s)
+   * PKC2 -> 0 item(s)
+   * Raf1 -> 0 item(s)
+   * PIP22 -> 0 item(s)
+   * PKA0 -> 0 item(s)
+   * PIP21 -> 1 item(s)
+   * Plcg1 -> 0 item(s)
+   * Erk2 -> 0 item(s)
+   * PIP32 -> 0 item(s)
+   * Mek2 -> 0 item(s)
+   * Plcg2 -> 0 item(s)
+   * Jnk1 -> 1 item(s)
+   * Akt0 -> 1 item(s)
+   * Mek0 -> 0 item(s)
+   * PIP31 -> 0 item(s)
+   * P380 -> 0 item(s)
+   * Erk0 -> 1 item(s)
+   * PIP20 -> 0 item(s)
+   * Erk1 -> 0 item(s)
+   * Akt1 -> 1 item(s)
+   * target -> 1 item(s)
+   * PKC0 -> 0 item(s)
+   * Jnk0 -> 0 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+Parameters: p0 
+Finding an extremum using Gradient Descent
+Found value 0.6541391087 at instantiation 
+p0=4722366482869645/4722366482869645213696
+Finished in 0.000s

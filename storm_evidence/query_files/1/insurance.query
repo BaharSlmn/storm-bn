@@ -1,0 +1,1 @@
+storm --jani jani_files/1/insurance.jani --prop "P=? [G(Accident=0 | Accident=-1)]"

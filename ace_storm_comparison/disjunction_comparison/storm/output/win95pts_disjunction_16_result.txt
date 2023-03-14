@@ -1,0 +1,25 @@
+Storm 1.6.4
+
+Date: Tue Apr 26 11:05:10 2022
+Command line arguments: --jani storm/win95pts/win95pts.jani --prop 'P=? [F((DataFile=0|AppOK=0|AppData=0|AppDtGnTm=1|NtSpd=0|NetPrint=1|PrtFile=0|LclGrbld=1|PrtIcon=1|PrtPort=1|DS_LCLOK=1|DSApplctn=1|PrtStatPaper=0|Problem1=0|EPSGrphc=0|Problem4=0))]'
+Current working directory: /experiments/ace_storm_comparison/disjunction_comparison
+
+Time for model input parsing: 0.056s.
+
+Time for model construction: 0.083s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	1611
+Transitions: 	2746
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 2 item(s)
+   * init -> 1 item(s)
+   * ((((((((((((((((DataFile = 0) | (AppOK = 0)) | (AppData = 0)) | (AppDtGnTm = 1)) | (NtSpd = 0)) | (NetPrint = 1)) | (PrtFile = 0)) | (LclGrbld = 1)) | (PrtIcon = 1)) | (PrtPort = 1)) | (DS_LCLOK = 1)) | (DSApplctn = 1)) | (PrtStatPaper = 0)) | (Problem1 = 0)) | (EPSGrphc = 0)) | (Problem4 = 0)) -> 245 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F ((((((((((((((((DataFile = 0) | (AppOK = 0)) | (AppData = 0)) | (AppDtGnTm = 1)) | (NtSpd = 0)) | (NetPrint = 1)) | (PrtFile = 0)) | (LclGrbld = 1)) | (PrtIcon = 1)) | (PrtPort = 1)) | (DS_LCLOK = 1)) | (DSApplctn = 1)) | (PrtStatPaper = 0)) | (Problem1 = 0)) | (EPSGrphc = 0)) | (Problem4 = 0))] ...
+Result (for initial states): 1
+Time for model checking: 0.001s.

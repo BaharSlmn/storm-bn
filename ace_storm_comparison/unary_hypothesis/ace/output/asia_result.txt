@@ -1,0 +1,15 @@
+Pr(e) = 0.9999999999999998
+Network : ace/net_files/asia.net
+Network Read Time (ms) : 113.144048
+Number of Evidence Sets : 1
+AC :
+  Nodes : 105
+  Edges : 148
+  Total Initialization Time (ms) : 9.506053
+  Total Inference Time (ms) : 1.001232
+  Minimum Inference Time (ms) : 1.001232
+  Maximum Inference Time (ms) : 1.001232
+  Median Inference Time (ms) : 1.001232
+  Mean Inference Time (ms) : 1.001232
+  Standard Deviation Inference Time (ms) : 0.0
+

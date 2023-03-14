@@ -1,0 +1,69 @@
+Storm-pars 1.6.4
+
+Date: Fri Apr 22 12:40:39 2022
+Command line arguments: -drn storm/drn_files/p1/sachs.drn --prop 'P=? [F("Raf0")]' --bisimulation
+Current working directory: /experiments/bayesserver_storm_comparison
+
+Time for model construction: 0.020s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	130
+Transitions: 	384
+Reward Models:  none
+State Labels: 	35 labels
+   * Akt1 -> 1 item(s)
+   * deadlock -> 3 item(s)
+   * Akt0 -> 1 item(s)
+   * Erk2 -> 3 item(s)
+   * Erk1 -> 3 item(s)
+   * Plcg2 -> 1 item(s)
+   * Mek1 -> 3 item(s)
+   * PIP30 -> 3 item(s)
+   * PIP22 -> 1 item(s)
+   * PIP21 -> 1 item(s)
+   * PKA1 -> 3 item(s)
+   * P381 -> 9 item(s)
+   * PIP31 -> 3 item(s)
+   * PKC2 -> 1 item(s)
+   * Akt2 -> 1 item(s)
+   * init -> 1 item(s)
+   * PKC0 -> 1 item(s)
+   * Jnk2 -> 9 item(s)
+   * PKC1 -> 1 item(s)
+   * PIP20 -> 1 item(s)
+   * PKA0 -> 3 item(s)
+   * Plcg0 -> 1 item(s)
+   * PKA2 -> 3 item(s)
+   * Mek0 -> 3 item(s)
+   * Erk0 -> 3 item(s)
+   * Jnk0 -> 9 item(s)
+   * P382 -> 9 item(s)
+   * Plcg1 -> 1 item(s)
+   * P380 -> 9 item(s)
+   * Jnk1 -> 9 item(s)
+   * Raf0 -> 9 item(s)
+   * Raf1 -> 9 item(s)
+   * Raf2 -> 9 item(s)
+   * PIP32 -> 3 item(s)
+   * Mek2 -> 3 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	42
+Transitions: 	66
+Reward Models:  none
+State Labels: 	2 labels
+   * init -> 1 item(s)
+   * Raf0 -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F "Raf0"] ...
+Result (initial states): (-18750001549010667263915253 * (18827808128881866878154892149550385218000000000*p0+(-49713063833051211941788663059400826205043178203)))/(1556347656250000000000000000000000000000000000000000000000000000000000000)
+Time for model checking: 0.000s.
+

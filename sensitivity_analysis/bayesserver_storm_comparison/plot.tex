@@ -1,0 +1,127 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{etoolbox}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenx}
+\usepackage[american]{babel}
+\usepackage{tikz}
+
+%\addtolength{\textheight}{0.32mm}
+%\addtolength{\voffset}{-0.16mm}
+\usepackage{amsmath}
+\usepackage{thmtools, thm-restate}
+\usepackage{xspace}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{upgreek}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{amssymb}
+\usepackage{environ}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{stmaryrd}
+\usepackage{adjustbox}
+\usepackage{makecell}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{comment}
+\usepackage{float} 
+
+%TikZ
+\usetikzlibrary{decorations,arrows,shapes,automata,calc}
+\tikzstyle{dist}=[circle,  inner sep=1pt, fill]
+\tikzstyle{point}=[circle,  inner sep=2pt, fill]
+\tikzstyle{ms}=[draw,circle,text centered,minimum size=6mm,text width=3mm]
+\tikzstyle{ps}=[draw,rectangle,text centered,minimum size=6mm,text width=3mm]
+
+% Colours
+\definecolor{color1}{RGB}{55,126,184} % lightblueish
+\definecolor{color2}{RGB}{228,26,28} % red
+\definecolor{color3}{RGB}{77,175,74} % green
+\definecolor{color4}{RGB}{152,78,163} % purple
+\definecolor{color5}{RGB}{255,127,0} % orange
+\definecolor{color6}{rgb}{0.5, 1.0, 0.83} % aquamarine
+\definecolor{color8}{rgb}{0.66, 0.66, 0.66} % gray
+\definecolor{color7}{rgb}{0.48, 0.25, 0.0} %brown
+\definecolor{commentcolor}{RGB}{60,114,26}
+\usepackage{cleveref}
+\newcommand{\tool}[1]{\textsc{#1}\xspace}
+\newcommand{\storm}{\tool{Storm}}
+\newcommand{\stormbisim}{\tool{Storm (bi-simulation)}}
+\newcommand{\stormnobisim}{\tool{Storm (regular)}}
+\newcommand{\bayesserver}{\tool{Bayesserver}}
+\newcommand{\ace}{\tool{Ace}}
+\newcommand{\psdd}{\tool{PSDD}}
+\newcommand{\compilation}{\tool{Compilation Time}}
+\newcommand{\vars}{\tool{\#Variables}}
+\newcommand{\inference}{\tool{Total Inference Time}}
+
+
+
+
+\begin{document}
+\newlength{\scatterplotsize}
+\setlength{\scatterplotsize}{\linewidth}
+
+ \begin{tikzpicture}
+    	\path[use as bounding box,draw=white] (-1,-1) rectangle (4.5,4.5);
+    	\begin{axis}[
+    		width=0.45\textwidth,
+    		height=0.45\scatterplotsize,
+    		axis equal image,
+    		xmin=0.0001,
+    		ymin=0.0001,
+    		ymax=2500,
+    		xmax=2500,
+    		xmode=log,
+    		ymode=log,
+    		axis x line=bottom,
+    		axis y line=left,
+     		xtick={0.001,0.01,0.1,1,10,100},
+    		xticklabels={$10^{-3}$,$10^{-2}$,$10^{-1}$,$10^{0}$,$10^1$,$10^2$},
+    		extra x ticks = {1200},
+    		extra x tick labels = {NS},
+    		extra x tick style = {grid = major},
+     		ytick={0.001,0.01,0.1,1,10,100},
+    		yticklabels={$10^{-3}$,$10^{-2}$,$10^{-1}$,$10^{0}$,$10^1$,$10^2$},
+    		extra y ticks = {1200},
+    		extra y tick labels = {NS},
+    		extra y tick style = {grid = major},
+    		xlabel={\storm},
+    		xlabel style={yshift=-13pt},
+    		ylabel={\bayesserver},
+    		ylabel style={yshift=-0cm},
+    		yticklabel style={font=\small},
+    		xticklabel style={rotate=290,anchor=west,font=\small},
+    		legend pos=south east,
+    		legend columns=1,
+    		legend style={nodes={scale=0.75, transform shape},inner sep=1.5pt,yshift=0cm,xshift=-0.4cm},
+    		%legend cell align={left}
+    		]
+    		\addplot[
+    		scatter,
+    		only marks,
+    		scatter/classes={
+    			qual1={mark=triangle*, mark size=1.7, color1},
+    			qual2={mark=diamond*, mark size=1.7, color2},
+    			qual10={mark=pentagon*, mark size=1.7, color3},
+    			qual50={mark=pentagon*, mark size=1.7, color5},
+    			qual100={mark=pentagon*, mark size=1.7, color4},
+    			qual200={mark=pentagon*, mark size=1.7, color1},
+    			qual300={mark=pentagon*, mark size=1.7, color8}
+    		},
+    		scatter src=explicit symbolic
+    		]%
+    		table [col sep=comma,x=storm_bisim,y=bayesserver,meta=scatterclass] {storm_bayesserver_comparison.csv};
+    		\legend{p1, p2, p10+, p50+, p100+, p200+, p300+}
+    		\addplot[no marks] coordinates {(0.0001,0.0001) (100,100)};
+    		\addplot[no marks, densely dotted] coordinates {(0.0001,0.001) (10,100)};
+    		\addplot[no marks, densely dotted] coordinates {(0.001,0.0001) (100,10)};
+    	\end{axis}
+\end{tikzpicture}
+
+
+\end{document}

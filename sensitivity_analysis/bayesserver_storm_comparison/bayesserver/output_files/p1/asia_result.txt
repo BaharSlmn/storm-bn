@@ -1,0 +1,23 @@
+Network name = asia
+
+
+Time for Sensitivity Analysis: 0.013846158981323242s
+
+
+Parameter node = lung
+Parameter entry = [smokeyes,lungyes]
+Hypothesis = xrayyes
+Evidence = default
+
+
+Parameter value = 0.1
+Sensitivity value = 0.460163999999999
+P(Abnormal | e) = 0.11029003999999999
+Alpha = 0.460163999999999
+Beta = 0.06427364000000009
+Delta = 1.0
+Gamma = 0.0
+
+
+Eval(0.2) = 0.15630643999999988
+Eval'(0.2) = 0.460163999999999

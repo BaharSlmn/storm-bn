@@ -1,0 +1,1 @@
+storm --jani jani_files/30/cancer.jani --prop "P=? [G(Xray=0 | Xray=-1)]"

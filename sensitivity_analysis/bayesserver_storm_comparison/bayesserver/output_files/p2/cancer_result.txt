@@ -1,0 +1,30 @@
+Network name = cancer
+
+
+Time for Sensitivity Analysis: 0.008870840072631836s
+
+
+Parameter node 1 = Cancer
+Parameter entry 1 = [Pollutionlow,SmokerTrue,CancerTrue]
+Parameter node 2 = Smoker
+Parameter entry 2 = [SmokerTrue]
+Hypothesis = DyspnoeaTrue
+Evidence = default
+
+
+Parameter value 1 = 0.03
+P(DyspnoeaTrue | e) = 0.3040705
+Alpha1 = 0.31500000000004214
+Beta1 = -4.163336342344337e-15
+Delta1 = 0.30101500000000003
+Gamma1 = 0.000734999999999116
+
+
+Parameter value 2 = 0.3
+Alpha2 = 0.0
+Beta2 = 0.0
+Delta2 = 1.0
+Gamma2 = 0.0
+
+
+Eval(0.2,0.2) = 0.3137620000000007

@@ -1,0 +1,30 @@
+Network name = hailfinder
+
+
+Time for Sensitivity Analysis: 0.010171651840209961s
+
+
+Parameter node 1 = Scenario
+Parameter entry 1 = [DateMay15_Jun14,ScenarioA]
+Parameter node 2 = Scenario
+Parameter entry 2 = [DateAug20_Sep15,ScenarioB]
+Hypothesis = DewpointsLowEvrywhere
+Evidence = default
+
+
+Parameter value 1 = 0.1
+P(DewpointsLowEvrywhere | e) = 0.14881885159999997
+Alpha1 = 8.200510977344906e-15
+Beta1 = -0.026652056888890396
+Delta1 = 0.15442178759001263
+Gamma1 = -0.026706639101124627
+
+
+Parameter value 2 = 0.11
+Alpha2 = 0.0
+Beta2 = 0.0
+Delta2 = 1.0
+Gamma2 = 0.0
+
+
+Eval(0.2,0.2) = 0.14375004839200994

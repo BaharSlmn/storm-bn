@@ -1,0 +1,117 @@
+Storm-pars 1.6.4
+
+Date: Fri Apr 22 12:40:42 2022
+Command line arguments: -drn storm/drn_files/p1/water.drn --prop 'P=? [F("CBODD_12_450")]' --bisimulation
+Current working directory: /experiments/bayesserver_storm_comparison
+
+Time for model construction: 5.425s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	37569
+Transitions: 	72778
+Reward Models:  none
+State Labels: 	83 labels
+   * CKNI_12_452 -> 1 item(s)
+   * CKNI_12_451 -> 1 item(s)
+   * CKNI_12_450 -> 1 item(s)
+   * C_NI_12_452 -> 3 item(s)
+   * C_NI_12_451 -> 3 item(s)
+   * C_NI_12_453 -> 3 item(s)
+   * C_NI_12_450 -> 3 item(s)
+   * CBODD_12_452 -> 12 item(s)
+   * CBODD_12_450 -> 12 item(s)
+   * C_NI_12_303 -> 60 item(s)
+   * C_NI_12_300 -> 60 item(s)
+   * CNOD_12_451 -> 192 item(s)
+   * CNOD_12_450 -> 240 item(s)
+   * CBODN_12_453 -> 72 item(s)
+   * CBODN_12_452 -> 504 item(s)
+   * CBODN_12_451 -> 648 item(s)
+   * CBODN_12_450 -> 216 item(s)
+   * CKND_12_001 -> 240 item(s)
+   * C_NI_12_153 -> 56 item(s)
+   * C_NI_12_152 -> 64 item(s)
+   * CKND_12_302 -> 2220 item(s)
+   * C_NI_12_150 -> 56 item(s)
+   * CBODD_12_152 -> 64 item(s)
+   * CBODD_12_150 -> 32 item(s)
+   * C_NI_12_000 -> 24 item(s)
+   * CNON_12_300 -> 572 item(s)
+   * CBODD_12_151 -> 96 item(s)
+   * CNON_12_452 -> 480 item(s)
+   * CNON_12_451 -> 720 item(s)
+   * CKNI_12_002 -> 8 item(s)
+   * CKND_12_451 -> 1878 item(s)
+   * CKNI_12_302 -> 946 item(s)
+   * CKND_12_152 -> 240 item(s)
+   * CBODD_12_453 -> 12 item(s)
+   * init -> 1 item(s)
+   * CBODN_12_001 -> 1 item(s)
+   * CBODD_12_301 -> 928 item(s)
+   * CKND_12_301 -> 1440 item(s)
+   * CNOD_12_001 -> 1 item(s)
+   * CBODN_12_151 -> 1 item(s)
+   * CBODD_12_451 -> 12 item(s)
+   * C_NI_12_001 -> 24 item(s)
+   * CBODD_12_001 -> 1 item(s)
+   * C_NI_12_003 -> 24 item(s)
+   * CKNI_12_151 -> 384 item(s)
+   * CNON_12_450 -> 456 item(s)
+   * CNOD_12_150 -> 2 item(s)
+   * CKNI_12_001 -> 8 item(s)
+   * CBODN_12_152 -> 1 item(s)
+   * CKNI_12_000 -> 8 item(s)
+   * CKNN_12_300 -> 1332 item(s)
+   * CNON_12_152 -> 4 item(s)
+   * CNOD_12_151 -> 2 item(s)
+   * deadlock -> 3 item(s)
+   * CNON_12_151 -> 4 item(s)
+   * C_NI_12_301 -> 60 item(s)
+   * CNOD_12_300 -> 2320 item(s)
+   * CKNN_12_150 -> 480 item(s)
+   * C_NI_12_002 -> 24 item(s)
+   * CBODD_12_303 -> 208 item(s)
+   * CKNN_12_450 -> 1440 item(s)
+   * CKNN_12_151 -> 480 item(s)
+   * CKND_12_151 -> 240 item(s)
+   * CKNI_12_152 -> 384 item(s)
+   * CKNI_12_301 -> 946 item(s)
+   * CNON_12_001 -> 1 item(s)
+   * CBODD_12_302 -> 688 item(s)
+   * CNOD_12_301 -> 2304 item(s)
+   * CNON_12_453 -> 24 item(s)
+   * CBODD_12_300 -> 464 item(s)
+   * CNON_12_301 -> 2288 item(s)
+   * CNON_12_302 -> 1716 item(s)
+   * C_NI_12_302 -> 60 item(s)
+   * CKNN_12_001 -> 1 item(s)
+   * CBODN_12_300 -> 460 item(s)
+   * CKND_12_452 -> 2838 item(s)
+   * CBODN_12_301 -> 880 item(s)
+   * CBODN_12_302 -> 880 item(s)
+   * C_NI_12_151 -> 64 item(s)
+   * CKNI_12_150 -> 384 item(s)
+   * CKNN_12_301 -> 1176 item(s)
+   * CKNI_12_300 -> 946 item(s)
+   * CKNN_12_451 -> 1440 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.036s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	3649
+Transitions: 	6092
+Reward Models:  none
+State Labels: 	2 labels
+   * init -> 1 item(s)
+   * CBODD_12_450 -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F "CBODD_12_450"] ...
+Result (initial states): (23333331 * (609660439775733942795528684905293325*p0+1285773828169374714755893478722990818))/(1300000000000000000000000000000000000000000000)
+Time for model checking: 0.008s.
+

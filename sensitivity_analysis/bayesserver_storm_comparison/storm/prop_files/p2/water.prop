@@ -1,0 +1,1 @@
+storm-pars -drn storm/drn_files/p2/water.drn --prop "P=? [F(\"CBODD_12_450\")]" --bisimulation

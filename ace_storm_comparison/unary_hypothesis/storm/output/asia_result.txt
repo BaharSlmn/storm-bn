@@ -1,0 +1,57 @@
+Storm 1.6.4 (dev)
+
+Date: Thu Apr 28 12:15:56 2022
+Command line arguments: --jani storm/jani_files/asia.jani --expvisittimes --build-all-labels
+Current working directory: /home/hans/Desktop/private/ace_storm_comparison/unary_hypothesis
+
+Time for model input parsing: 0.001s.
+
+Time for model construction: 0.014s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	37
+Transitions: 	62
+Reward Models:  none
+State Labels: 	18 labels
+   * init -> 1 item(s)
+   * xray0 -> 2 item(s)
+   * asia0 -> 1 item(s)
+   * bronc1 -> 2 item(s)
+   * tub0 -> 1 item(s)
+   * xray1 -> 2 item(s)
+   * tub1 -> 1 item(s)
+   * bronc0 -> 2 item(s)
+   * dysp0 -> 4 item(s)
+   * dysp1 -> 4 item(s)
+   * either0 -> 2 item(s)
+   * deadlock -> 4 item(s)
+   * lung0 -> 4 item(s)
+   * lung1 -> 4 item(s)
+   * asia1 -> 1 item(s)
+   * either1 -> 2 item(s)
+   * smoke0 -> 2 item(s)
+   * smoke1 -> 2 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+Accumulated values for labels:
+	asia0: 0.01
+	asia1: 0.99
+	bronc0: 0.45
+	bronc1: 0.55
+	deadlock: inf
+	dysp0: 0.4359706
+	dysp1: 0.5640294
+	either0: 0.064828
+	either1: 0.935172
+	init: 1
+	lung0: 0.055
+	lung1: 0.945
+	smoke0: 0.5
+	smoke1: 0.5
+	tub0: 0.0104
+	tub1: 0.9896
+	xray0: inf
+	xray1: inf
+Result: [5.2e-05, inf] (range)
+Time for model checking: 0.000s.

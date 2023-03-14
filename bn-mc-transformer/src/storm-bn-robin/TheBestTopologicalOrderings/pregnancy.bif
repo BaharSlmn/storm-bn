@@ -1,0 +1,14 @@
+network pregnancy {
+}
+variable Sex {
+  type discrete [ 2 ] { Male, Female };
+}
+variable Pregnancy {
+  type discrete [ 2 ] { True, False };
+}
+probability ( Sex ){
+  table 0.5, 0.5;
+}
+probability ( Pregnancy | Sex  ){
+  table 0, 1, 0.05, 0.95;
+}

@@ -1,0 +1,30 @@
+Network name = earthquake
+
+
+Time for Sensitivity Analysis: 0.008896589279174805s
+
+
+Parameter node 1 = Alarm
+Parameter entry 1 = [BurglaryTrue,EarthquakeTrue,AlarmTrue]
+Parameter node 2 = Alarm
+Parameter entry 2 = [BurglaryFalse,EarthquakeTrue,AlarmTrue]
+Hypothesis = MaryCallsTrue
+Evidence = default
+
+
+Parameter value 1 = 0.95
+P(MaryCallsTrue | e) = 0.021118798
+Alpha1 = -2.420269822426807e-17
+Beta1 = 0.00013800000000000186
+Delta1 = 0.01702571799999999
+Gamma1 = 0.013662000000000061
+
+
+Parameter value 2 = 0.29
+Alpha2 = 6.044771458939146e-16
+Beta2 = -1.7529837230923522e-16
+Delta2 = 1.0000000000000002
+Gamma2 = -7.656710514656253e-16
+
+
+Eval(0.2,0.2) = 0.019785718

@@ -1,0 +1,22 @@
+{
+	"jani-version": 1,
+	"name": "pathfinder.jani",
+	"type": "dtmc",
+	"features": [ "derived-operators" ],
+"variables": [
+],
+"properties": [
+],
+"automata": [
+{
+	"name": "pathfinder",
+	"locations": [{"name": "loc0"}],
+	"initial-locations": ["loc0"],
+	"edges": [
+	]
+}
+],
+"system": {
+	"elements": [ {"automaton": "pathfinder"} ]
+}
+}

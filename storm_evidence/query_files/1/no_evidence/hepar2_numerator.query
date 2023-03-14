@@ -1,0 +1,1 @@
+storm --jani jani_files/no_evidence/hepar2.jani --prop "P=? [F(age=1|age=2|age=3|diabetes=1)]"

@@ -1,0 +1,1 @@
+timeout 15m storm-pars --jani alarm-red-green-plots/2D/alarm_pla_graph.jani --prop "P<=0.4 [F(VENTTUBE=0)]" --region "0<=p<=1","0<=q<=1","0<=p2<=1","0<=p3<=1","0<=p4<=1","0<=p5<=1","0<=p6<=1","0<=p7<=1","0<=p8<=1" --timemem --refine 0.01 --bisimulation --resultfile alarm-red-green-plots/2D/alarm_pla_graph.txt

@@ -1,0 +1,15 @@
+Pr(e) = 0.9999998879553964
+Network : ace/mildew/mildew_disjunction_2.net
+Network Read Time (ms) : 402.812095
+Number of Evidence Sets : 1
+AC :
+  Nodes : 1636309
+  Edges : 3255500
+  Total Initialization Time (ms) : 870.1879419999999
+  Total Inference Time (ms) : 68.277586
+  Minimum Inference Time (ms) : 68.277586
+  Maximum Inference Time (ms) : 68.277586
+  Median Inference Time (ms) : 68.277586
+  Mean Inference Time (ms) : 68.277586
+  Standard Deviation Inference Time (ms) : 0.0
+

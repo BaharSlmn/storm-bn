@@ -1,0 +1,2 @@
+storm-pars -drn storm/drn_files/p2/hailfinder.drn --prop "P=? [F(\"Dewpoints0\")]" --bisimulation
+

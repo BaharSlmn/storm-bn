@@ -1,0 +1,15 @@
+Pr(e) = 1.0
+Network : ace/net_files/cancer.net
+Network Read Time (ms) : 118.764578
+Number of Evidence Sets : 1
+AC :
+  Nodes : 67
+  Edges : 82
+  Total Initialization Time (ms) : 11.638864
+  Total Inference Time (ms) : 0.6354719999999999
+  Minimum Inference Time (ms) : 0.6354719999999999
+  Maximum Inference Time (ms) : 0.6354719999999999
+  Median Inference Time (ms) : 0.6354719999999999
+  Mean Inference Time (ms) : 0.6354719999999999
+  Standard Deviation Inference Time (ms) : 0.0
+

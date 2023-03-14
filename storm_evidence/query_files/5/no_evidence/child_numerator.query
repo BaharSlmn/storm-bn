@@ -1,0 +1,1 @@
+storm --jani jani_files/no_evidence/child.jani --prop "P=? [F(HypDistrib=1|HypoxiaInO2=1|HypoxiaInO2=2)]"

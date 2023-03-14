@@ -1,0 +1,1 @@
+storm --jani jani_files/5/insurance.jani --prop "P=? [G(ThisCarCost=0 | ThisCarCost=-1)]"

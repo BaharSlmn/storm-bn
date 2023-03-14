@@ -1,0 +1,1 @@
+storm --jani jani_files/10/water.jani --prop "P=? [G(CBODD_12_45=0 | CBODD_12_45=-1)]"

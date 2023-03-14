@@ -1,0 +1,22 @@
+{}
+DTMC
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID
+Academic license - for non-commercial use only - registered to hans.vrapi@rwth-aachen.de
+Solving...
+Academic license - for non-commercial use only - registered to hans.vrapi@rwth-aachen.de
+Solving...
+Academic license - for non-commercial use only - registered to hans.vrapi@rwth-aachen.de
+Solving...
+Academic license - for non-commercial use only - registered to hans.vrapi@rwth-aachen.de
+Qcqp: 0.5391459050466283: Mc: 0.5391459050466283
+iterations =2
+solver time=0.001943349838256836
+encoding time=0.011209726333618164
+iterate time=0.0
+inner part = 0.0s (0.0)
+adding constraints = 0.0s
+Point found: {p0:5902958103587057/590295810358705651712;p3:5902958103587057/590295810358705651712;p6:5902958103587057/590295810358705651712;p1:5902958103587057/590295810358705651712;p4:5902958103587057/590295810358705651712;p7:5902958103587057/590295810358705651712;p2:5902958103587057/590295810358705651712;p5:5902958103587057/590295810358705651712}: 607024324266581/1125899906842624 (approx. 0.5391459050466283)
+This procedure took 0.041513919830322266s (from start: 0.047089338302612305s)
+Warning: environment still referenced so free is deferred (Continue to use WLS)

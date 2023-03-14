@@ -1,0 +1,1 @@
+storm --jani jani_files/30/hailfinder.jani --prop "P=? [G(LowLLapse=0 | LowLLapse=-1)]"

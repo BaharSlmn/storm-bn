@@ -1,0 +1,25 @@
+Storm 1.6.4
+
+Date: Wed Jun  8 15:08:54 2022
+Command line arguments: --jani jani_files/no_evidence/insurance.jani --prop 'P=? [F(RiskAversion=1|RiskAversion=2|RiskAversion=3|Mileage=1|Mileage=2|Mileage=3|OtherCarCost=1|OtherCarCost=2|OtherCarCost=3)]'
+Current working directory: /home/hans/Desktop/Storm-bn/storm_evidence
+
+Time for model input parsing: 0.033s.
+
+Time for model construction: 0.192s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	16896
+Transitions: 	40624
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 4 item(s)
+   * init -> 1 item(s)
+   * (((((((((RiskAversion = 1) | (RiskAversion = 2)) | (RiskAversion = 3)) | (Mileage = 1)) | (Mileage = 2)) | (Mileage = 3)) | (OtherCarCost = 1)) | (OtherCarCost = 2)) | (OtherCarCost = 3)) -> 3960 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F (((((((((RiskAversion = 1) | (RiskAversion = 2)) | (RiskAversion = 3)) | (Mileage = 1)) | (Mileage = 2)) | (Mileage = 3)) | (OtherCarCost = 1)) | (OtherCarCost = 2)) | (OtherCarCost = 3))] ...
+Result (for initial states): 0.9986235607
+Time for model checking: 0.008s.

@@ -1,0 +1,336 @@
+{
+	"jani-version": 1,
+	"name": "studentMood.jani",
+	"type": "dtmc",
+	"features": [ "derived-operators" ],
+"variables": [
+	{
+	"name": "Dif",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+},
+	{
+	"name": "Prep",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+},
+	{
+	"name": "Grade",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+},
+	{
+	"name": "Mood",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+}
+],
+"properties": [
+],
+"automata": [
+{
+	"name": "studentMood",
+	"locations": [{"name": "loc0"},{"name": "loc1"},{"name": "loc2"},{"name": "loc3"},{"name": "loc4"}],
+	"initial-locations": ["loc0"],
+	"edges": [
+	{
+		"location": "loc0",
+		"destinations": [
+		{
+			"location": "loc1",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "Dif",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc1",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "Dif",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc1",
+		"destinations": [
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "Prep",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "Prep",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Prep",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Dif",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.95},
+			"assignments": [
+			{
+				"ref": "Grade",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "Grade",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Prep",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Dif",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "Grade",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.95},
+			"assignments": [
+			{
+				"ref": "Grade",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Prep",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "Dif",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "Grade",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "Grade",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Prep",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "Dif",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "Grade",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "Grade",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Grade",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "Mood",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "Mood",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Grade",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "Mood",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "Mood",
+				"value": 1
+			}
+			]
+		}
+		]
+	}
+	]
+}
+],
+"system": {
+	"elements": [ {"automaton": "studentMood"} ]
+}
+}

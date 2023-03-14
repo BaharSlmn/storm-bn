@@ -1,0 +1,1 @@
+storm --jani storm/andes/andes.jani --prop "P=? [F(SNode_17=0)];P=? [F(SNode_17=1)];P=? [F(TRY12=0)];P=? [F(TRY12=1)];P=? [F(TRY15=0)];P=? [F(TRY15=1)];P=? [F(TRY14=0)];P=? [F(TRY14=1)];P=? [F(TRY13=0)];P=? [F(TRY13=1)];P=? [F(TRY11=0)];P=? [F(TRY11=1)];P=? [F(GOAL_2=0)];" --engine dd > storm/output/andes_dd_result.txt

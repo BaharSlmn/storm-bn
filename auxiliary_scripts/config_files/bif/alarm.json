@@ -1,0 +1,21 @@
+{
+    "network" : "alarm",
+    "bif_location" : "bif_files/alarm.bif",
+    "output_file" : "parametric_bif_files/alarm_6.bif",
+    "parameters" : {
+      "non_distinct" : [
+
+      ],
+      "CPT" :  [],
+      "by_number_of_rows" : [
+        {
+          "node" :  "CO",
+          "number_of_rows" :  6,
+          "parameter_position" : 0
+        }
+
+      ],
+      "by_parent_evaluation" : [
+      ]
+    }
+}

@@ -1,0 +1,73 @@
+// Exported by storm
+// Original model type: DTMC
+@type: DTMC
+@parameters
+p0 
+@placeholders
+$1 : (-1 * (p0+(-1)))/(1)
+$0 : (p0)/(1)
+@reward_models
+
+@nr_states
+15
+@nr_choices
+15
+@model
+state 0 init
+	action 0
+		1 : 1/50
+		2 : 49/50
+state 1 Earthquake0
+	action 0
+		3 : 1/100
+		4 : 99/100
+state 2 Earthquake1
+	action 0
+		5 : 1/100
+		6 : 99/100
+state 3 Burglary0
+	action 0
+		7 : $0
+		8 : $1
+state 4 Burglary1
+	action 0
+		7 : 29/100
+		8 : 71/100
+state 5 Burglary0
+	action 0
+		7 : 47/50
+		8 : 3/50
+state 6 Burglary1
+	action 0
+		7 : 1/1000
+		8 : 999/1000
+state 7 Alarm0
+	action 0
+		9 : 9/10
+		10 : 1/10
+state 8 Alarm1
+	action 0
+		11 : 1/20
+		12 : 19/20
+state 9 JohnCalls0
+	action 0
+		13 : 7/10
+		14 : 3/10
+state 10 JohnCalls1
+	action 0
+		13 : 7/10
+		14 : 3/10
+state 11 JohnCalls0
+	action 0
+		13 : 1/100
+		14 : 99/100
+state 12 JohnCalls1
+	action 0
+		13 : 1/100
+		14 : 99/100
+state 13 MaryCalls0 deadlock
+	action 0
+		13 : 1
+state 14 MaryCalls1 deadlock
+	action 0
+		14 : 1

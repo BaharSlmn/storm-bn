@@ -1,0 +1,1 @@
+storm --jani jani_files/30/barley.jani --prop "P=? [G(slt22=0 | slt22=-1)]"

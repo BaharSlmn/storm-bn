@@ -1,0 +1,1 @@
+storm --jani jani_files/1/alarm.jani --prop "P=? [G(HYPOVOLEMIA=0 | HYPOVOLEMIA=-1)]"

@@ -1,0 +1,30 @@
+Network name = insurance
+
+
+Time for Sensitivity Analysis: 0.02738499641418457s
+
+
+Parameter node 1 = Accident
+Parameter entry 1 = [AntilockFalse,MileageTwentyThou,DrivQualityPoor,AccidentNone]
+Parameter node 2 = DrivingSkill
+Parameter entry 2 = [AgeAdolescent,SeniorTrainFalse,DrivingSkillExpert]
+Hypothesis = PropCostThousand
+Evidence = default
+
+
+Parameter value 1 = 0.3
+P(PropCostThousand | e) = 0.562945590882865
+Alpha1 = -0.018853802104336813
+Beta1 = 0.05996525941708603
+Delta1 = 0.5428946599234555
+Gamma1 = 0.046883203316974154
+
+
+Parameter value 2 = 0.05
+Alpha2 = -2.220446049250313e-14
+Beta2 = 1.1102230246251565e-15
+Delta2 = 0.9999999999999997
+Gamma2 = 6.661338147750939e-15
+
+
+Eval(0.2,0.2) = 0.5635102003860939

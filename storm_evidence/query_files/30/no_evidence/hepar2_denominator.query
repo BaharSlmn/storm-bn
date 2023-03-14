@@ -1,0 +1,1 @@
+storm --jani jani_files/no_evidence/hepar2.jani --prop "P=? [F(flatulence=1|amylase=1|amylase=2|surgery=1|vh_amn=1|ChHepatitis=1|ChHepatitis=2|hbeag=1|hbsag=1|hbsag_anti=1|Hyperbilirubinemia=1|pain=1|pain_ruq=1|THepatitis=1|ggtp=1|ggtp=2|ggtp=3|anorexia=1|hepatalgia=1|Cirrhosis=1|Cirrhosis=2|inr=1|inr=2|bleeding=1|albumin=1|albumin=2|edema=1|spiders=1)]"

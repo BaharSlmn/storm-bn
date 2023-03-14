@@ -1,0 +1,46 @@
+Storm-pars 1.6.4
+
+Date: Fri Apr 22 12:40:16 2022
+Command line arguments: -drn storm/drn_files/p2/earthquake.drn --prop 'P=? [F("MaryCalls0")]' --bisimulation
+Current working directory: /experiments/bayesserver_storm_comparison
+
+Time for model construction: 0.010s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	15
+Transitions: 	28
+Reward Models:  none
+State Labels: 	12 labels
+   * deadlock -> 2 item(s)
+   * MaryCalls0 -> 1 item(s)
+   * JohnCalls1 -> 2 item(s)
+   * JohnCalls0 -> 2 item(s)
+   * Alarm1 -> 1 item(s)
+   * Alarm0 -> 1 item(s)
+   * MaryCalls1 -> 1 item(s)
+   * Burglary1 -> 2 item(s)
+   * Burglary0 -> 2 item(s)
+   * Earthquake1 -> 1 item(s)
+   * Earthquake0 -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	13
+Transitions: 	22
+Reward Models:  none
+State Labels: 	2 labels
+   * init -> 1 item(s)
+   * MaryCalls0 -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F "MaryCalls0"] ...
+Result (initial states): (69000*p0+6831000*p1+8512859)/(500000000)
+Time for model checking: 0.000s.
+

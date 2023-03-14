@@ -1,0 +1,1 @@
+storm --jani jani_files/1/barley.jani --prop "P=? [G(tkv=0 | tkv=-1)]"

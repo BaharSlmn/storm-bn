@@ -1,0 +1,17 @@
+{
+    "network" : "alarm",
+    "drn_location" : "drn_files/alarm.drn",
+    "output_file" : "param_drn_files/alarm_1.drn",
+    "parameters" : {
+
+      "CPT" :  [
+        {
+          "node": "BP0",
+          "parent_names": ["CO", "TPR"],
+          "possible_parent_values": [["0", "1", "2"], ["0", "1", "2"]]
+        }],
+      "by_parent_evaluation" : [
+
+      ]
+    }
+}

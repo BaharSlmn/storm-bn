@@ -1,0 +1,1 @@
+storm --jani jani_files/5/hepar2.jani --prop "P=? [G(edema=0 | edema=-1)]"

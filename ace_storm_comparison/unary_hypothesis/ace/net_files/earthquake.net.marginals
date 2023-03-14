@@ -1,0 +1,26 @@
+Network : ace/net_files/earthquake.net
+Network Read Time (ms) : 114.327242
+Number of Evidence Sets : 1
+AC :
+  Nodes : 67
+  Edges : 82
+  Total Initialization Time (ms) : 8.940463
+  Total Inference Time (ms) : 0.619634
+  Minimum Inference Time (ms) : 0.619634
+  Maximum Inference Time (ms) : 0.619634
+  Median Inference Time (ms) : 0.619634
+  Mean Inference Time (ms) : 0.619634
+  Standard Deviation Inference Time (ms) : 0.0
+
+
+=============================================
+
+e = {}
+
+Pr(e) = 1E0
+
+Pr(Alarm,e) = [0.0161142, 0.9838857999999999]
+Pr(MaryCalls,e) = [0.021118797999999998, 0.9788812019999998]
+Pr(Earthquake,e) = [0.019999999999999997, 0.9800000000000002]
+Pr(Burglary,e) = [0.009999999999999998, 0.99]
+Pr(JohnCalls,e) = [0.06369707, 0.9363029299999999]

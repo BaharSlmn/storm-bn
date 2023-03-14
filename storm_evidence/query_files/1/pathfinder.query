@@ -1,0 +1,1 @@
+storm --jani jani_files/1/pathfinder.jani --prop "P=? [G(F98=0 | F98=-1)]"

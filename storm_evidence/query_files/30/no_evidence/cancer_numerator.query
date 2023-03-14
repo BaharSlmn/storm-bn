@@ -1,0 +1,1 @@
+storm --jani jani_files/no_evidence/cancer.jani --prop "P=? [F(Smoker=1|Cancer=1|Xray=1)]"

@@ -1,0 +1,3707 @@
+{
+	"jani-version": 1,
+	"name": "child.jani",
+	"type": "dtmc",
+	"features": [ "derived-operators" ],
+"variables": [
+	{
+	"name": "BirthAsphyxia",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "BirthAsphyxia0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "BirthAsphyxia1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "HypoxiaInO2",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 2
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "HypoxiaInO20",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "HypoxiaInO21",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "HypoxiaInO22",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "CO2",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 2
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "CO20",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "CO21",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "CO22",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "Grunting",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "Grunting0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Grunting1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "LVHreport",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "LVHreport0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "LVHreport1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "CO2Report",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "CO2Report0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "CO2Report1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "Disease",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 5
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "Disease0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Disease1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Disease2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Disease3",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Disease4",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Disease5",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "GruntingReport",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "GruntingReport0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "GruntingReport1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "LVH",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "LVH0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "LVH1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "CardiacMixing",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 3
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "CardiacMixing0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "CardiacMixing1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "CardiacMixing2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "CardiacMixing3",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "LungParench",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 2
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "LungParench0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "LungParench1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "LungParench2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "Sick",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "Sick0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "Sick1",
+		"transient": true,
+		"type": "bool"
+	}
+],
+"properties": [
+],
+"automata": [
+{
+	"name": "child",
+	"locations": [
+		{
+		"name": "loc0"
+		},
+		{
+		"name": "loc1",
+		"transient-values": [
+		{
+			"ref": "BirthAsphyxia0",
+			"value": {
+				"op": "=",
+				"left": "BirthAsphyxia",
+				"right": 0
+			}
+		},
+		{
+			"ref": "BirthAsphyxia1",
+			"value": {
+				"op": "=",
+				"left": "BirthAsphyxia",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc2",
+		"transient-values": [
+		{
+			"ref": "Disease0",
+			"value": {
+				"op": "=",
+				"left": "Disease",
+				"right": 0
+			}
+		},
+		{
+			"ref": "Disease1",
+			"value": {
+				"op": "=",
+				"left": "Disease",
+				"right": 1
+			}
+		},
+		{
+			"ref": "Disease2",
+			"value": {
+				"op": "=",
+				"left": "Disease",
+				"right": 2
+			}
+		},
+		{
+			"ref": "Disease3",
+			"value": {
+				"op": "=",
+				"left": "Disease",
+				"right": 3
+			}
+		},
+		{
+			"ref": "Disease4",
+			"value": {
+				"op": "=",
+				"left": "Disease",
+				"right": 4
+			}
+		},
+		{
+			"ref": "Disease5",
+			"value": {
+				"op": "=",
+				"left": "Disease",
+				"right": 5
+			}
+		}
+		]
+		},
+		{
+		"name": "loc3",
+		"transient-values": [
+		{
+			"ref": "LVH0",
+			"value": {
+				"op": "=",
+				"left": "LVH",
+				"right": 0
+			}
+		},
+		{
+			"ref": "LVH1",
+			"value": {
+				"op": "=",
+				"left": "LVH",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc4",
+		"transient-values": [
+		{
+			"ref": "LVHreport0",
+			"value": {
+				"op": "=",
+				"left": "LVHreport",
+				"right": 0
+			}
+		},
+		{
+			"ref": "LVHreport1",
+			"value": {
+				"op": "=",
+				"left": "LVHreport",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc5",
+		"transient-values": [
+		{
+			"ref": "Sick0",
+			"value": {
+				"op": "=",
+				"left": "Sick",
+				"right": 0
+			}
+		},
+		{
+			"ref": "Sick1",
+			"value": {
+				"op": "=",
+				"left": "Sick",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc6",
+		"transient-values": [
+		{
+			"ref": "LungParench0",
+			"value": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 0
+			}
+		},
+		{
+			"ref": "LungParench1",
+			"value": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 1
+			}
+		},
+		{
+			"ref": "LungParench2",
+			"value": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 2
+			}
+		}
+		]
+		},
+		{
+		"name": "loc7",
+		"transient-values": [
+		{
+			"ref": "Grunting0",
+			"value": {
+				"op": "=",
+				"left": "Grunting",
+				"right": 0
+			}
+		},
+		{
+			"ref": "Grunting1",
+			"value": {
+				"op": "=",
+				"left": "Grunting",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc8",
+		"transient-values": [
+		{
+			"ref": "GruntingReport0",
+			"value": {
+				"op": "=",
+				"left": "GruntingReport",
+				"right": 0
+			}
+		},
+		{
+			"ref": "GruntingReport1",
+			"value": {
+				"op": "=",
+				"left": "GruntingReport",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc9",
+		"transient-values": [
+		{
+			"ref": "CardiacMixing0",
+			"value": {
+				"op": "=",
+				"left": "CardiacMixing",
+				"right": 0
+			}
+		},
+		{
+			"ref": "CardiacMixing1",
+			"value": {
+				"op": "=",
+				"left": "CardiacMixing",
+				"right": 1
+			}
+		},
+		{
+			"ref": "CardiacMixing2",
+			"value": {
+				"op": "=",
+				"left": "CardiacMixing",
+				"right": 2
+			}
+		},
+		{
+			"ref": "CardiacMixing3",
+			"value": {
+				"op": "=",
+				"left": "CardiacMixing",
+				"right": 3
+			}
+		}
+		]
+		},
+		{
+		"name": "loc10",
+		"transient-values": [
+		{
+			"ref": "HypoxiaInO20",
+			"value": {
+				"op": "=",
+				"left": "HypoxiaInO2",
+				"right": 0
+			}
+		},
+		{
+			"ref": "HypoxiaInO21",
+			"value": {
+				"op": "=",
+				"left": "HypoxiaInO2",
+				"right": 1
+			}
+		},
+		{
+			"ref": "HypoxiaInO22",
+			"value": {
+				"op": "=",
+				"left": "HypoxiaInO2",
+				"right": 2
+			}
+		}
+		]
+		},
+		{
+		"name": "loc11",
+		"transient-values": [
+		{
+			"ref": "CO20",
+			"value": {
+				"op": "=",
+				"left": "CO2",
+				"right": 0
+			}
+		},
+		{
+			"ref": "CO21",
+			"value": {
+				"op": "=",
+				"left": "CO2",
+				"right": 1
+			}
+		},
+		{
+			"ref": "CO22",
+			"value": {
+				"op": "=",
+				"left": "CO2",
+				"right": 2
+			}
+		}
+		]
+		},
+		{
+		"name": "loc12",
+		"transient-values": [
+		{
+			"ref": "CO2Report0",
+			"value": {
+				"op": "=",
+				"left": "CO2Report",
+				"right": 0
+			}
+		},
+		{
+			"ref": "CO2Report1",
+			"value": {
+				"op": "=",
+				"left": "CO2Report",
+				"right": 1
+			}
+		}
+		]
+		}
+],
+	"initial-locations": ["loc0"],
+	"edges": [
+	{
+		"location": "loc0",
+		"destinations": [
+		{
+			"location": "loc1",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "BirthAsphyxia",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc1",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "BirthAsphyxia",
+				"value": 1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc1",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "BirthAsphyxia",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.25},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc1",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "BirthAsphyxia",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.03061224},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.33673469},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.29591837},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.23469388},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.05102041},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.05102041},
+			"assignments": [
+			{
+				"ref": "Disease",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 0
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 1
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 0
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 1
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 2
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 0
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 1
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 3
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 0
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 1
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 4
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 0
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.95},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 1
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 5
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 0
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "LVH",
+				"value": 1
+			},
+			{
+				"ref": "Disease",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "LVH",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "LVHreport",
+				"value": 0
+			},
+			{
+				"ref": "LVH",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "LVHreport",
+				"value": -1
+			},
+			{
+				"ref": "LVH",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "LVH",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "LVHreport",
+				"value": 0
+			},
+			{
+				"ref": "LVH",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.95},
+			"assignments": [
+			{
+				"ref": "LVHreport",
+				"value": -1
+			},
+			{
+				"ref": "LVH",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc4",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "Sick",
+				"value": 0
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "Sick",
+				"value": 1
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc4",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "Sick",
+				"value": 0
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "Sick",
+				"value": 1
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc4",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 2
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "Sick",
+				"value": 0
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "Sick",
+				"value": 1
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc4",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 3
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "Sick",
+				"value": 0
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "Sick",
+				"value": 1
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc4",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 4
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "Sick",
+				"value": 0
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "Sick",
+				"value": 1
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc4",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 5
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "Sick",
+				"value": 0
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "Sick",
+				"value": 1
+			},
+			{
+				"ref": "LVHreport",
+				"value": -1
+			},
+			{
+				"ref": "BirthAsphyxia",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 0
+			},
+			{
+				"ref": "Sick",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 1
+			},
+			{
+				"ref": "Sick",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 2
+			},
+			{
+				"ref": "Sick",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 0
+			},
+			{
+				"ref": "Sick",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 1
+			},
+			{
+				"ref": "Sick",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 2
+			},
+			{
+				"ref": "Sick",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 2
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 0
+			},
+			{
+				"ref": "Sick",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 1
+			},
+			{
+				"ref": "Sick",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 2
+			},
+			{
+				"ref": "Sick",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 3
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 0
+			},
+			{
+				"ref": "Sick",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 1
+			},
+			{
+				"ref": "Sick",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 2
+			},
+			{
+				"ref": "Sick",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 4
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 0
+			},
+			{
+				"ref": "Sick",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 1
+			},
+			{
+				"ref": "Sick",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 2
+			},
+			{
+				"ref": "Sick",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 5
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.03},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 0
+			},
+			{
+				"ref": "Sick",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.25},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 1
+			},
+			{
+				"ref": "Sick",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.72},
+			"assignments": [
+			{
+				"ref": "LungParench",
+				"value": 2
+			},
+			{
+				"ref": "Sick",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Sick",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "Grunting",
+				"value": 0
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "Grunting",
+				"value": -1
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Sick",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "Grunting",
+				"value": 0
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "Grunting",
+				"value": -1
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Sick",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "Grunting",
+				"value": 0
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "Grunting",
+				"value": -1
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Sick",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "Grunting",
+				"value": 0
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.95},
+			"assignments": [
+			{
+				"ref": "Grunting",
+				"value": -1
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Sick",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "Grunting",
+				"value": 0
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "Grunting",
+				"value": -1
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "Sick",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "Grunting",
+				"value": 0
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "Grunting",
+				"value": -1
+			},
+			{
+				"ref": "LungParench",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Grunting",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "GruntingReport",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Grunting",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "GruntingReport",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 0
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.43},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 1
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 2
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 3
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 0
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.09},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 1
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.09},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 2
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 3
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 2
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 0
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.16},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 1
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 2
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 3
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 3
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 0
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 1
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.95},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 2
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 3
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 4
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 0
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.03},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 1
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.95},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 2
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 3
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "Disease",
+				"right": 5
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 0
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.53},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 1
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 2
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "CardiacMixing",
+				"value": 3
+			},
+			{
+				"ref": "GruntingReport",
+				"value": -1
+			},
+			{
+				"ref": "Grunting",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc9",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "CardiacMixing",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc10",
+			"probability": {"exp": 0.93},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": 0
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc9",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "CardiacMixing",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc10",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": 0
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc9",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "CardiacMixing",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc10",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": 0
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc9",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "CardiacMixing",
+				"right": 3
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc10",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": 0
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.18},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc9",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "CardiacMixing",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc10",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": 0
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc9",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "CardiacMixing",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc10",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": 0
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.75},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.15},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc9",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "CardiacMixing",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc10",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": 0
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.65},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc9",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "CardiacMixing",
+				"right": 3
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc10",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": 0
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.6},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc9",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "CardiacMixing",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc10",
+			"probability": {"exp": 0.7},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": 0
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc9",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "CardiacMixing",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc10",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": 0
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.65},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.25},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc9",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "CardiacMixing",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc10",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": 0
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc9",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "CardiacMixing",
+				"right": 3
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc10",
+			"probability": {"exp": 0.02},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": 0
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.18},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			},
+			{
+				"ref": "CardiacMixing",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "CO2",
+				"value": 0
+			},
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "CO2",
+				"value": -1
+			},
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "CO2",
+				"value": -1
+			},
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.65},
+			"assignments": [
+			{
+				"ref": "CO2",
+				"value": 0
+			},
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "CO2",
+				"value": -1
+			},
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "CO2",
+				"value": -1
+			},
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "LungParench",
+				"right": 2
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.45},
+			"assignments": [
+			{
+				"ref": "CO2",
+				"value": 0
+			},
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "CO2",
+				"value": -1
+			},
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "CO2",
+				"value": -1
+			},
+			{
+				"ref": "HypoxiaInO2",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc11",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "CO2",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "CO2Report",
+				"value": 0
+			},
+			{
+				"ref": "CO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "CO2Report",
+				"value": 1
+			},
+			{
+				"ref": "CO2",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc11",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "CO2",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "CO2Report",
+				"value": 0
+			},
+			{
+				"ref": "CO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "CO2Report",
+				"value": 1
+			},
+			{
+				"ref": "CO2",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc11",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "CO2",
+				"right": 2
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "CO2Report",
+				"value": 0
+			},
+			{
+				"ref": "CO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc12",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "CO2Report",
+				"value": 1
+			},
+			{
+				"ref": "CO2",
+				"value": -1
+			}
+			]
+		}
+		]
+	}
+	]
+}
+],
+"system": {
+	"elements": [ {"automaton": "child"} ]
+}
+}

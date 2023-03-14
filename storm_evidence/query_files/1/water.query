@@ -1,0 +1,1 @@
+storm --jani jani_files/1/water.jani --prop "P=? [G(C_NI_12_45=0 | C_NI_12_45=-1)]"

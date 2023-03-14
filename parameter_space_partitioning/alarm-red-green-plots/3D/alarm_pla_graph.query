@@ -1,0 +1,1 @@
+timeout 15m storm-pars --jani alarm-red-green-plots/3D/alarm_pla_graph_xy.jani --prop "P=? [F(VENTTUBE=0)]" --timemem --bisimulation

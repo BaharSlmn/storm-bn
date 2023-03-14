@@ -1,0 +1,1257 @@
+Storm 1.6.4 (dev)
+
+Date: Thu Apr 28 12:33:37 2022
+Command line arguments: --jani storm/jani_files/mildew.jani --expvisittimes --build-all-labels
+Current working directory: /home/hans/Desktop/private/ace_storm_comparison/unary_hypothesis
+
+Time for model input parsing: 12.083s.
+
+Time for model construction: 27.143s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	427086
+Transitions: 	1696791
+Reward Models:  none
+State Labels: 	618 labels
+   * udbytte85 -> 1 item(s)
+   * udbytte82 -> 1 item(s)
+   * udbytte77 -> 1 item(s)
+   * udbytte75 -> 1 item(s)
+   * udbytte74 -> 1 item(s)
+   * udbytte72 -> 1 item(s)
+   * udbytte71 -> 1 item(s)
+   * udbytte70 -> 1 item(s)
+   * udbytte69 -> 1 item(s)
+   * udbytte68 -> 1 item(s)
+   * udbytte66 -> 1 item(s)
+   * udbytte65 -> 1 item(s)
+   * udbytte64 -> 1 item(s)
+   * udbytte63 -> 1 item(s)
+   * udbytte62 -> 1 item(s)
+   * udbytte59 -> 1 item(s)
+   * udbytte58 -> 1 item(s)
+   * udbytte57 -> 1 item(s)
+   * udbytte56 -> 1 item(s)
+   * udbytte55 -> 1 item(s)
+   * udbytte54 -> 1 item(s)
+   * udbytte53 -> 1 item(s)
+   * udbytte50 -> 1 item(s)
+   * udbytte5 -> 1 item(s)
+   * udbytte49 -> 1 item(s)
+   * udbytte67 -> 1 item(s)
+   * udbytte48 -> 1 item(s)
+   * udbytte47 -> 1 item(s)
+   * udbytte80 -> 1 item(s)
+   * udbytte45 -> 1 item(s)
+   * udbytte43 -> 1 item(s)
+   * udbytte40 -> 1 item(s)
+   * udbytte39 -> 1 item(s)
+   * udbytte34 -> 1 item(s)
+   * udbytte33 -> 1 item(s)
+   * udbytte32 -> 1 item(s)
+   * udbytte31 -> 1 item(s)
+   * udbytte30 -> 1 item(s)
+   * udbytte3 -> 1 item(s)
+   * udbytte29 -> 1 item(s)
+   * udbytte28 -> 1 item(s)
+   * udbytte27 -> 1 item(s)
+   * udbytte6 -> 1 item(s)
+   * udbytte26 -> 1 item(s)
+   * udbytte24 -> 1 item(s)
+   * udbytte42 -> 1 item(s)
+   * udbytte22 -> 1 item(s)
+   * udbytte21 -> 1 item(s)
+   * udbytte2 -> 1 item(s)
+   * udbytte19 -> 1 item(s)
+   * dm_464 -> 1 item(s)
+   * dm_344 -> 3 item(s)
+   * dm_460 -> 1 item(s)
+   * dm_46 -> 1 item(s)
+   * dm_459 -> 1 item(s)
+   * dm_451 -> 1 item(s)
+   * dm_450 -> 1 item(s)
+   * dm_449 -> 1 item(s)
+   * dm_442 -> 1 item(s)
+   * dm_447 -> 1 item(s)
+   * dm_218 -> 72 item(s)
+   * dm_14 -> 873 item(s)
+   * dm_44 -> 1 item(s)
+   * dm_215 -> 72 item(s)
+   * dm_337 -> 3 item(s)
+   * dm_436 -> 1 item(s)
+   * dm_434 -> 1 item(s)
+   * udbytte37 -> 1 item(s)
+   * dm_433 -> 1 item(s)
+   * dm_432 -> 1 item(s)
+   * straaling_32 -> 2769 item(s)
+   * dm_431 -> 1 item(s)
+   * dm_42 -> 1 item(s)
+   * dm_419 -> 1 item(s)
+   * meldug_10 -> 5 item(s)
+   * dm_493 -> 1 item(s)
+   * dm_444 -> 1 item(s)
+   * dm_427 -> 1 item(s)
+   * meldug_43 -> 1227 item(s)
+   * dm_415 -> 1 item(s)
+   * dm_246 -> 63 item(s)
+   * dm_414 -> 1 item(s)
+   * dm_412 -> 1 item(s)
+   * dm_420 -> 1 item(s)
+   * dm_445 -> 1 item(s)
+   * dm_411 -> 1 item(s)
+   * dm_370 -> 3 item(s)
+   * dm_398 -> 3 item(s)
+   * dm_349 -> 3 item(s)
+   * dm_416 -> 1 item(s)
+   * dm_394 -> 3 item(s)
+   * dm_380 -> 3 item(s)
+   * dm_119 -> 873 item(s)
+   * dm_39 -> 2 item(s)
+   * udbytte46 -> 1 item(s)
+   * dm_470 -> 1 item(s)
+   * dm_389 -> 3 item(s)
+   * dm_386 -> 3 item(s)
+   * dm_40 -> 1 item(s)
+   * dm_384 -> 3 item(s)
+   * udbytte23 -> 1 item(s)
+   * dm_356 -> 3 item(s)
+   * dm_382 -> 3 item(s)
+   * dm_327 -> 3 item(s)
+   * dm_379 -> 3 item(s)
+   * foto_422 -> 82 item(s)
+   * lai_06 -> 1 item(s)
+   * dm_440 -> 1 item(s)
+   * foto_219 -> 270 item(s)
+   * dm_374 -> 3 item(s)
+   * dm_321 -> 3 item(s)
+   * dm_19 -> 873 item(s)
+   * dm_126 -> 873 item(s)
+   * udbytte81 -> 1 item(s)
+   * dm_482 -> 1 item(s)
+   * dm_455 -> 1 item(s)
+   * dm_10 -> 369 item(s)
+   * nedboer_20 -> 988 item(s)
+   * dm_456 -> 1 item(s)
+   * dm_372 -> 3 item(s)
+   * dm_492 -> 1 item(s)
+   * dm_37 -> 2 item(s)
+   * dm_424 -> 1 item(s)
+   * dm_368 -> 3 item(s)
+   * dm_367 -> 3 item(s)
+   * meldug_38 -> 536 item(s)
+   * straaling_40 -> 846 item(s)
+   * dm_366 -> 3 item(s)
+   * temp_22 -> 2964 item(s)
+   * dm_376 -> 3 item(s)
+   * meldug_33 -> 536 item(s)
+   * dm_364 -> 3 item(s)
+   * foto_328 -> 168 item(s)
+   * dm_441 -> 1 item(s)
+   * dm_362 -> 3 item(s)
+   * dm_463 -> 1 item(s)
+   * dm_361 -> 3 item(s)
+   * straaling_30 -> 2769 item(s)
+   * deadlock -> 86 item(s)
+   * dm_360 -> 3 item(s)
+   * dm_359 -> 3 item(s)
+   * temp_21 -> 2964 item(s)
+   * dm_244 -> 63 item(s)
+   * foto_314 -> 178 item(s)
+   * dm_369 -> 3 item(s)
+   * dm_490 -> 1 item(s)
+   * dm_446 -> 1 item(s)
+   * dm_252 -> 54 item(s)
+   * lai_27 -> 103 item(s)
+   * dm_429 -> 1 item(s)
+   * dm_355 -> 3 item(s)
+   * dm_472 -> 1 item(s)
+   * foto_20 -> 180 item(s)
+   * dm_43 -> 1 item(s)
+   * udbytte51 -> 1 item(s)
+   * dm_36 -> 2 item(s)
+   * dm_130 -> 873 item(s)
+   * dm_358 -> 3 item(s)
+   * dm_350 -> 3 item(s)
+   * dm_413 -> 1 item(s)
+   * dm_498 -> 1 item(s)
+   * dm_439 -> 1 item(s)
+   * dm_347 -> 3 item(s)
+   * dm_381 -> 3 item(s)
+   * dm_453 -> 1 item(s)
+   * dm_340 -> 3 item(s)
+   * udbytte9 -> 1 item(s)
+   * lai_30 -> 443 item(s)
+   * dm_425 -> 1 item(s)
+   * dm_229 -> 72 item(s)
+   * dm_226 -> 72 item(s)
+   * dm_452 -> 1 item(s)
+   * udbytte35 -> 1 item(s)
+   * dm_317 -> 2 item(s)
+   * dm_329 -> 3 item(s)
+   * dm_228 -> 72 item(s)
+   * dm_26 -> 63 item(s)
+   * foto_424 -> 0 item(s)
+   * meldug_18 -> 5 item(s)
+   * dm_210 -> 72 item(s)
+   * dm_30 -> 2 item(s)
+   * dm_383 -> 3 item(s)
+   * dm_496 -> 1 item(s)
+   * dm_323 -> 3 item(s)
+   * dm_443 -> 1 item(s)
+   * dm_410 -> 1 item(s)
+   * dm_125 -> 873 item(s)
+   * dm_38 -> 2 item(s)
+   * nedboer_32 -> 3104 item(s)
+   * dm_346 -> 3 item(s)
+   * lai_11 -> 2 item(s)
+   * dm_353 -> 3 item(s)
+   * meldug_31 -> 536 item(s)
+   * dm_22 -> 36 item(s)
+   * foto_113 -> 54 item(s)
+   * dm_320 -> 3 item(s)
+   * dm_124 -> 873 item(s)
+   * dm_467 -> 1 item(s)
+   * dm_225 -> 72 item(s)
+   * dm_23 -> 45 item(s)
+   * straaling_22 -> 4824 item(s)
+   * dm_217 -> 72 item(s)
+   * udbytte14 -> 1 item(s)
+   * dm_18 -> 873 item(s)
+   * dm_448 -> 1 item(s)
+   * udbytte17 -> 1 item(s)
+   * dm_258 -> 27 item(s)
+   * meldug_23 -> 32 item(s)
+   * dm_17 -> 873 item(s)
+   * dm_128 -> 873 item(s)
+   * straaling_11 -> 288 item(s)
+   * dm_212 -> 72 item(s)
+   * dm_318 -> 3 item(s)
+   * dm_393 -> 3 item(s)
+   * straaling_12 -> 288 item(s)
+   * dm_20 -> 27 item(s)
+   * dm_117 -> 873 item(s)
+   * foto_426 -> 0 item(s)
+   * dm_112 -> 873 item(s)
+   * udbytte0 -> 1 item(s)
+   * dm_230 -> 72 item(s)
+   * dm_476 -> 1 item(s)
+   * dm_27 -> 72 item(s)
+   * dm_45 -> 1 item(s)
+   * foto_218 -> 405 item(s)
+   * dm_457 -> 1 item(s)
+   * foto_415 -> 100 item(s)
+   * dm_423 -> 1 item(s)
+   * foto_26 -> 1026 item(s)
+   * dm_312 -> 2 item(s)
+   * foto_411 -> 100 item(s)
+   * dm_333 -> 3 item(s)
+   * dm_110 -> 873 item(s)
+   * meldug_17 -> 5 item(s)
+   * dm_41 -> 1 item(s)
+   * straaling_23 -> 4824 item(s)
+   * dm_224 -> 72 item(s)
+   * udbytte8 -> 1 item(s)
+   * mikro_13 -> 211 item(s)
+   * dm_339 -> 3 item(s)
+   * dm_343 -> 3 item(s)
+   * dm_428 -> 1 item(s)
+   * dm_121 -> 873 item(s)
+   * dm_33 -> 2 item(s)
+   * dm_115 -> 873 item(s)
+   * dm_397 -> 3 item(s)
+   * dm_388 -> 3 item(s)
+   * dm_326 -> 3 item(s)
+   * dm_232 -> 72 item(s)
+   * foto_217 -> 549 item(s)
+   * dm_322 -> 3 item(s)
+   * dm_396 -> 3 item(s)
+   * foto_13 -> 27 item(s)
+   * dm_351 -> 3 item(s)
+   * udbytte20 -> 1 item(s)
+   * dm_352 -> 3 item(s)
+   * dm_113 -> 873 item(s)
+   * meldug_46 -> 1227 item(s)
+   * dm_211 -> 72 item(s)
+   * foto_18 -> 63 item(s)
+   * dm_426 -> 1 item(s)
+   * dm_249 -> 54 item(s)
+   * dm_222 -> 72 item(s)
+   * dm_336 -> 3 item(s)
+   * udbytte44 -> 1 item(s)
+   * meldug_12 -> 5 item(s)
+   * dm_385 -> 3 item(s)
+   * foto_318 -> 178 item(s)
+   * dm_12 -> 486 item(s)
+   * dm_465 -> 1 item(s)
+   * dm_15 -> 873 item(s)
+   * dm_131 -> 873 item(s)
+   * dm_13 -> 873 item(s)
+   * dm_438 -> 1 item(s)
+   * dm_21 -> 36 item(s)
+   * dm_118 -> 873 item(s)
+   * foto_327 -> 168 item(s)
+   * straaling_20 -> 4824 item(s)
+   * dm_421 -> 1 item(s)
+   * meldug_40 -> 1227 item(s)
+   * dm_247 -> 54 item(s)
+   * mikro_22 -> 3836 item(s)
+   * dm_31 -> 2 item(s)
+   * dm_220 -> 72 item(s)
+   * dm_391 -> 3 item(s)
+   * dm_47 -> 1 item(s)
+   * dm_357 -> 3 item(s)
+   * dm_231 -> 72 item(s)
+   * straaling_31 -> 2769 item(s)
+   * dm_313 -> 2 item(s)
+   * dm_335 -> 3 item(s)
+   * dm_259 -> 27 item(s)
+   * dm_129 -> 873 item(s)
+   * dm_454 -> 1 item(s)
+   * lai_10 -> 1 item(s)
+   * udbytte13 -> 1 item(s)
+   * dm_371 -> 3 item(s)
+   * dm_234 -> 72 item(s)
+   * dm_338 -> 3 item(s)
+   * dm_227 -> 72 item(s)
+   * udbytte10 -> 1 item(s)
+   * foto_417 -> 100 item(s)
+   * dm_236 -> 72 item(s)
+   * dm_437 -> 1 item(s)
+   * dm_330 -> 3 item(s)
+   * dm_120 -> 873 item(s)
+   * nedboer_11 -> 53 item(s)
+   * dm_213 -> 72 item(s)
+   * dm_239 -> 63 item(s)
+   * dm_422 -> 1 item(s)
+   * dm_486 -> 1 item(s)
+   * dm_240 -> 63 item(s)
+   * dm_24 -> 45 item(s)
+   * udbytte41 -> 1 item(s)
+   * dm_241 -> 63 item(s)
+   * nedboer_31 -> 3104 item(s)
+   * lai_12 -> 9 item(s)
+   * udbytte52 -> 1 item(s)
+   * dm_319 -> 3 item(s)
+   * temp_11 -> 159 item(s)
+   * dm_243 -> 63 item(s)
+   * dm_116 -> 873 item(s)
+   * foto_114 -> 54 item(s)
+   * dm_248 -> 54 item(s)
+   * dm_235 -> 72 item(s)
+   * dm_238 -> 63 item(s)
+   * dm_123 -> 873 item(s)
+   * dm_479 -> 1 item(s)
+   * foto_48 -> 100 item(s)
+   * mikro_31 -> 8869 item(s)
+   * dm_316 -> 2 item(s)
+   * lai_43 -> 0 item(s)
+   * dm_348 -> 3 item(s)
+   * dm_341 -> 3 item(s)
+   * udbytte84 -> 1 item(s)
+   * foto_115 -> 45 item(s)
+   * dm_253 -> 45 item(s)
+   * lai_25 -> 120 item(s)
+   * dm_331 -> 3 item(s)
+   * dm_254 -> 45 item(s)
+   * udbytte83 -> 1 item(s)
+   * dm_11 -> 486 item(s)
+   * dm_257 -> 36 item(s)
+   * foto_116 -> 45 item(s)
+   * dm_255 -> 45 item(s)
+   * foto_14 -> 36 item(s)
+   * dm_122 -> 873 item(s)
+   * dm_256 -> 36 item(s)
+   * foto_46 -> 100 item(s)
+   * dm_127 -> 873 item(s)
+   * dm_260 -> 18 item(s)
+   * dm_375 -> 3 item(s)
+   * meldug_20 -> 32 item(s)
+   * udbytte4 -> 1 item(s)
+   * dm_342 -> 3 item(s)
+   * udbytte73 -> 1 item(s)
+   * dm_466 -> 1 item(s)
+   * temp_33 -> 9312 item(s)
+   * dm_325 -> 3 item(s)
+   * dm_480 -> 1 item(s)
+   * straaling_41 -> 846 item(s)
+   * dm_219 -> 72 item(s)
+   * dm_390 -> 3 item(s)
+   * dm_29 -> 72 item(s)
+   * lai_36 -> 270 item(s)
+   * dm_365 -> 3 item(s)
+   * dm_34 -> 2 item(s)
+   * foto_216 -> 702 item(s)
+   * foto_326 -> 168 item(s)
+   * dm_311 -> 2 item(s)
+   * udbytte7 -> 1 item(s)
+   * foto_212 -> 864 item(s)
+   * dm_328 -> 3 item(s)
+   * dm_310 -> 2 item(s)
+   * dm_32 -> 2 item(s)
+   * dm_111 -> 873 item(s)
+   * foto_21 -> 180 item(s)
+   * dm_48 -> 1 item(s)
+   * dm_387 -> 3 item(s)
+   * dm_315 -> 2 item(s)
+   * dm_377 -> 3 item(s)
+   * dm_345 -> 3 item(s)
+   * udbytte76 -> 1 item(s)
+   * dm_378 -> 3 item(s)
+   * dm_399 -> 3 item(s)
+   * dm_233 -> 72 item(s)
+   * middel_32 -> 36362 item(s)
+   * dm_221 -> 72 item(s)
+   * foto_27 -> 1026 item(s)
+   * dm_250 -> 54 item(s)
+   * temp_12 -> 159 item(s)
+   * dm_332 -> 3 item(s)
+   * dm_468 -> 1 item(s)
+   * dm_25 -> 63 item(s)
+   * dm_469 -> 1 item(s)
+   * foto_35 -> 122 item(s)
+   * dm_471 -> 1 item(s)
+   * dm_497 -> 1 item(s)
+   * dm_473 -> 1 item(s)
+   * dm_354 -> 3 item(s)
+   * dm_475 -> 1 item(s)
+   * foto_34 -> 122 item(s)
+   * lai_05 -> 1 item(s)
+   * middel_11 -> 844 item(s)
+   * dm_478 -> 1 item(s)
+   * dm_483 -> 1 item(s)
+   * dm_484 -> 1 item(s)
+   * dm_485 -> 1 item(s)
+   * foto_418 -> 82 item(s)
+   * dm_487 -> 1 item(s)
+   * udbytte25 -> 1 item(s)
+   * dm_488 -> 1 item(s)
+   * dm_324 -> 3 item(s)
+   * foto_15 -> 63 item(s)
+   * dm_489 -> 1 item(s)
+   * dm_474 -> 1 item(s)
+   * lai_22 -> 137 item(s)
+   * dm_435 -> 1 item(s)
+   * meldug_26 -> 32 item(s)
+   * udbytte60 -> 1 item(s)
+   * dm_491 -> 1 item(s)
+   * dm_494 -> 1 item(s)
+   * dm_495 -> 1 item(s)
+   * dm_251 -> 54 item(s)
+   * foto_215 -> 702 item(s)
+   * dm_499 -> 1 item(s)
+   * foto_10 -> 9 item(s)
+   * lai_31 -> 501 item(s)
+   * foto_11 -> 9 item(s)
+   * nedboer_21 -> 988 item(s)
+   * foto_110 -> 63 item(s)
+   * meldug_14 -> 5 item(s)
+   * foto_111 -> 63 item(s)
+   * foto_332 -> 0 item(s)
+   * foto_112 -> 54 item(s)
+   * foto_118 -> 27 item(s)
+   * foto_12 -> 18 item(s)
+   * foto_16 -> 63 item(s)
+   * foto_17 -> 63 item(s)
+   * foto_39 -> 122 item(s)
+   * foto_210 -> 1026 item(s)
+   * dm_214 -> 72 item(s)
+   * foto_211 -> 1026 item(s)
+   * dm_392 -> 3 item(s)
+   * foto_213 -> 864 item(s)
+   * foto_214 -> 864 item(s)
+   * foto_24 -> 657 item(s)
+   * foto_22 -> 342 item(s)
+   * foto_23 -> 504 item(s)
+   * dm_245 -> 63 item(s)
+   * foto_25 -> 1071 item(s)
+   * dm_35 -> 2 item(s)
+   * foto_28 -> 1026 item(s)
+   * udbytte38 -> 1 item(s)
+   * foto_45 -> 100 item(s)
+   * foto_29 -> 1026 item(s)
+   * lai_00 -> 0 item(s)
+   * temp_20 -> 2964 item(s)
+   * foto_30 -> 61 item(s)
+   * lai_33 -> 526 item(s)
+   * foto_31 -> 61 item(s)
+   * lai_21 -> 124 item(s)
+   * dm_334 -> 3 item(s)
+   * foto_310 -> 122 item(s)
+   * lai_02 -> 0 item(s)
+   * foto_311 -> 122 item(s)
+   * dm_114 -> 873 item(s)
+   * foto_315 -> 178 item(s)
+   * lai_34 -> 448 item(s)
+   * foto_19 -> 63 item(s)
+   * foto_316 -> 178 item(s)
+   * foto_313 -> 178 item(s)
+   * foto_320 -> 178 item(s)
+   * udbytte36 -> 1 item(s)
+   * foto_427 -> 0 item(s)
+   * meldug_37 -> 536 item(s)
+   * foto_319 -> 178 item(s)
+   * dm_430 -> 1 item(s)
+   * meldug_30 -> 536 item(s)
+   * foto_32 -> 61 item(s)
+   * foto_321 -> 178 item(s)
+   * dm_28 -> 72 item(s)
+   * foto_322 -> 178 item(s)
+   * foto_323 -> 176 item(s)
+   * lai_03 -> 1 item(s)
+   * foto_325 -> 176 item(s)
+   * foto_329 -> 162 item(s)
+   * temp_30 -> 0 item(s)
+   * foto_33 -> 61 item(s)
+   * dm_242 -> 63 item(s)
+   * foto_330 -> 0 item(s)
+   * foto_331 -> 0 item(s)
+   * foto_423 -> 0 item(s)
+   * dm_237 -> 63 item(s)
+   * foto_36 -> 122 item(s)
+   * foto_37 -> 122 item(s)
+   * foto_38 -> 122 item(s)
+   * dm_223 -> 72 item(s)
+   * middel_20 -> 15344 item(s)
+   * foto_40 -> 100 item(s)
+   * foto_117 -> 36 item(s)
+   * foto_416 -> 100 item(s)
+   * foto_49 -> 100 item(s)
+   * lai_16 -> 8 item(s)
+   * foto_41 -> 100 item(s)
+   * foto_410 -> 100 item(s)
+   * dm_49 -> 1 item(s)
+   * lai_24 -> 134 item(s)
+   * meldug_16 -> 5 item(s)
+   * foto_412 -> 100 item(s)
+   * temp_10 -> 159 item(s)
+   * foto_414 -> 100 item(s)
+   * foto_42 -> 100 item(s)
+   * dm_363 -> 3 item(s)
+   * foto_420 -> 82 item(s)
+   * foto_425 -> 0 item(s)
+   * dm_314 -> 2 item(s)
+   * temp_23 -> 2964 item(s)
+   * foto_43 -> 100 item(s)
+   * lai_04 -> 1 item(s)
+   * meldug_45 -> 1227 item(s)
+   * foto_47 -> 100 item(s)
+   * lai_01 -> 0 item(s)
+   * lai_07 -> 1 item(s)
+   * lai_13 -> 9 item(s)
+   * lai_14 -> 9 item(s)
+   * meldug_11 -> 5 item(s)
+   * foto_421 -> 82 item(s)
+   * lai_15 -> 8 item(s)
+   * lai_17 -> 7 item(s)
+   * foto_324 -> 176 item(s)
+   * lai_20 -> 116 item(s)
+   * lai_26 -> 119 item(s)
+   * dm_481 -> 1 item(s)
+   * lai_32 -> 526 item(s)
+   * lai_35 -> 390 item(s)
+   * lai_40 -> 1227 item(s)
+   * dm_461 -> 1 item(s)
+   * lai_41 -> 1044 item(s)
+   * udbytte61 -> 1 item(s)
+   * lai_42 -> 498 item(s)
+   * meldug_13 -> 5 item(s)
+   * mikro_10 -> 211 item(s)
+   * meldug_15 -> 5 item(s)
+   * meldug_21 -> 32 item(s)
+   * foto_312 -> 178 item(s)
+   * meldug_22 -> 32 item(s)
+   * dm_16 -> 873 item(s)
+   * dm_477 -> 1 item(s)
+   * mikro_21 -> 3836 item(s)
+   * udbytte78 -> 1 item(s)
+   * udbytte18 -> 1 item(s)
+   * meldug_24 -> 32 item(s)
+   * middel_33 -> 36362 item(s)
+   * nedboer_30 -> 3104 item(s)
+   * meldug_25 -> 32 item(s)
+   * meldug_27 -> 32 item(s)
+   * meldug_28 -> 32 item(s)
+   * init -> 1 item(s)
+   * meldug_32 -> 536 item(s)
+   * middel_22 -> 15344 item(s)
+   * meldug_34 -> 536 item(s)
+   * foto_119 -> 18 item(s)
+   * meldug_35 -> 536 item(s)
+   * meldug_36 -> 536 item(s)
+   * meldug_41 -> 1227 item(s)
+   * dm_462 -> 1 item(s)
+   * meldug_42 -> 1227 item(s)
+   * meldug_44 -> 1227 item(s)
+   * mikro_20 -> 3836 item(s)
+   * temp_31 -> 9312 item(s)
+   * meldug_47 -> 1227 item(s)
+   * meldug_48 -> 1227 item(s)
+   * udbytte79 -> 1 item(s)
+   * middel_10 -> 844 item(s)
+   * middel_12 -> 844 item(s)
+   * middel_13 -> 844 item(s)
+   * middel_21 -> 15344 item(s)
+   * foto_317 -> 178 item(s)
+   * foto_413 -> 100 item(s)
+   * middel_23 -> 15344 item(s)
+   * middel_30 -> 36362 item(s)
+   * temp_40 -> 0 item(s)
+   * middel_31 -> 36362 item(s)
+   * foto_419 -> 82 item(s)
+   * mikro_11 -> 211 item(s)
+   * mikro_12 -> 211 item(s)
+   * foto_44 -> 100 item(s)
+   * mikro_23 -> 3836 item(s)
+   * mikro_30 -> 8869 item(s)
+   * mikro_32 -> 9312 item(s)
+   * dm_458 -> 1 item(s)
+   * mikro_33 -> 9312 item(s)
+   * dm_395 -> 3 item(s)
+   * nedboer_10 -> 53 item(s)
+   * nedboer_12 -> 53 item(s)
+   * nedboer_22 -> 988 item(s)
+   * straaling_10 -> 288 item(s)
+   * straaling_13 -> 288 item(s)
+   * dm_373 -> 3 item(s)
+   * straaling_21 -> 4824 item(s)
+   * straaling_33 -> 2769 item(s)
+   * straaling_42 -> 846 item(s)
+   * straaling_43 -> 846 item(s)
+   * lai_23 -> 135 item(s)
+   * temp_13 -> 159 item(s)
+   * dm_216 -> 72 item(s)
+   * temp_32 -> 9312 item(s)
+   * temp_41 -> 282 item(s)
+   * dm_417 -> 1 item(s)
+   * temp_42 -> 282 item(s)
+   * udbytte12 -> 1 item(s)
+   * temp_43 -> 282 item(s)
+   * udbytte1 -> 1 item(s)
+   * dm_418 -> 1 item(s)
+   * udbytte11 -> 1 item(s)
+   * udbytte15 -> 1 item(s)
+   * udbytte16 -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+Accumulated values for labels:
+	deadlock: inf
+	dm_10: 0.02088158971
+	dm_11: 0.003865935161
+	dm_110: 0.07053339316
+	dm_111: 0.07994448099
+	dm_112: 0.09279744333
+	dm_113: 0.09230739993
+	dm_114: 0.08996907351
+	dm_115: 0.08442493957
+	dm_116: 0.07369735373
+	dm_117: 0.05886738906
+	dm_118: 0.04390837038
+	dm_119: 0.03554697709
+	dm_12: 0.005531624217
+	dm_120: 0.0257944694
+	dm_121: 0.0172681793
+	dm_122: 0.01037043595
+	dm_123: 0.006488032533
+	dm_124: 0.003706741221
+	dm_125: 0.002033769617
+	dm_126: 0.001052162593
+	dm_127: 0.0005117374857
+	dm_128: 0.0001665178411
+	dm_129: 6.069930975e-05
+	dm_13: 0.006756806047
+	dm_130: 1.05346497e-05
+	dm_131: 2.342203782e-06
+	dm_14: 0.00968559934
+	dm_15: 0.01451864737
+	dm_16: 0.02214067904
+	dm_17: 0.03049857276
+	dm_18: 0.04192964404
+	dm_19: 0.05472834859
+	dm_20: 0.02155711057
+	dm_21: 0.003380314322
+	dm_210: 0.006955430911
+	dm_211: 0.007573614634
+	dm_212: 0.008303244763
+	dm_213: 0.009256256473
+	dm_214: 0.01067527356
+	dm_215: 0.01273500464
+	dm_216: 0.01546390407
+	dm_217: 0.01897904466
+	dm_218: 0.02334243726
+	dm_219: 0.02844616701
+	dm_22: 0.003239896623
+	dm_220: 0.03403993064
+	dm_221: 0.04012384598
+	dm_222: 0.04623343586
+	dm_223: 0.05179425096
+	dm_224: 0.05657897157
+	dm_225: 0.06018653731
+	dm_226: 0.06194608492
+	dm_227: 0.06195357925
+	dm_228: 0.06022685531
+	dm_229: 0.05666481576
+	dm_23: 0.002969844135
+	dm_230: 0.05168762289
+	dm_231: 0.04587781239
+	dm_232: 0.03945634073
+	dm_233: 0.0328920419
+	dm_234: 0.02666504772
+	dm_235: 0.02096917555
+	dm_236: 0.01597481365
+	dm_237: 0.01182186381
+	dm_238: 0.008498133902
+	dm_239: 0.005906280666
+	dm_24: 0.002988196606
+	dm_240: 0.003984401695
+	dm_241: 0.002606624412
+	dm_242: 0.00164994685
+	dm_243: 0.001008897414
+	dm_244: 0.0005981395312
+	dm_245: 0.000341658597
+	dm_246: 0.0001879757428
+	dm_247: 9.941024755e-05
+	dm_248: 5.057552386e-05
+	dm_249: 2.452054315e-05
+	dm_25: 0.003363557584
+	dm_250: 1.138128307e-05
+	dm_251: 5.017577662e-06
+	dm_252: 2.076388947e-06
+	dm_253: 7.974789239e-07
+	dm_254: 2.816232574e-07
+	dm_255: 8.921177068e-08
+	dm_256: 2.511095751e-08
+	dm_257: 5.956358411e-09
+	dm_258: 1.177415728e-09
+	dm_259: 1.582403902e-10
+	dm_26: 0.004011786796
+	dm_260: 1.353360963e-11
+	dm_27: 0.004778658115
+	dm_28: 0.00559111706
+	dm_29: 0.006319761837
+	dm_30: 0.02215060538
+	dm_31: 0.002825761282
+	dm_310: 0.002480731723
+	dm_311: 0.002387170914
+	dm_312: 0.00235984393
+	dm_313: 0.002383463706
+	dm_314: 0.002467876478
+	dm_315: 0.002618930985
+	dm_316: 0.002830958604
+	dm_317: 0.003110169186
+	dm_318: 0.00345683363
+	dm_319: 0.003855012292
+	dm_32: 0.003093850515
+	dm_320: 0.004305518984
+	dm_321: 0.004797286024
+	dm_322: 0.005303906179
+	dm_323: 0.005812831591
+	dm_324: 0.006294038386
+	dm_325: 0.006739945366
+	dm_326: 0.007133827267
+	dm_327: 0.007479998734
+	dm_328: 0.007804062337
+	dm_329: 0.008130495801
+	dm_33: 0.003382590179
+	dm_330: 0.0085033342
+	dm_331: 0.009000787213
+	dm_332: 0.009649516957
+	dm_333: 0.0105166971
+	dm_334: 0.01164427043
+	dm_335: 0.01303422826
+	dm_336: 0.01468796298
+	dm_337: 0.01659126849
+	dm_338: 0.01867234625
+	dm_339: 0.02093347872
+	dm_34: 0.003563686653
+	dm_340: 0.02328235743
+	dm_341: 0.02566889525
+	dm_342: 0.02808117007
+	dm_343: 0.03042739182
+	dm_344: 0.03268675077
+	dm_345: 0.03477645742
+	dm_346: 0.03658708965
+	dm_347: 0.03811531767
+	dm_348: 0.03920152485
+	dm_349: 0.03980312369
+	dm_35: 0.00359851123
+	dm_350: 0.03991806283
+	dm_351: 0.03936688695
+	dm_352: 0.03827143157
+	dm_353: 0.0366210008
+	dm_354: 0.03444595076
+	dm_355: 0.03187171479
+	dm_356: 0.02898338375
+	dm_357: 0.0258886112
+	dm_358: 0.0227376048
+	dm_359: 0.01960566221
+	dm_36: 0.003462466875
+	dm_360: 0.01661365406
+	dm_361: 0.01382115274
+	dm_362: 0.0112886192
+	dm_363: 0.00905164281
+	dm_364: 0.007126124898
+	dm_365: 0.005502027956
+	dm_366: 0.004170714551
+	dm_367: 0.003098510118
+	dm_368: 0.002257640914
+	dm_369: 0.001612126137
+	dm_37: 0.003202620445
+	dm_370: 0.001126836225
+	dm_371: 0.0007725453555
+	dm_372: 0.0005183104471
+	dm_373: 0.0003402870616
+	dm_374: 0.0002186750799
+	dm_375: 0.0001372697992
+	dm_376: 8.425489266e-05
+	dm_377: 5.047734392e-05
+	dm_378: 2.9508235e-05
+	dm_379: 1.683105407e-05
+	dm_38: 0.002890409284
+	dm_380: 9.348632706e-06
+	dm_381: 5.063892247e-06
+	dm_382: 2.66572705e-06
+	dm_383: 1.363982088e-06
+	dm_384: 6.764646718e-07
+	dm_385: 3.245198555e-07
+	dm_386: 1.503890017e-07
+	dm_387: 6.731043384e-08
+	dm_388: 2.893271412e-08
+	dm_389: 1.19650276e-08
+	dm_39: 0.002645286919
+	dm_390: 4.725856843e-09
+	dm_391: 1.771279444e-09
+	dm_392: 6.301307461e-10
+	dm_393: 2.088233661e-10
+	dm_394: 6.391884388e-11
+	dm_395: 1.799665906e-11
+	dm_396: 4.53185256e-12
+	dm_397: 1.025035341e-12
+	dm_398: 2.016020676e-13
+	dm_399: 3.876940975e-14
+	dm_40: 0.02417573056
+	dm_41: 0.003818178454
+	dm_410: 0.002991455118
+	dm_411: 0.003078866131
+	dm_412: 0.003241657582
+	dm_413: 0.003464835511
+	dm_414: 0.003754086701
+	dm_415: 0.00411885407
+	dm_416: 0.004523270543
+	dm_417: 0.004929559468
+	dm_418: 0.005415400858
+	dm_419: 0.005823613882
+	dm_42: 0.003974378008
+	dm_420: 0.006185119094
+	dm_421: 0.006521727569
+	dm_422: 0.006751836271
+	dm_423: 0.006877071079
+	dm_424: 0.006897724001
+	dm_425: 0.006883115838
+	dm_426: 0.006769732806
+	dm_427: 0.006528168948
+	dm_428: 0.006319817799
+	dm_429: 0.006044368384
+	dm_43: 0.004043632174
+	dm_430: 0.005771702019
+	dm_431: 0.005517928666
+	dm_432: 0.005294206527
+	dm_433: 0.00512629689
+	dm_434: 0.005017336847
+	dm_435: 0.005036538073
+	dm_436: 0.005190592158
+	dm_437: 0.00548063226
+	dm_438: 0.006014520996
+	dm_439: 0.006763765589
+	dm_44: 0.003958547549
+	dm_440: 0.007774670736
+	dm_441: 0.009048381433
+	dm_442: 0.01059222556
+	dm_443: 0.01238945218
+	dm_444: 0.01442425296
+	dm_445: 0.01665979704
+	dm_446: 0.01904108937
+	dm_447: 0.02153521888
+	dm_448: 0.02403598663
+	dm_449: 0.02652554581
+	dm_45: 0.003725279422
+	dm_450: 0.02888551942
+	dm_451: 0.03103029184
+	dm_452: 0.03292695592
+	dm_453: 0.03443868533
+	dm_454: 0.03556080895
+	dm_455: 0.03621782066
+	dm_456: 0.03636975687
+	dm_457: 0.03603978727
+	dm_458: 0.03522333362
+	dm_459: 0.03395817962
+	dm_46: 0.003431238103
+	dm_460: 0.03231888098
+	dm_461: 0.03035358864
+	dm_462: 0.02815529367
+	dm_463: 0.02578851164
+	dm_464: 0.02336119627
+	dm_465: 0.02091956958
+	dm_466: 0.01854175599
+	dm_467: 0.01626881417
+	dm_468: 0.014137602
+	dm_469: 0.01217402932
+	dm_47: 0.003174837479
+	dm_470: 0.01040135773
+	dm_471: 0.008800255883
+	dm_472: 0.007389903415
+	dm_473: 0.006151695628
+	dm_474: 0.005073783012
+	dm_475: 0.004148294576
+	dm_476: 0.003357800339
+	dm_477: 0.002689905257
+	dm_478: 0.002131694207
+	dm_479: 0.001667858911
+	dm_48: 0.003026222854
+	dm_480: 0.001289647729
+	dm_481: 0.0009835779127
+	dm_482: 0.0007393339105
+	dm_483: 0.000548455695
+	dm_484: 0.0004001052527
+	dm_485: 0.000287083996
+	dm_486: 0.0002028471879
+	dm_487: 0.0001407341201
+	dm_488: 9.594126288e-05
+	dm_489: 6.423888726e-05
+	dm_49: 0.002964042203
+	dm_490: 4.218563367e-05
+	dm_491: 2.719521912e-05
+	dm_492: 1.718446216e-05
+	dm_493: 1.064464073e-05
+	dm_494: 6.456013049e-06
+	dm_495: 3.835183514e-06
+	dm_496: 2.226566442e-06
+	dm_497: 1.265130599e-06
+	dm_498: 7.020438209e-07
+	dm_499: 7.872982209e-07
+	foto_10: 0.01325385082
+	foto_11: 0.00303061891
+	foto_110: 0.1670814151
+	foto_111: 0.1426220512
+	foto_112: 0.1023425608
+	foto_113: 0.06405132617
+	foto_114: 0.03504138095
+	foto_115: 0.01572039768
+	foto_116: 0.005821519301
+	foto_117: 0.002000983156
+	foto_118: 0.0003849663858
+	foto_119: 3.511549904e-05
+	foto_12: 0.004132503908
+	foto_13: 0.007195540153
+	foto_14: 0.01240155811
+	foto_15: 0.02080148838
+	foto_16: 0.04507794956
+	foto_17: 0.07940748095
+	foto_18: 0.1211274804
+	foto_19: 0.1584697083
+	foto_20: 0.02483595831
+	foto_21: 0.005578999826
+	foto_210: 0.1696723857
+	foto_211: 0.1521248942
+	foto_212: 0.1124476269
+	foto_213: 0.07069041259
+	foto_214: 0.03658977339
+	foto_215: 0.0147089887
+	foto_216: 0.004936776965
+	foto_217: 0.001490146799
+	foto_218: 0.0003055534597
+	foto_219: 2.957295084e-05
+	foto_22: 0.006958521973
+	foto_23: 0.01006474718
+	foto_24: 0.01563957168
+	foto_25: 0.02222267656
+	foto_26: 0.03533471818
+	foto_27: 0.05996518632
+	foto_28: 0.1055236125
+	foto_29: 0.150879765
+	foto_30: 0.03540457798
+	foto_31: 0.007080915606
+	foto_310: 0.02467066308
+	foto_311: 0.03360841915
+	foto_312: 0.0469622737
+	foto_313: 0.06424442419
+	foto_314: 0.08374744562
+	foto_315: 0.1018985862
+	foto_316: 0.1111324081
+	foto_317: 0.108617397
+	foto_318: 0.09563745027
+	foto_319: 0.07615742488
+	foto_32: 0.004673445401
+	foto_320: 0.0543841119
+	foto_321: 0.03473143255
+	foto_322: 0.01981492963
+	foto_323: 0.009800026555
+	foto_324: 0.003978085974
+	foto_325: 0.001374882948
+	foto_326: 0.000401061828
+	foto_327: 8.954954227e-05
+	foto_328: 9.073011789e-06
+	foto_329: 1.251306991e-07
+	foto_33: 0.005122184525
+	foto_330: 0
+	foto_331: 0
+	foto_332: 0
+	foto_34: 0.006634129639
+	foto_35: 0.007528225944
+	foto_36: 0.01069738926
+	foto_37: 0.01446387031
+	foto_38: 0.0171531537
+	foto_39: 0.01998222412
+	foto_40: 0.1073243124
+	foto_41: 0.0214648625
+	foto_410: 0.1193185771
+	foto_411: 0.08620525478
+	foto_412: 0.05273422853
+	foto_413: 0.02864284791
+	foto_414: 0.01435343609
+	foto_415: 0.00705369642
+	foto_416: 0.003336628954
+	foto_417: 0.001382048122
+	foto_418: 0.0004430360399
+	foto_419: 0.0001136339252
+	foto_42: 0.01922618082
+	foto_420: 9.642418092e-06
+	foto_421: 4.54839668e-07
+	foto_422: 2.165903181e-08
+	foto_423: 0
+	foto_424: 0
+	foto_425: 0
+	foto_426: 0
+	foto_427: 0
+	foto_43: 0.01843938255
+	foto_44: 0.02256587796
+	foto_45: 0.0423726087
+	foto_46: 0.08187811487
+	foto_47: 0.1098182035
+	foto_48: 0.1279847127
+	foto_49: 0.135332125
+	init: 1
+	lai_00: 0
+	lai_01: 0
+	lai_02: 0
+	lai_03: 0.1
+	lai_04: 0.2
+	lai_05: 0.2
+	lai_06: 0.4
+	lai_07: 0.1
+	lai_10: 0.0235931652
+	lai_11: 0.04603434829
+	lai_12: 0.07033235341
+	lai_13: 0.1533715958
+	lai_14: 0.198928717
+	lai_15: 0.2209940749
+	lai_16: 0.2013335969
+	lai_17: 0.08541204846
+	lai_20: 0.04502760712
+	lai_21: 0.06501899805
+	lai_22: 0.09127308506
+	lai_23: 0.1591675928
+	lai_24: 0.1966075957
+	lai_25: 0.2126214255
+	lai_26: 0.1559874583
+	lai_27: 0.07429613322
+	lai_30: 0.07080746813
+	lai_31: 0.1149452594
+	lai_32: 0.2152085151
+	lai_33: 0.2929677219
+	lai_34: 0.2295131499
+	lai_35: 0.07176899921
+	lai_36: 0.004788775318
+	lai_40: 0.2146377392
+	lai_41: 0.7178885305
+	lai_42: 0.06747361931
+	lai_43: 0
+	meldug_10: 0.1111111
+	meldug_11: 0.1111111
+	meldug_12: 0.1111111
+	meldug_13: 0.1111111
+	meldug_14: 0.1111111
+	meldug_15: 0.1111111
+	meldug_16: 0.1111111
+	meldug_17: 0.1111111
+	meldug_18: 0.1111111
+	meldug_20: 0.4800590122
+	meldug_21: 0.1037507119
+	meldug_22: 0.09615390621
+	meldug_23: 0.07933180251
+	meldug_24: 0.06834075221
+	meldug_25: 0.05435198178
+	meldug_26: 0.03936303503
+	meldug_27: 0.03336299122
+	meldug_28: 0.04528570743
+	meldug_30: 0.7376681877
+	meldug_31: 0.06195330251
+	meldug_32: 0.04946328957
+	meldug_33: 0.03965265051
+	meldug_34: 0.0341163786
+	meldug_35: 0.02673700901
+	meldug_36: 0.01841319527
+	meldug_37: 0.0141929558
+	meldug_38: 0.01780292721
+	meldug_40: 0.8619139606
+	meldug_41: 0.04272879329
+	meldug_42: 0.02642406133
+	meldug_43: 0.01884107557
+	meldug_44: 0.01587174556
+	meldug_45: 0.01212418953
+	meldug_46: 0.008359178705
+	meldug_47: 0.006086073834
+	meldug_48: 0.007650810715
+	middel_10: 0.2499999751
+	middel_11: 0.2499999751
+	middel_12: 0.2499999751
+	middel_13: 0.2499999751
+	middel_20: 0.249999974
+	middel_21: 0.249999974
+	middel_22: 0.249999974
+	middel_23: 0.249999974
+	middel_30: 0.2499999723
+	middel_31: 0.2499999723
+	middel_32: 0.2499999723
+	middel_33: 0.2499999723
+	mikro_10: 0.2314169151
+	mikro_11: 0.2947917146
+	mikro_12: 0.2031801472
+	mikro_13: 0.2706111236
+	mikro_20: 0.1818361718
+	mikro_21: 0.3269340432
+	mikro_22: 0.1740618303
+	mikro_23: 0.3171678508
+	mikro_30: 0.1527452449
+	mikro_31: 0.2470577337
+	mikro_32: 0.2337915943
+	mikro_33: 0.3664053163
+	nedboer_10: 0.39999996
+	nedboer_11: 0.2669999733
+	nedboer_12: 0.3329999667
+	nedboer_20: 0.2669999722
+	nedboer_21: 0.3669999617
+	nedboer_22: 0.3659999618
+	nedboer_30: 0.2669999703
+	nedboer_31: 0.3669999592
+	nedboer_32: 0.3659999593
+	straaling_10: 0.1329999868
+	straaling_11: 0.4669999536
+	straaling_12: 0.3329999669
+	straaling_13: 0.06699999334
+	straaling_20: 0.03299999657
+	straaling_21: 0.432999955
+	straaling_22: 0.4669999515
+	straaling_23: 0.06699999304
+	straaling_30: 0.06699999257
+	straaling_31: 0.432999952
+	straaling_32: 0.432999952
+	straaling_33: 0.06699999257
+	straaling_40: 0.4329999515
+	straaling_41: 0.4329999515
+	straaling_42: 0.1329999851
+	straaling_43: 0.0009999998879
+	temp_10: 0.1329999867
+	temp_11: 0.5669999432
+	temp_12: 0.1669999833
+	temp_13: 0.1329999867
+	temp_20: 0.1329999861
+	temp_21: 0.4329999549
+	temp_22: 0.2999999687
+	temp_23: 0.133999986
+	temp_30: 0
+	temp_31: 0.2999999667
+	temp_32: 0.5329999408
+	temp_33: 0.1669999815
+	temp_40: 0
+	temp_41: 0.320999964
+	temp_42: 0.463999948
+	temp_43: 0.2149999759
+	udbytte0: inf
+	udbytte1: inf
+	udbytte10: inf
+	udbytte11: inf
+	udbytte12: inf
+	udbytte13: inf
+	udbytte14: inf
+	udbytte15: inf
+	udbytte16: inf
+	udbytte17: inf
+	udbytte18: inf
+	udbytte19: inf
+	udbytte2: inf
+	udbytte20: inf
+	udbytte21: inf
+	udbytte22: inf
+	udbytte23: inf
+	udbytte24: inf
+	udbytte25: inf
+	udbytte26: inf
+	udbytte27: inf
+	udbytte28: inf
+	udbytte29: inf
+	udbytte3: inf
+	udbytte30: inf
+	udbytte31: inf
+	udbytte32: inf
+	udbytte33: inf
+	udbytte34: inf
+	udbytte35: inf
+	udbytte36: inf
+	udbytte37: inf
+	udbytte38: inf
+	udbytte39: inf
+	udbytte4: inf
+	udbytte40: inf
+	udbytte41: inf
+	udbytte42: inf
+	udbytte43: inf
+	udbytte44: inf
+	udbytte45: inf
+	udbytte46: inf
+	udbytte47: inf
+	udbytte48: inf
+	udbytte49: inf
+	udbytte5: inf
+	udbytte50: inf
+	udbytte51: inf
+	udbytte52: inf
+	udbytte53: inf
+	udbytte54: inf
+	udbytte55: inf
+	udbytte56: inf
+	udbytte57: inf
+	udbytte58: inf
+	udbytte59: inf
+	udbytte6: inf
+	udbytte60: inf
+	udbytte61: inf
+	udbytte62: inf
+	udbytte63: inf
+	udbytte64: inf
+	udbytte65: inf
+	udbytte66: inf
+	udbytte67: inf
+	udbytte68: inf
+	udbytte69: inf
+	udbytte7: inf
+	udbytte70: inf
+	udbytte71: inf
+	udbytte72: inf
+	udbytte73: inf
+	udbytte74: inf
+	udbytte75: inf
+	udbytte76: inf
+	udbytte77: inf
+	udbytte78: inf
+	udbytte79: inf
+	udbytte8: inf
+	udbytte80: inf
+	udbytte81: inf
+	udbytte82: inf
+	udbytte83: inf
+	udbytte84: inf
+	udbytte85: inf
+	udbytte9: inf
+Result: [1.556322682e-25, inf] (range)
+Time for model checking: 0.442s.

@@ -1,0 +1,24 @@
+network unknown {
+}
+variable A {
+  type discrete [ 2 ] { yes, no };
+}
+variable B {
+  type discrete [ 2 ] { yes, no };
+}
+variable C {
+  type discrete [ 2 ] { yes, no };
+}
+probability ( A ) {
+  table 0.2, 0.8;
+}
+probability ( B | A ) {
+  (yes) 0.05, 0.95;
+  (no) 0.01, 0.99;
+}
+probability ( C | B, A ) {
+  (yes, yes) 0.3, 0.7;
+  (no, yes) 0.4, 0.6;
+  (yes, no) 0.1, 0.9;
+  (no, no) 0.5, 0.5;
+}

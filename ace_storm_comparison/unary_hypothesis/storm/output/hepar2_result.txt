@@ -1,0 +1,349 @@
+Storm 1.6.4 (dev)
+
+Date: Thu Apr 28 12:33:36 2022
+Command line arguments: --jani storm/jani_files/hepar2.jani --expvisittimes --build-all-labels
+Current working directory: /home/hans/Desktop/private/ace_storm_comparison/unary_hypothesis
+
+Time for model input parsing: 0.073s.
+
+Time for model construction: 0.268s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	11698
+Transitions: 	32289
+Reward Models:  none
+State Labels: 	164 labels
+   * deadlock -> 3 item(s)
+   * init -> 1 item(s)
+   * vh_amn1 -> 8 item(s)
+   * vh_amn0 -> 8 item(s)
+   * upper_pain0 -> 4 item(s)
+   * triglycerides2 -> 96 item(s)
+   * triglycerides1 -> 96 item(s)
+   * transfusion1 -> 4 item(s)
+   * transfusion0 -> 4 item(s)
+   * surgery1 -> 8 item(s)
+   * spleen1 -> 288 item(s)
+   * spleen0 -> 288 item(s)
+   * spiders1 -> 6 item(s)
+   * skin1 -> 6 item(s)
+   * proteins1 -> 2 item(s)
+   * triglycerides0 -> 96 item(s)
+   * pressure_ruq1 -> 24 item(s)
+   * pressure_ruq0 -> 24 item(s)
+   * platelet3 -> 72 item(s)
+   * platelet2 -> 72 item(s)
+   * platelet1 -> 72 item(s)
+   * platelet0 -> 72 item(s)
+   * phosphatase1 -> 144 item(s)
+   * cholesterol0 -> 96 item(s)
+   * bilirubin2 -> 18 item(s)
+   * amylase1 -> 4 item(s)
+   * ast0 -> 288 item(s)
+   * proteins0 -> 2 item(s)
+   * anorexia1 -> 192 item(s)
+   * ESR0 -> 96 item(s)
+   * fat1 -> 4 item(s)
+   * cholesterol1 -> 96 item(s)
+   * bilirubin1 -> 18 item(s)
+   * amylase0 -> 4 item(s)
+   * amylase2 -> 4 item(s)
+   * Cirrhosis2 -> 192 item(s)
+   * ast3 -> 288 item(s)
+   * ama0 -> 24 item(s)
+   * hepatomegaly0 -> 192 item(s)
+   * urea2 -> 1 item(s)
+   * urea0 -> 1 item(s)
+   * alt3 -> 576 item(s)
+   * alt0 -> 576 item(s)
+   * choledocholithotomy0 -> 4 item(s)
+   * bilirubin0 -> 18 item(s)
+   * Cirrhosis1 -> 192 item(s)
+   * hepatotoxic1 -> 96 item(s)
+   * ast1 -> 288 item(s)
+   * ascites0 -> 2 item(s)
+   * bilirubin3 -> 18 item(s)
+   * PBC1 -> 48 item(s)
+   * Hyperbilirubinemia0 -> 12 item(s)
+   * ChHepatitis1 -> 4 item(s)
+   * alcohol0 -> 6 item(s)
+   * ggtp1 -> 192 item(s)
+   * Steatosis0 -> 48 item(s)
+   * urea1 -> 1 item(s)
+   * gallstones0 -> 2 item(s)
+   * alcoholism0 -> 24 item(s)
+   * bleeding1 -> 24 item(s)
+   * albumin0 -> 6 item(s)
+   * fatigue0 -> 192 item(s)
+   * bleeding0 -> 24 item(s)
+   * ast2 -> 288 item(s)
+   * hbc_anti1 -> 12 item(s)
+   * irregular_liver0 -> 6 item(s)
+   * ESR1 -> 96 item(s)
+   * PBC0 -> 48 item(s)
+   * ama1 -> 24 item(s)
+   * THepatitis1 -> 96 item(s)
+   * ChHepatitis2 -> 4 item(s)
+   * ChHepatitis0 -> 4 item(s)
+   * Hyperbilirubinemia1 -> 12 item(s)
+   * palms1 -> 6 item(s)
+   * age0 -> 12 item(s)
+   * joints1 -> 24 item(s)
+   * alt1 -> 576 item(s)
+   * RHepatitis0 -> 96 item(s)
+   * Steatosis1 -> 48 item(s)
+   * carcinoma1 -> 6 item(s)
+   * THepatitis0 -> 96 item(s)
+   * age2 -> 12 item(s)
+   * carcinoma0 -> 6 item(s)
+   * edge0 -> 6 item(s)
+   * age3 -> 12 item(s)
+   * surgery0 -> 8 item(s)
+   * RHepatitis1 -> 96 item(s)
+   * alcoholism1 -> 24 item(s)
+   * fat0 -> 4 item(s)
+   * flatulence1 -> 4 item(s)
+   * flatulence0 -> 4 item(s)
+   * joints0 -> 24 item(s)
+   * alcohol1 -> 6 item(s)
+   * choledocholithotomy1 -> 4 item(s)
+   * edge1 -> 6 item(s)
+   * pain0 -> 24 item(s)
+   * alt2 -> 576 item(s)
+   * consciousness0 -> 2 item(s)
+   * sex1 -> 6 item(s)
+   * consciousness1 -> 2 item(s)
+   * obesity0 -> 48 item(s)
+   * anorexia0 -> 192 item(s)
+   * density0 -> 2 item(s)
+   * hepatotoxic0 -> 96 item(s)
+   * density1 -> 2 item(s)
+   * upper_pain1 -> 4 item(s)
+   * diabetes1 -> 48 item(s)
+   * encephalopathy1 -> 3 item(s)
+   * injections1 -> 16 item(s)
+   * fatigue1 -> 192 item(s)
+   * ascites1 -> 2 item(s)
+   * fibrosis1 -> 192 item(s)
+   * hcv_anti0 -> 12 item(s)
+   * hbeag0 -> 12 item(s)
+   * jaundice0 -> 72 item(s)
+   * fibrosis0 -> 192 item(s)
+   * gallstones1 -> 2 item(s)
+   * skin0 -> 6 item(s)
+   * ggtp0 -> 192 item(s)
+   * ggtp3 -> 192 item(s)
+   * hbsag0 -> 12 item(s)
+   * hbc_anti0 -> 12 item(s)
+   * edema1 -> 6 item(s)
+   * hbsag_anti0 -> 6 item(s)
+   * hbeag1 -> 12 item(s)
+   * hbsag1 -> 12 item(s)
+   * cholesterol2 -> 96 item(s)
+   * hbsag_anti1 -> 6 item(s)
+   * hcv_anti1 -> 12 item(s)
+   * edema0 -> 6 item(s)
+   * hepatalgia0 -> 192 item(s)
+   * hepatalgia1 -> 192 item(s)
+   * hepatomegaly1 -> 192 item(s)
+   * hospital1 -> 1 item(s)
+   * Cirrhosis0 -> 192 item(s)
+   * jaundice1 -> 72 item(s)
+   * spiders0 -> 6 item(s)
+   * phosphatase0 -> 144 item(s)
+   * hospital0 -> 1 item(s)
+   * injections0 -> 16 item(s)
+   * phosphatase2 -> 144 item(s)
+   * itching0 -> 24 item(s)
+   * age1 -> 12 item(s)
+   * albumin2 -> 6 item(s)
+   * inr0 -> 72 item(s)
+   * inr2 -> 72 item(s)
+   * ggtp2 -> 192 item(s)
+   * irregular_liver1 -> 6 item(s)
+   * diabetes0 -> 48 item(s)
+   * itching1 -> 24 item(s)
+   * encephalopathy0 -> 3 item(s)
+   * le_cells0 -> 24 item(s)
+   * le_cells1 -> 24 item(s)
+   * nausea0 -> 192 item(s)
+   * pain_ruq1 -> 96 item(s)
+   * albumin1 -> 6 item(s)
+   * inr1 -> 72 item(s)
+   * nausea1 -> 192 item(s)
+   * sex0 -> 6 item(s)
+   * obesity1 -> 48 item(s)
+   * palms0 -> 6 item(s)
+   * pain1 -> 24 item(s)
+   * ESR2 -> 96 item(s)
+   * pain_ruq0 -> 96 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+Accumulated values for labels:
+	ChHepatitis0: 0.1290048924
+	ChHepatitis1: 0.05166550231
+	ChHepatitis2: 0.8193296053
+	Cirrhosis0: 0.0539153304
+	Cirrhosis1: 0.02360147274
+	Cirrhosis2: 0.9224831969
+	ESR0: 0.1891127657
+	ESR1: 0.1254218907
+	ESR2: 0.6854653436
+	Hyperbilirubinemia0: 0.07244613651
+	Hyperbilirubinemia1: 0.9275538635
+	PBC0: 0.3848493669
+	PBC1: 0.6151506331
+	RHepatitis0: 0.02432045935
+	RHepatitis1: 0.9756795407
+	Steatosis0: 0.09585220132
+	Steatosis1: 0.9041477987
+	THepatitis0: 0.0393266146
+	THepatitis1: 0.9606733854
+	age0: 0.07725322
+	age1: 0.38769671
+	age2: 0.39771102
+	age3: 0.13733905
+	albumin0: 0.7539820469
+	albumin1: 0.1362829912
+	albumin2: 0.1097349619
+	alcohol0: 0.1193184455
+	alcohol1: 0.8806815545
+	alcoholism0: 0.1359084
+	alcoholism1: 0.8640916
+	alt0: 0.04802970583
+	alt1: 0.1696714011
+	alt2: 0.4167039451
+	alt3: 0.3655949479
+	ama0: 0.2258801425
+	ama1: 0.7741198575
+	amylase0: 0.01144492543
+	amylase1: 0.02145922489
+	amylase2: 0.9670958497
+	anorexia0: 0.2747552852
+	anorexia1: 0.7252447148
+	ascites0: 0.1364313302
+	ascites1: 0.8635686698
+	ast0: 0.01522686813
+	ast1: 0.200287846
+	ast2: 0.4619403072
+	ast3: 0.3225449786
+	bilirubin0: 0.0184482626
+	bilirubin1: 0.08128656897
+	bilirubin2: 0.2433228654
+	bilirubin3: 0.656942303
+	bleeding0: 0.1619686012
+	bleeding1: 0.8380313988
+	carcinoma0: 0.06405225478
+	carcinoma1: 0.9359477452
+	choledocholithotomy0: 0.1402002731
+	choledocholithotomy1: 0.8597997269
+	cholesterol0: 0.05154287638
+	cholesterol1: 0.1987035983
+	cholesterol2: 0.7497535253
+	consciousness0: 0.02518184553
+	consciousness1: 0.9748181545
+	deadlock: inf
+	density0: 0.3884121655
+	density1: 0.6115878345
+	diabetes0: 0.03576538
+	diabetes1: 0.96423462
+	edema0: 0.1410955347
+	edema1: 0.8589044653
+	edge0: 0.2678142456
+	edge1: 0.7321857544
+	encephalopathy0: 0.03092818419
+	encephalopathy1: 0.9690718158
+	fat0: 0.2646638042
+	fat1: 0.7353361958
+	fatigue0: 0.5521798046
+	fatigue1: 0.4478201954
+	fibrosis0: 0.04210407244
+	fibrosis1: 0.9578959276
+	flatulence0: 0.4248926735
+	flatulence1: 0.5751073265
+	gallstones0: 0.1530758
+	gallstones1: 0.8469242
+	ggtp0: 0.1305507227
+	ggtp1: 0.1325118515
+	ggtp2: 0.1332036917
+	ggtp3: 0.6037337341
+	hbc_anti0: 0.09320519105
+	hbc_anti1: 0.9067948089
+	hbeag0: 0.003394185523
+	hbeag1: 0.9966058145
+	hbsag0: 0.0931212305
+	hbsag1: 0.9068787695
+	hbsag_anti0: 0.01826570953
+	hbsag_anti1: 0.9817342905
+	hcv_anti0: 0.002147738778
+	hcv_anti1: 0.9978522612
+	hepatalgia0: 0.2228884103
+	hepatalgia1: 0.7771115897
+	hepatomegaly0: 0.6778512608
+	hepatomegaly1: 0.3221487392
+	hepatotoxic0: 0.08154506
+	hepatotoxic1: 0.91845494
+	hospital0: 0.5350501
+	hospital1: 0.4649499
+	init: 1
+	injections0: 0.393884584
+	injections1: 0.606115416
+	inr0: 0.05590339766
+	inr1: 0.868765149
+	inr2: 0.07533145334
+	irregular_liver0: 0.1392072414
+	irregular_liver1: 0.8607927586
+	itching0: 0.4242090176
+	itching1: 0.5757909824
+	jaundice0: 0.2719147611
+	jaundice1: 0.7280852389
+	joints0: 0.1111425217
+	joints1: 0.8888574783
+	le_cells0: 0.07169009729
+	le_cells1: 0.9283099027
+	nausea0: 0.2904028925
+	nausea1: 0.7095971075
+	obesity0: 0.068669528
+	obesity1: 0.931330472
+	pain0: 0.2199415466
+	pain1: 0.7800584534
+	pain_ruq0: 0.4177142225
+	pain_ruq1: 0.5822857775
+	palms0: 0.1638647082
+	palms1: 0.8361352918
+	phosphatase0: 0.1658264591
+	phosphatase1: 0.3167175069
+	phosphatase2: 0.517456034
+	platelet0: 0.08130812603
+	platelet1: 0.7000586301
+	platelet2: 0.1516741943
+	platelet3: 0.0669590495
+	pressure_ruq0: 0.3814032935
+	pressure_ruq1: 0.6185967065
+	proteins0: 0.9816841043
+	proteins1: 0.0183158957
+	sex0: 0.5979971
+	sex1: 0.4020029
+	skin0: 0.3820400326
+	skin1: 0.6179599674
+	spiders0: 0.213329186
+	spiders1: 0.786670814
+	spleen0: 0.1252918279
+	spleen1: 0.8747081721
+	surgery0: 0.4234621
+	surgery1: 0.5765379
+	transfusion0: 0.1626976223
+	transfusion1: 0.8373023777
+	triglycerides0: 0.03862676719
+	triglycerides1: 0.0443492006
+	triglycerides2: 0.9170240322
+	upper_pain0: 0.3905579259
+	upper_pain1: 0.6094420741
+	urea0: inf
+	urea1: inf
+	urea2: inf
+	vh_amn0: 0.1731044
+	vh_amn1: 0.8268956
+Result: [2.274435896e-12, inf] (range)
+Time for model checking: 0.007s.

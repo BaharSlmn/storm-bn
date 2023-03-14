@@ -1,0 +1,15 @@
+Pr(e) = 0.9999998879553962
+Network : ace/net_files/mildew.net
+Network Read Time (ms) : 449.976346
+Number of Evidence Sets : 1
+AC :
+  Nodes : 1118179
+  Edges : 2219244
+  Total Initialization Time (ms) : 785.4135229999999
+  Total Inference Time (ms) : 48.48359
+  Minimum Inference Time (ms) : 48.48359
+  Maximum Inference Time (ms) : 48.48359
+  Median Inference Time (ms) : 48.48359
+  Mean Inference Time (ms) : 48.48359
+  Standard Deviation Inference Time (ms) : 0.0
+

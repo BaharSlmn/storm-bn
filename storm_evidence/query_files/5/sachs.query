@@ -1,0 +1,1 @@
+storm --jani jani_files/5/sachs.jani --prop "P=? [G(Akt=0 | Akt=-1)]"

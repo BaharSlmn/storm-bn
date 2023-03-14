@@ -1,0 +1,1 @@
+storm --jani jani_files/30/mildew.jani --prop "P=? [G(udbytte=0 | udbytte=-1)]"

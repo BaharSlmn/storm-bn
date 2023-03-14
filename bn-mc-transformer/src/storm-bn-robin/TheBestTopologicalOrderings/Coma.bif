@@ -1,0 +1,32 @@
+network Coma {
+}
+variable MetastCancer {
+  type discrete [ 2 ] { present, absent };
+}
+variable BrainTumor {
+  type discrete [ 2 ] { present, absent };
+}
+variable IncrSerCal {
+  type discrete [ 2 ] { present, absent };
+}
+variable Coma {
+  type discrete [ 2 ] { present, absent };
+}
+variable SevHeadaches {
+  type discrete [ 2 ] { present, absent };
+}
+probability ( MetastCancer ){
+  table 0.2, 0.8;
+}
+probability ( BrainTumor | MetastCancer  ){
+  table 0.2, 0.8, 0.05, 0.95;
+}
+probability ( IncrSerCal | MetastCancer  ){
+  table 0.8, 0.2, 0.2, 0.8;
+}
+probability ( Coma | IncrSerCal, BrainTumor  ){
+  table 0.8, 0.2, 0.8, 0.2, 0.8, 0.2, 0.05, 0.95;
+}
+probability ( SevHeadaches | BrainTumor  ){
+  table 0.8, 0.2, 0.6, 0.4;
+}

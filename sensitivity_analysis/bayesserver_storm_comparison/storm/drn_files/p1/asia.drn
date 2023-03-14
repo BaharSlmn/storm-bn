@@ -1,0 +1,129 @@
+// Exported by storm
+// Original model type: DTMC
+@type: DTMC
+@parameters
+p0 
+@placeholders
+$1 : (-1 * (p0+(-1)))/(1)
+$0 : (p0)/(1)
+@reward_models
+
+@nr_states
+31
+@nr_choices
+31
+@model
+state 0 init
+	action 0
+		1 : 1/100
+		2 : 99/100
+state 1 asia0
+	action 0
+		3 : 1/20
+		4 : 19/20
+state 2 asia1
+	action 0
+		3 : 1/100
+		4 : 99/100
+state 3 tub0
+	action 0
+		5 : 1/2
+		6 : 1/2
+state 4 tub1
+	action 0
+		7 : 1/2
+		8 : 1/2
+state 5 smoke0
+	action 0
+		9 : $0
+		10 : $1
+state 6 smoke1
+	action 0
+		11 : 1/100
+		12 : 99/100
+state 7 smoke0
+	action 0
+		13 : $0
+		14 : $1
+state 8 smoke1
+	action 0
+		15 : 1/100
+		16 : 99/100
+state 9 lung0
+	action 0
+		17 : 1
+state 10 lung1
+	action 0
+		17 : 1
+state 11 lung0
+	action 0
+		18 : 1
+state 12 lung1
+	action 0
+		18 : 1
+state 13 lung0
+	action 0
+		17 : 1
+state 14 lung1
+	action 0
+		19 : 1
+state 15 lung0
+	action 0
+		18 : 1
+state 16 lung1
+	action 0
+		20 : 1
+state 17 either0
+	action 0
+		21 : 3/5
+		22 : 2/5
+state 18 either0
+	action 0
+		21 : 3/10
+		22 : 7/10
+state 19 either1
+	action 0
+		23 : 3/5
+		24 : 2/5
+state 20 either1
+	action 0
+		23 : 3/10
+		24 : 7/10
+state 21 bronc0
+	action 0
+		25 : 9/10
+		26 : 1/10
+state 22 bronc1
+	action 0
+		25 : 7/10
+		26 : 3/10
+state 23 bronc0
+	action 0
+		27 : 4/5
+		28 : 1/5
+state 24 bronc1
+	action 0
+		27 : 1/10
+		28 : 9/10
+state 25 dysp0
+	action 0
+		29 : 49/50
+		30 : 1/50
+state 26 dysp1
+	action 0
+		29 : 49/50
+		30 : 1/50
+state 27 dysp0
+	action 0
+		29 : 1/20
+		30 : 19/20
+state 28 dysp1
+	action 0
+		29 : 1/20
+		30 : 19/20
+state 29 deadlock xray0
+	action 0
+		29 : 1
+state 30 deadlock xray1
+	action 0
+		30 : 1

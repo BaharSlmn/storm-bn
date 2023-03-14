@@ -1,0 +1,1 @@
+storm --jani jani_files/10/alarm.jani --prop "P=? [G(PCWP=0 | PCWP=-1)]"

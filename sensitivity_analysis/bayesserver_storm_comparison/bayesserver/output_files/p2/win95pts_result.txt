@@ -1,0 +1,30 @@
+Network name = win95pts
+
+
+Time for Sensitivity Analysis: 0.01278996467590332s
+
+
+Parameter node 1 = EMFOK
+Parameter entry 1 = [AppDataCorrect,DskLocalGreater_than_2_Mb,PrtThreadOK,EMFOKYes]
+Parameter node 2 = AppData
+Parameter entry 2 = [AppOKCorrect,DataFileCorrect,AppDataCorrect]
+Hypothesis = GDIINYes
+Evidence = default
+
+
+Parameter value 1 = 0.99
+P(GDIINYes | e) = 0.9525186282665544
+Alpha1 = 0.9122168066962496
+Beta1 = 1.1517598125086354e-05
+Delta1 = 6.250754061593726e-07
+Gamma1 = 0.049507222325812866
+
+
+Parameter value 2 = 0.9999
+Alpha2 = 0.0
+Beta2 = 0.0
+Delta2 = 1.0
+Gamma2 = 0.0
+
+
+Eval(0.2,0.2) = 0.04639304532804374

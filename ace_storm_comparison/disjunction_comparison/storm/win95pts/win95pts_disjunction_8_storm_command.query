@@ -1,0 +1,1 @@
+storm --jani storm/win95pts/win95pts.jani --prop "P=? [F((AppDtGnTm=0|PrntPrcssTm=1|PrtMem=0|DeskPrntSpd=0|NtSpd=1|NnPSGrphc=1|IncmpltPS=0|Problem3=1))]" >> storm/output/win95pts_disjunction_8_result.txt

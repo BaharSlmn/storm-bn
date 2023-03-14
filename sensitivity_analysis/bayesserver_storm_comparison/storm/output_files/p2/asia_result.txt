@@ -1,0 +1,52 @@
+Storm-pars 1.6.4
+
+Date: Fri Apr 22 12:40:12 2022
+Command line arguments: -drn storm/drn_files/p2/asia.drn --prop 'P=? [F("xray0")]' --bisimulation
+Current working directory: /experiments/bayesserver_storm_comparison
+
+Time for model construction: 0.014s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	31
+Transitions: 	52
+Reward Models:  none
+State Labels: 	18 labels
+   * xray0 -> 1 item(s)
+   * dysp1 -> 2 item(s)
+   * dysp0 -> 2 item(s)
+   * init -> 1 item(s)
+   * asia0 -> 1 item(s)
+   * tub0 -> 1 item(s)
+   * bronc1 -> 2 item(s)
+   * smoke1 -> 2 item(s)
+   * deadlock -> 2 item(s)
+   * lung0 -> 4 item(s)
+   * lung1 -> 4 item(s)
+   * either0 -> 2 item(s)
+   * smoke0 -> 2 item(s)
+   * asia1 -> 1 item(s)
+   * either1 -> 2 item(s)
+   * xray1 -> 1 item(s)
+   * tub1 -> 1 item(s)
+   * bronc0 -> 2 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	18
+Transitions: 	26
+Reward Models:  none
+State Labels: 	2 labels
+   * xray0 -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F "xray0"] ...
+Result (initial states): (-1 * (930000*p0*p1+(-1850700)*p1+(-92079300)*p0+(-12762193)))/(200000000)
+Time for model checking: 0.000s.
+

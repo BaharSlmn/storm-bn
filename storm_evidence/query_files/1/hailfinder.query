@@ -1,0 +1,1 @@
+storm --jani jani_files/1/hailfinder.jani --prop "P=? [G(LatestCIN=0 | LatestCIN=-1)]"

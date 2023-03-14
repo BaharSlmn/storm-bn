@@ -1,0 +1,4 @@
+{}
+DTMC
+Academic license - for non-commercial use only - expires 2022-12-22
+Using license file /Users/bahare/gurobi.lic

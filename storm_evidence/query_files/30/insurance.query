@@ -1,0 +1,1 @@
+storm --jani jani_files/30/insurance.jani --prop "P=? [G(ILiCost=0 | ILiCost=-1)]"

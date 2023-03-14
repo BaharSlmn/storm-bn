@@ -1,0 +1,1 @@
+storm --jani jani_files/10/child.jani --prop "P=? [G(CO2Report=0 | CO2Report=-1)]"

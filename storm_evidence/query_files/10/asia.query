@@ -1,0 +1,1 @@
+storm --jani jani_files/10/asia.jani --prop "P=? [G(dysp=0 | dysp=-1)]"

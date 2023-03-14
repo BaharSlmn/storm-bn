@@ -1,0 +1,73 @@
+// Exported by storm
+// Original model type: DTMC
+@type: DTMC
+@parameters
+p0 
+@placeholders
+$1 : (-1 * (p0+(-1)))/(1)
+$0 : (p0)/(1)
+@reward_models
+
+@nr_states
+15
+@nr_choices
+15
+@model
+state 0 init
+	action 0
+		1 : 9/10
+		2 : 1/10
+state 1 Pollution0
+	action 0
+		3 : 3/10
+		4 : 7/10
+state 2 Pollution1
+	action 0
+		5 : 3/10
+		6 : 7/10
+state 3 Smoker0
+	action 0
+		7 : $0
+		8 : $1
+state 4 Smoker1
+	action 0
+		7 : 1/1000
+		8 : 999/1000
+state 5 Smoker0
+	action 0
+		7 : 1/20
+		8 : 19/20
+state 6 Smoker1
+	action 0
+		7 : 1/50
+		8 : 49/50
+state 7 Cancer0
+	action 0
+		9 : 9/10
+		10 : 1/10
+state 8 Cancer1
+	action 0
+		11 : 1/5
+		12 : 4/5
+state 9 Xray0
+	action 0
+		13 : 13/20
+		14 : 7/20
+state 10 Xray1
+	action 0
+		13 : 13/20
+		14 : 7/20
+state 11 Xray0
+	action 0
+		13 : 3/10
+		14 : 7/10
+state 12 Xray1
+	action 0
+		13 : 3/10
+		14 : 7/10
+state 13 Dyspnoea0 deadlock
+	action 0
+		13 : 1
+state 14 Dyspnoea1 deadlock
+	action 0
+		14 : 1

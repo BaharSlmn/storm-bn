@@ -1,0 +1,29 @@
+Network : ace/net_files/asia.net
+Network Read Time (ms) : 113.144048
+Number of Evidence Sets : 1
+AC :
+  Nodes : 105
+  Edges : 148
+  Total Initialization Time (ms) : 9.506053
+  Total Inference Time (ms) : 1.001232
+  Minimum Inference Time (ms) : 1.001232
+  Maximum Inference Time (ms) : 1.001232
+  Median Inference Time (ms) : 1.001232
+  Mean Inference Time (ms) : 1.001232
+  Standard Deviation Inference Time (ms) : 0.0
+
+
+=============================================
+
+e = {}
+
+Pr(e) = 1E0
+
+Pr(lung,e) = [0.05500000000000001, 0.9450000000000001]
+Pr(asia,e) = [0.010000000000000002, 0.9900000000000002]
+Pr(xray,e) = [0.11029004000000002, 0.8897099600000001]
+Pr(tub,e) = [0.010400000000000003, 0.9896000000000001]
+Pr(bronc,e) = [0.45, 0.5499999999999999]
+Pr(dysp,e) = [0.4359706000000001, 0.5640294000000001]
+Pr(either,e) = [0.06482800000000001, 0.9351720000000001]
+Pr(smoke,e) = [0.5, 0.5]

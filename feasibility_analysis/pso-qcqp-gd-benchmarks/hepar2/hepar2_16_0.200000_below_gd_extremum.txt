@@ -1,0 +1,9 @@
+Storm-pars 1.6.4 (dev)
+
+Date: Sat Jan  1 22:29:46 2022
+Command line arguments: --explicit-drn pso-qcqp-gd-benchmarks/hepar2/drn_files/hepar2_16.drn --prop 'Pmin=? [F("ggtp1"|"ast1"|"cholesterol1"|"hcv_anti1")]
+' --find-extremum
+Current working directory: /Users/bahare/Documents/Experiments/gradient-descent
+
+ERROR (ArgumentValidators.cpp:81): Unable to read from non-existing file 'pso-qcqp-gd-benchmarks/hepar2/drn_files/hepar2_16.drn'.
+ERROR (storm-pars.cpp:1124): An exception caused Storm-pars to terminate. The message of the exception is: IllegalArgumentValueException: Unable to read from non-existing file 'pso-qcqp-gd-benchmarks/hepar2/drn_files/hepar2_16.drn'.

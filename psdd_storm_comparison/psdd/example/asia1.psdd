@@ -1,0 +1,51 @@
+c ids of psdd nodes start at 0
+c psdd nodes appear bottom-up, children before parents
+c file syntax:
+c psdd count-of-sdd-nodes
+c L id-of-literal-sdd-node id-of-vtree literal
+c T id-of-trueNode-sdd-node id-of-vtree variable log(litProb)
+c D id-of-decomposition-sdd-node id-of-vtree number-of-elements {id-of-prime id-of-sub log(elementProb)}
+psdd 8 43
+T 0 14 7 -2.30259
+T 1 14 7 -1.20397
+T 2 14 7 -1.60944
+L 3 12 -3
+T 4 14 7 -0.105361
+L 5 12 3
+D 6 13 2 5 1 -0.916291 3 0 -0.510826
+D 7 13 2 5 4 -0.916291 3 2 -0.510826
+D 8 13 2 5 1 -0.356675 3 0 -1.20397
+T 9 10 8 -3.91202
+D 10 13 2 5 4 -0.356675 3 2 -1.20397
+T 11 10 8 -0.0512933
+T 12 8 4 -0.105361
+T 13 8 4 -0.0100503
+D 14 11 1 9 6 0
+D 15 11 1 11 7 0
+D 16 11 1 9 8 0
+L 17 8 -4
+D 18 11 1 11 10 0
+L 19 8 4
+D 20 9 1 12 14 0
+D 21 9 1 13 16 0
+D 22 9 1 17 14 0
+D 23 9 1 19 15 0
+D 24 9 1 17 16 0
+L 25 6 -6
+D 26 9 1 19 18 0
+L 27 6 6
+D 28 7 1 25 20 0
+D 29 7 1 25 21 0
+D 30 7 2 27 23 -0.105361 25 22 -2.30259
+L 31 4 -2
+D 32 7 2 27 26 -0.0100503 25 24 -4.60517
+L 33 4 2
+D 34 5 2 33 29 -0.693147 31 28 -0.693147
+T 35 2 1 -0.049271
+D 36 5 2 33 32 -0.693147 31 30 -0.693147
+T 37 2 1 -0.00964621
+D 38 3 1 35 34 0
+L 39 0 -5
+D 40 3 1 37 36 0
+L 41 0 5
+D 42 1 2 41 40 -0.0104545 39 38 -4.56595

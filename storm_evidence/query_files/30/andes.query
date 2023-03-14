@@ -1,0 +1,1 @@
+storm --jani jani_files/30/andes.jani --prop "P=? [G(SNode_19=0 | SNode_19=-1)]"

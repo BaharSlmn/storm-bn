@@ -1,0 +1,1 @@
+storm-pars -drn  storm/drn_files/p2/asia.drn --prop "P=? [F(\"xray0\")]" --bisimulation

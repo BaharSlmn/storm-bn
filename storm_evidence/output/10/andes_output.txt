@@ -1,0 +1,25 @@
+Storm 1.6.4
+
+Date: Wed Jun  8 15:12:03 2022
+Command line arguments: --jani jani_files/10/andes.jani --prop 'P=? [G(SNode_18=0 | SNode_18=-1)]'
+Current working directory: /home/hans/Desktop/Storm-bn/storm_evidence
+
+Time for model input parsing: 0.078s.
+
+Time for model construction: 11.698s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	732396
+Transitions: 	1365868
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 2 item(s)
+   * ((SNode_18 = 0) | (SNode_18 = -(1))) -> 732395 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [G ((SNode_18 = 0) | (SNode_18 = -(1)))] ...
+Result (for initial states): 0.4999999977
+Time for model checking: 0.926s.

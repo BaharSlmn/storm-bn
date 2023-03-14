@@ -1,0 +1,25 @@
+Storm 1.6.4
+
+Date: Wed Jun  8 15:08:53 2022
+Command line arguments: --jani jani_files/10/insurance.jani --prop 'P=? [G(ILiCost=0 | ILiCost=-1)]'
+Current working directory: /home/hans/Desktop/Storm-bn/storm_evidence
+
+Time for model input parsing: 0.014s.
+
+Time for model construction: 0.056s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	290
+Transitions: 	773
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 4 item(s)
+   * init -> 1 item(s)
+   * ((ILiCost = 0) | (ILiCost = -(1))) -> 287 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [G ((ILiCost = 0) | (ILiCost = -(1)))] ...
+Result (for initial states): 0.9944465336
+Time for model checking: 0.000s.

@@ -1,0 +1,1 @@
+storm --jani jani_files/1/hepar2.jani --prop "P=? [G(diabetes=0 | diabetes=-1)]"

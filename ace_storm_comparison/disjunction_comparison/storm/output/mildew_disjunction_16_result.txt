@@ -1,0 +1,33 @@
+Storm 1.6.4
+
+Date: Tue Apr 26 11:00:58 2022
+Command line arguments: --jani storm/mildew/mildew.jani --prop 'P=? [F((lai_1=1|temp_1=1|middel_1=1|meldug_2=0|foto_1=0|nedboer_2=1|middel_2=0|straaling_2=1|foto_2=0|dm_1=0|nedboer_3=1|mikro_3=1|middel_3=1|meldug_4=0|straaling_3=0|udbytte=1))]'
+Current working directory: /experiments/ace_storm_comparison/disjunction_comparison
+
+Time for model input parsing: 11.972s.
+
+Storm 1.6.4
+
+Date: Tue Apr 26 11:04:30 2022
+Command line arguments: --jani storm/mildew/mildew.jani --prop 'P=? [F((lai_1=1|temp_1=1|middel_1=1|meldug_2=0|foto_1=0|nedboer_2=1|middel_2=0|straaling_2=1|foto_2=0|dm_1=0|nedboer_3=1|mikro_3=1|middel_3=1|meldug_4=0|straaling_3=0|udbytte=1))]'
+Current working directory: /experiments/ace_storm_comparison/disjunction_comparison
+
+Time for model input parsing: 12.983s.
+
+Time for model construction: 17.243s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	350279
+Transitions: 	1242704
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 85 item(s)
+   * init -> 1 item(s)
+   * ((((((((((((((((lai_1 = 1) | (temp_1 = 1)) | (middel_1 = 1)) | (meldug_2 = 0)) | (foto_1 = 0)) | (nedboer_2 = 1)) | (middel_2 = 0)) | (straaling_2 = 1)) | (foto_2 = 0)) | (dm_1 = 0)) | (nedboer_3 = 1)) | (mikro_3 = 1)) | (middel_3 = 1)) | (meldug_4 = 0)) | (straaling_3 = 0)) | (udbytte = 1)) -> 61611 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F ((((((((((((((((lai_1 = 1) | (temp_1 = 1)) | (middel_1 = 1)) | (meldug_2 = 0)) | (foto_1 = 0)) | (nedboer_2 = 1)) | (middel_2 = 0)) | (straaling_2 = 1)) | (foto_2 = 0)) | (dm_1 = 0)) | (nedboer_3 = 1)) | (mikro_3 = 1)) | (middel_3 = 1)) | (meldug_4 = 0)) | (straaling_3 = 0)) | (udbytte = 1))] ...
+Result (for initial states): 0.997775285
+Time for model checking: 0.324s.

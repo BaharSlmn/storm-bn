@@ -1,0 +1,25 @@
+Storm 1.6.4
+
+Date: Wed Jun  8 15:08:48 2022
+Command line arguments: --jani jani_files/30/asia.jani --prop 'P=? [G(dysp=0 | dysp=-1)]'
+Current working directory: /home/hans/Desktop/Storm-bn/storm_evidence
+
+Time for model input parsing: 0.002s.
+
+Time for model construction: 0.017s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	16
+Transitions: 	26
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 2 item(s)
+   * ((dysp = 0) | (dysp = -(1))) -> 15 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [G ((dysp = 0) | (dysp = -(1)))] ...
+Result (for initial states): 0.8145
+Time for model checking: 0.000s.

@@ -1,0 +1,25 @@
+Storm 1.6.4
+
+Date: Wed Jun  8 15:14:10 2022
+Command line arguments: --jani jani_files/no_evidence/hepar2.jani --prop 'P=? [F(amylase=1|amylase=2|le_cells=1|hepatotoxic=1|carcinoma=1|edema=1)]'
+Current working directory: /home/hans/Desktop/Storm-bn/storm_evidence
+
+Time for model input parsing: 0.076s.
+
+Time for model construction: 0.236s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	11602
+Transitions: 	31957
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 3 item(s)
+   * init -> 1 item(s)
+   * ((((((amylase = 1) | (amylase = 2)) | (le_cells = 1)) | (hepatotoxic = 1)) | (carcinoma = 1)) | (edema = 1)) -> 140 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F ((((((amylase = 1) | (amylase = 2)) | (le_cells = 1)) | (hepatotoxic = 1)) | (carcinoma = 1)) | (edema = 1))] ...
+Result (for initial states): 0.999998995
+Time for model checking: 0.010s.

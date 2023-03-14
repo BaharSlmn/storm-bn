@@ -1,0 +1,1 @@
+storm --jani jani_files/30/hepar2.jani --prop "P=? [G(consciousness=0 | consciousness=-1)]"

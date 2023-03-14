@@ -1,0 +1,25 @@
+Storm 1.6.4
+
+Date: Wed Jun  8 15:08:53 2022
+Command line arguments: --jani jani_files/no_evidence/insurance.jani --prop 'P=? [F(SeniorTrain=1)]'
+Current working directory: /home/hans/Desktop/Storm-bn/storm_evidence
+
+Time for model input parsing: 0.034s.
+
+Time for model construction: 0.107s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	8292
+Transitions: 	25686
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 4 item(s)
+   * (SeniorTrain = 1) -> 48 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F (SeniorTrain = 1)] ...
+Result (for initial states): 0.882999982
+Time for model checking: 0.002s.

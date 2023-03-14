@@ -1,0 +1,1 @@
+storm --jani storm/mildew/mildew.jani --prop "P=? [F((temp_1=1|meldug_2=1|foto_2=0|udbytte=1))]" >> storm/output/mildew_disjunction_4_result.txt

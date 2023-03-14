@@ -1,0 +1,1 @@
+storm --jani jani_files/5/child.jani --prop "P=? [G(HypoxiaInO2=0 | HypoxiaInO2=-1)]"

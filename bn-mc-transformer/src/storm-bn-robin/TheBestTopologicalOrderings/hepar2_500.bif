@@ -1,0 +1,2581 @@
+network unknown {
+}
+variable alcoholism {
+  type discrete [ 2 ] { present, absent };
+}
+variable vh_amn {
+  type discrete [ 2 ] { present, absent };
+}
+variable hepatotoxic {
+  type discrete [ 2 ] { present, absent };
+}
+variable THepatitis {
+  type discrete [ 2 ] { present, absent };
+}
+variable hospital {
+  type discrete [ 2 ] { present, absent };
+}
+variable surgery {
+  type discrete [ 2 ] { present, absent };
+}
+variable gallstones {
+  type discrete [ 2 ] { present, absent };
+}
+variable choledocholithotomy {
+  type discrete [ 2 ] { present, absent };
+}
+variable injections {
+  type discrete [ 2 ] { present, absent };
+}
+variable transfusion {
+  type discrete [ 2 ] { present, absent };
+}
+variable ChHepatitis {
+  type discrete [ 3 ] { active, persistent, absent };
+}
+variable sex {
+  type discrete [ 2 ] { female, male };
+}
+variable age {
+  type discrete [ 4 ] { age65_100, age51_65, age31_50, age0_30 };
+}
+variable PBC {
+  type discrete [ 2 ] { present, absent };
+}
+variable fibrosis {
+  type discrete [ 2 ] { present, absent };
+}
+variable diabetes {
+  type discrete [ 2 ] { present, absent };
+}
+variable obesity {
+  type discrete [ 2 ] { present, absent };
+}
+variable Steatosis {
+  type discrete [ 2 ] { present, absent };
+}
+variable Cirrhosis {
+  type discrete [ 3 ] { decompensate, compensate, absent };
+}
+variable Hyperbilirubinemia {
+  type discrete [ 2 ] { present, absent };
+}
+variable triglycerides {
+  type discrete [ 3 ] { a17_4, a3_2, a1_0 };
+}
+variable RHepatitis {
+  type discrete [ 2 ] { present, absent };
+}
+variable fatigue {
+  type discrete [ 2 ] { present, absent };
+}
+variable bilirubin {
+  type discrete [ 4 ] { a88_20, a19_7, a6_2, a1_0 };
+}
+variable itching {
+  type discrete [ 2 ] { present, absent };
+}
+variable upper_pain {
+  type discrete [ 2 ] { present, absent };
+}
+variable fat {
+  type discrete [ 2 ] { present, absent };
+}
+variable pain_ruq {
+  type discrete [ 2 ] { present, absent };
+}
+variable pressure_ruq {
+  type discrete [ 2 ] { present, absent };
+}
+variable phosphatase {
+  type discrete [ 3 ] { a4000_700, a699_240, a239_0 };
+}
+variable skin {
+  type discrete [ 2 ] { present, absent };
+}
+variable ama {
+  type discrete [ 2 ] { present, absent };
+}
+variable le_cells {
+  type discrete [ 2 ] { present, absent };
+}
+variable joints {
+  type discrete [ 2 ] { present, absent };
+}
+variable pain {
+  type discrete [ 2 ] { present, absent };
+}
+variable proteins {
+  type discrete [ 2 ] { a10_6, a5_2 };
+}
+variable edema {
+  type discrete [ 2 ] { present, absent };
+}
+variable platelet {
+  type discrete [ 4 ] { a597_300, a299_150, a149_100, a99_0 };
+}
+variable inr {
+  type discrete [ 3 ] { a200_110, a109_70, a69_0 };
+}
+variable bleeding {
+  type discrete [ 2 ] { present, absent };
+}
+variable flatulence {
+  type discrete [ 2 ] { present, absent };
+}
+variable alcohol {
+  type discrete [ 2 ] { present, absent };
+}
+variable encephalopathy {
+  type discrete [ 2 ] { present, absent };
+}
+variable urea {
+  type discrete [ 3 ] { a165_50, a49_40, a39_0 };
+}
+variable ascites {
+  type discrete [ 2 ] { present, absent };
+}
+variable hepatomegaly {
+  type discrete [ 2 ] { present, absent };
+}
+variable hepatalgia {
+  type discrete [ 2 ] { present, absent };
+}
+variable density {
+  type discrete [ 2 ] { present, absent };
+}
+variable ESR {
+  type discrete [ 3 ] { a200_50, a49_15, a14_0 };
+}
+variable alt {
+  type discrete [ 4 ] { a850_200, a199_100, a99_35, a34_0 };
+}
+variable ast {
+  type discrete [ 4 ] { a700_400, a399_150, a149_40, a39_0 };
+}
+variable amylase {
+  type discrete [ 3 ] { a1400_500, a499_300, a299_0 };
+}
+variable ggtp {
+  type discrete [ 4 ] { a640_70, a69_30, a29_10, a9_0 };
+}
+variable cholesterol {
+  type discrete [ 3 ] { a999_350, a349_240, a239_0 };
+}
+variable hbsag {
+  type discrete [ 2 ] { present, absent };
+}
+variable hbsag_anti {
+  type discrete [ 2 ] { present, absent };
+}
+variable anorexia {
+  type discrete [ 2 ] { present, absent };
+}
+variable nausea {
+  type discrete [ 2 ] { present, absent };
+}
+variable spleen {
+  type discrete [ 2 ] { present, absent };
+}
+variable consciousness {
+  type discrete [ 2 ] { present, absent };
+}
+variable spiders {
+  type discrete [ 2 ] { present, absent };
+}
+variable jaundice {
+  type discrete [ 2 ] { present, absent };
+}
+variable albumin {
+  type discrete [ 3 ] { a70_50, a49_30, a29_0 };
+}
+variable edge {
+  type discrete [ 2 ] { present, absent };
+}
+variable irregular_liver {
+  type discrete [ 2 ] { present, absent };
+}
+variable hbc_anti {
+  type discrete [ 2 ] { present, absent };
+}
+variable hcv_anti {
+  type discrete [ 2 ] { present, absent };
+}
+variable palms {
+  type discrete [ 2 ] { present, absent };
+}
+variable hbeag {
+  type discrete [ 2 ] { present, absent };
+}
+variable carcinoma {
+  type discrete [ 2 ] { present, absent };
+}
+probability ( alcoholism ){
+table 0.1359084, 0.8640916;
+}
+
+probability ( vh_amn ){
+table 0.1731044, 0.8268956;
+}
+
+probability ( hepatotoxic ){
+table 0.08154506, 0.91845494;
+}
+
+probability ( THepatitis | hepatotoxic, alcoholism ){
+(present, present) p100, 0.8*((1-p100)/(1-0.2));
+(absent, present) p151, 0.91111111*((1-p151)/(1-0.08888889));
+(present, absent) p39, 0.99808061*((1-p39)/(1-0.00191939));
+(absent, absent) p188, 0.9673913*((1-p188)/(1-0.0326087));
+}
+
+probability ( hospital ){
+table 0.5350501, 0.4649499;
+}
+
+probability ( surgery ){
+table 0.4234621, 0.5765379;
+}
+
+probability ( gallstones ){
+table 0.1530758, 0.8469242;
+}
+
+probability ( choledocholithotomy | gallstones ){
+(present) p47, 0.2897196*((1-p47)/(1-0.7102804));
+(absent) p108, 0.96283784*((1-p108)/(1-0.03716216));
+}
+
+probability ( injections | hospital, surgery, choledocholithotomy ){
+(present, present, present) p146, 0.2*((1-p146)/(1-0.8));
+(absent, present, present) p265, 0.625*((1-p265)/(1-0.375));
+(present, absent, present) p94, 0.1666667*((1-p94)/(1-0.8333333));
+(absent, absent, present) p284, 0.98901099*((1-p284)/(1-0.01098901));
+(present, present, absent) p217, 0.284153*((1-p217)/(1-0.715847));
+(absent, present, absent) p33, 0.7666667*((1-p33)/(1-0.2333333));
+(present, absent, absent) p185, 0.5181818*((1-p185)/(1-0.4818182));
+(absent, absent, absent) p243, 0.9352518*((1-p243)/(1-0.0647482));
+}
+
+probability ( transfusion | hospital, surgery, choledocholithotomy ){
+(present, present, present) p25, 0.6666667*((1-p25)/(1-0.3333333));
+(absent, present, present) p240, 0.875*((1-p240)/(1-0.125));
+(present, absent, present) p140, 0.8333333*((1-p140)/(1-0.1666667));
+(absent, absent, present) p214, 0.98901099*((1-p214)/(1-0.01098901));
+(present, present, absent) p282, 0.7103825*((1-p282)/(1-0.2896175));
+(absent, present, absent) p181, 0.7*((1-p181)/(1-0.3));
+(present, absent, absent) p263, 0.8818182*((1-p263)/(1-0.1181818));
+(absent, absent, absent) p86, 0.98920863*((1-p86)/(1-0.01079137));
+}
+
+probability ( ChHepatitis | transfusion, vh_amn, injections ){
+(present, present, present) p268, 0.0052356*((1-p268)/(1-0.2094241)), 0.7853403*((1-p268)/(1-0.2094241));
+(absent, present, present) p194, 0.05128205*((1-p194)/(1-0.15384615)), 0.79487180*((1-p194)/(1-0.15384615));
+(present, absent, present) p248, 0.06*((1-p248)/(1-0.06)), 0.88*((1-p248)/(1-0.06));
+(absent, absent, present) p157, 0.00591716*((1-p157)/(1-0.07692308)), 0.91715976*((1-p157)/(1-0.07692308));
+(present, present, absent) p49, 0.3076923*((1-p49)/(1-0.4615385)), 0.2307692*((1-p49)/(1-0.4615385));
+(absent, present, absent) p287, 0.14*((1-p287)/(1-0.24)), 0.62*((1-p287)/(1-0.24));
+(present, absent, absent) p222, 0.04347826*((1-p222)/(1-0.13043478)), 0.82608696*((1-p222)/(1-0.13043478));
+(absent, absent, absent) p110, 0.05357143*((1-p110)/(1-0.13095238)), 0.81547619*((1-p110)/(1-0.13095238));
+}
+
+probability ( sex ){
+table 0.5979971, 0.4020029;
+}
+
+probability ( age ){
+table 0.07725322, 0.38769671, 0.39771102, 0.13733906;
+}
+
+probability ( PBC | sex, age ){
+(female, age65_100) p101, 0.3428571*((1-p101)/(1-0.6571429));
+(male, age65_100) p286, 0.6315789*((1-p286)/(1-0.3684211));
+(female, age51_65) p152, 0.299435*((1-p152)/(1-0.700565));
+(male, age51_65) p220, 0.91489362*((1-p220)/(1-0.08510638));
+(female, age31_50) p189, 0.3850575*((1-p189)/(1-0.6149425));
+(male, age31_50) p246, 0.93269231*((1-p246)/(1-0.06730769));
+(female, age0_30) p40, 0.875*((1-p40)/(1-0.125));
+(male, age0_30) p267, 0.99843994*((1-p267)/(1-0.00156006));
+}
+
+probability ( fibrosis | ChHepatitis ){
+(active) p95, 0.7*((1-p95)/(1-0.3));
+(persistent) p34, 0.95*((1-p34)/(1-0.05));
+(absent) p147, 0.999*((1-p147)/(1-0.001));
+}
+
+probability ( diabetes ){
+table 0.03576538, 0.96423462;
+}
+
+probability ( obesity | diabetes ){
+(present) p80, 0.76*((1-p80)/(1-0.24));
+(absent) p19, 0.93768546*((1-p19)/(1-0.06231454));
+}
+
+probability ( Steatosis | obesity, alcoholism ){
+(present, present) p0, 0.6363636*((1-p0)/(1-0.3636364));
+(absent, present) p122, 0.7619048*((1-p122)/(1-0.2380952));
+(present, absent) p167, 0.8108108*((1-p167)/(1-0.1891892));
+(absent, absent) p61, 0.93650794*((1-p61)/(1-0.06349206));
+}
+
+probability ( Cirrhosis | fibrosis, Steatosis ){
+(present, present) p20, 0.24*((1-p20)/(1-0.56)), 0.20*((1-p20)/(1-0.56));
+(absent, present) p178, 0.15*((1-p178)/(1-0.35)), 0.50*((1-p178)/(1-0.35));
+(present, absent) p136, 0.21*((1-p136)/(1-0.49)), 0.30*((1-p136)/(1-0.49));
+(absent, absent) p81, 0.001*((1-p81)/(1-0.001)), 0.998*((1-p81)/(1-0.001));
+}
+
+probability ( Hyperbilirubinemia | age, sex ){
+(age65_100, female) p201, 0.997151*((1-p201)/(1-0.002849));
+(age51_65, female) p292, 0.98870056*((1-p292)/(1-0.01129944));
+(age31_50, female) p119, 0.95402299*((1-p119)/(1-0.04597701));
+(age0_30, female) p228, 0.78125*((1-p228)/(1-0.21875));
+(age65_100, male) p254, 0.9947644*((1-p254)/(1-0.0052356));
+(age51_65, male) p58, 0.9787234*((1-p58)/(1-0.0212766));
+(age31_50, male) p273, 0.92307692*((1-p273)/(1-0.07692308));
+(age0_30, male) p165, 0.546875*((1-p165)/(1-0.453125));
+}
+
+probability ( triglycerides | Steatosis ){
+(present) p109, 0.1641791*((1-p109)/(1-0.1791045)), 0.6567164*((1-p109)/(1-0.1791045));
+(absent) p48, 0.03164557*((1-p48)/(1-0.02373418)), 0.94462025*((1-p48)/(1-0.02373418));
+}
+
+probability ( RHepatitis | hepatotoxic ){
+(present) p11, 0.98245614*((1-p11)/(1-0.01754386));
+(absent) p72, 0.97507788*((1-p72)/(1-0.02492212));
+}
+
+probability ( fatigue | ChHepatitis, THepatitis, RHepatitis ){
+(active, present, present) p160, 0.3636364*((1-p160)/(1-0.6363636));
+(persistent, present, present) p303, 0.3928571*((1-p303)/(1-0.6071429));
+(absent, present, present) p317, 0.3846154*((1-p317)/(1-0.6153846));
+(active, absent, present) p288, 0.3763441*((1-p288)/(1-0.6236559));
+(persistent, absent, present) p52, 0.4107143*((1-p52)/(1-0.5892857));
+(absent, absent, present) p331, 0.2941177*((1-p331)/(1-0.7058823));
+(active, present, absent) p250, 0.375*((1-p250)/(1-0.625));
+(persistent, present, absent) p197, 0.4067797*((1-p197)/(1-0.5932203));
+(absent, present, absent) p269, 0.3333333*((1-p269)/(1-0.6666667));
+(active, absent, absent) p224, 0.3956044*((1-p224)/(1-0.6043956));
+(persistent, absent, absent) p113, 0.4722222*((1-p113)/(1-0.5277778));
+(absent, absent, absent) p345, 0.4640151*((1-p345)/(1-0.5359849));
+}
+
+probability ( bilirubin | Hyperbilirubinemia, PBC, Cirrhosis, gallstones, ChHepatitis ){
+(present, present, decompensate, present, active) p472, 0.21739130*((1-p472)/(1-0.04347826)), 0.34782609*((1-p472)/(1-0.04347826)), 0.39130435*((1-p472)/(1-0.04347826));
+(absent, present, decompensate, present, active) 0.04081633, 0.14285714, 0.40816327, 0.40816327;
+(present, absent, decompensate, present, active) 0.01449275, 0.11594203, 0.39130435, 0.47826087;
+(absent, absent, decompensate, present, active) p372, 0.16037736*((1-p372)/(1-0.02830189)), 0.36792453*((1-p372)/(1-0.02830189)), 0.44339623*((1-p372)/(1-0.02830189));
+(present, present, compensate, present, active) 0.03571429, 0.16071429, 0.39285714, 0.41071429;
+(absent, present, compensate, present, active) 0.04255319, 0.17021277, 0.37234043, 0.41489362;
+(present, absent, compensate, present, active) 0.00311526, 0.03115265, 0.43613707, 0.52959502;
+(absent, absent, compensate, present, active) 0.00321543, 0.09646302, 0.41800643, 0.48231511;
+(present, present, absent, present, active) p291, 0.15492958*((1-p291)/(1-0.04225352)), 0.36619718*((1-p291)/(1-0.04225352)), 0.43661972*((1-p291)/(1-0.04225352));
+(absent, present, absent, present, active) p334, 0.16417910*((1-p334)/(1-0.04477612)), 0.34328358*((1-p334)/(1-0.04477612)), 0.44776119*((1-p334)/(1-0.04477612));
+(present, absent, absent, present, active) p401, 0.00255102*((1-p401)/(1-0.00255102)), 0.33163265*((1-p401)/(1-0.00255102)), 0.66326531*((1-p401)/(1-0.00255102));
+(absent, absent, absent, present, active) p460, 0.00980392*((1-p460)/(1-0.00980392)), 0.19607843*((1-p460)/(1-0.00980392)), 0.78431373*((1-p460)/(1-0.00980392));
+(present, present, decompensate, absent, active) p164, 0.11538462*((1-p164)/(1-0.01923077)), 0.36538462*((1-p164)/(1-0.01923077)), 0.50000000*((1-p164)/(1-0.01923077));
+(absent, present, decompensate, absent, active) 0.03030303, 0.14393939, 0.34090909, 0.48484848;
+(present, absent, decompensate, absent, active) 0.00151286, 0.04538578, 0.34795764, 0.60514372;
+(absent, absent, decompensate, absent, active) 0.01449275, 0.07246377, 0.24637681, 0.66666667;
+(present, present, compensate, absent, active) 0.02020202, 0.11111111, 0.34343434, 0.52525253;
+(absent, present, compensate, absent, active) p253, 0.136*((1-p253)/(1-0.032)), 0.312*((1-p253)/(1-0.032)), 0.520*((1-p253)/(1-0.032));
+(present, absent, compensate, absent, active) p408, 0.01782531*((1-p408)/(1-0.00178253)), 0.28520499*((1-p408)/(1-0.00178253)), 0.69518717*((1-p408)/(1-0.00178253));
+(absent, absent, compensate, absent, active) 0.01818182, 0.01818182, 0.14545455, 0.81818181;
+(present, present, absent, absent, active) p478, 0.12121212*((1-p478)/(1-0.03030303)), 0.35606061*((1-p478)/(1-0.03030303)), 0.49242424*((1-p478)/(1-0.03030303));
+(absent, present, absent, absent, active) 0.03910615, 0.15083799, 0.32960894, 0.48044693;
+(present, absent, absent, absent, active) p422, 0.01468429*((1-p422)/(1-0.00146843)), 0.30837004*((1-p422)/(1-0.00146843)), 0.67547724*((1-p422)/(1-0.00146843));
+(absent, absent, absent, absent, active) p320, 0.02469136*((1-p320)/(1-0.01234568)), 0.14814815*((1-p320)/(1-0.01234568)), 0.81481481*((1-p320)/(1-0.01234568));
+(present, present, decompensate, present, persistent) p490, 0.22222222*((1-p490)/(1-0.07407407)), 0.33333333*((1-p490)/(1-0.07407407)), 0.37037037*((1-p490)/(1-0.07407407));
+(absent, present, decompensate, present, persistent) 0.06818182, 0.20454545, 0.36363636, 0.36363636;
+(present, absent, decompensate, present, persistent) 0.00398406, 0.11952191, 0.35856574, 0.51792829;
+(absent, absent, decompensate, present, persistent) 0.01818182, 0.16363636, 0.34545455, 0.47272727;
+(present, present, compensate, present, persistent) 0.05882353, 0.20588235, 0.38235294, 0.35294118;
+(absent, present, compensate, present, persistent) p454, 0.20338983*((1-p454)/(1-0.05084746)), 0.37288136*((1-p454)/(1-0.05084746)), 0.37288136*((1-p454)/(1-0.05084746));
+(present, absent, compensate, present, persistent) 0.00892857, 0.00892857, 0.44642857, 0.53571429;
+(absent, absent, compensate, present, persistent) 0.00621118, 0.06211180, 0.43478261, 0.49689441;
+(present, present, absent, present, persistent) 0.06, 0.20, 0.36, 0.38;
+(absent, present, absent, present, persistent) p436, 0.19444444*((1-p436)/(1-0.05555556)), 0.35185185*((1-p436)/(1-0.05555556)), 0.39814815*((1-p436)/(1-0.05555556));
+(present, absent, absent, present, persistent) 0.0049505, 0.0049505, 0.2970297, 0.6930693;
+(absent, absent, absent, present, persistent) p348, 0.07692308*((1-p348)/(1-0.07692308)), 0.07692308*((1-p348)/(1-0.07692308)), 0.76923076*((1-p348)/(1-0.07692308));
+(present, present, decompensate, absent, persistent) 0.01818182, 0.11818182, 0.38181818, 0.48181818;
+(absent, present, decompensate, absent, persistent) 0.02173913, 0.13768116, 0.35507246, 0.48550725;
+(present, absent, decompensate, absent, persistent) p57, 0.04341534*((1-p57)/(1-0.00144718)), 0.37626628*((1-p57)/(1-0.00144718)), 0.57887120*((1-p57)/(1-0.00144718));
+(absent, absent, decompensate, absent, persistent) p484, 0.07692308*((1-p484)/(1-0.01282051)), 0.26923077*((1-p484)/(1-0.01282051)), 0.64102564*((1-p484)/(1-0.01282051));
+(present, present, compensate, absent, persistent) p429, 0.10679612*((1-p429)/(1-0.01941748)), 0.34951456*((1-p429)/(1-0.01941748)), 0.52427184*((1-p429)/(1-0.01941748));
+(absent, present, compensate, absent, persistent) 0.0234375, 0.1328125, 0.3125000, 0.5312500;
+(present, absent, compensate, absent, persistent) 0.00174825, 0.00174825, 0.29720280, 0.69930070;
+(absent, absent, compensate, absent, persistent) p118, 0.01694915*((1-p118)/(1-0.01694915)), 0.10169492*((1-p118)/(1-0.01694915)), 0.86440678*((1-p118)/(1-0.01694915));
+(present, present, absent, absent, persistent) p415, 0.11510791*((1-p415)/(1-0.02158273)), 0.37410072*((1-p415)/(1-0.02158273)), 0.48920863*((1-p415)/(1-0.02158273));
+(absent, present, absent, absent, persistent) 0.02926829, 0.14634146, 0.33658537, 0.48780488;
+(present, absent, absent, absent, persistent) p394, 0.00127877*((1-p394)/(1-0.00127877)), 0.33248082*((1-p394)/(1-0.00127877)), 0.66496164*((1-p394)/(1-0.00127877));
+(absent, absent, absent, absent, persistent) 0.00284091, 0.00284091, 0.05681818, 0.93750000;
+(present, present, decompensate, present, absent) p466, 0.23684211*((1-p466)/(1-0.07894737)), 0.34210526*((1-p466)/(1-0.07894737)), 0.34210526*((1-p466)/(1-0.07894737));
+(absent, present, decompensate, present, absent) 0.07692308, 0.23076923, 0.35384615, 0.33846154;
+(present, absent, decompensate, present, absent) p272, 0.13245033*((1-p272)/(1-0.00662252)), 0.26490066*((1-p272)/(1-0.00662252)), 0.59602649*((1-p272)/(1-0.00662252));
+(absent, absent, decompensate, present, absent) p380, 0.19230769*((1-p380)/(1-0.01923077)), 0.01923077*((1-p380)/(1-0.01923077)), 0.76923077*((1-p380)/(1-0.01923077));
+(present, present, compensate, present, absent) p448, 0.23076923*((1-p448)/(1-0.07692308)), 0.35897436*((1-p448)/(1-0.07692308)), 0.33333333*((1-p448)/(1-0.07692308));
+(absent, present, compensate, present, absent) p442, 0.22535211*((1-p442)/(1-0.07042254)), 0.36619718*((1-p442)/(1-0.07042254)), 0.33802817*((1-p442)/(1-0.07042254));
+(present, absent, compensate, present, absent) 0.01388889, 0.01388889, 0.41666667, 0.55555555;
+(absent, absent, compensate, present, absent) 0.04545455, 0.04545455, 0.45454545, 0.45454545;
+(present, present, absent, present, absent) 0.07575758, 0.22727273, 0.36363636, 0.33333333;
+(absent, present, absent, present, absent) 0.08536585, 0.24390244, 0.36585366, 0.30487805;
+(present, absent, absent, present, absent) 0.07692308, 0.07692308, 0.07692308, 0.76923076;
+(absent, absent, absent, present, absent) p227, 0.01587302*((1-p227)/(1-0.01587302)), 0.01587302*((1-p227)/(1-0.01587302)), 0.95238094*((1-p227)/(1-0.01587302));
+(present, present, decompensate, absent, absent) p306, 0.12408759*((1-p306)/(1-0.02189781)), 0.41605839*((1-p306)/(1-0.02189781)), 0.43795620*((1-p306)/(1-0.02189781));
+(absent, present, decompensate, absent, absent) 0.02590674, 0.15025907, 0.38341969, 0.44041451;
+(present, absent, decompensate, absent, absent) 0.00114811, 0.05740528, 0.44776119, 0.49368542;
+(absent, absent, decompensate, absent, absent) p387, 0.13207547*((1-p387)/(1-0.01886792)), 0.43396226*((1-p387)/(1-0.01886792)), 0.41509434*((1-p387)/(1-0.01886792));
+(present, present, compensate, absent, absent) 0.02362205, 0.11811024, 0.37795276, 0.48031496;
+(absent, present, compensate, absent, absent) 0.02824859, 0.14124294, 0.33898305, 0.49152542;
+(present, absent, compensate, absent, absent) p356, 0.00144509*((1-p356)/(1-0.00144509)), 0.36127168*((1-p356)/(1-0.00144509)), 0.63583814*((1-p356)/(1-0.00144509));
+(absent, absent, compensate, absent, absent) 0.03448276, 0.03448276, 0.10344828, 0.82758620;
+(present, present, absent, absent, absent) 0.02061856, 0.12371134, 0.40721649, 0.44845361;
+(absent, present, absent, absent, absent) p200, 0.16666667*((1-p200)/(1-0.03030303)), 0.38888889*((1-p200)/(1-0.03030303)), 0.41414141*((1-p200)/(1-0.03030303));
+(present, absent, absent, absent, absent) 0.00181159, 0.00181159, 0.54347827, 0.45289855;
+(absent, absent, absent, absent, absent) p364, 0.02126152*((1-p364)/(1-0.00070872)), 0.13465627*((1-p364)/(1-0.00070872)), 0.84337349*((1-p364)/(1-0.00070872));
+}
+
+probability ( itching | bilirubin ){
+(a88_20) p154, 0.125*((1-p154)/(1-0.875));
+(a19_7) p43, 0.3134328*((1-p43)/(1-0.6865672));
+(a6_2) p191, 0.4522613*((1-p191)/(1-0.5477387));
+(a1_0) p104, 0.6666667*((1-p104)/(1-0.3333333));
+}
+
+probability ( upper_pain | gallstones ){
+(present) p21, 0.588785*((1-p21)/(1-0.411215));
+(absent) p82, 0.6131757*((1-p82)/(1-0.3868243));
+}
+
+probability ( fat | gallstones ){
+(present) p1, 0.8224299*((1-p1)/(1-0.1775701));
+(absent) p62, 0.7195946*((1-p62)/(1-0.2804054));
+}
+
+probability ( pain_ruq | Steatosis, Hyperbilirubinemia ){
+(present, present) p46, 0.6065574*((1-p46)/(1-0.3934426));
+(absent, present) p193, 0.7142857*((1-p193)/(1-0.2857143));
+(present, absent) p156, 0.5223881*((1-p156)/(1-0.4776119));
+(absent, absent) p107, 0.578125*((1-p107)/(1-0.421875));
+}
+
+probability ( pressure_ruq | gallstones, PBC, ChHepatitis ){
+(present, present, active) p186, 0.6666667*((1-p186)/(1-0.3333333));
+(absent, present, active) p37, 0.6575342*((1-p37)/(1-0.3424658));
+(present, absent, active) p285, 0.6*((1-p285)/(1-0.4));
+(absent, absent, active) p98, 0.5308642*((1-p98)/(1-0.4691358));
+(present, present, persistent) p218, 0.671875*((1-p218)/(1-0.328125));
+(absent, present, persistent) p330, 0.6772487*((1-p330)/(1-0.3227513));
+(present, absent, persistent) p244, 0.90909091*((1-p244)/(1-0.09090909));
+(absent, absent, persistent) p302, 0.5714286*((1-p302)/(1-0.4285714));
+(present, present, absent) p149, 0.6707317*((1-p149)/(1-0.3292683));
+(absent, present, absent) p316, 0.7070707*((1-p316)/(1-0.2929293));
+(present, absent, absent) p266, 0.7142857*((1-p266)/(1-0.2857143));
+(absent, absent, absent) p344, 0.5467626*((1-p344)/(1-0.4532374));
+}
+
+probability ( phosphatase | RHepatitis, THepatitis, Cirrhosis, ChHepatitis ){
+(present, present, decompensate, active) p397, 0.29166667*((1-p397)/(1-0.04166667)), 0.66666666*((1-p397)/(1-0.04166667));
+(absent, present, decompensate, active) p439, 0.28571429*((1-p439)/(1-0.04761905)), 0.66666666*((1-p439)/(1-0.04761905));
+(present, absent, decompensate, active) p390, 0.28985507*((1-p390)/(1-0.02898551)), 0.68115942*((1-p390)/(1-0.02898551));
+(absent, absent, decompensate, active) p487, 0.29885057*((1-p487)/(1-0.04597701)), 0.65517242*((1-p487)/(1-0.04597701));
+(present, present, compensate, active) p211, 0.26415094*((1-p211)/(1-0.03773585)), 0.69811321*((1-p211)/(1-0.03773585));
+(absent, present, compensate, active) p352, 0.27777778*((1-p352)/(1-0.04166667)), 0.68055555*((1-p352)/(1-0.04166667));
+(present, absent, compensate, active) p261, 0.29850746*((1-p261)/(1-0.02985075)), 0.67164179*((1-p261)/(1-0.02985075));
+(absent, absent, compensate, active) p299, 0.33707865*((1-p299)/(1-0.04494382)), 0.61797753*((1-p299)/(1-0.04494382));
+(present, present, absent, active) p404, 0.21428571*((1-p404)/(1-0.03571429)), 0.75000000*((1-p404)/(1-0.03571429));
+(absent, present, absent, active) 0.04651163, 0.22093023, 0.73255814;
+(present, absent, absent, active) p327, 0.24675325*((1-p327)/(1-0.02597403)), 0.72727272*((1-p327)/(1-0.02597403));
+(absent, absent, absent, active) p432, 0.21978022*((1-p432)/(1-0.03296703)), 0.74725275*((1-p432)/(1-0.03296703));
+(present, present, decompensate, persistent) p383, 0.30434783*((1-p383)/(1-0.04347826)), 0.65217391*((1-p383)/(1-0.04347826));
+(absent, present, decompensate, persistent) p475, 0.31147541*((1-p475)/(1-0.04918033)), 0.63934426*((1-p475)/(1-0.04918033));
+(present, absent, decompensate, persistent) p469, 0.32203390*((1-p469)/(1-0.03389831)), 0.64406779*((1-p469)/(1-0.03389831));
+(absent, absent, decompensate, persistent) p313, 0.33707865*((1-p313)/(1-0.04494382)), 0.61797753*((1-p313)/(1-0.04494382));
+(present, present, compensate, persistent) p135, 0.250*((1-p135)/(1-0.025)), 0.725*((1-p135)/(1-0.025));
+(absent, present, compensate, persistent) p280, 0.25925926*((1-p280)/(1-0.03703704)), 0.70370370*((1-p280)/(1-0.03703704));
+(present, absent, compensate, persistent) p237, 0.28571429*((1-p237)/(1-0.02040816)), 0.69387755*((1-p237)/(1-0.02040816));
+(absent, absent, compensate, persistent) p360, 0.31168831*((1-p360)/(1-0.03896104)), 0.64935065*((1-p360)/(1-0.03896104));
+(present, present, absent, persistent) p376, 0.20454545*((1-p376)/(1-0.02272727)), 0.77272728*((1-p376)/(1-0.02272727));
+(absent, present, absent, persistent) 0.04054054, 0.20270270, 0.75675676;
+(present, absent, absent, persistent) p425, 0.234375*((1-p425)/(1-0.015625)), 0.750000*((1-p425)/(1-0.015625));
+(absent, absent, absent, persistent) p445, 0.19444444*((1-p445)/(1-0.02777778)), 0.77777778*((1-p445)/(1-0.02777778));
+(present, present, decompensate, absent) p177, 0.33333333*((1-p177)/(1-0.04166667)), 0.62500000*((1-p177)/(1-0.04166667));
+(absent, present, decompensate, absent) p457, 0.34722222*((1-p457)/(1-0.05555556)), 0.59722222*((1-p457)/(1-0.05555556));
+(present, absent, decompensate, absent) p418, 0.37878788*((1-p418)/(1-0.04545455)), 0.57575757*((1-p418)/(1-0.04545455));
+(absent, absent, decompensate, absent) p341, 0.48275862*((1-p341)/(1-0.06896552)), 0.44827586*((1-p341)/(1-0.06896552));
+(present, present, compensate, absent) p481, 0.27027027*((1-p481)/(1-0.02702703)), 0.70270270*((1-p481)/(1-0.02702703));
+(absent, present, compensate, absent) p18, 0.26785714*((1-p18)/(1-0.05357143)), 0.67857143*((1-p18)/(1-0.05357143));
+(present, absent, compensate, absent) p411, 0.31250000*((1-p411)/(1-0.02083333)), 0.66666667*((1-p411)/(1-0.02083333));
+(absent, absent, compensate, absent) p463, 0.38709677*((1-p463)/(1-0.06451613)), 0.54838710*((1-p463)/(1-0.06451613));
+(present, present, absent, absent) 0.02325581, 0.18604651, 0.79069768;
+(absent, present, absent, absent) p368, 0.14814815*((1-p368)/(1-0.07407407)), 0.77777778*((1-p368)/(1-0.07407407));
+(present, absent, absent, absent) p79, 0.23391813*((1-p79)/(1-0.00584795)), 0.76023392*((1-p79)/(1-0.00584795));
+(absent, absent, absent, absent) p451, 0.3394077*((1-p451)/(1-0.2118451)), 0.4487472*((1-p451)/(1-0.2118451));
+}
+
+probability ( skin | bilirubin ){
+(a88_20) p141, 0.00621118*((1-p141)/(1-0.99378882));
+(a19_7) p27, 0.1044776*((1-p27)/(1-0.8955224));
+(a6_2) p88, 0.2964824*((1-p88)/(1-0.7035176));
+(a1_0) p182, 0.8177458*((1-p182)/(1-0.1822542));
+}
+
+probability ( ama | PBC ){
+(present) p35, 0.4321429*((1-p35)/(1-0.5678571));
+(absent) p96, 0.98806683*((1-p96)/(1-0.01193317));
+}
+
+probability ( le_cells | PBC ){
+(present) p73, 0.8785714*((1-p73)/(1-0.1214286));
+(absent) p12, 0.95942721*((1-p12)/(1-0.04057279));
+}
+
+probability ( joints | PBC ){
+(present) p103, 0.8714286*((1-p103)/(1-0.1285714));
+(absent) p42, 0.8997613*((1-p42)/(1-0.1002387));
+}
+
+probability ( pain | PBC, joints ){
+(present, present) p111, 0.6111111*((1-p111)/(1-0.3888889));
+(absent, present) p158, 0.1904762*((1-p158)/(1-0.8095238));
+(present, absent) p195, 0.852459*((1-p195)/(1-0.147541));
+(absent, absent) p50, 0.8169761*((1-p50)/(1-0.1830239));
+}
+
+probability ( proteins | Cirrhosis ){
+(decompensate) p31, 0.00172117*((1-p31)/(1-0.99827883));
+(compensate) p92, 0.00321543*((1-p92)/(1-0.99678457));
+(absent) p144, 0.01967213*((1-p144)/(1-0.98032787));
+}
+
+probability ( edema | Cirrhosis ){
+(decompensate) p65, 0.6551724*((1-p65)/(1-0.3448276));
+(compensate) p4, 0.93548387*((1-p4)/(1-0.06451613));
+(absent) p125, 0.8688525*((1-p125)/(1-0.1311475));
+}
+
+probability ( platelet | Cirrhosis, PBC ){
+(decompensate, present) p180, 0.63690476*((1-p180)/(1-0.06547619)), 0.17857143*((1-p180)/(1-0.06547619)), 0.11904762*((1-p180)/(1-0.06547619));
+(compensate, present) p239, 0.63934426*((1-p239)/(1-0.06557377)), 0.17486339*((1-p239)/(1-0.06557377)), 0.12021858*((1-p239)/(1-0.06557377));
+(absent, present) p85, 0.67142857*((1-p85)/(1-0.06428571)), 0.15714286*((1-p85)/(1-0.06428571)), 0.10714286*((1-p85)/(1-0.06428571));
+(decompensate, absent) p213, 0.46551724*((1-p213)/(1-0.06896552)), 0.27586207*((1-p213)/(1-0.06896552)), 0.18965517*((1-p213)/(1-0.06896552));
+(compensate, absent) p24, 0.64516129*((1-p24)/(1-0.06451613)), 0.16129032*((1-p24)/(1-0.06451613)), 0.12903226*((1-p24)/(1-0.06451613));
+(absent, absent) p139, 0.73636364*((1-p139)/(1-0.09393939)), 0.13939394*((1-p139)/(1-0.09393939)), 0.03030303*((1-p139)/(1-0.09393939));
+}
+
+probability ( inr | ChHepatitis, Cirrhosis, THepatitis, Hyperbilirubinemia ){
+(active, decompensate, present, present) p458, 0.84210526*((1-p458)/(1-0.01754386)), 0.14035088*((1-p458)/(1-0.01754386));
+(persistent, decompensate, present, present) p470, 0.84848485*((1-p470)/(1-0.03030303)), 0.12121212*((1-p470)/(1-0.03030303));
+(absent, decompensate, present, present) p413, 0.81034483*((1-p413)/(1-0.03448276)), 0.15517241*((1-p413)/(1-0.03448276));
+(active, compensate, present, present) p198, 0.850*((1-p198)/(1-0.025)), 0.125*((1-p198)/(1-0.025));
+(persistent, compensate, present, present) p332, 0.82456140*((1-p332)/(1-0.03508772)), 0.14035088*((1-p332)/(1-0.03508772));
+(absent, compensate, present, present) p434, 0.76785715*((1-p434)/(1-0.01785714)), 0.21428571*((1-p434)/(1-0.01785714));
+(active, absent, present, present) 0.02197802, 0.89010989, 0.08791209;
+(persistent, absent, present, present) p385, 0.88135593*((1-p385)/(1-0.05084746)), 0.06779661*((1-p385)/(1-0.05084746));
+(absent, absent, present, present) p378, 0.84210526*((1-p378)/(1-0.03508772)), 0.12280702*((1-p378)/(1-0.03508772));
+(active, decompensate, absent, present) 0.02150538, 0.81720430, 0.16129032;
+(persistent, decompensate, absent, present) p427, 0.79710145*((1-p427)/(1-0.02898551)), 0.17391304*((1-p427)/(1-0.02898551));
+(absent, decompensate, absent, present) p346, 0.75000000*((1-p346)/(1-0.02173913)), 0.22826087*((1-p346)/(1-0.02173913));
+(active, compensate, absent, present) p420, 0.86746988*((1-p420)/(1-0.02409639)), 0.10843373*((1-p420)/(1-0.02409639));
+(persistent, compensate, absent, present) p270, 0.85714285*((1-p270)/(1-0.03571429)), 0.10714286*((1-p270)/(1-0.03571429));
+(absent, compensate, absent, present) p251, 0.80281691*((1-p251)/(1-0.02816901)), 0.16901408*((1-p251)/(1-0.02816901));
+(active, absent, absent, present) p476, 0.904*((1-p476)/(1-0.024)), 0.072*((1-p476)/(1-0.024));
+(persistent, absent, absent, present) p446, 0.90666667*((1-p446)/(1-0.05333333)), 0.04000000*((1-p446)/(1-0.05333333));
+(absent, absent, absent, present) p354, 0.89285714*((1-p354)/(1-0.05357143)), 0.05357143*((1-p354)/(1-0.05357143));
+(active, decompensate, present, absent) p406, 0.81818182*((1-p406)/(1-0.01298701)), 0.16883117*((1-p406)/(1-0.01298701));
+(persistent, decompensate, present, absent) p115, 0.79032259*((1-p115)/(1-0.03225806)), 0.17741935*((1-p115)/(1-0.03225806));
+(absent, decompensate, present, absent) p482, 0.75714286*((1-p482)/(1-0.01428571)), 0.22857143*((1-p482)/(1-0.01428571));
+(active, compensate, present, absent) p399, 0.86666667*((1-p399)/(1-0.01333333)), 0.12000000*((1-p399)/(1-0.01333333));
+(persistent, compensate, present, absent) p452, 0.83673469*((1-p452)/(1-0.04081633)), 0.12244898*((1-p452)/(1-0.04081633));
+(absent, compensate, present, absent) p289, 0.78571429*((1-p289)/(1-0.01785714)), 0.19642857*((1-p289)/(1-0.01785714));
+(active, absent, present, absent) p318, 0.90384615*((1-p318)/(1-0.01923077)), 0.07692308*((1-p318)/(1-0.01923077));
+(persistent, absent, present, absent) p488, 0.90*((1-p488)/(1-0.05)), 0.05*((1-p488)/(1-0.05));
+(absent, absent, present, absent) p362, 0.92592592*((1-p362)/(1-0.03703704)), 0.03703704*((1-p362)/(1-0.03703704));
+(active, decompensate, absent, absent) p304, 0.80000000*((1-p304)/(1-0.01666667)), 0.18333333*((1-p304)/(1-0.01666667));
+(persistent, decompensate, absent, absent) p392, 0.75308642*((1-p392)/(1-0.02469136)), 0.22222222*((1-p392)/(1-0.02469136));
+(absent, decompensate, absent, absent) p54, 0.60240964*((1-p54)/(1-0.00172117)), 0.39586919*((1-p54)/(1-0.00172117));
+(active, compensate, absent, absent) p370, 0.85294118*((1-p370)/(1-0.01960784)), 0.12745098*((1-p370)/(1-0.01960784));
+(persistent, compensate, absent, absent) p162, 0.83333334*((1-p162)/(1-0.03333333)), 0.13333333*((1-p162)/(1-0.03333333));
+(absent, compensate, absent, absent) p440, 0.67524116*((1-p440)/(1-0.00321543)), 0.32154341*((1-p440)/(1-0.00321543));
+(active, absent, absent, absent) p464, 0.90109890*((1-p464)/(1-0.02197802)), 0.07692308*((1-p464)/(1-0.02197802));
+(persistent, absent, absent, absent) 0.08333333, 0.88888889, 0.02777778;
+(absent, absent, absent, absent) p225, 0.875*((1-p225)/(1-0.065)), 0.060*((1-p225)/(1-0.065));
+}
+
+probability ( bleeding | platelet, inr ){
+(a597_300, a200_110) p338, 0.8571429*((1-p338)/(1-0.1428571));
+(a299_150, a200_110) p296, 0.8695652*((1-p296)/(1-0.1304348));
+(a149_100, a200_110) p9, 0.8*((1-p9)/(1-0.2));
+(a99_0, a200_110) p130, 0.5*((1-p130)/(1-0.5));
+(a597_300, a109_70) p324, 0.893617*((1-p324)/(1-0.106383));
+(a299_150, a109_70) p233, 0.8626506*((1-p233)/(1-0.1373494));
+(a149_100, a109_70) p70, 0.8666667*((1-p70)/(1-0.1333333));
+(a99_0, a109_70) p258, 0.744186*((1-p258)/(1-0.255814));
+(a597_300, a69_0) p207, 0.90909091*((1-p207)/(1-0.09090909));
+(a299_150, a69_0) p310, 0.575*((1-p310)/(1-0.425));
+(a149_100, a69_0) p277, 0.75*((1-p277)/(1-0.25));
+(a99_0, a69_0) p173, 0.3333333*((1-p173)/(1-0.6666667));
+}
+
+probability ( flatulence | gallstones ){
+(present) p26, 0.6074766*((1-p26)/(1-0.3925234));
+(absent) p87, 0.5692568*((1-p87)/(1-0.4307432));
+}
+
+probability ( alcohol | Cirrhosis ){
+(decompensate) p67, 0.7931034*((1-p67)/(1-0.2068966));
+(compensate) p6, 0.7741936*((1-p6)/(1-0.2258064));
+(absent) p127, 0.8885246*((1-p127)/(1-0.1114754));
+}
+
+probability ( encephalopathy | Cirrhosis, PBC ){
+(decompensate, present) p77, 0.94674556*((1-p77)/(1-0.05325444));
+(compensate, present) p210, 0.95108696*((1-p210)/(1-0.04891304));
+(absent, present) p176, 0.94642857*((1-p176)/(1-0.05357143));
+(decompensate, absent) p236, 0.94827586*((1-p236)/(1-0.05172414));
+(compensate, absent) p134, 0.99678457*((1-p134)/(1-0.00321543));
+(absent, absent) p16, 0.98484848*((1-p16)/(1-0.01515152));
+}
+
+probability ( urea | encephalopathy ){
+(present) p106, 0.1304348*((1-p106)/(1-0.2173913)), 0.6521739*((1-p106)/(1-0.2173913));
+(absent) p45, 0.06508876*((1-p45)/(1-0.03550296)), 0.89940828*((1-p45)/(1-0.03550296));
+}
+
+probability ( ascites | proteins ){
+(a10_6) p89, 0.8719068*((1-p89)/(1-0.1280932));
+(a5_2) p28, 0.4166667*((1-p28)/(1-0.5833333));
+}
+
+probability ( hepatomegaly | RHepatitis, THepatitis, Steatosis, Hyperbilirubinemia ){
+(present, present, present, present) p229, 0.3902439*((1-p229)/(1-0.6097561));
+(absent, present, present, present) p255, 0.4*((1-p255)/(1-0.6));
+(present, absent, present, present) p307, 0.4098361*((1-p307)/(1-0.5901639));
+(absent, absent, present, present) p321, 0.4133333*((1-p321)/(1-0.5866667));
+(present, present, absent, present) p168, 0.4081633*((1-p168)/(1-0.5918367));
+(absent, present, absent, present) p63, 0.4102564*((1-p63)/(1-0.5897436));
+(present, absent, absent, present) p349, 0.4444444*((1-p349)/(1-0.5555556));
+(absent, absent, absent, present) p293, 0.625*((1-p293)/(1-0.375));
+(present, present, present, absent) p123, 0.32*((1-p123)/(1-0.68));
+(absent, present, present, absent) p203, 0.3243243*((1-p203)/(1-0.6756757));
+(present, absent, present, absent) p357, 0.3472222*((1-p357)/(1-0.6527778));
+(absent, absent, present, absent) p365, 0.3134328*((1-p365)/(1-0.6865672));
+(present, present, absent, absent) p335, 0.326087*((1-p335)/(1-0.673913));
+(absent, present, absent, absent) p2, 0.2222222*((1-p2)/(1-0.7777778));
+(present, absent, absent, absent) p274, 0.2941177*((1-p274)/(1-0.7058823));
+(absent, absent, absent, absent) p373, 0.3026316*((1-p373)/(1-0.6973684));
+}
+
+probability ( hepatalgia | hepatomegaly ){
+(present) p13, 0.6857749*((1-p13)/(1-0.3142251));
+(absent) p74, 0.96929825*((1-p74)/(1-0.03070175));
+}
+
+probability ( density | encephalopathy ){
+(present) p121, 0.2608696*((1-p121)/(1-0.7391304));
+(absent) p60, 0.6227811*((1-p60)/(1-0.3772189));
+}
+
+probability ( ESR | PBC, ChHepatitis, Steatosis, Hyperbilirubinemia ){
+(present, active, present, present) p412, 0.1721312*((1-p412)/(1-0.2704918)), 0.5573770*((1-p412)/(1-0.2704918));
+(absent, active, present, present) p281, 0.1768293*((1-p281)/(1-0.2682927)), 0.5548780*((1-p281)/(1-0.2682927));
+(present, persistent, present, present) p212, 0.1767956*((1-p212)/(1-0.3093923)), 0.5138121*((1-p212)/(1-0.3093923));
+(absent, persistent, present, present) p405, 0.12048193*((1-p405)/(1-0.06024096)), 0.81927711*((1-p405)/(1-0.06024096));
+(present, absent, present, present) p314, 0.1712963*((1-p314)/(1-0.3425926)), 0.4861111*((1-p314)/(1-0.3425926));
+(absent, absent, present, present) p238, 0.06329114*((1-p238)/(1-0.07594937)), 0.86075949*((1-p238)/(1-0.07594937));
+(present, active, absent, present) p391, 0.1911765*((1-p391)/(1-0.2941177)), 0.5147058*((1-p391)/(1-0.2941177));
+(absent, active, absent, present) p426, 0.1633987*((1-p426)/(1-0.1045752)), 0.7320261*((1-p426)/(1-0.1045752));
+(present, persistent, absent, present) p300, 0.1720430*((1-p300)/(1-0.3333333)), 0.4946237*((1-p300)/(1-0.3333333));
+(absent, persistent, absent, present) p419, 0.07608696*((1-p419)/(1-0.05434783)), 0.86956521*((1-p419)/(1-0.05434783));
+(present, absent, absent, present) p138, 0.1818182*((1-p138)/(1-0.3636364)), 0.4545455*((1-p138)/(1-0.3636364));
+(absent, absent, absent, present) p398, 0.07142857*((1-p398)/(1-0.01785714)), 0.91071429*((1-p398)/(1-0.01785714));
+(present, active, present, absent) p179, 0.1837838*((1-p179)/(1-0.2972973)), 0.5189189*((1-p179)/(1-0.2972973));
+(absent, active, present, absent) p262, 0.1625*((1-p262)/(1-0.1750)), 0.6625*((1-p262)/(1-0.1750));
+(present, persistent, present, absent) p361, 0.1711230*((1-p361)/(1-0.3315508)), 0.4973262*((1-p361)/(1-0.3315508));
+(absent, persistent, present, absent) p377, 0.08602151*((1-p377)/(1-0.08602151)), 0.82795698*((1-p377)/(1-0.08602151));
+(present, absent, present, absent) p328, 0.1779359*((1-p328)/(1-0.3629893)), 0.4590747*((1-p328)/(1-0.3629893));
+(absent, absent, present, absent) p23, 0.05970149*((1-p23)/(1-0.13432836)), 0.80597015*((1-p23)/(1-0.13432836));
+(present, active, absent, absent) p369, 0.2055749*((1-p369)/(1-0.3205575)), 0.4738676*((1-p369)/(1-0.3205575));
+(absent, active, absent, absent) p433, 0.21978022*((1-p433)/(1-0.03296703)), 0.74725275*((1-p433)/(1-0.03296703));
+(present, persistent, absent, absent) p353, 0.184*((1-p353)/(1-0.368)), 0.448*((1-p353)/(1-0.368));
+(absent, persistent, absent, absent) p342, 0.05555556*((1-p342)/(1-0.05555556)), 0.88888888*((1-p342)/(1-0.05555556));
+(present, absent, absent, absent) p84, 0.2107143*((1-p84)/(1-0.4321429)), 0.3571429*((1-p84)/(1-0.4321429));
+(absent, absent, absent, absent) p384, 0.05325444*((1-p384)/(1-0.04733728)), 0.89940828*((1-p384)/(1-0.04733728));
+}
+
+probability ( alt | ChHepatitis, RHepatitis, THepatitis, Steatosis, Cirrhosis ){
+(active, present, present, present, decompensate) 0.05882353, 0.15686275, 0.41176471, 0.37254902;
+(persistent, present, present, present, decompensate) 0.05172414, 0.15517241, 0.39655172, 0.39655172;
+(absent, present, present, present, decompensate) p421, 0.12*((1-p421)/(1-0.02)), 0.40*((1-p421)/(1-0.02)), 0.46*((1-p421)/(1-0.02));
+(active, absent, present, present, decompensate) p393, 0.1728395*((1-p393)/(1-0.0617284)), 0.4197531*((1-p393)/(1-0.0617284)), 0.3456790*((1-p393)/(1-0.0617284));
+(persistent, absent, present, present, decompensate) p271, 0.12068966*((1-p271)/(1-0.01724138)), 0.39655172*((1-p271)/(1-0.01724138)), 0.46551724*((1-p271)/(1-0.01724138));
+(absent, absent, present, present, decompensate) p441, 0.10909091*((1-p441)/(1-0.01818182)), 0.43636364*((1-p441)/(1-0.01818182)), 0.43636364*((1-p441)/(1-0.01818182));
+(active, present, absent, present, decompensate) 0.06849315, 0.16438356, 0.42465753, 0.34246575;
+(persistent, present, absent, present, decompensate) p414, 0.11538462*((1-p414)/(1-0.01923077)), 0.40384615*((1-p414)/(1-0.01923077)), 0.46153846*((1-p414)/(1-0.01923077));
+(absent, present, absent, present, decompensate) p447, 0.11666667*((1-p447)/(1-0.01666667)), 0.45000000*((1-p447)/(1-0.01666667)), 0.41666667*((1-p447)/(1-0.01666667));
+(active, absent, absent, present, decompensate) 0.06862745, 0.16666667, 0.42156863, 0.34313725;
+(persistent, absent, absent, present, decompensate) p347, 0.11111111*((1-p347)/(1-0.02777778)), 0.38888889*((1-p347)/(1-0.02777778)), 0.47222222*((1-p347)/(1-0.02777778));
+(absent, absent, absent, present, decompensate) p116, 0.09333333*((1-p116)/(1-0.02666667)), 0.42666667*((1-p116)/(1-0.02666667)), 0.45333333*((1-p116)/(1-0.02666667));
+(active, present, present, absent, decompensate) 0.06451613, 0.17741935, 0.41935484, 0.33870968;
+(persistent, present, present, absent, decompensate) 0.02272727, 0.11363636, 0.40909091, 0.45454545;
+(absent, present, present, absent, decompensate) p55, 0.12*((1-p55)/(1-0.02)), 0.44*((1-p55)/(1-0.02)), 0.42*((1-p55)/(1-0.02));
+(active, absent, present, absent, decompensate) 0.06976744, 0.16279070, 0.41860465, 0.34883721;
+(persistent, absent, present, absent, decompensate) 0.01724138, 0.10344828, 0.39655172, 0.48275862;
+(absent, absent, present, absent, decompensate) p371, 0.100*((1-p371)/(1-0.025)), 0.425*((1-p371)/(1-0.025)), 0.450*((1-p371)/(1-0.025));
+(active, present, absent, absent, decompensate) 0.0750, 0.1875, 0.4250, 0.3125;
+(persistent, present, absent, absent, decompensate) p428, 0.13207547*((1-p428)/(1-0.01886792)), 0.41509434*((1-p428)/(1-0.01886792)), 0.43396226*((1-p428)/(1-0.01886792));
+(absent, present, absent, absent, decompensate) p199, 0.12676056*((1-p199)/(1-0.02816901)), 0.46478873*((1-p199)/(1-0.02816901)), 0.38028169*((1-p199)/(1-0.02816901));
+(active, absent, absent, absent, decompensate) p407, 0.17777778*((1-p407)/(1-0.08148148)), 0.42222222*((1-p407)/(1-0.08148148)), 0.31851852*((1-p407)/(1-0.08148148));
+(persistent, absent, absent, absent, decompensate) p333, 0.11363636*((1-p333)/(1-0.03409091)), 0.38636364*((1-p333)/(1-0.03409091)), 0.46590909*((1-p333)/(1-0.03409091));
+(absent, absent, absent, absent, decompensate) 0.06896552, 0.12068966, 0.46551724, 0.34482759;
+(active, present, present, present, compensate) 0.05454545, 0.16363636, 0.41818182, 0.36363636;
+(persistent, present, present, present, compensate) p465, 0.13043478*((1-p465)/(1-0.02173913)), 0.41304348*((1-p465)/(1-0.02173913)), 0.43478261*((1-p465)/(1-0.02173913));
+(absent, present, present, present, compensate) p435, 0.12738854*((1-p435)/(1-0.00212314)), 0.42462845*((1-p435)/(1-0.00212314)), 0.44585987*((1-p435)/(1-0.00212314));
+(active, absent, present, present, compensate) 0.05479452, 0.16438356, 0.42465753, 0.35616438;
+(persistent, absent, present, present, compensate) 0.00191939, 0.11516315, 0.40307102, 0.47984645;
+(absent, absent, present, present, compensate) 0.00172117, 0.10327022, 0.44750430, 0.44750430;
+(active, present, absent, present, compensate) p163, 0.17647059*((1-p163)/(1-0.05882353)), 0.42647059*((1-p163)/(1-0.05882353)), 0.33823529*((1-p163)/(1-0.05882353));
+(persistent, present, absent, present, compensate) 0.0020790, 0.1247401, 0.4158004, 0.4573805;
+(absent, present, absent, present, compensate) p290, 0.12477718*((1-p290)/(1-0.00178253)), 0.46345811*((1-p290)/(1-0.00178253)), 0.40998217*((1-p290)/(1-0.00178253));
+(active, absent, absent, present, compensate) 0.0625000, 0.1666667, 0.4270833, 0.3437500;
+(persistent, absent, absent, present, compensate) 0.01492537, 0.11940299, 0.40298507, 0.46268657;
+(absent, absent, absent, present, compensate) 0.01176471, 0.10588235, 0.44705882, 0.43529412;
+(active, present, present, absent, compensate) p459, 0.19298246*((1-p459)/(1-0.07017544)), 0.42105263*((1-p459)/(1-0.07017544)), 0.31578947*((1-p459)/(1-0.07017544));
+(persistent, present, present, absent, compensate) p477, 0.13477089*((1-p477)/(1-0.00269542)), 0.40431267*((1-p477)/(1-0.00269542)), 0.45822102*((1-p477)/(1-0.00269542));
+(absent, present, present, absent, compensate) 0.00249377, 0.14962594, 0.44887781, 0.39900249;
+(active, absent, present, absent, compensate) p363, 0.18181818*((1-p363)/(1-0.07792208)), 0.41558442*((1-p363)/(1-0.07792208)), 0.32467532*((1-p363)/(1-0.07792208));
+(persistent, absent, present, absent, compensate) p453, 0.12244898*((1-p453)/(1-0.02040816)), 0.38775510*((1-p453)/(1-0.02040816)), 0.46938776*((1-p453)/(1-0.02040816));
+(absent, absent, present, absent, compensate) 0.01470588, 0.11764706, 0.44117647, 0.42647059;
+(active, present, absent, absent, compensate) 0.08333333, 0.20833333, 0.43055556, 0.27777778;
+(persistent, present, absent, absent, compensate) 0.02272727, 0.15909091, 0.40909091, 0.40909091;
+(absent, present, absent, absent, compensate) 0.01724138, 0.15517241, 0.48275862, 0.34482759;
+(active, absent, absent, absent, compensate) 0.08661417, 0.19685039, 0.42519685, 0.29133858;
+(persistent, absent, absent, absent, compensate) 0.02631579, 0.13157895, 0.39473684, 0.44736842;
+(absent, absent, absent, absent, compensate) p355, 0.19354839*((1-p355)/(1-0.03225806)), 0.51612903*((1-p355)/(1-0.03225806)), 0.25806452*((1-p355)/(1-0.03225806));
+(active, present, present, present, absent) 0.04761905, 0.15873016, 0.41269841, 0.38095238;
+(persistent, present, present, present, absent) p379, 0.1084599*((1-p379)/(1-0.0021692)), 0.3904555*((1-p379)/(1-0.0021692)), 0.4989154*((1-p379)/(1-0.0021692));
+(absent, present, present, present, absent) p471, 0.11516315*((1-p471)/(1-0.00191939)), 0.42226488*((1-p471)/(1-0.00191939)), 0.46065259*((1-p471)/(1-0.00191939));
+(active, absent, present, present, absent) p319, 0.15294118*((1-p319)/(1-0.05882353)), 0.41176471*((1-p319)/(1-0.05882353)), 0.37647059*((1-p319)/(1-0.05882353));
+(persistent, absent, present, present, absent) 0.00166389, 0.09983361, 0.38269551, 0.51580699;
+(absent, absent, present, present, absent) p400, 0.09198423*((1-p400)/(1-0.00131406)), 0.42049934*((1-p400)/(1-0.00131406)), 0.48620237*((1-p400)/(1-0.00131406));
+(active, present, absent, present, absent) 0.0625, 0.1750, 0.4125, 0.3500;
+(persistent, present, absent, present, absent) 0.00181488, 0.12704174, 0.39927405, 0.47186933;
+(absent, present, absent, present, absent) 0.00144718, 0.11577424, 0.44862518, 0.43415340;
+(active, absent, absent, present, absent) p483, 0.168*((1-p483)/(1-0.064)), 0.416*((1-p483)/(1-0.064)), 0.352*((1-p483)/(1-0.064));
+(persistent, absent, absent, present, absent) p386, 0.10714286*((1-p386)/(1-0.01190476)), 0.38095238*((1-p386)/(1-0.01190476)), 0.50000000*((1-p386)/(1-0.01190476));
+(absent, absent, absent, present, absent) 0.00149031, 0.08941878, 0.41728763, 0.49180328;
+(active, present, present, absent, absent) 0.07936508, 0.19047619, 0.41269841, 0.31746032;
+(persistent, present, present, absent, absent) 0.00262467, 0.13123360, 0.36745407, 0.49868766;
+(absent, present, present, absent, absent) 0.0023753, 0.1425178, 0.4275534, 0.4275534;
+(active, absent, present, absent, absent) 0.08333333, 0.18750000, 0.40625000, 0.32291667;
+(persistent, absent, present, absent, absent) 0.01818182, 0.10909091, 0.34545455, 0.52727272;
+(absent, absent, present, absent, absent) p252, 0.07380074*((1-p252)/(1-0.00369004)), 0.36900369*((1-p252)/(1-0.00369004)), 0.55350553*((1-p252)/(1-0.00369004));
+(active, present, absent, absent, absent) 0.08988764, 0.22471910, 0.41573034, 0.26966292;
+(persistent, present, absent, absent, absent) 0.02083333, 0.16666667, 0.37500000, 0.43750000;
+(absent, present, absent, absent, absent) p489, 0.23391813*((1-p489)/(1-0.00584795)), 0.46783626*((1-p489)/(1-0.00584795)), 0.29239766*((1-p489)/(1-0.00584795));
+(active, absent, absent, absent, absent) 0.1208791, 0.2307692, 0.3956044, 0.2527472;
+(persistent, absent, absent, absent, absent) p226, 0.13888889*((1-p226)/(1-0.02777778)), 0.27777778*((1-p226)/(1-0.02777778)), 0.55555555*((1-p226)/(1-0.02777778));
+(absent, absent, absent, absent, absent) p305, 0.17473118*((1-p305)/(1-0.04569892)), 0.42741935*((1-p305)/(1-0.04569892)), 0.35215054*((1-p305)/(1-0.04569892));
+}
+
+probability ( ast | ChHepatitis, RHepatitis, THepatitis, Steatosis, Cirrhosis ){
+(active, present, present, present, decompensate) 0.01960784, 0.13725490, 0.47058824, 0.37254902;
+(persistent, present, present, present, decompensate) p322, 0.14035088*((1-p322)/(1-0.01754386)), 0.45614035*((1-p322)/(1-0.01754386)), 0.38596491*((1-p322)/(1-0.01754386));
+(absent, present, present, present, decompensate) p171, 0.09980040*((1-p171)/(1-0.00199601)), 0.45908184*((1-p171)/(1-0.00199601)), 0.43912176*((1-p171)/(1-0.00199601));
+(active, absent, present, present, decompensate) p409, 0.16049383*((1-p409)/(1-0.02469136)), 0.46913580*((1-p409)/(1-0.02469136)), 0.34567901*((1-p409)/(1-0.02469136));
+(persistent, absent, present, present, decompensate) 0.00172117, 0.10327022, 0.44750430, 0.44750430;
+(absent, absent, present, present, decompensate) p485, 0.09074410*((1-p485)/(1-0.00181488)), 0.47186933*((1-p485)/(1-0.00181488)), 0.43557169*((1-p485)/(1-0.00181488));
+(active, present, absent, present, decompensate) 0.02777778, 0.15277778, 0.48611111, 0.33333333;
+(persistent, present, absent, present, decompensate) p395, 0.09596929*((1-p395)/(1-0.00191939)), 0.46065259*((1-p395)/(1-0.00191939)), 0.44145873*((1-p395)/(1-0.00191939));
+(absent, present, absent, present, decompensate) 0.00166389, 0.09983361, 0.49916805, 0.39933444;
+(active, absent, absent, present, decompensate) p350, 0.16504854*((1-p350)/(1-0.02912621)), 0.46601942*((1-p350)/(1-0.02912621)), 0.33980583*((1-p350)/(1-0.02912621));
+(persistent, absent, absent, present, decompensate) p358, 0.09985735*((1-p358)/(1-0.00142653)), 0.44222539*((1-p358)/(1-0.00142653)), 0.45649073*((1-p358)/(1-0.00142653));
+(absent, absent, absent, present, decompensate) 0.00133156, 0.09320905, 0.45272969, 0.45272969;
+(active, present, present, absent, decompensate) p437, 0.16129032*((1-p437)/(1-0.01612903)), 0.48387097*((1-p437)/(1-0.01612903)), 0.33870968*((1-p437)/(1-0.01612903));
+(persistent, present, present, absent, decompensate) 0.00221729, 0.11086475, 0.46563193, 0.42128603;
+(absent, present, present, absent, decompensate) p479, 0.09980040*((1-p479)/(1-0.00199601)), 0.47904192*((1-p479)/(1-0.00199601)), 0.41916168*((1-p479)/(1-0.00199601));
+(active, absent, present, absent, decompensate) 0.02352941, 0.16470588, 0.45882353, 0.35294118;
+(persistent, absent, present, absent, decompensate) 0.00172117, 0.10327022, 0.43029260, 0.46471601;
+(absent, absent, present, absent, decompensate) 0.00126422, 0.08849558, 0.45512010, 0.45512010;
+(active, present, absent, absent, decompensate) 0.025, 0.175, 0.500, 0.300;
+(persistent, present, absent, absent, decompensate) 0.00184843, 0.11090573, 0.48059150, 0.40665434;
+(absent, present, absent, absent, decompensate) p473, 0.11251758*((1-p473)/(1-0.00140647)), 0.52039381*((1-p473)/(1-0.00140647)), 0.36568214*((1-p473)/(1-0.00140647));
+(active, absent, absent, absent, decompensate) 0.03676471, 0.17647059, 0.47058824, 0.31617647;
+(persistent, absent, absent, absent, decompensate) p336, 0.10227273*((1-p336)/(1-0.01136364)), 0.44318182*((1-p336)/(1-0.01136364)), 0.44318182*((1-p336)/(1-0.01136364));
+(absent, absent, absent, absent, decompensate) p430, 0.13793103*((1-p430)/(1-0.01724138)), 0.50000000*((1-p430)/(1-0.01724138)), 0.34482759*((1-p430)/(1-0.01724138));
+(active, present, present, present, compensate) 0.01818182, 0.12727273, 0.49090909, 0.36363636;
+(persistent, present, present, present, compensate) 0.00221729, 0.08869180, 0.48780488, 0.42128603;
+(absent, present, present, present, compensate) 0.00212314, 0.08492569, 0.48832272, 0.42462845;
+(active, absent, present, present, compensate) 0.02739726, 0.13698630, 0.47945205, 0.35616438;
+(persistent, absent, present, present, compensate) p68, 0.07677543*((1-p68)/(1-0.00191939)), 0.46065259*((1-p68)/(1-0.00191939)), 0.46065259*((1-p68)/(1-0.00191939));
+(absent, absent, present, present, compensate) 0.00172117, 0.06884682, 0.48192771, 0.44750430;
+(active, present, absent, present, compensate) p455, 0.14705882*((1-p455)/(1-0.02941176)), 0.50000001*((1-p455)/(1-0.02941176)), 0.32352941*((1-p455)/(1-0.02941176));
+(persistent, present, absent, present, compensate) 0.00203666, 0.08146640, 0.48879837, 0.42769857;
+(absent, present, absent, present, compensate) 0.00175131, 0.08756567, 0.52539405, 0.38528897;
+(active, absent, absent, present, compensate) p231, 0.1562500*((1-p231)/(1-0.0312500)), 0.4791667*((1-p231)/(1-0.0312500)), 0.3333333*((1-p231)/(1-0.0312500));
+(persistent, absent, absent, present, compensate) p374, 0.08941878*((1-p374)/(1-0.00149031)), 0.46199702*((1-p374)/(1-0.00149031)), 0.44709389*((1-p374)/(1-0.00149031));
+(absent, absent, absent, present, compensate) p381, 0.08130081*((1-p381)/(1-0.00116144)), 0.48780488*((1-p381)/(1-0.00116144)), 0.42973287*((1-p381)/(1-0.00116144));
+(active, present, present, absent, compensate) 0.01818182, 0.16363636, 0.50909091, 0.30909091;
+(persistent, present, present, absent, compensate) p294, 0.08086253*((1-p294)/(1-0.00269542)), 0.51212938*((1-p294)/(1-0.00269542)), 0.40431267*((1-p294)/(1-0.00269542));
+(absent, present, present, absent, compensate) 0.00249377, 0.07481297, 0.54862842, 0.37406484;
+(active, absent, present, absent, compensate) p388, 0.16883117*((1-p388)/(1-0.02597403)), 0.48051948*((1-p388)/(1-0.02597403)), 0.32467532*((1-p388)/(1-0.02597403));
+(persistent, absent, present, absent, compensate) 0.00203666, 0.08146640, 0.46843177, 0.44806517;
+(absent, absent, present, absent, compensate) 0.00149031, 0.07451565, 0.49180328, 0.43219076;
+(active, present, absent, absent, compensate) 0.02777778, 0.18055556, 0.52777777, 0.26388889;
+(persistent, present, absent, absent, compensate) 0.00226757, 0.09070295, 0.52154195, 0.38548753;
+(absent, present, absent, absent, compensate) 0.00172117, 0.10327022, 0.58519794, 0.30981067;
+(active, absent, absent, absent, compensate) 0.03937008, 0.18110236, 0.49606299, 0.28346457;
+(persistent, absent, absent, absent, compensate) p205, 0.09210526*((1-p205)/(1-0.01315789)), 0.47368421*((1-p205)/(1-0.01315789)), 0.42105263*((1-p205)/(1-0.01315789));
+(absent, absent, absent, absent, compensate) 0.03225806, 0.06451613, 0.67741936, 0.22580645;
+(active, present, present, present, absent) 0.01612903, 0.14516129, 0.46774194, 0.37096774;
+(persistent, present, present, present, absent) 0.00212314, 0.08492569, 0.44585987, 0.46709130;
+(absent, present, present, present, absent) 0.00191939, 0.07677543, 0.46065259, 0.46065259;
+(active, absent, present, present, absent) p308, 0.14285714*((1-p308)/(1-0.02380952)), 0.45238095*((1-p308)/(1-0.02380952)), 0.38095238*((1-p308)/(1-0.02380952));
+(persistent, absent, present, present, absent) 0.00166389, 0.08319468, 0.41597338, 0.49916805;
+(absent, absent, present, present, absent) 0.00133156, 0.06657790, 0.43941411, 0.49267643;
+(active, present, absent, present, absent) p128, 0.15189873*((1-p128)/(1-0.02531646)), 0.48101266*((1-p128)/(1-0.02531646)), 0.34177215*((1-p128)/(1-0.02531646));
+(persistent, present, absent, present, absent) p449, 0.09074410*((1-p449)/(1-0.00181488)), 0.45372051*((1-p449)/(1-0.00181488)), 0.45372051*((1-p449)/(1-0.00181488));
+(absent, present, absent, present, absent) p7, 0.08559201*((1-p7)/(1-0.00142653)), 0.49928673*((1-p7)/(1-0.00142653)), 0.41369472*((1-p7)/(1-0.00142653));
+(active, absent, absent, present, absent) p416, 0.15873016*((1-p416)/(1-0.03174603)), 0.46031746*((1-p416)/(1-0.03174603)), 0.34920635*((1-p416)/(1-0.03174603));
+(persistent, absent, absent, present, absent) p461, 0.08423586*((1-p461)/(1-0.00120337)), 0.43321300*((1-p461)/(1-0.00120337)), 0.48134777*((1-p461)/(1-0.00120337));
+(absent, absent, absent, present, absent) p256, 0.07451565*((1-p256)/(1-0.00149031)), 0.43219076*((1-p256)/(1-0.00149031)), 0.49180328*((1-p256)/(1-0.00149031));
+(active, present, present, absent, absent) p366, 0.17741935*((1-p366)/(1-0.03225806)), 0.48387097*((1-p366)/(1-0.03225806)), 0.30645161*((1-p366)/(1-0.03225806));
+(persistent, present, present, absent, absent) 0.00269542, 0.08086253, 0.45822102, 0.45822102;
+(absent, present, present, absent, absent) p467, 0.07299270*((1-p467)/(1-0.00243309)), 0.51094891*((1-p467)/(1-0.00243309)), 0.41362530*((1-p467)/(1-0.00243309));
+(active, absent, present, absent, absent) p275, 0.1875000*((1-p275)/(1-0.0312500)), 0.4583333*((1-p275)/(1-0.0312500)), 0.3229167*((1-p275)/(1-0.0312500));
+(persistent, absent, present, absent, absent) 0.00181488, 0.09074410, 0.41742287, 0.49001815;
+(absent, absent, present, absent, absent) 0.00369004, 0.07380074, 0.36900369, 0.55350553;
+(active, present, absent, absent, absent) p402, 0.20224719*((1-p402)/(1-0.03370787)), 0.50561797*((1-p402)/(1-0.03370787)), 0.25842697*((1-p402)/(1-0.03370787));
+(persistent, present, absent, absent, absent) p423, 0.10615711*((1-p423)/(1-0.00212314)), 0.48832272*((1-p423)/(1-0.00212314)), 0.40339703*((1-p423)/(1-0.00212314));
+(absent, present, absent, absent, absent) 0.00584795, 0.11695906, 0.64327486, 0.23391813;
+(active, absent, absent, absent, absent) p443, 0.23076923*((1-p443)/(1-0.05494505)), 0.46153846*((1-p443)/(1-0.05494505)), 0.25274725*((1-p443)/(1-0.05494505));
+(persistent, absent, absent, absent, absent) 0.02777778, 0.11111111, 0.36111111, 0.50000000;
+(absent, absent, absent, absent, absent) 0.01075269, 0.22580645, 0.46774194, 0.29569892;
+}
+
+probability ( amylase | gallstones ){
+(present) p117, 0.04672897*((1-p117)/(1-0.01869159)), 0.93457944*((1-p117)/(1-0.01869159));
+(absent) p56, 0.01689189*((1-p56)/(1-0.01013514)), 0.97297297*((1-p56)/(1-0.01013514));
+}
+
+probability ( ggtp | PBC, THepatitis, RHepatitis, Steatosis, ChHepatitis, Hyperbilirubinemia ){
+(present, present, present, present, active, present) 0.1590909, 0.1477273, 0.1136364, 0.5795454;
+(absent, present, present, present, active, present) p438, 0.1415094*((1-p438)/(1-0.1509434)), 0.1226415*((1-p438)/(1-0.1509434)), 0.5849057*((1-p438)/(1-0.1509434));
+(present, absent, present, present, active, present) 0.1756757, 0.1621622, 0.1216216, 0.5405405;
+(absent, absent, present, present, active, present) p474, 0.04761905*((1-p474)/(1-0.06349206)), 0.11111111*((1-p474)/(1-0.06349206)), 0.77777778*((1-p474)/(1-0.06349206));
+(present, present, absent, present, active, present) p450, 0.1590909*((1-p450)/(1-0.1666667)), 0.1212121*((1-p450)/(1-0.1666667)), 0.5530303*((1-p450)/(1-0.1666667));
+(absent, present, absent, present, active, present) 0.05714286, 0.04285714, 0.10000000, 0.80000000;
+(present, absent, absent, present, active, present) 0.1787710, 0.1731844, 0.1229050, 0.5251396;
+(absent, absent, absent, present, active, present) p486, 0.06493506*((1-p486)/(1-0.06493506)), 0.11688312*((1-p486)/(1-0.06493506)), 0.75324676*((1-p486)/(1-0.06493506));
+(present, present, present, absent, active, present) p375, 0.1610169*((1-p375)/(1-0.1694915)), 0.1186441*((1-p375)/(1-0.1694915)), 0.5508475*((1-p375)/(1-0.1694915));
+(absent, present, present, absent, active, present) 0.06557377, 0.04918033, 0.09836066, 0.78688524;
+(present, absent, present, absent, active, present) p462, 0.1710526*((1-p462)/(1-0.1776316)), 0.1250000*((1-p462)/(1-0.1776316)), 0.5263158*((1-p462)/(1-0.1776316));
+(absent, absent, present, absent, active, present) 0.06410256, 0.05128205, 0.10256410, 0.78205129;
+(present, present, absent, absent, active, present) p359, 0.1677419*((1-p359)/(1-0.1741935)), 0.1225806*((1-p359)/(1-0.1741935)), 0.5354840*((1-p359)/(1-0.1741935));
+(absent, present, absent, absent, active, present) 0.06024096, 0.04819277, 0.09638554, 0.79518073;
+(present, absent, absent, absent, active, present) 0.1826087, 0.1782609, 0.1260870, 0.5130434;
+(absent, absent, absent, absent, active, present) 0.05660377, 0.06603774, 0.12264151, 0.75471698;
+(present, present, present, present, persistent, present) 0.1546392, 0.1443299, 0.1134021, 0.5876288;
+(absent, present, present, present, persistent, present) 0.05555556, 0.03703704, 0.09259259, 0.81481481;
+(present, absent, present, present, persistent, present) 0.1666667, 0.1500000, 0.1250000, 0.5583333;
+(absent, absent, present, present, persistent, present) 0.04838710, 0.03225806, 0.11290323, 0.80645161;
+(present, present, absent, present, persistent, present) 0.1652893, 0.1487603, 0.1157025, 0.5702479;
+(absent, present, absent, present, persistent, present) 0.04545455, 0.03030303, 0.10606061, 0.81818181;
+(present, absent, absent, present, persistent, present) p337, 0.1572327*((1-p337)/(1-0.1698113)), 0.1257862*((1-p337)/(1-0.1698113)), 0.5471698*((1-p337)/(1-0.1698113));
+(absent, absent, absent, present, persistent, present) p410, 0.04444444*((1-p410)/(1-0.04444444)), 0.12222222*((1-p410)/(1-0.04444444)), 0.78888890*((1-p410)/(1-0.04444444));
+(present, present, present, absent, persistent, present) 0.1759259, 0.1574074, 0.1111111, 0.5555556;
+(absent, present, present, absent, persistent, present) p295, 0.02083333*((1-p295)/(1-0.04166667)), 0.08333333*((1-p295)/(1-0.04166667)), 0.85416667*((1-p295)/(1-0.04166667));
+(present, absent, present, absent, persistent, present) 0.1785714, 0.1714286, 0.1214286, 0.5285714;
+(absent, absent, present, absent, persistent, present) 0.04545455, 0.04545455, 0.10606061, 0.80303029;
+(present, present, absent, absent, persistent, present) 0.1748252, 0.1678322, 0.1188811, 0.5384615;
+(absent, present, absent, absent, persistent, present) p480, 0.04166667*((1-p480)/(1-0.04166667)), 0.09722222*((1-p480)/(1-0.04166667)), 0.81944444*((1-p480)/(1-0.04166667));
+(present, absent, absent, absent, persistent, present) p257, 0.1846847*((1-p257)/(1-0.1846847)), 0.1261261*((1-p257)/(1-0.1846847)), 0.5045045*((1-p257)/(1-0.1846847));
+(absent, absent, absent, absent, persistent, present) 0.04395604, 0.07692308, 0.13186813, 0.74725275;
+(present, present, present, present, absent, present) 0.1666667, 0.1481482, 0.1111111, 0.5740740;
+(absent, present, present, present, absent, present) p431, 0.00188324*((1-p431)/(1-0.05649718)), 0.07532957*((1-p431)/(1-0.05649718)), 0.86629001*((1-p431)/(1-0.05649718));
+(present, absent, present, present, absent, present) 0.1764706, 0.1544118, 0.1176471, 0.5514705;
+(absent, absent, present, present, absent, present) 0.04615385, 0.01538462, 0.09230769, 0.84615384;
+(present, present, absent, present, absent, present) 0.1726619, 0.1510791, 0.1151079, 0.5611511;
+(absent, present, absent, present, absent, present) p309, 0.01428571*((1-p309)/(1-0.04285714)), 0.08571429*((1-p309)/(1-0.04285714)), 0.85714286*((1-p309)/(1-0.04285714));
+(present, absent, absent, present, absent, present) 0.1822917, 0.1614583, 0.1197917, 0.5364583;
+(absent, absent, absent, present, absent, present) 0.03703704, 0.02777778, 0.10185185, 0.83333333;
+(present, present, present, absent, absent, present) 0.1885246, 0.1639344, 0.1065574, 0.5409836;
+(absent, present, present, absent, absent, present) p367, 0.00216920*((1-p367)/(1-0.04338395)), 0.04338395*((1-p367)/(1-0.04338395)), 0.91106290*((1-p367)/(1-0.04338395));
+(present, absent, present, absent, absent, present) 0.1964286, 0.1785714, 0.1130952, 0.5119048;
+(absent, absent, present, absent, absent, present) 0.03076923, 0.01538462, 0.06153846, 0.89230769;
+(present, present, absent, absent, absent, present) 0.1918605, 0.1744186, 0.1104651, 0.5232558;
+(absent, present, absent, absent, absent, present) 0.02702703, 0.01351351, 0.05405405, 0.90540541;
+(present, absent, absent, absent, absent, present) 0.1986755, 0.1920530, 0.1225166, 0.4867550;
+(absent, absent, absent, absent, absent, present) 0.00177936, 0.00177936, 0.01779359, 0.97864769;
+(present, present, present, present, active, absent) 0.1696429, 0.1607143, 0.1250000, 0.5446428;
+(absent, present, present, present, active, absent) p389, 0.09210526*((1-p389)/(1-0.10526316)), 0.13157895*((1-p389)/(1-0.10526316)), 0.67105263*((1-p389)/(1-0.10526316));
+(present, absent, present, present, active, absent) 0.1800000, 0.1666667, 0.1333333, 0.5200000;
+(absent, absent, present, present, active, absent) 0.07594937, 0.07594937, 0.13924051, 0.70886075;
+(present, present, absent, present, active, absent) 0.1768707, 0.1632653, 0.1292517, 0.5306123;
+(absent, present, absent, present, active, absent) 0.07142857, 0.07142857, 0.13095238, 0.72619048;
+(present, absent, absent, present, active, absent) p8, 0.1756098*((1-p8)/(1-0.1804878)), 0.1365854*((1-p8)/(1-0.1804878)), 0.5073170*((1-p8)/(1-0.1804878));
+(absent, absent, absent, present, active, absent) 0.07692308, 0.08547009, 0.14529915, 0.69230768;
+(present, present, present, absent, active, absent) p396, 0.1755725*((1-p396)/(1-0.1832061)), 0.1297710*((1-p396)/(1-0.1832061)), 0.5114504*((1-p396)/(1-0.1832061));
+(absent, present, present, absent, active, absent) p382, 0.078125*((1-p382)/(1-0.078125)), 0.125000*((1-p382)/(1-0.078125)), 0.718750*((1-p382)/(1-0.078125));
+(present, absent, present, absent, active, absent) 0.1899441, 0.1899441, 0.1340782, 0.4860335;
+(absent, absent, present, absent, active, absent) 0.07692308, 0.08791209, 0.13186813, 0.70329670;
+(present, present, absent, absent, active, absent) 0.1857923, 0.1857923, 0.1311475, 0.4972678;
+(absent, present, absent, absent, active, absent) p232, 0.08080808*((1-p232)/(1-0.07070707)), 0.12121212*((1-p232)/(1-0.07070707)), 0.72727273*((1-p232)/(1-0.07070707));
+(present, absent, absent, absent, active, absent) 0.1939799, 0.1939799, 0.1371237, 0.4749164;
+(absent, absent, absent, absent, active, absent) p417, 0.14285714*((1-p417)/(1-0.08791209)), 0.17582418*((1-p417)/(1-0.08791209)), 0.59340659*((1-p417)/(1-0.08791209));
+(present, present, present, present, persistent, absent) p351, 0.1538462*((1-p351)/(1-0.1730769)), 0.1250000*((1-p351)/(1-0.1730769)), 0.5480769*((1-p351)/(1-0.1730769));
+(absent, present, present, present, persistent, absent) 0.06122449, 0.02040816, 0.10204082, 0.81632653;
+(present, absent, present, present, persistent, absent) 0.1782946, 0.1627907, 0.1317830, 0.5271317;
+(absent, absent, present, present, persistent, absent) 0.05000000, 0.03333333, 0.13333333, 0.78333334;
+(present, present, absent, present, persistent, absent) p456, 0.1590909*((1-p456)/(1-0.1742424)), 0.1287879*((1-p456)/(1-0.1742424)), 0.5378788*((1-p456)/(1-0.1742424));
+(absent, present, absent, present, persistent, absent) p129, 0.03076923*((1-p129)/(1-0.04615385)), 0.12307692*((1-p129)/(1-0.04615385)), 0.80000000*((1-p129)/(1-0.04615385));
+(present, absent, absent, present, persistent, absent) 0.1843575, 0.1675978, 0.1340782, 0.5139665;
+(absent, absent, absent, present, persistent, absent) p69, 0.04210526*((1-p69)/(1-0.04210526)), 0.13684211*((1-p69)/(1-0.04210526)), 0.77894737*((1-p69)/(1-0.04210526));
+(present, present, present, absent, persistent, absent) p206, 0.1739130*((1-p206)/(1-0.1913044)), 0.1217391*((1-p206)/(1-0.1913044)), 0.5130435*((1-p206)/(1-0.1913044));
+(absent, present, present, absent, persistent, absent) 0.04761905, 0.02380952, 0.09523810, 0.83333333;
+(present, absent, present, absent, persistent, absent) p468, 0.1858974*((1-p468)/(1-0.1987179)), 0.1282051*((1-p468)/(1-0.1987179)), 0.4871795*((1-p468)/(1-0.1987179));
+(absent, absent, present, absent, persistent, absent) 0.03448276, 0.03448276, 0.12068966, 0.81034482;
+(present, present, absent, absent, persistent, absent) 0.19375, 0.18125, 0.12500, 0.50000;
+(absent, present, absent, absent, persistent, absent) p424, 0.03030303*((1-p424)/(1-0.03030303)), 0.10606061*((1-p424)/(1-0.03030303)), 0.83333333*((1-p424)/(1-0.03030303));
+(present, absent, absent, absent, persistent, absent) 0.2007435, 0.1970260, 0.1338290, 0.4684015;
+(absent, absent, absent, absent, persistent, absent) 0.00277008, 0.05540166, 0.19390582, 0.74792244;
+(present, present, present, present, absent, absent) p444, 0.1612903*((1-p444)/(1-0.1854839)), 0.1209677*((1-p444)/(1-0.1854839)), 0.5322581*((1-p444)/(1-0.1854839));
+(absent, present, present, present, absent, absent) 0.07393715, 0.00184843, 0.09242144, 0.83179298;
+(present, absent, present, present, absent, absent) 0.1939394, 0.1696970, 0.1272727, 0.5090909;
+(absent, absent, present, present, absent, absent) 0.06756757, 0.01351351, 0.10810811, 0.81081081;
+(present, present, absent, present, absent, absent) p403, 0.1656805*((1-p403)/(1-0.1893491)), 0.1242604*((1-p403)/(1-0.1893491)), 0.5207100*((1-p403)/(1-0.1893491));
+(absent, present, absent, present, absent, absent) p323, 0.01234568*((1-p323)/(1-0.06172840)), 0.09876543*((1-p323)/(1-0.06172840)), 0.82716049*((1-p323)/(1-0.06172840));
+(present, absent, absent, present, absent, absent) 0.1977612, 0.1791045, 0.1268657, 0.4962687;
+(absent, absent, absent, present, absent, absent) 0.07462687, 0.02985075, 0.13432836, 0.76119402;
+(present, present, present, absent, absent, absent) p276, 0.1836735*((1-p276)/(1-0.2108843)), 0.1156463*((1-p276)/(1-0.2108843)), 0.4897959*((1-p276)/(1-0.2108843));
+(absent, present, present, absent, absent, absent) 0.06651885, 0.00221729, 0.04434590, 0.88691796;
+(present, absent, present, absent, absent, absent) p172, 0.1991342*((1-p172)/(1-0.2207792)), 0.1212121*((1-p172)/(1-0.2207792)), 0.4588745*((1-p172)/(1-0.2207792));
+(absent, absent, present, absent, absent, absent) 0.11695906, 0.00584795, 0.05847953, 0.81871346;
+(present, present, absent, absent, absent, absent) 0.2142857, 0.1932773, 0.1176471, 0.4747899;
+(absent, present, absent, absent, absent, absent) 0.07380074, 0.00369004, 0.03690037, 0.88560885;
+(present, absent, absent, absent, absent, absent) 0.2392857, 0.2250000, 0.1321429, 0.4035714;
+(absent, absent, absent, absent, absent, absent) 0.080, 0.096, 0.144, 0.680;
+}
+
+probability ( cholesterol | PBC, Steatosis, ChHepatitis ){
+(present, present, active) p131, 0.28275862*((1-p131)/(1-0.08965517)), 0.62758621*((1-p131)/(1-0.08965517));
+(absent, present, active) p297, 0.27981651*((1-p297)/(1-0.09174312)), 0.62844037*((1-p297)/(1-0.09174312));
+(present, absent, active) p278, 0.3047619*((1-p278)/(1-0.1015873)), 0.5936508*((1-p278)/(1-0.1015873));
+(absent, absent, active) p339, 0.06593407*((1-p339)/(1-0.03296703)), 0.90109890*((1-p339)/(1-0.03296703));
+(present, present, persistent) p71, 0.30113636*((1-p71)/(1-0.09659091)), 0.60227273*((1-p71)/(1-0.09659091));
+(absent, present, persistent) p10, 0.23899371*((1-p10)/(1-0.06918239)), 0.69182390*((1-p10)/(1-0.06918239));
+(present, absent, persistent) p259, 0.3152866*((1-p259)/(1-0.1050955)), 0.5796179*((1-p259)/(1-0.1050955));
+(absent, absent, persistent) p174, 0.02770083*((1-p174)/(1-0.00277008)), 0.96952909*((1-p174)/(1-0.00277008));
+(present, present, absent) p234, 0.3256705*((1-p234)/(1-0.1034483)), 0.5708812*((1-p234)/(1-0.1034483));
+(absent, present, absent) p208, 0.22388060*((1-p208)/(1-0.04477612)), 0.73134328*((1-p208)/(1-0.04477612));
+(present, absent, absent) p325, 0.3642857*((1-p325)/(1-0.1250000)), 0.5107143*((1-p325)/(1-0.1250000));
+(absent, absent, absent) p311, 0.09773434*((1-p311)/(1-0.00044425)), 0.90182141*((1-p311)/(1-0.00044425));
+}
+
+probability ( hbsag | vh_amn, ChHepatitis ){
+(present, active) p5, 0.5*((1-p5)/(1-0.5));
+(absent, active) p170, 0.8095238*((1-p170)/(1-0.1904762));
+(present, persistent) p126, 0.5384615*((1-p126)/(1-0.4615385));
+(absent, persistent) p230, 0.95652174*((1-p230)/(1-0.04347826));
+(present, absent) p204, 0.8875*((1-p204)/(1-0.1125));
+(absent, absent) p66, 0.95325203*((1-p66)/(1-0.04674797));
+}
+
+probability ( hbsag_anti | vh_amn, ChHepatitis, hbsag ){
+(present, active, present) p143, 0.9929078*((1-p143)/(1-0.0070922));
+(absent, active, present) p264, 0.91666667*((1-p264)/(1-0.08333333));
+(present, persistent, present) p283, 0.98360656*((1-p283)/(1-0.01639344));
+(absent, persistent, present) p315, 0.90909091*((1-p315)/(1-0.09090909));
+(present, absent, present) p30, 0.98901099*((1-p30)/(1-0.01098901));
+(absent, absent, present) p91, 0.995671*((1-p91)/(1-0.004329));
+(present, active, absent) p216, 0.92857143*((1-p216)/(1-0.07142857));
+(absent, active, absent) p184, 0.99804305*((1-p184)/(1-0.00195695));
+(present, persistent, absent) p242, 0.98591549*((1-p242)/(1-0.01408451));
+(absent, persistent, absent) p301, 0.99547511*((1-p301)/(1-0.00452489));
+(present, absent, absent) p343, 0.95774648*((1-p343)/(1-0.04225352));
+(absent, absent, absent) p329, 0.98507463*((1-p329)/(1-0.01492537));
+}
+
+probability ( anorexia | RHepatitis, THepatitis ){
+(present, present) p124, 0.8181818*((1-p124)/(1-0.1818182));
+(absent, present) p3, 0.7777778*((1-p3)/(1-0.2222222));
+(present, absent) p64, 0.8823529*((1-p64)/(1-0.1176471));
+(absent, absent) p169, 0.719084*((1-p169)/(1-0.280916));
+}
+
+probability ( nausea | RHepatitis, THepatitis ){
+(present, present) p41, 0.6363636*((1-p41)/(1-0.3636364));
+(absent, present) p153, 0.6296296*((1-p153)/(1-0.3703704));
+(present, absent) p102, 0.6470588*((1-p102)/(1-0.3529412));
+(absent, absent) p190, 0.7145038*((1-p190)/(1-0.2854962));
+}
+
+probability ( spleen | Cirrhosis, RHepatitis, THepatitis ){
+(decompensate, present, present) p312, 0.6764706*((1-p312)/(1-0.3235294));
+(compensate, present, present) p209, 0.6976744*((1-p209)/(1-0.3023256));
+(absent, present, present) p340, 0.8378378*((1-p340)/(1-0.1621622));
+(decompensate, absent, present) p133, 0.6376812*((1-p133)/(1-0.3623188));
+(compensate, absent, present) p175, 0.7843137*((1-p175)/(1-0.2156863));
+(absent, absent, present) p326, 0.8888889*((1-p326)/(1-0.1111111));
+(decompensate, present, absent) p15, 0.6296296*((1-p15)/(1-0.3703704));
+(compensate, present, absent) p298, 0.7555556*((1-p298)/(1-0.2444444));
+(absent, present, absent) p279, 0.8823529*((1-p279)/(1-0.1176471));
+(decompensate, absent, absent) p235, 0.5172414*((1-p235)/(1-0.4827586));
+(compensate, absent, absent) p76, 0.7419355*((1-p76)/(1-0.2580645));
+(absent, absent, absent) p260, 0.8992933*((1-p260)/(1-0.1007067));
+}
+
+probability ( consciousness | encephalopathy ){
+(present) p78, 0.6956522*((1-p78)/(1-0.3043478));
+(absent) p17, 0.98372781*((1-p17)/(1-0.01627219));
+}
+
+probability ( spiders | Cirrhosis ){
+(decompensate) p148, 0.3965517*((1-p148)/(1-0.6034483));
+(compensate) p36, 0.516129*((1-p36)/(1-0.483871));
+(absent) p97, 0.8163934*((1-p97)/(1-0.1836066));
+}
+
+probability ( jaundice | bilirubin ){
+(a88_20) p120, 0.25*((1-p120)/(1-0.75));
+(a19_7) p202, 0.4328358*((1-p202)/(1-0.5671642));
+(a6_2) p59, 0.6532663*((1-p59)/(1-0.3467337));
+(a1_0) p166, 0.8057554*((1-p166)/(1-0.1942446));
+}
+
+probability ( albumin | Cirrhosis ){
+(decompensate) p75, 0.08605852*((1-p75)/(1-0.91222031)), 0.00172117*((1-p75)/(1-0.91222031));
+(compensate) p14, 0.00321543*((1-p14)/(1-0.96463023)), 0.03215434*((1-p14)/(1-0.96463023));
+(absent) p132, 0.1426229*((1-p132)/(1-0.7393443)), 0.1180328*((1-p132)/(1-0.7393443));
+}
+
+probability ( edge | Cirrhosis ){
+(decompensate) p114, 0.2413793*((1-p114)/(1-0.7586207));
+(compensate) p161, 0.5483871*((1-p161)/(1-0.4516129));
+(absent) p53, 0.7655738*((1-p53)/(1-0.2344262));
+}
+
+probability ( irregular_liver | Cirrhosis ){
+(decompensate) p83, 0.3965517*((1-p83)/(1-0.6034483));
+(compensate) p137, 0.6451613*((1-p137)/(1-0.3548387));
+(absent) p22, 0.8934426*((1-p22)/(1-0.1065574));
+}
+
+probability ( hbc_anti | vh_amn, ChHepatitis ){
+(present, active) p159, 0.99644128*((1-p159)/(1-0.00355872));
+(absent, active) p196, 0.92063492*((1-p196)/(1-0.07936508));
+(present, persistent) p249, 0.99236641*((1-p249)/(1-0.00763359));
+(absent, persistent) p223, 0.8695652*((1-p223)/(1-0.1304348));
+(present, absent) p51, 0.9125*((1-p51)/(1-0.0875));
+(absent, absent) p112, 0.898374*((1-p112)/(1-0.101626));
+}
+
+probability ( hcv_anti | vh_amn, ChHepatitis ){
+(present, active) p44, 0.99644128*((1-p44)/(1-0.00355872));
+(absent, active) p247, 0.99841521*((1-p247)/(1-0.00158479));
+(present, persistent) p105, 0.99236641*((1-p105)/(1-0.00763359));
+(absent, persistent) p221, 0.995671*((1-p221)/(1-0.004329));
+(present, absent) p192, 0.99875156*((1-p192)/(1-0.00124844));
+(absent, absent) p155, 0.99796748*((1-p155)/(1-0.00203252));
+}
+
+probability ( palms | Cirrhosis ){
+(decompensate) p93, 0.5*((1-p93)/(1-0.5));
+(compensate) p32, 0.7096774*((1-p32)/(1-0.2903226));
+(absent) p145, 0.8590164*((1-p145)/(1-0.1409836));
+}
+
+probability ( hbeag | vh_amn, ChHepatitis ){
+(present, active) p219, 0.99644128*((1-p219)/(1-0.00355872));
+(absent, active) p38, 0.99841521*((1-p38)/(1-0.00158479));
+(present, persistent) p99, 0.99236641*((1-p99)/(1-0.00763359));
+(absent, persistent) p187, 0.95652174*((1-p187)/(1-0.04347826));
+(present, absent) p150, 0.99875156*((1-p150)/(1-0.00124844));
+(absent, absent) p245, 0.99796748*((1-p245)/(1-0.00203252));
+}
+
+probability ( carcinoma | Cirrhosis, PBC ){
+(decompensate, present) p29, 0.6363636*((1-p29)/(1-0.3636364));
+(compensate, present) p183, 0.7272727*((1-p183)/(1-0.2727273));
+(absent, present) p90, 0.9*((1-p90)/(1-0.1));
+(decompensate, absent) p241, 0.7*((1-p241)/(1-0.3));
+(compensate, absent) p215, 0.8*((1-p215)/(1-0.2));
+(absent, absent) p142, 0.99*((1-p142)/(1-0.01));
+}
+
+parameter p0{
+}
+
+parameter p1{
+}
+
+parameter p2{
+}
+
+parameter p3{
+}
+
+parameter p4{
+}
+
+parameter p5{
+}
+
+parameter p6{
+}
+
+parameter p7{
+}
+
+parameter p8{
+}
+
+parameter p9{
+}
+
+parameter p10{
+}
+
+parameter p11{
+}
+
+parameter p12{
+}
+
+parameter p13{
+}
+
+parameter p14{
+}
+
+parameter p15{
+}
+
+parameter p16{
+}
+
+parameter p17{
+}
+
+parameter p18{
+}
+
+parameter p19{
+}
+
+parameter p20{
+}
+
+parameter p21{
+}
+
+parameter p22{
+}
+
+parameter p23{
+}
+
+parameter p24{
+}
+
+parameter p25{
+}
+
+parameter p26{
+}
+
+parameter p27{
+}
+
+parameter p28{
+}
+
+parameter p29{
+}
+
+parameter p30{
+}
+
+parameter p31{
+}
+
+parameter p32{
+}
+
+parameter p33{
+}
+
+parameter p34{
+}
+
+parameter p35{
+}
+
+parameter p36{
+}
+
+parameter p37{
+}
+
+parameter p38{
+}
+
+parameter p39{
+}
+
+parameter p40{
+}
+
+parameter p41{
+}
+
+parameter p42{
+}
+
+parameter p43{
+}
+
+parameter p44{
+}
+
+parameter p45{
+}
+
+parameter p46{
+}
+
+parameter p47{
+}
+
+parameter p48{
+}
+
+parameter p49{
+}
+
+parameter p50{
+}
+
+parameter p51{
+}
+
+parameter p52{
+}
+
+parameter p53{
+}
+
+parameter p54{
+}
+
+parameter p55{
+}
+
+parameter p56{
+}
+
+parameter p57{
+}
+
+parameter p58{
+}
+
+parameter p59{
+}
+
+parameter p60{
+}
+
+parameter p61{
+}
+
+parameter p62{
+}
+
+parameter p63{
+}
+
+parameter p64{
+}
+
+parameter p65{
+}
+
+parameter p66{
+}
+
+parameter p67{
+}
+
+parameter p68{
+}
+
+parameter p69{
+}
+
+parameter p70{
+}
+
+parameter p71{
+}
+
+parameter p72{
+}
+
+parameter p73{
+}
+
+parameter p74{
+}
+
+parameter p75{
+}
+
+parameter p76{
+}
+
+parameter p77{
+}
+
+parameter p78{
+}
+
+parameter p79{
+}
+
+parameter p80{
+}
+
+parameter p81{
+}
+
+parameter p82{
+}
+
+parameter p83{
+}
+
+parameter p84{
+}
+
+parameter p85{
+}
+
+parameter p86{
+}
+
+parameter p87{
+}
+
+parameter p88{
+}
+
+parameter p89{
+}
+
+parameter p90{
+}
+
+parameter p91{
+}
+
+parameter p92{
+}
+
+parameter p93{
+}
+
+parameter p94{
+}
+
+parameter p95{
+}
+
+parameter p96{
+}
+
+parameter p97{
+}
+
+parameter p98{
+}
+
+parameter p99{
+}
+
+parameter p100{
+}
+
+parameter p101{
+}
+
+parameter p102{
+}
+
+parameter p103{
+}
+
+parameter p104{
+}
+
+parameter p105{
+}
+
+parameter p106{
+}
+
+parameter p107{
+}
+
+parameter p108{
+}
+
+parameter p109{
+}
+
+parameter p110{
+}
+
+parameter p111{
+}
+
+parameter p112{
+}
+
+parameter p113{
+}
+
+parameter p114{
+}
+
+parameter p115{
+}
+
+parameter p116{
+}
+
+parameter p117{
+}
+
+parameter p118{
+}
+
+parameter p119{
+}
+
+parameter p120{
+}
+
+parameter p121{
+}
+
+parameter p122{
+}
+
+parameter p123{
+}
+
+parameter p124{
+}
+
+parameter p125{
+}
+
+parameter p126{
+}
+
+parameter p127{
+}
+
+parameter p128{
+}
+
+parameter p129{
+}
+
+parameter p130{
+}
+
+parameter p131{
+}
+
+parameter p132{
+}
+
+parameter p133{
+}
+
+parameter p134{
+}
+
+parameter p135{
+}
+
+parameter p136{
+}
+
+parameter p137{
+}
+
+parameter p138{
+}
+
+parameter p139{
+}
+
+parameter p140{
+}
+
+parameter p141{
+}
+
+parameter p142{
+}
+
+parameter p143{
+}
+
+parameter p144{
+}
+
+parameter p145{
+}
+
+parameter p146{
+}
+
+parameter p147{
+}
+
+parameter p148{
+}
+
+parameter p149{
+}
+
+parameter p150{
+}
+
+parameter p151{
+}
+
+parameter p152{
+}
+
+parameter p153{
+}
+
+parameter p154{
+}
+
+parameter p155{
+}
+
+parameter p156{
+}
+
+parameter p157{
+}
+
+parameter p158{
+}
+
+parameter p159{
+}
+
+parameter p160{
+}
+
+parameter p161{
+}
+
+parameter p162{
+}
+
+parameter p163{
+}
+
+parameter p164{
+}
+
+parameter p165{
+}
+
+parameter p166{
+}
+
+parameter p167{
+}
+
+parameter p168{
+}
+
+parameter p169{
+}
+
+parameter p170{
+}
+
+parameter p171{
+}
+
+parameter p172{
+}
+
+parameter p173{
+}
+
+parameter p174{
+}
+
+parameter p175{
+}
+
+parameter p176{
+}
+
+parameter p177{
+}
+
+parameter p178{
+}
+
+parameter p179{
+}
+
+parameter p180{
+}
+
+parameter p181{
+}
+
+parameter p182{
+}
+
+parameter p183{
+}
+
+parameter p184{
+}
+
+parameter p185{
+}
+
+parameter p186{
+}
+
+parameter p187{
+}
+
+parameter p188{
+}
+
+parameter p189{
+}
+
+parameter p190{
+}
+
+parameter p191{
+}
+
+parameter p192{
+}
+
+parameter p193{
+}
+
+parameter p194{
+}
+
+parameter p195{
+}
+
+parameter p196{
+}
+
+parameter p197{
+}
+
+parameter p198{
+}
+
+parameter p199{
+}
+
+parameter p200{
+}
+
+parameter p201{
+}
+
+parameter p202{
+}
+
+parameter p203{
+}
+
+parameter p204{
+}
+
+parameter p205{
+}
+
+parameter p206{
+}
+
+parameter p207{
+}
+
+parameter p208{
+}
+
+parameter p209{
+}
+
+parameter p210{
+}
+
+parameter p211{
+}
+
+parameter p212{
+}
+
+parameter p213{
+}
+
+parameter p214{
+}
+
+parameter p215{
+}
+
+parameter p216{
+}
+
+parameter p217{
+}
+
+parameter p218{
+}
+
+parameter p219{
+}
+
+parameter p220{
+}
+
+parameter p221{
+}
+
+parameter p222{
+}
+
+parameter p223{
+}
+
+parameter p224{
+}
+
+parameter p225{
+}
+
+parameter p226{
+}
+
+parameter p227{
+}
+
+parameter p228{
+}
+
+parameter p229{
+}
+
+parameter p230{
+}
+
+parameter p231{
+}
+
+parameter p232{
+}
+
+parameter p233{
+}
+
+parameter p234{
+}
+
+parameter p235{
+}
+
+parameter p236{
+}
+
+parameter p237{
+}
+
+parameter p238{
+}
+
+parameter p239{
+}
+
+parameter p240{
+}
+
+parameter p241{
+}
+
+parameter p242{
+}
+
+parameter p243{
+}
+
+parameter p244{
+}
+
+parameter p245{
+}
+
+parameter p246{
+}
+
+parameter p247{
+}
+
+parameter p248{
+}
+
+parameter p249{
+}
+
+parameter p250{
+}
+
+parameter p251{
+}
+
+parameter p252{
+}
+
+parameter p253{
+}
+
+parameter p254{
+}
+
+parameter p255{
+}
+
+parameter p256{
+}
+
+parameter p257{
+}
+
+parameter p258{
+}
+
+parameter p259{
+}
+
+parameter p260{
+}
+
+parameter p261{
+}
+
+parameter p262{
+}
+
+parameter p263{
+}
+
+parameter p264{
+}
+
+parameter p265{
+}
+
+parameter p266{
+}
+
+parameter p267{
+}
+
+parameter p268{
+}
+
+parameter p269{
+}
+
+parameter p270{
+}
+
+parameter p271{
+}
+
+parameter p272{
+}
+
+parameter p273{
+}
+
+parameter p274{
+}
+
+parameter p275{
+}
+
+parameter p276{
+}
+
+parameter p277{
+}
+
+parameter p278{
+}
+
+parameter p279{
+}
+
+parameter p280{
+}
+
+parameter p281{
+}
+
+parameter p282{
+}
+
+parameter p283{
+}
+
+parameter p284{
+}
+
+parameter p285{
+}
+
+parameter p286{
+}
+
+parameter p287{
+}
+
+parameter p288{
+}
+
+parameter p289{
+}
+
+parameter p290{
+}
+
+parameter p291{
+}
+
+parameter p292{
+}
+
+parameter p293{
+}
+
+parameter p294{
+}
+
+parameter p295{
+}
+
+parameter p296{
+}
+
+parameter p297{
+}
+
+parameter p298{
+}
+
+parameter p299{
+}
+
+parameter p300{
+}
+
+parameter p301{
+}
+
+parameter p302{
+}
+
+parameter p303{
+}
+
+parameter p304{
+}
+
+parameter p305{
+}
+
+parameter p306{
+}
+
+parameter p307{
+}
+
+parameter p308{
+}
+
+parameter p309{
+}
+
+parameter p310{
+}
+
+parameter p311{
+}
+
+parameter p312{
+}
+
+parameter p313{
+}
+
+parameter p314{
+}
+
+parameter p315{
+}
+
+parameter p316{
+}
+
+parameter p317{
+}
+
+parameter p318{
+}
+
+parameter p319{
+}
+
+parameter p320{
+}
+
+parameter p321{
+}
+
+parameter p322{
+}
+
+parameter p323{
+}
+
+parameter p324{
+}
+
+parameter p325{
+}
+
+parameter p326{
+}
+
+parameter p327{
+}
+
+parameter p328{
+}
+
+parameter p329{
+}
+
+parameter p330{
+}
+
+parameter p331{
+}
+
+parameter p332{
+}
+
+parameter p333{
+}
+
+parameter p334{
+}
+
+parameter p335{
+}
+
+parameter p336{
+}
+
+parameter p337{
+}
+
+parameter p338{
+}
+
+parameter p339{
+}
+
+parameter p340{
+}
+
+parameter p341{
+}
+
+parameter p342{
+}
+
+parameter p343{
+}
+
+parameter p344{
+}
+
+parameter p345{
+}
+
+parameter p346{
+}
+
+parameter p347{
+}
+
+parameter p348{
+}
+
+parameter p349{
+}
+
+parameter p350{
+}
+
+parameter p351{
+}
+
+parameter p352{
+}
+
+parameter p353{
+}
+
+parameter p354{
+}
+
+parameter p355{
+}
+
+parameter p356{
+}
+
+parameter p357{
+}
+
+parameter p358{
+}
+
+parameter p359{
+}
+
+parameter p360{
+}
+
+parameter p361{
+}
+
+parameter p362{
+}
+
+parameter p363{
+}
+
+parameter p364{
+}
+
+parameter p365{
+}
+
+parameter p366{
+}
+
+parameter p367{
+}
+
+parameter p368{
+}
+
+parameter p369{
+}
+
+parameter p370{
+}
+
+parameter p371{
+}
+
+parameter p372{
+}
+
+parameter p373{
+}
+
+parameter p374{
+}
+
+parameter p375{
+}
+
+parameter p376{
+}
+
+parameter p377{
+}
+
+parameter p378{
+}
+
+parameter p379{
+}
+
+parameter p380{
+}
+
+parameter p381{
+}
+
+parameter p382{
+}
+
+parameter p383{
+}
+
+parameter p384{
+}
+
+parameter p385{
+}
+
+parameter p386{
+}
+
+parameter p387{
+}
+
+parameter p388{
+}
+
+parameter p389{
+}
+
+parameter p390{
+}
+
+parameter p391{
+}
+
+parameter p392{
+}
+
+parameter p393{
+}
+
+parameter p394{
+}
+
+parameter p395{
+}
+
+parameter p396{
+}
+
+parameter p397{
+}
+
+parameter p398{
+}
+
+parameter p399{
+}
+
+parameter p400{
+}
+
+parameter p401{
+}
+
+parameter p402{
+}
+
+parameter p403{
+}
+
+parameter p404{
+}
+
+parameter p405{
+}
+
+parameter p406{
+}
+
+parameter p407{
+}
+
+parameter p408{
+}
+
+parameter p409{
+}
+
+parameter p410{
+}
+
+parameter p411{
+}
+
+parameter p412{
+}
+
+parameter p413{
+}
+
+parameter p414{
+}
+
+parameter p415{
+}
+
+parameter p416{
+}
+
+parameter p417{
+}
+
+parameter p418{
+}
+
+parameter p419{
+}
+
+parameter p420{
+}
+
+parameter p421{
+}
+
+parameter p422{
+}
+
+parameter p423{
+}
+
+parameter p424{
+}
+
+parameter p425{
+}
+
+parameter p426{
+}
+
+parameter p427{
+}
+
+parameter p428{
+}
+
+parameter p429{
+}
+
+parameter p430{
+}
+
+parameter p431{
+}
+
+parameter p432{
+}
+
+parameter p433{
+}
+
+parameter p434{
+}
+
+parameter p435{
+}
+
+parameter p436{
+}
+
+parameter p437{
+}
+
+parameter p438{
+}
+
+parameter p439{
+}
+
+parameter p440{
+}
+
+parameter p441{
+}
+
+parameter p442{
+}
+
+parameter p443{
+}
+
+parameter p444{
+}
+
+parameter p445{
+}
+
+parameter p446{
+}
+
+parameter p447{
+}
+
+parameter p448{
+}
+
+parameter p449{
+}
+
+parameter p450{
+}
+
+parameter p451{
+}
+
+parameter p452{
+}
+
+parameter p453{
+}
+
+parameter p454{
+}
+
+parameter p455{
+}
+
+parameter p456{
+}
+
+parameter p457{
+}
+
+parameter p458{
+}
+
+parameter p459{
+}
+
+parameter p460{
+}
+
+parameter p461{
+}
+
+parameter p462{
+}
+
+parameter p463{
+}
+
+parameter p464{
+}
+
+parameter p465{
+}
+
+parameter p466{
+}
+
+parameter p467{
+}
+
+parameter p468{
+}
+
+parameter p469{
+}
+
+parameter p470{
+}
+
+parameter p471{
+}
+
+parameter p472{
+}
+
+parameter p473{
+}
+
+parameter p474{
+}
+
+parameter p475{
+}
+
+parameter p476{
+}
+
+parameter p477{
+}
+
+parameter p478{
+}
+
+parameter p479{
+}
+
+parameter p480{
+}
+
+parameter p481{
+}
+
+parameter p482{
+}
+
+parameter p483{
+}
+
+parameter p484{
+}
+
+parameter p485{
+}
+
+parameter p486{
+}
+
+parameter p487{
+}
+
+parameter p488{
+}
+
+parameter p489{
+}
+
+parameter p490{
+}
+

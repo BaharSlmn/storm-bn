@@ -1,0 +1,15 @@
+Pr(e) = 1.0000000000000053
+Network : ace/net_files/andes.net
+Network Read Time (ms) : 168.266167
+Number of Evidence Sets : 1
+AC :
+  Nodes : 727577
+  Edges : 1454216
+  Total Initialization Time (ms) : 510.747578
+  Total Inference Time (ms) : 43.490696
+  Minimum Inference Time (ms) : 43.490696
+  Maximum Inference Time (ms) : 43.490696
+  Median Inference Time (ms) : 43.490696
+  Mean Inference Time (ms) : 43.490696
+  Standard Deviation Inference Time (ms) : 0.0
+

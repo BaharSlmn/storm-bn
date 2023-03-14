@@ -1,0 +1,2 @@
+storm-pars -drn storm/drn_files/p1/insurance.drn --prop "P=? [F(\"PropCost0\")]" --bisimulation
+

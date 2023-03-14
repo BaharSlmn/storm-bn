@@ -1,0 +1,65 @@
+//
+// Created by Bahare Salmani on 2019-04-09.
+//
+
+#ifndef BNPARSER_PARSER_H
+#define BNPARSER_PARSER_H
+
+// reading a text file
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <unordered_set>
+#include "map"
+#include <stack>
+#include "BNNode.h"
+#include "ProbabilityTable.h"
+#include "Evidence.h"
+#include "Hypothesis.h"
+#include "../transformer/DAG.h"
+
+class BNNetwork {
+public:
+    BNNetwork(){};
+    BNNetwork(std::string networkName, std::vector<BNNode> nodes, std::vector<ProbabilityTable> tables,
+            std::vector<Evidence> evidences, std::vector<Hypothesis> hypothesises, std::unordered_set<std::string> parameterNames);
+    BNNetwork(std::string fileLoc, std::string fileName, std::string fileFormat);
+    std::vector<BNNode> getNodes();
+    BNNode getNodeByName(std::string nodeName);
+    ProbabilityTable getTableByDependentNodeName(std::string nodeName);
+    std::string getNetworkName();
+    std::vector<ProbabilityTable> getSortedProbabilityTables();
+    int getTopologicalOrder(std::string nodeName);
+    std::vector<Evidence> getEvidences();
+    std::vector<Hypothesis> getHypothesises();
+    std::unordered_set<std::string> getParameterNames();
+
+
+private:
+    std::string fileContent;
+    std::string networkName;
+    std::vector<BNNode> nodes;
+    std::vector<ProbabilityTable> probabilityTables;
+    std::vector<ProbabilityTable> sortedProbabilityTables;
+    std::map<std::string, BNNode> nameToNodeMap;
+    std::map<std::string, ProbabilityTable> nodeNameToTableMap;
+    std::map<std::string, int> nodeTopologicalOrder;
+    DAG dag;
+
+    std::vector<Evidence> evidences;
+    std::vector<Hypothesis> hypothesises;
+    std::unordered_set<std::string> parameterNames;
+    void createNodeList();
+    void createTableList();
+    void createEvidenceList();
+    void createHypothesisList();
+    void createParametersList();
+    void sortTheTables();
+    void addEdgesToDAG();
+    int calculateTheNumberOfStates();
+
+
+    };
+
+#endif //BNPARSER_PARSER_H

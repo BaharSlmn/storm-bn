@@ -1,0 +1,46 @@
+Storm-pars 1.6.4
+
+Date: Fri Apr 22 12:40:13 2022
+Command line arguments: -drn storm/drn_files/p1/cancer.drn --prop 'P=? [F("Dyspnoea0")]' --bisimulation
+Current working directory: /experiments/bayesserver_storm_comparison
+
+Time for model construction: 0.010s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	15
+Transitions: 	28
+Reward Models:  none
+State Labels: 	12 labels
+   * deadlock -> 2 item(s)
+   * Xray1 -> 2 item(s)
+   * Xray0 -> 2 item(s)
+   * Cancer0 -> 1 item(s)
+   * Smoker1 -> 2 item(s)
+   * Cancer1 -> 1 item(s)
+   * Smoker0 -> 2 item(s)
+   * Dyspnoea0 -> 1 item(s)
+   * Pollution1 -> 1 item(s)
+   * Dyspnoea1 -> 1 item(s)
+   * Pollution0 -> 1 item(s)
+   * init -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	13
+Transitions: 	22
+Reward Models:  none
+State Labels: 	2 labels
+   * init -> 1 item(s)
+   * Dyspnoea0 -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F "Dyspnoea0"] ...
+Result (initial states): (189000*p0+602471)/(2000000)
+Time for model checking: 0.000s.
+

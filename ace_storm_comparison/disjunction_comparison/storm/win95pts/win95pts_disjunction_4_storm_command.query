@@ -1,0 +1,1 @@
+storm --jani storm/win95pts/win95pts.jani --prop "P=? [F((REPEAT=1|PrtIcon=0|FntInstlltn=0|TTOK=1))]" >> storm/output/win95pts_disjunction_4_result.txt

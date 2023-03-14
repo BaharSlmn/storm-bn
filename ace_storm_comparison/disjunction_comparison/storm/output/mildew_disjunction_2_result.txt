@@ -1,0 +1,56 @@
+Storm 1.6.4
+
+Date: Tue Apr 26 10:59:09 2022
+Command line arguments: --jani storm/mildew/mildew.jani --prop 'P=? [F((middel_1=0|temp_3=0))]'
+Current working directory: /experiments/ace_storm_comparison/disjunction_comparison
+
+Time for model input parsing: 11.732s.
+
+Time for model construction: 18.840s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	419913
+Transitions: 	1660066
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 86 item(s)
+   * init -> 1 item(s)
+   * ((middel_1 = 0) | (temp_3 = 0)) -> 844 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F ((middel_1 = 0) | (temp_3 = 0))] ...
+Result (for initial states): 0.2499999751
+Time for model checking: 0.087s.
+Storm 1.6.4
+
+Date: Tue Apr 26 11:01:41 2022
+Command line arguments: --jani storm/mildew/mildew.jani --prop 'P=? [F((middel_1=0|temp_3=0))]'
+Current working directory: /experiments/ace_storm_comparison/disjunction_comparison
+
+Storm 1.6.4
+
+Date: Tue Apr 26 11:02:26 2022
+Command line arguments: --jani storm/mildew/mildew.jani --prop 'P=? [F((middel_1=0|temp_3=0))]'
+Current working directory: /experiments/ace_storm_comparison/disjunction_comparison
+
+Time for model input parsing: 11.797s.
+
+Time for model construction: 16.654s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	419913
+Transitions: 	1660066
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 86 item(s)
+   * init -> 1 item(s)
+   * ((middel_1 = 0) | (temp_3 = 0)) -> 844 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F ((middel_1 = 0) | (temp_3 = 0))] ...
+Result (for initial states): 0.2499999751
+Time for model checking: 0.088s.

@@ -1,0 +1,44 @@
+Storm-pars 1.6.4
+
+Date: Mon Apr 25 18:49:38 2022
+Command line arguments: --jani alarm-red-green-plots/3D/alarm_pla_graph_xy.jani --prop 'P=? [F(VENTTUBE=0)]' --timemem --bisimulation
+Current working directory: /experiments/parameter_partitioning
+
+Time for model input parsing: 0.017s.
+
+Time for model construction: 0.048s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	888
+Transitions: 	2387
+Reward Models:  none
+State Labels: 	3 labels
+   * init -> 1 item(s)
+   * deadlock -> 3 item(s)
+   * (VENTTUBE = 0) -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.000s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	31
+Transitions: 	65
+Reward Models:  none
+State Labels: 	2 labels
+   * init -> 1 item(s)
+   * (VENTTUBE = 0) -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F (VENTTUBE = 0)] ...
+Result (initial states): (-9375 * (1676*x*y+(-1388)*y+(-419)*x+(-28)))/(525460*x*y^2+4439980*y+1786540*y^2+(-2182169)*x*y+512701*x+7137940)
+Time for model checking: 0.008s.
+
+
+Performance statistics:
+  * peak memory usage: 56MB
+  * CPU time: 0.090s
+  * wallclock time: 0.083s

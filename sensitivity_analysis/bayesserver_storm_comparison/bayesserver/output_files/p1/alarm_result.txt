@@ -1,0 +1,23 @@
+Network name = alarm
+
+
+Time for Sensitivity Analysis: 0.015022039413452148s
+
+
+Parameter node = VENTALV
+Parameter entry = [INTUBATIONNORMAL,VENTLUNGZERO,VENTALVZERO]
+Hypothesis = BPLOW
+Evidence = default
+
+
+Parameter value = 0.97
+Sensitivity value = -0.004963245779583609
+P(Abnormal | e) = 0.38999308772930713
+Alpha = -0.004963245779583609
+Beta = 0.39480743613550323
+Delta = 1.0
+Gamma = 0.0
+
+
+Eval(0.2) = 0.3938147869795865
+Eval'(0.2) = -0.004963245779583609

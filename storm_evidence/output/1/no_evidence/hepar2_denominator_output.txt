@@ -1,0 +1,25 @@
+Storm 1.6.4
+
+Date: Wed Jun  8 15:14:10 2022
+Command line arguments: --jani jani_files/no_evidence/hepar2.jani --prop 'P=? [F(age=1|age=2|age=3)]'
+Current working directory: /home/hans/Desktop/Storm-bn/storm_evidence
+
+Time for model input parsing: 0.068s.
+
+Time for model construction: 0.221s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	11626
+Transitions: 	32109
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 3 item(s)
+   * init -> 1 item(s)
+   * (((age = 1) | (age = 2)) | (age = 3)) -> 36 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F (((age = 1) | (age = 2)) | (age = 3))] ...
+Result (for initial states): 0.92274678
+Time for model checking: 0.003s.

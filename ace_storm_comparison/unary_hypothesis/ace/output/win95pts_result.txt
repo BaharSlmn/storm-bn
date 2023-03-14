@@ -1,0 +1,15 @@
+Pr(e) = 0.9999999999999993
+Network : ace/net_files/win95pts.net
+Network Read Time (ms) : 141.774363
+Number of Evidence Sets : 1
+AC :
+  Nodes : 3004
+  Edges : 5638
+  Total Initialization Time (ms) : 47.392837
+  Total Inference Time (ms) : 3.005566
+  Minimum Inference Time (ms) : 3.005566
+  Maximum Inference Time (ms) : 3.005566
+  Median Inference Time (ms) : 3.005566
+  Mean Inference Time (ms) : 3.005566
+  Standard Deviation Inference Time (ms) : 0.0
+

@@ -1,0 +1,1 @@
+storm --jani jani_files/10/win95pts.jani --prop "P=? [G(Problem5=0 | Problem5=-1)]"

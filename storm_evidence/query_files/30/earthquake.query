@@ -1,0 +1,1 @@
+storm --jani jani_files/30/earthquake.jani --prop "P=? [G(MaryCalls=0 | MaryCalls=-1)]"

@@ -1,0 +1,67 @@
+net
+{
+}
+node Dif_low
+{
+	states = ( "false" "true" );
+}
+node Dif_high
+{
+	states = ( "false" "true" );
+}
+node Prep_low
+{
+	states = ( "false" "true" );
+}
+node Prep_high
+{
+	states = ( "false" "true" );
+}
+node Grade_low
+{
+	states = ( "false" "true" );
+}
+node Grade_high
+{
+	states = ( "false" "true" );
+}
+node Mood_low
+{
+	states = ( "false" "true" );
+}
+node Mood_high
+{
+	states = ( "false" "true" );
+}
+potential ( Dif_low  )
+{
+	data = (0.400000 0.600000) ;
+}
+potential ( Dif_high | Dif_low  )
+{
+	data = ((0.000000 1.000000)(1.0 0.0)) ;
+}
+potential ( Prep_low  )
+{
+	data = (0.300000 0.700000) ;
+}
+potential ( Prep_high | Prep_low  )
+{
+	data = ((0.000000 1.000000)(1.0 0.0)) ;
+}
+potential ( Grade_low | Prep_low Prep_high Dif_low Dif_high  )
+{
+	data = (((((0.050000 0.950000)(0.950000 0.050000))((0.500000 0.500000)(0.400000 0.600000)))(((1.0 0.0)(1.0 0.0))((1.0 0.0)(1.0 0.0))))((((1.0 0.0)(1.0 0.0))((1.0 0.0)(1.0 0.0)))(((1.0 0.0)(1.0 0.0))((1.0 0.0)(1.0 0.0))))) ;
+}
+potential ( Grade_high | Prep_low Prep_high Dif_low Dif_high Grade_low  )
+{
+	data = ((((((0.000000 1.000000)(1.0 0.0))((0.000000 1.000000)(1.0 0.0)))(((0.000000 1.000000)(1.0 0.0))((0.000000 1.000000)(1.0 0.0))))((((1.0 0.0)(1.0 0.0))((1.0 0.0)(1.0 0.0)))(((1.0 0.0)(1.0 0.0))((1.0 0.0)(1.0 0.0)))))(((((1.0 0.0)(1.0 0.0))((1.0 0.0)(1.0 0.0)))(((1.0 0.0)(1.0 0.0))((1.0 0.0)(1.0 0.0))))((((1.0 0.0)(1.0 0.0))((1.0 0.0)(1.0 0.0)))(((1.0 0.0)(1.0 0.0))((1.0 0.0)(1.0 0.0)))))) ;
+}
+potential ( Mood_low | Grade_low Grade_high  )
+{
+	data = (((0.100000 0.900000)(0.700000 0.300000))((1.0 0.0)(1.0 0.0))) ;
+}
+potential ( Mood_high | Grade_low Grade_high Mood_low  )
+{
+	data = ((((0.000000 1.000000)(1.0 0.0))((0.000000 1.000000)(1.0 0.0)))(((1.0 0.0)(1.0 0.0))((1.0 0.0)(1.0 0.0)))) ;
+}

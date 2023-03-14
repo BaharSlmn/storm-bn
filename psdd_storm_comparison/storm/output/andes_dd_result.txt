@@ -1,0 +1,61 @@
+Storm 1.6.4
+
+Date: Thu May  5 12:51:46 2022
+Command line arguments: --jani storm/andes/andes.jani --prop 'P=? [F(SNode_17=0)];P=? [F(SNode_17=1)];P=? [F(TRY12=0)];P=? [F(TRY12=1)];P=? [F(TRY15=0)];P=? [F(TRY15=1)];P=? [F(TRY14=0)];P=? [F(TRY14=1)];P=? [F(TRY13=0)];P=? [F(TRY13=1)];P=? [F(TRY11=0)];P=? [F(TRY11=1)];P=? [F(GOAL_2=0)];' --engine dd
+Current working directory: /home/hans/Desktop/private/psdd_storm_comparison
+
+Time for model input parsing: 0.116s.
+
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.
+ WARN (DdJaniModelBuilder.cpp:1522): Destination does not have any effect.

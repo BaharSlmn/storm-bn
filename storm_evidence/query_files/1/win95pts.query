@@ -1,0 +1,1 @@
+storm --jani jani_files/1/win95pts.jani --prop "P=? [G(GrbldPS=0 | GrbldPS=-1)]"

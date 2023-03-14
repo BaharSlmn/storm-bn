@@ -1,0 +1,155 @@
+Storm-pars 1.6.4 (dev)
+
+Date: Thu May 12 10:46:45 2022
+Command line arguments: --explicit-drn pso-qcqp-gd-benchmarks/sachs/drn_files/sachs_8.drn --prop 'Pmin<=0.550000 [F("Akt1"|"Jnk1"|"P381"|"PIP21")]
+' --find-feasible
+Current working directory: /home/hans/Desktop/feasibility-JAIR
+
+Time for model construction: 0.018s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	130
+Transitions: 	384
+Reward Models:  none
+State Labels: 	35 labels
+   * Akt1 -> 1 item(s)
+   * deadlock -> 3 item(s)
+   * Akt0 -> 1 item(s)
+   * Erk2 -> 3 item(s)
+   * Erk1 -> 3 item(s)
+   * Plcg2 -> 1 item(s)
+   * Mek1 -> 3 item(s)
+   * PIP30 -> 3 item(s)
+   * PIP22 -> 1 item(s)
+   * PIP21 -> 1 item(s)
+   * PKA1 -> 3 item(s)
+   * P381 -> 9 item(s)
+   * PIP31 -> 3 item(s)
+   * PKC2 -> 1 item(s)
+   * Akt2 -> 1 item(s)
+   * init -> 1 item(s)
+   * PKC0 -> 1 item(s)
+   * Jnk2 -> 9 item(s)
+   * PKC1 -> 1 item(s)
+   * PIP20 -> 1 item(s)
+   * PKA0 -> 3 item(s)
+   * Plcg0 -> 1 item(s)
+   * PKA2 -> 3 item(s)
+   * Mek0 -> 3 item(s)
+   * Erk0 -> 3 item(s)
+   * Jnk0 -> 9 item(s)
+   * P382 -> 9 item(s)
+   * Plcg1 -> 1 item(s)
+   * P380 -> 9 item(s)
+   * Jnk1 -> 9 item(s)
+   * Raf0 -> 9 item(s)
+   * Raf1 -> 9 item(s)
+   * Raf2 -> 9 item(s)
+   * PIP32 -> 3 item(s)
+   * Mek2 -> 3 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model simplification: 0.001s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	11
+Transitions: 	28
+Reward Models:  none
+State Labels: 	36 labels
+   * Plcg1 -> 0 item(s)
+   * P382 -> 0 item(s)
+   * Jnk1 -> 1 item(s)
+   * P380 -> 0 item(s)
+   * PKA0 -> 0 item(s)
+   * PIP20 -> 0 item(s)
+   * PIP31 -> 0 item(s)
+   * Erk0 -> 3 item(s)
+   * Mek0 -> 0 item(s)
+   * PKA2 -> 0 item(s)
+   * Plcg0 -> 0 item(s)
+   * Plcg2 -> 0 item(s)
+   * Raf0 -> 0 item(s)
+   * Raf1 -> 0 item(s)
+   * Raf2 -> 0 item(s)
+   * Erk1 -> 3 item(s)
+   * Jnk0 -> 0 item(s)
+   * target -> 1 item(s)
+   * PKC2 -> 0 item(s)
+   * deadlock -> 2 item(s)
+   * PIP30 -> 0 item(s)
+   * PIP22 -> 0 item(s)
+   * PIP21 -> 1 item(s)
+   * Akt1 -> 1 item(s)
+   * Erk2 -> 2 item(s)
+   * init -> 1 item(s)
+   * Akt2 -> 1 item(s)
+   * Mek1 -> 0 item(s)
+   * Akt0 -> 1 item(s)
+   * Jnk2 -> 0 item(s)
+   * PKC0 -> 0 item(s)
+   * P381 -> 1 item(s)
+   * Mek2 -> 0 item(s)
+   * PIP32 -> 0 item(s)
+   * PKA1 -> 0 item(s)
+   * PKC1 -> 0 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.001s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	11
+Transitions: 	28
+Reward Models:  none
+State Labels: 	36 labels
+   * Plcg1 -> 0 item(s)
+   * P382 -> 0 item(s)
+   * Jnk1 -> 1 item(s)
+   * P380 -> 0 item(s)
+   * PKA0 -> 0 item(s)
+   * PIP20 -> 0 item(s)
+   * PIP31 -> 0 item(s)
+   * Erk0 -> 3 item(s)
+   * Mek0 -> 0 item(s)
+   * PKA2 -> 0 item(s)
+   * Plcg0 -> 0 item(s)
+   * Plcg2 -> 0 item(s)
+   * Raf0 -> 0 item(s)
+   * Raf1 -> 0 item(s)
+   * Raf2 -> 0 item(s)
+   * Erk1 -> 3 item(s)
+   * Jnk0 -> 0 item(s)
+   * target -> 1 item(s)
+   * PKC2 -> 0 item(s)
+   * deadlock -> 2 item(s)
+   * PIP30 -> 0 item(s)
+   * PIP22 -> 0 item(s)
+   * PIP21 -> 1 item(s)
+   * Akt1 -> 1 item(s)
+   * Erk2 -> 2 item(s)
+   * init -> 1 item(s)
+   * Akt2 -> 1 item(s)
+   * Mek1 -> 0 item(s)
+   * Akt0 -> 1 item(s)
+   * Jnk2 -> 0 item(s)
+   * PKC0 -> 0 item(s)
+   * P381 -> 1 item(s)
+   * Mek2 -> 0 item(s)
+   * PIP32 -> 0 item(s)
+   * PKA1 -> 0 item(s)
+   * PKC1 -> 0 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+Parameters: p0 p3 p6 p1 p4 p7 p2 p5 
+Finding a feasible instantiation using Gradient Descent
+Trying out a new starting point
+Trying initial guess (p->0.5 for every parameter p or set start point)
+Satisfied the bound! Done!
+Aborting because the bound is satisfied
+Found value 0.5391457877 at instantiation 
+p0=540068885577/36028797018963968,p3=872000966607/36028797018963968,p6=719402937217/72057594037927936,p1=1559503408309/72057594037927936,p4=63635465573/18014398509481984,p7=702583306871/72057594037927936,p2=5804488642977/72057594037927936,p5=339098011981/36028797018963968
+Finished in 0.001s

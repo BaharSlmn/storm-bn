@@ -1,0 +1,141 @@
+Storm-pars 1.6.4
+
+Date: Fri Apr 22 12:40:10 2022
+Command line arguments: -drn storm/drn_files/p2/alarm.drn --prop 'P=? [F("BP0")]' --bisimulation
+Current working directory: /experiments/bayesserver_storm_comparison
+
+Time for model construction: 0.215s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	1256
+Transitions: 	3576
+Reward Models:  none
+State Labels: 	107 labels
+   * HRSAT2 -> 1 item(s)
+   * deadlock -> 3 item(s)
+   * HRBP1 -> 3 item(s)
+   * ERRLOWOUTPUT0 -> 3 item(s)
+   * PCWP0 -> 3 item(s)
+   * BP0 -> 9 item(s)
+   * CO2 -> 27 item(s)
+   * STROKEVOLUME2 -> 36 item(s)
+   * STROKEVOLUME1 -> 36 item(s)
+   * LVEDVOLUME1 -> 27 item(s)
+   * HISTORY1 -> 36 item(s)
+   * HISTORY0 -> 36 item(s)
+   * LVFAILURE1 -> 18 item(s)
+   * LVFAILURE0 -> 18 item(s)
+   * HYPOVOLEMIA1 -> 9 item(s)
+   * HYPOVOLEMIA0 -> 9 item(s)
+   * HR2 -> 3 item(s)
+   * BP2 -> 9 item(s)
+   * CATECHOL0 -> 3 item(s)
+   * TPR2 -> 18 item(s)
+   * TPR1 -> 18 item(s)
+   * ANAPHYLAXIS1 -> 18 item(s)
+   * ANAPHYLAXIS0 -> 18 item(s)
+   * HREKG2 -> 6 item(s)
+   * CVP1 -> 9 item(s)
+   * PRESS1 -> 24 item(s)
+   * PRESS3 -> 24 item(s)
+   * PCWP2 -> 3 item(s)
+   * PCWP1 -> 3 item(s)
+   * CO1 -> 27 item(s)
+   * VENTLUNG0 -> 3 item(s)
+   * MINVOL0 -> 12 item(s)
+   * MINVOL3 -> 12 item(s)
+   * PAP0 -> 24 item(s)
+   * VENTALV0 -> 8 item(s)
+   * PRESS2 -> 24 item(s)
+   * INTUBATION2 -> 8 item(s)
+   * INTUBATION1 -> 8 item(s)
+   * HRSAT1 -> 1 item(s)
+   * CATECHOL1 -> 3 item(s)
+   * INSUFFANESTH0 -> 9 item(s)
+   * INTUBATION0 -> 8 item(s)
+   * KINKEDTUBE1 -> 4 item(s)
+   * init -> 1 item(s)
+   * CVP0 -> 9 item(s)
+   * EXPCO23 -> 9 item(s)
+   * VENTLUNG1 -> 3 item(s)
+   * HRSAT0 -> 1 item(s)
+   * MINVOLSET0 -> 1 item(s)
+   * LVEDVOLUME2 -> 27 item(s)
+   * VENTTUBE1 -> 1 item(s)
+   * INSUFFANESTH1 -> 9 item(s)
+   * STROKEVOLUME0 -> 36 item(s)
+   * MINVOLSET1 -> 1 item(s)
+   * HREKG1 -> 6 item(s)
+   * TPR0 -> 18 item(s)
+   * PAP1 -> 24 item(s)
+   * VENTTUBE2 -> 1 item(s)
+   * PRESS0 -> 24 item(s)
+   * CVP2 -> 9 item(s)
+   * BP1 -> 9 item(s)
+   * HR0 -> 3 item(s)
+   * VENTMACH0 -> 1 item(s)
+   * HREKG0 -> 6 item(s)
+   * ERRCAUTER0 -> 3 item(s)
+   * ARTCO22 -> 12 item(s)
+   * MINVOL1 -> 12 item(s)
+   * ERRLOWOUTPUT1 -> 3 item(s)
+   * VENTMACH2 -> 1 item(s)
+   * VENTTUBE0 -> 1 item(s)
+   * DISCONNECT0 -> 4 item(s)
+   * PAP2 -> 24 item(s)
+   * HR1 -> 3 item(s)
+   * VENTMACH3 -> 1 item(s)
+   * MINVOLSET2 -> 1 item(s)
+   * HRBP2 -> 3 item(s)
+   * VENTLUNG3 -> 3 item(s)
+   * DISCONNECT1 -> 4 item(s)
+   * LVEDVOLUME0 -> 27 item(s)
+   * EXPCO21 -> 9 item(s)
+   * FIO20 -> 32 item(s)
+   * VENTLUNG2 -> 3 item(s)
+   * SAO20 -> 16 item(s)
+   * MINVOL2 -> 12 item(s)
+   * ERRCAUTER1 -> 3 item(s)
+   * SHUNT0 -> 12 item(s)
+   * PULMEMBOLUS1 -> 12 item(s)
+   * SHUNT1 -> 12 item(s)
+   * ARTCO20 -> 12 item(s)
+   * VENTALV1 -> 8 item(s)
+   * VENTALV2 -> 8 item(s)
+   * KINKEDTUBE0 -> 4 item(s)
+   * PULMEMBOLUS0 -> 12 item(s)
+   * VENTALV3 -> 8 item(s)
+   * FIO21 -> 32 item(s)
+   * HRBP0 -> 3 item(s)
+   * SAO22 -> 16 item(s)
+   * CO0 -> 27 item(s)
+   * PVSAT0 -> 32 item(s)
+   * PVSAT2 -> 24 item(s)
+   * PVSAT1 -> 32 item(s)
+   * ARTCO21 -> 12 item(s)
+   * VENTMACH1 -> 1 item(s)
+   * EXPCO20 -> 9 item(s)
+   * SAO21 -> 16 item(s)
+   * VENTTUBE3 -> 1 item(s)
+   * EXPCO22 -> 9 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 0.001s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	370
+Transitions: 	792
+Reward Models:  none
+State Labels: 	2 labels
+   * init -> 1 item(s)
+   * BP0 -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F "BP0"] ...
+Result (initial states): (6126089582508950895132483601139450000*p1*p0+119956570288021047546681580722421200*p1+(-4859711405383683371180851285299752000)*p0+381697395916864087705495834051089283791)/(966796875000000000000000000000000000000)
+Time for model checking: 0.002s.
+

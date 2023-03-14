@@ -1,0 +1,126 @@
+// Exported by storm
+// Original model type: DTMC
+@type: DTMC
+@parameters
+
+@reward_models
+
+@nr_states
+31
+@nr_choices
+31
+@model
+state 0 init
+	action 0
+		1 : 0.01
+		2 : 0.99
+state 1 asia0
+	action 0
+		3 : 0.05
+		4 : 0.95
+state 2 asia1
+	action 0
+		3 : 0.01
+		4 : 0.99
+state 3 tub0
+	action 0
+		5 : 0.5
+		6 : 0.5
+state 4 tub1
+	action 0
+		7 : 0.5
+		8 : 0.5
+state 5 smoke0
+	action 0
+		9 : 0.1
+		10 : 0.9
+state 6 smoke1
+	action 0
+		11 : 0.01
+		12 : 0.99
+state 7 smoke0
+	action 0
+		13 : 0.1
+		14 : 0.9
+state 8 smoke1
+	action 0
+		15 : 0.01
+		16 : 0.99
+state 9 lung0
+	action 0
+		17 : 1
+state 10 lung1
+	action 0
+		17 : 1
+state 11 lung0
+	action 0
+		18 : 1
+state 12 lung1
+	action 0
+		18 : 1
+state 13 lung0
+	action 0
+		17 : 1
+state 14 lung1
+	action 0
+		19 : 1
+state 15 lung0
+	action 0
+		18 : 1
+state 16 lung1
+	action 0
+		20 : 1
+state 17 either0
+	action 0
+		21 : 0.6
+		22 : 0.4
+state 18 either0
+	action 0
+		21 : 0.3
+		22 : 0.7
+state 19 either1
+	action 0
+		23 : 0.6
+		24 : 0.4
+state 20 either1
+	action 0
+		23 : 0.3
+		24 : 0.7
+state 21 bronc0
+	action 0
+		25 : 0.9
+		26 : 0.1
+state 22 bronc1
+	action 0
+		25 : 0.7
+		26 : 0.3
+state 23 bronc0
+	action 0
+		27 : 0.8
+		28 : 0.2
+state 24 bronc1
+	action 0
+		27 : 0.1
+		28 : 0.9
+state 25 dysp0
+	action 0
+		29 : 0.98
+		30 : 0.02
+state 26 dysp1
+	action 0
+		29 : 0.98
+		30 : 0.02
+state 27 dysp0
+	action 0
+		29 : 0.05
+		30 : 0.95
+state 28 dysp1
+	action 0
+		29 : 0.05
+		30 : 0.95
+state 29 deadlock xray0
+	action 0
+		29 : 1
+state 30 deadlock xray1
+	action 0
+		30 : 1

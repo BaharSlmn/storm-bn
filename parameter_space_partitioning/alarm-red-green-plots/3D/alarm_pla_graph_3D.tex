@@ -1,0 +1,22 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\standaloneenv{pgfpicture}
+\pgfplotsset{samples=51}
+
+\begin{document}
+
+\begin{tikzpicture}
+  \begin{axis}[
+    width=8.5cm, height=7cm,
+    colormap={redgreen}{color=(green), color=(red)},
+    colormap access=direct,
+    xlabel=p, ylabel=q,
+    ]
+
+    \addplot3[surf, shader=faceted interp, domain=0:1, point meta min=0, point meta max=1, point meta={z+0.6}] {(-9375 * (1676*x*y+(-1388)*y+(-419)*x+(-28)))/(525460*x*y^2+4439980*y+1786540*y^2+(-2182169)*x*y+512701*x+7137940)};
+   % \addplot3 [surf,domain=0:1,opacity=0.5,color=black] {0.6};
+  \end{axis}
+\end{tikzpicture}
+
+\end{document}

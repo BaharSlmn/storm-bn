@@ -1,0 +1,25 @@
+Storm 1.6.4
+
+Date: Thu Apr 28 13:06:40 2022
+Command line arguments: --jani storm/hailfinder/hailfinder.jani --prop 'P=? [F((SatContMoist=1|CapInScen=1))]'
+Current working directory: /experiments/ace_storm_comparison/disjunction_comparison
+
+Time for model input parsing: 0.126s.
+
+Time for model construction: 0.346s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	17532
+Transitions: 	47325
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 7 item(s)
+   * init -> 1 item(s)
+   * ((SatContMoist = 1) | (CapInScen = 1)) -> 115 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F ((SatContMoist = 1) | (CapInScen = 1))] ...
+Result (for initial states): 0.4285789912
+Time for model checking: 0.011s.

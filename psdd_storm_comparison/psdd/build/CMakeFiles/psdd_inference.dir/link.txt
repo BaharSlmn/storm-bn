@@ -1,0 +1,1 @@
+/usr/bin/c++  -no-pie   CMakeFiles/psdd_inference.dir/psdd_inference_main.cpp.o  -o psdd_inference   -L/usr/local/lib  -L/home/hans/Desktop/Storm-bn/psdd_storm_comparison/psdd/lib/linux  -Wl,-rpath,/usr/local/lib:/home/hans/Desktop/Storm-bn/psdd_storm_comparison/psdd/lib/linux libpsdd.a -lsdd -lgmp -lhtd -lkahypar 

@@ -1,0 +1,1 @@
+storm --jani jani_files/no_evidence/survey.jani --prop "P=? [F(E=1|T=1|T=2)]"

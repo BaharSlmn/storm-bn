@@ -1,0 +1,8 @@
+networkname,networkinstance,realparamnum,threshhold,gdtime,psotime,qcqptime,scatterclass
+hailfinder,32,32,0.600000,0.027,10000,0.446973,hailfinder
+hailfinder,64,64,0.600000,0.197,10000,1.411009,hailfinder
+hailfinder,128,128,0.600000,0.946,10000,9.139932,hailfinder
+hailfinder,256,256,0.600000,3.444,10000,39.342014,hailfinder
+hailfinder,512,512,0.600000,27.365,63.175801515579224,10000.000000,hailfinder
+hailfinder,1024,853,0.600000,23.166,52.410083055496216,10000.000000,hailfinder
+hailfinder,2048,853,0.600000,25.186,52.242977142333984,10000.000000,hailfinder

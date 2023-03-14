@@ -1,0 +1,25 @@
+Storm 1.6.4
+
+Date: Wed Jun  8 15:11:08 2022
+Command line arguments: --jani jani_files/no_evidence/andes.jani --prop 'P=? [F(NEED36=1|SNode_67=1|FIND49=1|GRAV2=1|SNode_88=1|GOAL_109=1|GOAL_111=1|SUM75=1|GOAL_114=1|GOAL_146=1|INCLINE51=1|SNode_119=1|SNode_19=1)]'
+Current working directory: /home/hans/Desktop/Storm-bn/storm_evidence
+
+Time for model input parsing: 0.086s.
+
+Time for model construction: 25.322s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	2718435
+Transitions: 	5179684
+Reward Models:  none
+State Labels: 	3 labels
+   * deadlock -> 1 item(s)
+   * init -> 1 item(s)
+   * (((((((((((((NEED36 = 1) | (SNode_67 = 1)) | (FIND49 = 1)) | (GRAV2 = 1)) | (SNode_88 = 1)) | (GOAL_109 = 1)) | (GOAL_111 = 1)) | (SUM75 = 1)) | (GOAL_114 = 1)) | (GOAL_146 = 1)) | (INCLINE51 = 1)) | (SNode_119 = 1)) | (SNode_19 = 1)) -> 78857 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [F (((((((((((((NEED36 = 1) | (SNode_67 = 1)) | (FIND49 = 1)) | (GRAV2 = 1)) | (SNode_88 = 1)) | (GOAL_109 = 1)) | (GOAL_111 = 1)) | (SUM75 = 1)) | (GOAL_114 = 1)) | (GOAL_146 = 1)) | (INCLINE51 = 1)) | (SNode_119 = 1)) | (SNode_19 = 1))] ...
+Result (for initial states): 0.9998545783
+Time for model checking: 2.222s.

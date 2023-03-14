@@ -1,0 +1,121 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{etoolbox}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenx}
+\usepackage[american]{babel}
+\usepackage{tikz}
+
+%\addtolength{\textheight}{0.32mm}
+%\addtolength{\voffset}{-0.16mm}
+\usepackage{amsmath}
+\usepackage{thmtools, thm-restate}
+\usepackage{xspace}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{upgreek}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{amssymb}
+\usepackage{environ}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{stmaryrd}
+\usepackage{adjustbox}
+\usepackage{makecell}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{comment}
+\usepackage{float} 
+
+%TikZ
+\usetikzlibrary{decorations,arrows,shapes,automata,calc}
+\tikzstyle{dist}=[circle,  inner sep=1pt, fill]
+\tikzstyle{point}=[circle,  inner sep=2pt, fill]
+\tikzstyle{ms}=[draw,circle,text centered,minimum size=6mm,text width=3mm]
+\tikzstyle{ps}=[draw,rectangle,text centered,minimum size=6mm,text width=3mm]
+
+% Colours
+\definecolor{color1}{RGB}{55,126,184} % lightblueish
+\definecolor{color2}{RGB}{228,26,28} % red
+\definecolor{color3}{RGB}{77,175,74} % green
+\definecolor{color4}{RGB}{152,78,163} % purple
+\definecolor{color5}{RGB}{255,127,0} % orange
+\definecolor{color6}{rgb}{0.5, 1.0, 0.83} % aquamarine
+\definecolor{color8}{rgb}{0.66, 0.66, 0.66} % gray
+\definecolor{color7}{rgb}{0.48, 0.25, 0.0} %brown
+\definecolor{commentcolor}{RGB}{60,114,26}
+\usepackage{cleveref}
+\newcommand{\tool}[1]{\textsc{#1}\xspace}
+\newcommand{\storm}{\tool{Storm}}
+\newcommand{\stormbisim}{\tool{Storm (bi-simulation)}}
+\newcommand{\stormnobisim}{\tool{Storm (regular)}}
+\newcommand{\bayesserver}{\tool{Bayesserver}}
+\newcommand{\ace}{\tool{Ace}}
+\newcommand{\psdd}{\tool{PSDD}}
+\newcommand{\compilation}{\tool{Compilation Time}}
+\newcommand{\vars}{\tool{\#Variables}}
+\newcommand{\inference}{\tool{Total Inference Time}}
+
+
+
+
+\begin{document}
+\newlength{\scatterplotsize}
+\setlength{\scatterplotsize}{\linewidth}
+
+\begin{tikzpicture}
+	\path[use as bounding box,draw=white] (-1,-1) rectangle (4,4);
+	\begin{axis}[
+		title={(b)},
+		width=\linewidth,
+		height=0.7\scatterplotsize,
+		axis equal image,
+		ymax=1500,
+		xmax=30,
+		ymode=log,
+		axis x line=bottom,
+		axis y line=left,
+		xtick={2,4,6,8,16},
+		xticklabels={2,4,6,8,16},
+		ytick={0.001,0.01,0.1,1,10,100},
+		yticklabels={$10^{-3}$,$10^{-2}$,$10^{-1}$,$10^{0}$,$10^1$,$10^2$},
+		extra y ticks = {1000},
+		extra y tick labels = {TO},
+		extra y tick style = {grid = major},
+		xlabel={Size of the hypothesis},
+		xlabel style={yshift=5pt},
+		ylabel={Time [ms]},
+		ylabel style={yshift=-0.4cm},
+		xlabel style={yshift=-10pt},
+		yticklabel style={font=\scriptsize},
+		xticklabel style={rotate=290,anchor=west,font=\scriptsize},
+		legend pos=south east,
+		legend columns=1,
+		legend style={nodes={scale=0.75, transform shape},inner sep=1.5pt,yshift=0.1cm,xshift=-0.2cm},
+		%legend cell align={left}
+		]
+		\addplot[black,
+		scatter,
+		only marks,
+		scatter/classes={
+			win9-storm={mark=o, mark size=1.5, color1},
+			win9-ace={mark=square*, mark size=1.5, color1},
+			hail-storm={mark=o, mark size=1.5, color2},
+			hail-ace={mark=square*, mark size=1.5, color2},
+			mild-storm={mark=o, mark size=1.5, color3},
+			mild-ace={mark=square*, mark size=1.5, color3}
+			%,
+			%andes-storm={mark=triangle*, mark size=1.5, color7},
+			%andes-ace={halfcircle, mark size=1.5, color3}
+		},
+		scatter src=explicit symbolic
+		]%
+		table [col sep=comma,x=h_size,y=inference_time(s),meta=scatterclass]{multiple-disjunction-ace-storm.csv};
+		\legend{win95pts-storm,win95pts-ace,hailfinder-storm,hailfinder-ace,mildew-storm,mildew-ace}
+	\end{axis}
+\end{tikzpicture}
+
+\end{document}

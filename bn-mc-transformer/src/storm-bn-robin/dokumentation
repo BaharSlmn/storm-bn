@@ -1,0 +1,48 @@
+To include evidence and hypothesis add the following to .BIF file:
+evidence <NameE> {
+	<variableName>=<i>;
+	...
+}
+hypothesis <NameH> {
+	<variableName>=<anything>;
+	...
+}
+
+Where things in <> need to be filled in (without <>), i in [0,(val-1)] where val is number of values of the corresponding variable,
+variableName is valid string name of variable (not the index). In case of hypothesis the value is ignored so anything should be 
+accepted (0 should work everytime). Three dots denote that there can be multiple evidence/hypthesis nodes specified at once.
+
+Example for alarm.bif:
+
+evidence first {
+	HISTORY=0;
+	PCWP=2;
+}
+hypothesis second {
+	HREKG=0;
+	HRSAT=0;
+}
+
+To get result of the conditional query Pr(HREKG=0,HRSAT=0|HISTORY=0,PCWP=2) use query 1-Pr(reach (PCWP=2&HREKG=1|PCWP=2&HREKG=2|PCWP=2&HRSAT=1|PCWP=2&HRSAT=2))), because PCWP is after both HREKG and HRSAT in the best topological ordering.
+If hypothesis is after the last evidence just use 1-Pr(reach not hypothesis)
+
+Some queries used to obtain the results in the thesis text:
+
+storm-pars --jani insurance.jani --prop "P>=0.3 [F((Accident=1&PropCost=0)|(Accident=2&PropCost=0)|(Accident=3&PropCost=0))]" --region "0<=a<=1","0<=b<=1","0<=c<=1","0<=d<=1","0<=e<=1" --refine 0.1 --timemem --bisimulation --bisimulation:type strong
+
+storm-pars --jani andes.jani --prop "P>=0.62 [F(GOAL_147=0)]" --region "0.3<=a<=1","0.2<=b<=1","0.2<=c<=1","0<=d<=0.6","0<=e<=0.8" --timemem --refine 0.08 --bisimulation
+
+storm-pars --jani alarm.jani --prop "P>=0.20 [F(CO=1)]" --region "0<=a<=0.8","0.4<=b<=1","0.9<=c<=1","0.2<=d<=0.5","0<=e<=0.5" --timemem --refine 0.04 --bisimulation
+
+storm-pars --jani asia.jani --prop "P>=0.46 [F(dysp=0)]" --region "0.2<=a<=1","0.2<=b<=1","0.2<=c<=1","0<=d<=0.5","0<=e<=0.2" --timemem --refine 0.09 --bisimulation
+
+storm-pars --jani win95pts.jani --prop "P>=0.90 [F(Problem6=0)]" --region "0.87<=a<=1","0.87<=b<=1","0.36<=c<=0.7","0.5<=d<=0.7","0.2<=e<=0.4" --timemem --refine 0.15 --bisimulation
+
+storm-pars --jani win95pts.jani --prop "P<=0.90 [F(GDIIN=0)]" --region "0.93<=a<=1","0.93<=b<=1","0.93<=c<=1","0.93<=d<=1","0.92<=e<=1" --timemem --refine 0.15 --bisimulation
+
+Parameters where placed based on the samiam, but I am not sure which parameter was placed where
+
+
+storm-pars --jani insurance.jani --prop "P=?[F(PropCost=0)]" --timemem --help all
+storm-pars --jani win95pts.jani --prop "P=?[F(Problem6=0)]" --timemem --bisimulation
+storm-pars --jani asia.jani --prop "P=? [F(dysp=0)]" --timemem --bisimulation

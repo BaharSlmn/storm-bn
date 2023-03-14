@@ -1,0 +1,1 @@
+storm --jani jani_files/no_evidence/child.jani --prop "P=? [F(LVHreport=1|XrayReport=1|XrayReport=2|XrayReport=3|XrayReport=4)]"

@@ -1,0 +1,1 @@
+storm --jani jani_files/no_evidence/insurance.jani --prop "P=? [F(SeniorTrain=1)]"

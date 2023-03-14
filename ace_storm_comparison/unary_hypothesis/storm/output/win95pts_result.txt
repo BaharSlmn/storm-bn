@@ -1,0 +1,329 @@
+Storm 1.6.4 (dev)
+
+Date: Thu Apr 28 12:34:36 2022
+Command line arguments: --jani storm/jani_files/win95pts.jani --expvisittimes --build-all-labels
+Current working directory: /home/hans/Desktop/private/ace_storm_comparison/unary_hypothesis
+
+Time for model input parsing: 0.046s.
+
+Time for model construction: 0.177s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	9947
+Transitions: 	17948
+Reward Models:  none
+State Labels: 	154 labels
+   * deadlock -> 2 item(s)
+   * init -> 1 item(s)
+   * TstpsTxt0 -> 12 item(s)
+   * TnrSpply1 -> 32 item(s)
+   * TTOK1 -> 2 item(s)
+   * TrTypFnts0 -> 4 item(s)
+   * TTOK0 -> 2 item(s)
+   * ScrnFntNtPrntrFnt0 -> 4 item(s)
+   * REPEAT0 -> 128 item(s)
+   * PrtTimeOut1 -> 128 item(s)
+   * PrtTimeOut0 -> 128 item(s)
+   * PrtThread1 -> 4 item(s)
+   * PrtThread0 -> 4 item(s)
+   * PrtStatToner1 -> 4 item(s)
+   * PrtStatToner0 -> 4 item(s)
+   * PrtStatPaper1 -> 16 item(s)
+   * PrtStatPaper0 -> 16 item(s)
+   * PrtStatOff1 -> 32 item(s)
+   * PrtStatOff0 -> 32 item(s)
+   * PrtStatMem1 -> 12 item(s)
+   * PrtStatMem0 -> 12 item(s)
+   * PrtSpool1 -> 4 item(s)
+   * NetPrint1 -> 48 item(s)
+   * ScrnFntNtPrntrFnt1 -> 4 item(s)
+   * NetPrint0 -> 48 item(s)
+   * AppOK0 -> 4 item(s)
+   * AvlblVrtlMmry1 -> 4 item(s)
+   * LclGrbld1 -> 120 item(s)
+   * IncmpltPS1 -> 6 item(s)
+   * IncmpltPS0 -> 6 item(s)
+   * PrtCbl0 -> 512 item(s)
+   * HrglssDrtnAftrPrnt1 -> 8 item(s)
+   * GrphcsRltdDrvrSttngs1 -> 8 item(s)
+   * GrbldPS0 -> 8 item(s)
+   * CblPrtHrdwrOK0 -> 64 item(s)
+   * GDIIN0 -> 2 item(s)
+   * Problem60 -> 6 item(s)
+   * LclGrbld0 -> 128 item(s)
+   * NtSpd1 -> 24 item(s)
+   * PrtPaper1 -> 8 item(s)
+   * AvlblVrtlMmry0 -> 8 item(s)
+   * NtwrkCnfg1 -> 12 item(s)
+   * GDIOUT0 -> 32 item(s)
+   * GDIIN1 -> 3 item(s)
+   * GrbldPS1 -> 8 item(s)
+   * FntInstlltn0 -> 2 item(s)
+   * LclOK1 -> 128 item(s)
+   * Problem50 -> 1 item(s)
+   * FllCrrptdBffr1 -> 64 item(s)
+   * EPSGrphc0 -> 4 item(s)
+   * NnPSGrphc0 -> 14 item(s)
+   * NetOK0 -> 128 item(s)
+   * NnTTOK0 -> 4 item(s)
+   * PSERRMEM0 -> 6 item(s)
+   * NtSpd0 -> 24 item(s)
+   * PrntngArOK1 -> 6 item(s)
+   * DSApplctn0 -> 256 item(s)
+   * PTROFFLINE0 -> 128 item(s)
+   * GrbldOtpt0 -> 64 item(s)
+   * FntInstlltn1 -> 2 item(s)
+   * DeskPrntSpd0 -> 6 item(s)
+   * NnPSGrphc1 -> 16 item(s)
+   * PrtCbl1 -> 512 item(s)
+   * CblPrtHrdwrOK1 -> 64 item(s)
+   * DS_LCLOK1 -> 512 item(s)
+   * PTROFFLINE1 -> 128 item(s)
+   * EMFOK0 -> 2 item(s)
+   * AppData0 -> 2 item(s)
+   * DrvSet1 -> 48 item(s)
+   * EMFOK1 -> 2 item(s)
+   * REPEAT1 -> 96 item(s)
+   * AppDtGnTm1 -> 2 item(s)
+   * GrphcsRltdDrvrSttngs0 -> 8 item(s)
+   * DeskPrntSpd1 -> 6 item(s)
+   * NetOK1 -> 128 item(s)
+   * HrglssDrtnAftrPrnt0 -> 8 item(s)
+   * Problem41 -> 8 item(s)
+   * DrvOK0 -> 96 item(s)
+   * CmpltPgPrntd1 -> 6 item(s)
+   * AppOK1 -> 4 item(s)
+   * PrtIcon0 -> 256 item(s)
+   * CmpltPgPrntd0 -> 6 item(s)
+   * EPSGrphc1 -> 4 item(s)
+   * DS_NTOK0 -> 512 item(s)
+   * DrvSet0 -> 48 item(s)
+   * AppData1 -> 2 item(s)
+   * DataFile0 -> 2 item(s)
+   * DrvOK1 -> 96 item(s)
+   * NtGrbld1 -> 128 item(s)
+   * PrtMpTPth1 -> 512 item(s)
+   * GDIOUT1 -> 32 item(s)
+   * DataFile1 -> 2 item(s)
+   * PrtPath1 -> 256 item(s)
+   * DskLocal1 -> 1 item(s)
+   * Problem61 -> 6 item(s)
+   * PrtPath0 -> 256 item(s)
+   * NnTTOK1 -> 4 item(s)
+   * NtwrkCnfg0 -> 12 item(s)
+   * DSApplctn1 -> 256 item(s)
+   * PC2PRT0 -> 4 item(s)
+   * PSERRMEM1 -> 2 item(s)
+   * PrtPort1 -> 256 item(s)
+   * DS_LCLOK0 -> 512 item(s)
+   * Problem10 -> 8 item(s)
+   * Problem31 -> 2 item(s)
+   * PrtPScript1 -> 16 item(s)
+   * PgOrnttnOK1 -> 12 item(s)
+   * PrtSel1 -> 64 item(s)
+   * PrntPrcssTm0 -> 5 item(s)
+   * Problem51 -> 1 item(s)
+   * PrntPrcssTm1 -> 3 item(s)
+   * PC2PRT1 -> 4 item(s)
+   * PrtSpool0 -> 4 item(s)
+   * PSGRAPHIC0 -> 8 item(s)
+   * PrntngArOK0 -> 6 item(s)
+   * DskLocal0 -> 1 item(s)
+   * PrtPaper0 -> 8 item(s)
+   * PrntrAccptsTrtyp0 -> 8 item(s)
+   * TnrSpply0 -> 32 item(s)
+   * PrntrAccptsTrtyp1 -> 8 item(s)
+   * Problem11 -> 8 item(s)
+   * Problem20 -> 24 item(s)
+   * PSGRAPHIC1 -> 8 item(s)
+   * Problem21 -> 24 item(s)
+   * TstpsTxt1 -> 8 item(s)
+   * LclOK0 -> 128 item(s)
+   * PrtPScript0 -> 16 item(s)
+   * PrtQueue0 -> 24 item(s)
+   * Problem30 -> 2 item(s)
+   * Problem40 -> 8 item(s)
+   * PrtData1 -> 8 item(s)
+   * PrtDataOut0 -> 32 item(s)
+   * PrtDataOut1 -> 32 item(s)
+   * PrtFile1 -> 64 item(s)
+   * AppDtGnTm0 -> 5 item(s)
+   * PgOrnttnOK0 -> 12 item(s)
+   * PrtOn0 -> 16 item(s)
+   * DS_NTOK1 -> 512 item(s)
+   * PrtDriver0 -> 24 item(s)
+   * TrTypFnts1 -> 4 item(s)
+   * NtGrbld0 -> 128 item(s)
+   * PrtDriver1 -> 24 item(s)
+   * PrtFile0 -> 64 item(s)
+   * PrtIcon1 -> 256 item(s)
+   * PrtData0 -> 8 item(s)
+   * PrtMem0 -> 8 item(s)
+   * PrtMem1 -> 8 item(s)
+   * PrtQueue1 -> 24 item(s)
+   * FllCrrptdBffr0 -> 64 item(s)
+   * PrtMpTPth0 -> 512 item(s)
+   * PrtOn1 -> 16 item(s)
+   * GrbldOtpt1 -> 64 item(s)
+   * PrtPort0 -> 256 item(s)
+   * PrtSel0 -> 64 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+Accumulated values for labels:
+	AppData0: 0.9899384975
+	AppData1: 0.0100615025
+	AppDtGnTm0: 0.9995000005
+	AppDtGnTm1: 0.0004999995
+	AppOK0: 0.995
+	AppOK1: 0.005
+	AvlblVrtlMmry0: 0.992
+	AvlblVrtlMmry1: 0.008
+	CblPrtHrdwrOK0: 0.99
+	CblPrtHrdwrOK1: 0.01
+	CmpltPgPrntd0: 0.8940409995
+	CmpltPgPrntd1: 0.1059590005
+	DSApplctn0: 0.15
+	DSApplctn1: 0.85
+	DS_LCLOK0: 0.9532050201
+	DS_LCLOK1: 0.04679497991
+	DS_NTOK0: 0.5653655188
+	DS_NTOK1: 0.4346344812
+	DataFile0: 0.995
+	DataFile1: 0.005
+	DeskPrntSpd0: 0.9521940187
+	DeskPrntSpd1: 0.04780598133
+	DrvOK0: 0.99
+	DrvOK1: 0.01
+	DrvSet0: 0.99
+	DrvSet1: 0.01
+	DskLocal0: 0.97
+	DskLocal1: 0.03
+	EMFOK0: 0.9516764401
+	EMFOK1: 0.04832355987
+	EPSGrphc0: 0.99
+	EPSGrphc1: 0.01
+	FllCrrptdBffr0: 0.85
+	FllCrrptdBffr1: 0.15
+	FntInstlltn0: 0.98
+	FntInstlltn1: 0.02
+	GDIIN0: 0.9525186283
+	GDIIN1: 0.04748137173
+	GDIOUT0: 0.8584545234
+	GDIOUT1: 0.1415454766
+	GrbldOtpt0: 0.8901967346
+	GrbldOtpt1: 0.1098032654
+	GrbldPS0: 0.8842265312
+	GrbldPS1: 0.1157734688
+	GrphcsRltdDrvrSttngs0: 0.95
+	GrphcsRltdDrvrSttngs1: 0.05
+	HrglssDrtnAftrPrnt0: 0.9895550004
+	HrglssDrtnAftrPrnt1: 0.01044499955
+	IncmpltPS0: 0.8894582059
+	IncmpltPS1: 0.1105417941
+	LclGrbld0: 0.8904852637
+	LclGrbld1: 0.1095147363
+	LclOK0: 0.959882522
+	LclOK1: 0.040117478
+	NetOK0: 0.6677438
+	NetOK1: 0.3322562
+	NetPrint0: 0.8
+	NetPrint1: 0.2
+	NnPSGrphc0: 0.910765275
+	NnPSGrphc1: 0.089234725
+	NnTTOK0: 0.9075405088
+	NnTTOK1: 0.09245949116
+	NtGrbld0: 0.8890426184
+	NtGrbld1: 0.1109573816
+	NtSpd0: 0.9307485918
+	NtSpd1: 0.06925140823
+	NtwrkCnfg0: 0.98
+	NtwrkCnfg1: 0.02
+	PC2PRT0: 0.7765772894
+	PC2PRT1: 0.2234227106
+	PSERRMEM0: 0.9924
+	PSERRMEM1: 0.0076
+	PSGRAPHIC0: 0.919790275
+	PSGRAPHIC1: 0.080209725
+	PTROFFLINE0: 0.7
+	PTROFFLINE1: 0.3
+	PgOrnttnOK0: 0.95
+	PgOrnttnOK1: 0.05
+	PrntPrcssTm0: 0.9905000095
+	PrntPrcssTm1: 0.0094999905
+	PrntngArOK0: 0.98
+	PrntngArOK1: 0.02
+	PrntrAccptsTrtyp0: 0.9
+	PrntrAccptsTrtyp1: 0.1
+	Problem10: 0.572553964
+	Problem11: 0.427446036
+	Problem20: 0.9479049333
+	Problem21: 0.05209506671
+	Problem30: 0.1105417941
+	Problem31: 0.8894582059
+	Problem40: 0.085624725
+	Problem41: 0.914375275
+	Problem50: inf
+	Problem51: inf
+	Problem60: 0.8842265312
+	Problem61: 0.1157734688
+	PrtCbl0: 0.98
+	PrtCbl1: 0.02
+	PrtData0: 0.572553964
+	PrtData1: 0.427446036
+	PrtDataOut0: 0.8420790057
+	PrtDataOut1: 0.1579209943
+	PrtDriver0: 0.9
+	PrtDriver1: 0.1
+	PrtFile0: 0.7052474034
+	PrtFile1: 0.2947525966
+	PrtIcon0: 0.8982314
+	PrtIcon1: 0.1017686
+	PrtMem0: 0.95
+	PrtMem1: 0.05
+	PrtMpTPth0: 0.8
+	PrtMpTPth1: 0.2
+	PrtOn0: 0.9
+	PrtOn1: 0.1
+	PrtPScript0: 0.4
+	PrtPScript1: 0.6
+	PrtPaper0: 0.98
+	PrtPaper1: 0.02
+	PrtPath0: 0.97
+	PrtPath1: 0.03
+	PrtPort0: 0.99
+	PrtPort1: 0.01
+	PrtQueue0: 0.99
+	PrtQueue1: 0.01
+	PrtSel0: 0.99
+	PrtSel1: 0.01
+	PrtSpool0: 0.95
+	PrtSpool1: 0.05
+	PrtStatMem0: 0.9590500095
+	PrtStatMem1: 0.0409499905
+	PrtStatOff0: 0.892000008
+	PrtStatOff1: 0.107999992
+	PrtStatPaper0: 0.9790400096
+	PrtStatPaper1: 0.0209599904
+	PrtStatToner0: 0.9940100099
+	PrtStatToner1: 0.0059899901
+	PrtThread0: 0.9999
+	PrtThread1: 0.0001
+	PrtTimeOut0: 0.94
+	PrtTimeOut1: 0.06
+	REPEAT0: 0.9851
+	REPEAT1: 0.0149
+	ScrnFntNtPrntrFnt0: 0.95
+	ScrnFntNtPrntrFnt1: 0.05
+	TTOK0: 0.8571810084
+	TTOK1: 0.1428189916
+	TnrSpply0: 0.995
+	TnrSpply1: 0.005
+	TrTypFnts0: 0.9
+	TrTypFnts1: 0.1
+	TstpsTxt0: 0.9916160038
+	TstpsTxt1: 0.00838399616
+	deadlock: inf
+	init: 1
+Result: [2.45830719e-12, inf] (range)
+Time for model checking: 0.003s.

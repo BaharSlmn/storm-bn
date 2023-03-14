@@ -1,0 +1,23 @@
+Network name = hepar2
+
+
+Time for Sensitivity Analysis: 0.01444697380065918s
+
+
+Parameter node = encephalopathy
+Parameter entry = [Cirrhosisdecompensate,PBCpresent,encephalopathypresent]
+Hypothesis = ureaa165_50
+Evidence = default
+
+
+Parameter value = 0.05325444
+Sensitivity value = 0.003774052242787172
+P(Abnormal | e) = 0.04112843647168224
+Alpha = 0.003774052242787172
+Beta = 0.040927451432961864
+Delta = 1.0
+Gamma = 0.0
+
+
+Eval(0.2) = 0.0416822618815193
+Eval'(0.2) = 0.003774052242787172

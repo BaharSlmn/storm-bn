@@ -1,0 +1,1 @@
+storm-pars -drn storm/drn_files/pn/child_60.drn --prop "P=? [F(\"GruntingReport1\"|\"LowerBodyO21\"|\"RUQO21\"|\"CO2Report1\"|\"XrayReport1\")]" --bisimulation

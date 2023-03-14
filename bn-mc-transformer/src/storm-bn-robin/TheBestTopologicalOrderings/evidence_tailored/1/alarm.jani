@@ -1,0 +1,5103 @@
+{
+	"jani-version": 1,
+	"name": "alarm.jani",
+	"type": "dtmc",
+	"features": [ "derived-operators" ],
+"variables": [
+	{
+	"name": "HYPOVOLEMIA",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "HYPOVOLEMIA0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "HYPOVOLEMIA1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "KINKEDTUBE",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "KINKEDTUBE0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "KINKEDTUBE1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "FIO2",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "FIO20",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "FIO21",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "PVSAT",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 2
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "PVSAT0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "PVSAT1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "PVSAT2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "INTUBATION",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 2
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "INTUBATION0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "INTUBATION1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "INTUBATION2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "DISCONNECT",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 1
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "DISCONNECT0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "DISCONNECT1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "MINVOLSET",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 2
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "MINVOLSET0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "MINVOLSET1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "MINVOLSET2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "VENTMACH",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 3
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "VENTMACH0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "VENTMACH1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "VENTMACH2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "VENTMACH3",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "VENTTUBE",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 3
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "VENTTUBE0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "VENTTUBE1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "VENTTUBE2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "VENTTUBE3",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "VENTLUNG",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 3
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "VENTLUNG0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "VENTLUNG1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "VENTLUNG2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "VENTLUNG3",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+	"name": "VENTALV",
+	"type": {
+		"base": "int",
+		"kind": "bounded",
+		"lower-bound": -1,
+		"upper-bound": 3
+	},
+	"initial-value": -1
+	},
+		{
+		"initial-value": false,
+		"name": "VENTALV0",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "VENTALV1",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "VENTALV2",
+		"transient": true,
+		"type": "bool"
+	},
+	{
+		"initial-value": false,
+		"name": "VENTALV3",
+		"transient": true,
+		"type": "bool"
+	}
+],
+"properties": [
+],
+"automata": [
+{
+	"name": "alarm",
+	"locations": [
+		{
+		"name": "loc0"
+		},
+		{
+		"name": "loc1",
+		"transient-values": [
+		{
+			"ref": "MINVOLSET0",
+			"value": {
+				"op": "=",
+				"left": "MINVOLSET",
+				"right": 0
+			}
+		},
+		{
+			"ref": "MINVOLSET1",
+			"value": {
+				"op": "=",
+				"left": "MINVOLSET",
+				"right": 1
+			}
+		},
+		{
+			"ref": "MINVOLSET2",
+			"value": {
+				"op": "=",
+				"left": "MINVOLSET",
+				"right": 2
+			}
+		}
+		]
+		},
+		{
+		"name": "loc2",
+		"transient-values": [
+		{
+			"ref": "VENTMACH0",
+			"value": {
+				"op": "=",
+				"left": "VENTMACH",
+				"right": 0
+			}
+		},
+		{
+			"ref": "VENTMACH1",
+			"value": {
+				"op": "=",
+				"left": "VENTMACH",
+				"right": 1
+			}
+		},
+		{
+			"ref": "VENTMACH2",
+			"value": {
+				"op": "=",
+				"left": "VENTMACH",
+				"right": 2
+			}
+		},
+		{
+			"ref": "VENTMACH3",
+			"value": {
+				"op": "=",
+				"left": "VENTMACH",
+				"right": 3
+			}
+		}
+		]
+		},
+		{
+		"name": "loc3",
+		"transient-values": [
+		{
+			"ref": "DISCONNECT0",
+			"value": {
+				"op": "=",
+				"left": "DISCONNECT",
+				"right": 0
+			}
+		},
+		{
+			"ref": "DISCONNECT1",
+			"value": {
+				"op": "=",
+				"left": "DISCONNECT",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc4",
+		"transient-values": [
+		{
+			"ref": "VENTTUBE0",
+			"value": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 0
+			}
+		},
+		{
+			"ref": "VENTTUBE1",
+			"value": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 1
+			}
+		},
+		{
+			"ref": "VENTTUBE2",
+			"value": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 2
+			}
+		},
+		{
+			"ref": "VENTTUBE3",
+			"value": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 3
+			}
+		}
+		]
+		},
+		{
+		"name": "loc5",
+		"transient-values": [
+		{
+			"ref": "KINKEDTUBE0",
+			"value": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 0
+			}
+		},
+		{
+			"ref": "KINKEDTUBE1",
+			"value": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc6",
+		"transient-values": [
+		{
+			"ref": "INTUBATION0",
+			"value": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 0
+			}
+		},
+		{
+			"ref": "INTUBATION1",
+			"value": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 1
+			}
+		},
+		{
+			"ref": "INTUBATION2",
+			"value": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 2
+			}
+		}
+		]
+		},
+		{
+		"name": "loc7",
+		"transient-values": [
+		{
+			"ref": "VENTLUNG0",
+			"value": {
+				"op": "=",
+				"left": "VENTLUNG",
+				"right": 0
+			}
+		},
+		{
+			"ref": "VENTLUNG1",
+			"value": {
+				"op": "=",
+				"left": "VENTLUNG",
+				"right": 1
+			}
+		},
+		{
+			"ref": "VENTLUNG2",
+			"value": {
+				"op": "=",
+				"left": "VENTLUNG",
+				"right": 2
+			}
+		},
+		{
+			"ref": "VENTLUNG3",
+			"value": {
+				"op": "=",
+				"left": "VENTLUNG",
+				"right": 3
+			}
+		}
+		]
+		},
+		{
+		"name": "loc8",
+		"transient-values": [
+		{
+			"ref": "VENTALV0",
+			"value": {
+				"op": "=",
+				"left": "VENTALV",
+				"right": 0
+			}
+		},
+		{
+			"ref": "VENTALV1",
+			"value": {
+				"op": "=",
+				"left": "VENTALV",
+				"right": 1
+			}
+		},
+		{
+			"ref": "VENTALV2",
+			"value": {
+				"op": "=",
+				"left": "VENTALV",
+				"right": 2
+			}
+		},
+		{
+			"ref": "VENTALV3",
+			"value": {
+				"op": "=",
+				"left": "VENTALV",
+				"right": 3
+			}
+		}
+		]
+		},
+		{
+		"name": "loc9",
+		"transient-values": [
+		{
+			"ref": "FIO20",
+			"value": {
+				"op": "=",
+				"left": "FIO2",
+				"right": 0
+			}
+		},
+		{
+			"ref": "FIO21",
+			"value": {
+				"op": "=",
+				"left": "FIO2",
+				"right": 1
+			}
+		}
+		]
+		},
+		{
+		"name": "loc10",
+		"transient-values": [
+		{
+			"ref": "PVSAT0",
+			"value": {
+				"op": "=",
+				"left": "PVSAT",
+				"right": 0
+			}
+		},
+		{
+			"ref": "PVSAT1",
+			"value": {
+				"op": "=",
+				"left": "PVSAT",
+				"right": 1
+			}
+		},
+		{
+			"ref": "PVSAT2",
+			"value": {
+				"op": "=",
+				"left": "PVSAT",
+				"right": 2
+			}
+		}
+		]
+		},
+		{
+		"name": "loc11",
+		"transient-values": [
+		{
+			"ref": "HYPOVOLEMIA0",
+			"value": {
+				"op": "=",
+				"left": "HYPOVOLEMIA",
+				"right": 0
+			}
+		},
+		{
+			"ref": "HYPOVOLEMIA1",
+			"value": {
+				"op": "=",
+				"left": "HYPOVOLEMIA",
+				"right": 1
+			}
+		}
+		]
+		}
+],
+	"initial-locations": ["loc0"],
+	"edges": [
+	{
+		"location": "loc0",
+		"destinations": [
+		{
+			"location": "loc1",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "MINVOLSET",
+				"value": 0
+			}
+			]
+		},
+		{
+			"location": "loc1",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "MINVOLSET",
+				"value": 1
+			}
+			]
+		},
+		{
+			"location": "loc1",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "MINVOLSET",
+				"value": 2
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc1",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "MINVOLSET",
+				"right": 0
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "VENTMACH",
+				"value": 0
+			},
+			{
+				"ref": "MINVOLSET",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.93},
+			"assignments": [
+			{
+				"ref": "VENTMACH",
+				"value": 1
+			},
+			{
+				"ref": "MINVOLSET",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTMACH",
+				"value": 2
+			},
+			{
+				"ref": "MINVOLSET",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTMACH",
+				"value": 3
+			},
+			{
+				"ref": "MINVOLSET",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc1",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "MINVOLSET",
+				"right": 1
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "VENTMACH",
+				"value": 0
+			},
+			{
+				"ref": "MINVOLSET",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTMACH",
+				"value": 1
+			},
+			{
+				"ref": "MINVOLSET",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.93},
+			"assignments": [
+			{
+				"ref": "VENTMACH",
+				"value": 2
+			},
+			{
+				"ref": "MINVOLSET",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTMACH",
+				"value": 3
+			},
+			{
+				"ref": "MINVOLSET",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc1",
+		"guard": {
+		"exp": {
+				"op": "=",
+				"left": "MINVOLSET",
+				"right": 2
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "VENTMACH",
+				"value": 0
+			},
+			{
+				"ref": "MINVOLSET",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTMACH",
+				"value": 1
+			},
+			{
+				"ref": "MINVOLSET",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTMACH",
+				"value": 2
+			},
+			{
+				"ref": "MINVOLSET",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc2",
+			"probability": {"exp": 0.93},
+			"assignments": [
+			{
+				"ref": "VENTMACH",
+				"value": 3
+			},
+			{
+				"ref": "MINVOLSET",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc2",
+		"destinations": [
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "DISCONNECT",
+				"value": 0
+			},
+			{
+				"ref": "VENTMACH",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc3",
+			"probability": {"exp": 0.9},
+			"assignments": [
+			{
+				"ref": "DISCONNECT",
+				"value": 1
+			},
+			{
+				"ref": "VENTMACH",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTMACH",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "DISCONNECT",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 0
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 1
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 2
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 3
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTMACH",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "DISCONNECT",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 0
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 1
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 2
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 3
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTMACH",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "DISCONNECT",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 0
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 1
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 2
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 3
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTMACH",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "DISCONNECT",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 0
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 1
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 2
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 3
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTMACH",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "DISCONNECT",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 0
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 1
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 2
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 3
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTMACH",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "DISCONNECT",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 0
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 1
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 2
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 3
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTMACH",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "DISCONNECT",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 0
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 1
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 2
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 3
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc3",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTMACH",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "DISCONNECT",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 0
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 1
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 2
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc4",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTTUBE",
+				"value": 3
+			},
+			{
+				"ref": "DISCONNECT",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc4",
+		"destinations": [
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.04},
+			"assignments": [
+			{
+				"ref": "KINKEDTUBE",
+				"value": 0
+			},
+			{
+				"ref": "VENTTUBE",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc5",
+			"probability": {"exp": 0.96},
+			"assignments": [
+			{
+				"ref": "KINKEDTUBE",
+				"value": 1
+			},
+			{
+				"ref": "VENTTUBE",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc5",
+		"destinations": [
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.92},
+			"assignments": [
+			{
+				"ref": "INTUBATION",
+				"value": 0
+			},
+			{
+				"ref": "KINKEDTUBE",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.03},
+			"assignments": [
+			{
+				"ref": "INTUBATION",
+				"value": 1
+			},
+			{
+				"ref": "KINKEDTUBE",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc6",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "INTUBATION",
+				"value": 2
+			},
+			{
+				"ref": "KINKEDTUBE",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.95},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.03},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 2
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.4},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.58},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.68},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 0
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 2
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 2
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.95},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.03},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.5},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.48},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 1
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 2
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.3},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.68},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 2
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 2
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 2
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 2
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 2
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 2
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 2
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 2
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 3
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 3
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 3
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 2
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 3
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 0
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 3
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 1
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc6",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTTUBE",
+				"right": 3
+				},
+				"right": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "KINKEDTUBE",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 2
+				}
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 0
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 1
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 2
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc7",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTLUNG",
+				"value": 3
+			},
+			{
+				"ref": "INTUBATION",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTLUNG",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 0
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 1
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 2
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 3
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTLUNG",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 0
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 1
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 2
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 3
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTLUNG",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 0
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 1
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 2
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 3
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTLUNG",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 0
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 1
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 2
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 3
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTLUNG",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 0
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 1
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 2
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 3
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTLUNG",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 0
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 1
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 2
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 3
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTLUNG",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 0
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 1
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 2
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 3
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTLUNG",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 0
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 1
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 2
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 3
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTLUNG",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.97},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 0
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 1
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 2
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 3
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTLUNG",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.03},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 0
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.95},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 1
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 2
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 3
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTLUNG",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 0
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.94},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 1
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.04},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 2
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 3
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc7",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTLUNG",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "INTUBATION",
+				"right": 2
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 0
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.88},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 1
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.1},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 2
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc8",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "VENTALV",
+				"value": 3
+			},
+			{
+				"ref": "VENTLUNG",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc8",
+		"destinations": [
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.05},
+			"assignments": [
+			{
+				"ref": "FIO2",
+				"value": 0
+			},
+			{
+				"ref": "VENTALV",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc9",
+			"probability": {"exp": 0.95},
+			"assignments": [
+			{
+				"ref": "FIO2",
+				"value": 1
+			},
+			{
+				"ref": "VENTALV",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc9",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTALV",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "FIO2",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc10",
+			"probability": {"exp": 1},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": 0
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": -1
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": -1
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc9",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTALV",
+				"right": 0
+				},
+				"right": {
+				"op": "=",
+				"left": "FIO2",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc10",
+			"probability": {"exp": 0.99},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": 0
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": -1
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": -1
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc9",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTALV",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "FIO2",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc10",
+			"probability": {"exp": 0.95},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": 0
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.04},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": -1
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": -1
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc9",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTALV",
+				"right": 1
+				},
+				"right": {
+				"op": "=",
+				"left": "FIO2",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc10",
+			"probability": {"exp": 0.95},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": 0
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.04},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": -1
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": -1
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc9",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTALV",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "FIO2",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc10",
+			"probability": {"exp": 1},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": 0
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": -1
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": -1
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc9",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTALV",
+				"right": 2
+				},
+				"right": {
+				"op": "=",
+				"left": "FIO2",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc10",
+			"probability": {"exp": 0.95},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": 0
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.04},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": -1
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": -1
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc9",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTALV",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "FIO2",
+				"right": 0
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc10",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": 0
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.95},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": -1
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.04},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": -1
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc9",
+		"guard": {
+		"exp": {
+				"op": "∧",
+				"left": {
+				"op": "=",
+				"left": "VENTALV",
+				"right": 3
+				},
+				"right": {
+				"op": "=",
+				"left": "FIO2",
+				"right": 1
+				}
+		}
+		},
+		"destinations": [
+		{
+			"location": "loc10",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": 0
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.01},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": -1
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc0",
+			"probability": {"exp": 0.98},
+			"assignments": [
+			{
+				"ref": "PVSAT",
+				"value": -1
+			},
+			{
+				"ref": "FIO2",
+				"value": -1
+			}
+			]
+		}
+		]
+	},
+	{
+		"location": "loc10",
+		"destinations": [
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.2},
+			"assignments": [
+			{
+				"ref": "HYPOVOLEMIA",
+				"value": 0
+			},
+			{
+				"ref": "PVSAT",
+				"value": -1
+			}
+			]
+		},
+		{
+			"location": "loc11",
+			"probability": {"exp": 0.8},
+			"assignments": [
+			{
+				"ref": "HYPOVOLEMIA",
+				"value": 1
+			},
+			{
+				"ref": "PVSAT",
+				"value": -1
+			}
+			]
+		}
+		]
+	}
+	]
+}
+],
+"system": {
+	"elements": [ {"automaton": "alarm"} ]
+}
+}

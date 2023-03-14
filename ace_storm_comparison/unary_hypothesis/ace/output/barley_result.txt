@@ -1,0 +1,15 @@
+Pr(e) = 0.9999994240887665
+Network : ace/net_files/barley.net
+Network Read Time (ms) : 234.491614
+Number of Evidence Sets : 1
+AC :
+  Nodes : 18196115
+  Edges : 36348928
+  Total Initialization Time (ms) : 8467.891292
+  Total Inference Time (ms) : 456.562866
+  Minimum Inference Time (ms) : 456.562866
+  Maximum Inference Time (ms) : 456.562866
+  Median Inference Time (ms) : 456.562866
+  Mean Inference Time (ms) : 456.562866
+  Standard Deviation Inference Time (ms) : 0.0
+

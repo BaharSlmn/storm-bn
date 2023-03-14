@@ -1,0 +1,1 @@
+storm --jani jani_files/no_evidence/hepar2.jani --prop "P=? [F(hospital=1|surgery=1|gallstones=1|choledocholithotomy=1|injections=1|sex=1|diabetes=1|obesity=1)]"

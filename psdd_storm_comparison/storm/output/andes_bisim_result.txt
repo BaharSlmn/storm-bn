@@ -1,0 +1,1376 @@
+Storm 1.6.4 (dev)
+
+Date: Wed May  4 10:36:16 2022
+Command line arguments: --jani storm/andes/andes.jani --expvisittimes --build-all-labels --bisimulation
+Current working directory: /home/hans/Desktop/private/psdd_storm_comparison
+
+Time for model input parsing: 0.074s.
+
+Time for model construction: 295.097s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	10889443
+Transitions: 	20933804
+Reward Models:  none
+State Labels: 	448 labels
+   * WRITE63_1 -> 16384 item(s)
+   * WRITE63_0 -> 16384 item(s)
+   * WRITE31_1 -> 1024 item(s)
+   * WEIGHT57_1 -> 73728 item(s)
+   * WEIGHT57_0 -> 73728 item(s)
+   * VELOCITY7_1 -> 16384 item(s)
+   * VELOCITY7_0 -> 16384 item(s)
+   * VECTOR73_1 -> 65536 item(s)
+   * VECTOR70_1 -> 128 item(s)
+   * VECTOR44_0 -> 32768 item(s)
+   * VECTOR27_0 -> 6144 item(s)
+   * VALUE3_1 -> 8192 item(s)
+   * TRY26_1 -> 16 item(s)
+   * TRY25_0 -> 8 item(s)
+   * TRY24_0 -> 8 item(s)
+   * TRY14_1 -> 4 item(s)
+   * TRY12_1 -> 2 item(s)
+   * SYSTEM46_1 -> 8192 item(s)
+   * SYSTEM18_0 -> 256 item(s)
+   * SUM75_0 -> 32768 item(s)
+   * STRAT_90_1 -> 6144 item(s)
+   * STRAT_90_0 -> 6144 item(s)
+   * SNode_9_0 -> 32 item(s)
+   * SNode_97_1 -> 16384 item(s)
+   * SNode_95_1 -> 36864 item(s)
+   * SNode_95_0 -> 36864 item(s)
+   * SNode_94_0 -> 16384 item(s)
+   * SNode_93_1 -> 32768 item(s)
+   * SNode_93_0 -> 32768 item(s)
+   * SNode_92_0 -> 16384 item(s)
+   * SNode_91_1 -> 512 item(s)
+   * SNode_91_0 -> 512 item(s)
+   * SNode_94_1 -> 16384 item(s)
+   * SNode_8_1 -> 16384 item(s)
+   * SNode_8_0 -> 16384 item(s)
+   * SNode_88_0 -> 16384 item(s)
+   * SNode_86_0 -> 4096 item(s)
+   * SNode_7_0 -> 4096 item(s)
+   * SNode_74_1 -> 8192 item(s)
+   * SNode_74_0 -> 8192 item(s)
+   * SNode_73_0 -> 8192 item(s)
+   * SNode_70_1 -> 16384 item(s)
+   * SNode_70_0 -> 16384 item(s)
+   * SNode_6_1 -> 16 item(s)
+   * SNode_68_0 -> 32768 item(s)
+   * SNode_67_0 -> 4096 item(s)
+   * SNode_65_1 -> 8192 item(s)
+   * SNode_65_0 -> 8192 item(s)
+   * SNode_64_1 -> 32768 item(s)
+   * SNode_60_1 -> 2048 item(s)
+   * SNode_5_0 -> 8 item(s)
+   * VALUE3_0 -> 8192 item(s)
+   * SNode_59_1 -> 4096 item(s)
+   * TRY25_1 -> 8 item(s)
+   * SNode_55_0 -> 256 item(s)
+   * SNode_54_0 -> 1024 item(s)
+   * SNode_51_1 -> 64 item(s)
+   * SNode_4_1 -> 8192 item(s)
+   * SNode_75_0 -> 4096 item(s)
+   * SNode_47_0 -> 8192 item(s)
+   * SNode_46_0 -> 8192 item(s)
+   * SNode_43_1 -> 8192 item(s)
+   * SNode_42_0 -> 8192 item(s)
+   * SNode_41_0 -> 128 item(s)
+   * SNode_3_1 -> 32768 item(s)
+   * SNode_38_1 -> 16384 item(s)
+   * SNode_37_1 -> 16384 item(s)
+   * SNode_34_1 -> 512 item(s)
+   * WRITE30_1 -> 1024 item(s)
+   * SNode_34_0 -> 512 item(s)
+   * SNode_33_1 -> 1024 item(s)
+   * SNode_31_0 -> 4096 item(s)
+   * SNode_29_1 -> 16384 item(s)
+   * SNode_28_0 -> 512 item(s)
+   * WRITE30_0 -> 1024 item(s)
+   * SNode_27_1 -> 1024 item(s)
+   * SNode_26_1 -> 128 item(s)
+   * SNode_25_1 -> 32768 item(s)
+   * SNode_64_0 -> 32768 item(s)
+   * SNode_25_0 -> 32768 item(s)
+   * SNode_24_0 -> 65536 item(s)
+   * SNode_21_1 -> 131072 item(s)
+   * SNode_20_1 -> 131072 item(s)
+   * SNode_18_1 -> 1 item(s)
+   * SNode_18_0 -> 1 item(s)
+   * SNode_17_1 -> 1 item(s)
+   * SNode_17_0 -> 1 item(s)
+   * SNode_16_1 -> 32768 item(s)
+   * SNode_37_0 -> 16384 item(s)
+   * SNode_16_0 -> 32768 item(s)
+   * TRY13_1 -> 4 item(s)
+   * SNode_156_1 -> 4096 item(s)
+   * SNode_33_0 -> 1024 item(s)
+   * SNode_155_1 -> 32768 item(s)
+   * SNode_155_0 -> 32768 item(s)
+   * SNode_9_1 -> 32 item(s)
+   * SNode_154_0 -> 65536 item(s)
+   * SNode_152_1 -> 8192 item(s)
+   * SNode_152_0 -> 8192 item(s)
+   * SNode_14_1 -> 1 item(s)
+   * SNode_14_0 -> 1 item(s)
+   * SNode_13_0 -> 8192 item(s)
+   * SNode_137_0 -> 16384 item(s)
+   * SNode_7_1 -> 4096 item(s)
+   * SNode_136_1 -> 32768 item(s)
+   * SNode_136_0 -> 32768 item(s)
+   * SNode_135_1 -> 32768 item(s)
+   * VECTOR70_0 -> 128 item(s)
+   * SNode_73_1 -> 8192 item(s)
+   * SNode_135_0 -> 32768 item(s)
+   * SNode_134_1 -> 128 item(s)
+   * SNode_134_0 -> 128 item(s)
+   * WEIGHT56_0 -> 65536 item(s)
+   * SNode_47_1 -> 8192 item(s)
+   * SNode_133_0 -> 1024 item(s)
+   * SNode_68_1 -> 32768 item(s)
+   * GOAL_84_1 -> 4096 item(s)
+   * IDENTIFY43_0 -> 256 item(s)
+   * GOAL_83_1 -> 2048 item(s)
+   * GOAL_81_1 -> 4096 item(s)
+   * GOAL_143_0 -> 32768 item(s)
+   * GOAL_81_0 -> 4096 item(s)
+   * GOAL_109_0 -> 8192 item(s)
+   * RApp9_0 -> 49152 item(s)
+   * SNode_125_1 -> 32768 item(s)
+   * SNode_4_0 -> 8192 item(s)
+   * GOAL_69_1 -> 512 item(s)
+   * IDENTIFY41_0 -> 1024 item(s)
+   * GOAL_66_0 -> 1024 item(s)
+   * GOAL_130_0 -> 65536 item(s)
+   * GOAL_63_1 -> 16384 item(s)
+   * SNode_13_1 -> 8192 item(s)
+   * GOAL66_1 -> 73728 item(s)
+   * GOAL_56_1 -> 128 item(s)
+   * GOAL_56_0 -> 128 item(s)
+   * GOAL_50_0 -> 64 item(s)
+   * SNode_12_1 -> 12288 item(s)
+   * GOAL_49_0 -> 4 item(s)
+   * SUM75_1 -> 32768 item(s)
+   * IDENTIFY41_1 -> 1024 item(s)
+   * KINEMATI17_1 -> 128 item(s)
+   * NORMAL52_0 -> 2048 item(s)
+   * VECTOR44_1 -> 32768 item(s)
+   * SNode_60_0 -> 2048 item(s)
+   * GOAL_72_0 -> 512 item(s)
+   * GOAL_62_0 -> 512 item(s)
+   * GOAL_2_1 -> 4 item(s)
+   * GIVEN_1_1 -> 8192 item(s)
+   * GOAL_147_1 -> 512 item(s)
+   * GOAL_147_0 -> 512 item(s)
+   * SNode_15_0 -> 65536 item(s)
+   * GOAL_79_1 -> 4096 item(s)
+   * GOAL_146_1 -> 8192 item(s)
+   * SNode_112_1 -> 65536 item(s)
+   * SNode_54_1 -> 1024 item(s)
+   * GOAL_143_1 -> 32768 item(s)
+   * RApp12_1 -> 4096 item(s)
+   * GOAL_2_0 -> 4 item(s)
+   * GOAL_142_0 -> 32768 item(s)
+   * GOAL_48_0 -> 32 item(s)
+   * RApp6_1 -> 2048 item(s)
+   * GOAL_150_1 -> 1 item(s)
+   * SNode_55_1 -> 256 item(s)
+   * MAXIMIZE34_1 -> 8192 item(s)
+   * RApp6_0 -> 4096 item(s)
+   * RApp8_1 -> 49152 item(s)
+   * deadlock -> 2 item(s)
+   * TRY13_0 -> 2 item(s)
+   * GOAL_61_0 -> 512 item(s)
+   * GOAL_127_1 -> 147456 item(s)
+   * GOAL_62_1 -> 512 item(s)
+   * GOAL_127_0 -> 147456 item(s)
+   * GOAL_126_1 -> 16384 item(s)
+   * SNode_24_1 -> 65536 item(s)
+   * DISPLACEM0_1 -> 16384 item(s)
+   * GOAL_121_1 -> 32768 item(s)
+   * SNode_117_0 -> 1024 item(s)
+   * GOAL_121_0 -> 32768 item(s)
+   * WRITE64_1 -> 8192 item(s)
+   * KNOWN6_1 -> 2048 item(s)
+   * SNode_154_1 -> 65536 item(s)
+   * IDENTIFY39_0 -> 16384 item(s)
+   * GOAL_111_1 -> 98304 item(s)
+   * GOAL_149_1 -> 64 item(s)
+   * GRAV78_1 -> 2 item(s)
+   * CHOOSE35_1 -> 512 item(s)
+   * GOAL_110_1 -> 32768 item(s)
+   * SNode_44_0 -> 16384 item(s)
+   * IDENTIFY9_1 -> 2048 item(s)
+   * IDENTIFY9_0 -> 2048 item(s)
+   * EQUAL71_0 -> 64 item(s)
+   * GOAL72_1 -> 16384 item(s)
+   * SNode_116_1 -> 262144 item(s)
+   * SNode_44_1 -> 16384 item(s)
+   * GOAL_69_0 -> 512 item(s)
+   * DISPLACEM0_0 -> 16384 item(s)
+   * SNode_27_0 -> 1024 item(s)
+   * GOAL68_1 -> 32768 item(s)
+   * SNode_124_1 -> 131072 item(s)
+   * SNode_3_0 -> 32768 item(s)
+   * FIND58_1 -> 32768 item(s)
+   * GOAL_57_0 -> 512 item(s)
+   * GOAL_87_0 -> 8192 item(s)
+   * FIND58_0 -> 32768 item(s)
+   * SNode_52_0 -> 64 item(s)
+   * GOAL_107_1 -> 4096 item(s)
+   * GOAL_113_0 -> 65536 item(s)
+   * RApp10_1 -> 73728 item(s)
+   * SNode_119_1 -> 8 item(s)
+   * TRY26_0 -> 8 item(s)
+   * SNode_156_0 -> 4096 item(s)
+   * GIVEN_1_0 -> 8192 item(s)
+   * RApp11_0 -> 4096 item(s)
+   * COMPO16_0 -> 32 item(s)
+   * COMPO16_1 -> 32 item(s)
+   * HORIZ53_0 -> 2048 item(s)
+   * FORCE60_1 -> 32768 item(s)
+   * NEED1_1 -> 131072 item(s)
+   * CONSTANT5_0 -> 128 item(s)
+   * init -> 1 item(s)
+   * GOAL72_0 -> 16384 item(s)
+   * APPLY61_0 -> 65536 item(s)
+   * APPLY32_1 -> 512 item(s)
+   * GOAL_66_1 -> 1024 item(s)
+   * WRITE64_0 -> 8192 item(s)
+   * GOAL_53_0 -> 256 item(s)
+   * KINE29_1 -> 65536 item(s)
+   * CHOOSE47_0 -> 4096 item(s)
+   * GRAV2_1 -> 16384 item(s)
+   * SNode_86_1 -> 4096 item(s)
+   * BUGGY54_0 -> 4096 item(s)
+   * GOAL_114_1 -> 131072 item(s)
+   * GOAL_49_1 -> 4 item(s)
+   * AXIS33_1 -> 2048 item(s)
+   * GOAL_153_1 -> 32768 item(s)
+   * RESOLVE42_0 -> 1024 item(s)
+   * APPLY61_1 -> 65536 item(s)
+   * BUGGY54_1 -> 2048 item(s)
+   * APPLY77_0 -> 8 item(s)
+   * GOAL_50_1 -> 64 item(s)
+   * GOAL_80_0 -> 4096 item(s)
+   * SLIDING4_1 -> 16384 item(s)
+   * GOAL66_0 -> 73728 item(s)
+   * SNode_59_0 -> 4096 item(s)
+   * NEWTONS45_1 -> 8192 item(s)
+   * CHOOSE62_0 -> 32768 item(s)
+   * CHOOSE47_1 -> 4096 item(s)
+   * INCLINE51_1 -> 2048 item(s)
+   * CHOOSE19_0 -> 64 item(s)
+   * AXIS33_0 -> 2048 item(s)
+   * VAR20_1 -> 16384 item(s)
+   * TRY76_0 -> 128 item(s)
+   * GOAL_61_1 -> 512 item(s)
+   * GOAL_129_0 -> 65536 item(s)
+   * GOAL_79_0 -> 4096 item(s)
+   * FORCE60_0 -> 32768 item(s)
+   * RApp4_1 -> 256 item(s)
+   * SNode_137_1 -> 16384 item(s)
+   * DEFINE23_1 -> 8192 item(s)
+   * CHOOSE19_1 -> 64 item(s)
+   * GOAL_130_1 -> 65536 item(s)
+   * GOAL65_0 -> 32768 item(s)
+   * VECTOR69_1 -> 524288 item(s)
+   * SYSTEM18_1 -> 256 item(s)
+   * EQUATION28_1 -> 4096 item(s)
+   * SNode_151_0 -> 1 item(s)
+   * RESOLVE42_1 -> 1024 item(s)
+   * SYSTEM46_0 -> 8192 item(s)
+   * SNode_88_1 -> 16384 item(s)
+   * GOAL_83_0 -> 2048 item(s)
+   * GOAL_129_1 -> 65536 item(s)
+   * RESOLVE38_1 -> 1024 item(s)
+   * SNode_29_0 -> 16384 item(s)
+   * GOAL_98_1 -> 8192 item(s)
+   * GOAL_57_1 -> 512 item(s)
+   * GOAL_48_1 -> 32 item(s)
+   * TRY76_1 -> 128 item(s)
+   * GOAL_111_0 -> 98304 item(s)
+   * EQUAL71_1 -> 64 item(s)
+   * GOAL_108_1 -> 16384 item(s)
+   * FIND49_1 -> 16384 item(s)
+   * VAR20_0 -> 16384 item(s)
+   * GOAL_110_0 -> 32768 item(s)
+   * TRY15_1 -> 4 item(s)
+   * GOAL_84_0 -> 4096 item(s)
+   * APPLY32_0 -> 512 item(s)
+   * SNode_19_1 -> 1 item(s)
+   * GIVEN21_0 -> 2048 item(s)
+   * GOAL_126_0 -> 16384 item(s)
+   * WEIGHT56_1 -> 65536 item(s)
+   * FIND49_0 -> 16384 item(s)
+   * IDENTIFY39_1 -> 16384 item(s)
+   * SNode_5_1 -> 8 item(s)
+   * GOAL_150_0 -> 1 item(s)
+   * GOAL_114_0 -> 131072 item(s)
+   * GOAL_63_0 -> 16384 item(s)
+   * GOAL68_0 -> 32768 item(s)
+   * CHOOSE35_0 -> 512 item(s)
+   * SNode_67_1 -> 4096 item(s)
+   * SNode_132_1 -> 32768 item(s)
+   * SNode_11_0 -> 16 item(s)
+   * GOAL_103_1 -> 16384 item(s)
+   * NULL48_1 -> 32768 item(s)
+   * SNode_26_0 -> 128 item(s)
+   * GOAL_109_1 -> 8192 item(s)
+   * CONSTANT5_1 -> 128 item(s)
+   * EQUATION28_0 -> 4096 item(s)
+   * GOAL_103_0 -> 16384 item(s)
+   * SNode_92_1 -> 16384 item(s)
+   * APPLY77_1 -> 8 item(s)
+   * RESOLVE40_0 -> 1024 item(s)
+   * SNode_51_0 -> 64 item(s)
+   * SNode_12_0 -> 12288 item(s)
+   * GOAL_104_1 -> 32768 item(s)
+   * SNode_116_0 -> 262144 item(s)
+   * GOAL_107_0 -> 4096 item(s)
+   * SNode_100_0 -> 65536 item(s)
+   * GOAL_108_0 -> 16384 item(s)
+   * GOAL_87_1 -> 8192 item(s)
+   * NEED67_0 -> 32768 item(s)
+   * GOAL_80_1 -> 4096 item(s)
+   * GRAV78_0 -> 2 item(s)
+   * KINEMATI17_0 -> 128 item(s)
+   * RESOLVE37_0 -> 16384 item(s)
+   * GOAL_153_0 -> 32768 item(s)
+   * GOAL_99_0 -> 16384 item(s)
+   * GOAL_99_1 -> 16384 item(s)
+   * SNode_71_0 -> 16384 item(s)
+   * SNode_11_1 -> 16 item(s)
+   * SNode_122_0 -> 32768 item(s)
+   * VECTOR73_0 -> 65536 item(s)
+   * TRY14_0 -> 2 item(s)
+   * GIVEN21_1 -> 2048 item(s)
+   * GRAV2_0 -> 16384 item(s)
+   * SNode_42_1 -> 8192 item(s)
+   * SNode_38_0 -> 16384 item(s)
+   * RApp13_0 -> 2048 item(s)
+   * HORIZ53_1 -> 4096 item(s)
+   * SNode_133_1 -> 1024 item(s)
+   * DEFINE23_0 -> 8192 item(s)
+   * IDENTIFY10_0 -> 256 item(s)
+   * MAXIMIZE34_0 -> 8192 item(s)
+   * TRY11_0 -> 2 item(s)
+   * IDENTIFY10_1 -> 256 item(s)
+   * SNode_46_1 -> 8192 item(s)
+   * SNode_31_1 -> 4096 item(s)
+   * IDENTIFY22_0 -> 16384 item(s)
+   * SNode_106_1 -> 16384 item(s)
+   * IDENTIFY43_1 -> 256 item(s)
+   * SNode_40_1 -> 16384 item(s)
+   * IDENTIFY55_0 -> 16384 item(s)
+   * GOAL65_1 -> 32768 item(s)
+   * IDENTIFY55_1 -> 16384 item(s)
+   * IDENTIFY59_0 -> 65536 item(s)
+   * SNode_117_1 -> 1024 item(s)
+   * SNode_71_1 -> 16384 item(s)
+   * IDENTIFY59_1 -> 65536 item(s)
+   * GOAL_72_1 -> 512 item(s)
+   * KNOWN8_0 -> 512 item(s)
+   * VECTOR27_1 -> 6144 item(s)
+   * INCLINE51_0 -> 4096 item(s)
+   * SNode_20_0 -> 131072 item(s)
+   * RApp4_0 -> 256 item(s)
+   * KINE29_0 -> 65536 item(s)
+   * KNOWN6_0 -> 2048 item(s)
+   * KNOWN8_1 -> 512 item(s)
+   * TRY24_1 -> 8 item(s)
+   * NEED1_0 -> 131072 item(s)
+   * NEED36_0 -> 2048 item(s)
+   * NEED36_1 -> 2048 item(s)
+   * SNode_128_0 -> 98304 item(s)
+   * NEED67_1 -> 32768 item(s)
+   * CHOOSE62_1 -> 32768 item(s)
+   * SNode_112_0 -> 65536 item(s)
+   * NEWTONS45_0 -> 8192 item(s)
+   * SNode_124_0 -> 131072 item(s)
+   * NEWTONS74_0 -> 131072 item(s)
+   * IDENTIFY22_1 -> 16384 item(s)
+   * NEWTONS74_1 -> 131072 item(s)
+   * NORMAL50_0 -> 32768 item(s)
+   * TRY15_0 -> 2 item(s)
+   * TRY11_1 -> 2 item(s)
+   * RApp12_0 -> 4096 item(s)
+   * SLIDING4_0 -> 16384 item(s)
+   * NORMAL50_1 -> 32768 item(s)
+   * NULL48_0 -> 32768 item(s)
+   * RApp10_0 -> 147456 item(s)
+   * RApp5_1 -> 3072 item(s)
+   * RApp11_1 -> 2048 item(s)
+   * RApp1_0 -> 32768 item(s)
+   * GOAL_149_0 -> 64 item(s)
+   * SNode_118_0 -> 32 item(s)
+   * RApp7_0 -> 65536 item(s)
+   * SNode_21_0 -> 131072 item(s)
+   * RApp1_1 -> 16384 item(s)
+   * RApp2_0 -> 8192 item(s)
+   * SNode_19_0 -> 1 item(s)
+   * SNode_125_0 -> 32768 item(s)
+   * RApp2_1 -> 8192 item(s)
+   * VECTOR69_0 -> 524288 item(s)
+   * SNode_100_1 -> 65536 item(s)
+   * RApp3_0 -> 2048 item(s)
+   * RApp3_1 -> 2048 item(s)
+   * GOAL_146_0 -> 8192 item(s)
+   * RApp5_0 -> 6144 item(s)
+   * SNode_41_1 -> 128 item(s)
+   * RApp7_1 -> 16384 item(s)
+   * RApp8_0 -> 98304 item(s)
+   * RApp9_1 -> 24576 item(s)
+   * RESOLVE37_1 -> 16384 item(s)
+   * SNode_28_1 -> 512 item(s)
+   * NORMAL52_1 -> 2048 item(s)
+   * RESOLVE38_0 -> 1024 item(s)
+   * SNode_52_1 -> 64 item(s)
+   * RESOLVE40_1 -> 1024 item(s)
+   * SNode_102_0 -> 32768 item(s)
+   * SNode_15_1 -> 65536 item(s)
+   * SNode_102_1 -> 32768 item(s)
+   * GOAL_98_0 -> 8192 item(s)
+   * SNode_106_0 -> 16384 item(s)
+   * SNode_131_0 -> 262144 item(s)
+   * TRY12_0 -> 2 item(s)
+   * SNode_43_0 -> 8192 item(s)
+   * GOAL_142_1 -> 32768 item(s)
+   * SNode_10_0 -> 512 item(s)
+   * GOAL_104_0 -> 32768 item(s)
+   * SNode_10_1 -> 512 item(s)
+   * SNode_115_0 -> 131072 item(s)
+   * SNode_40_0 -> 16384 item(s)
+   * SNode_115_1 -> 131072 item(s)
+   * SNode_75_1 -> 4096 item(s)
+   * GOAL_53_1 -> 256 item(s)
+   * SNode_118_1 -> 32 item(s)
+   * WRITE31_0 -> 1024 item(s)
+   * GOAL_113_1 -> 65536 item(s)
+   * SNode_119_0 -> 8 item(s)
+   * SNode_151_1 -> 1 item(s)
+   * SNode_120_0 -> 8192 item(s)
+   * SNode_120_1 -> 8192 item(s)
+   * SNode_97_0 -> 16384 item(s)
+   * SNode_122_1 -> 32768 item(s)
+   * SNode_123_0 -> 16384 item(s)
+   * SNode_6_0 -> 16 item(s)
+   * RApp13_1 -> 2048 item(s)
+   * SNode_132_0 -> 32768 item(s)
+   * SNode_123_1 -> 16384 item(s)
+   * SNode_128_1 -> 98304 item(s)
+   * SNode_131_1 -> 262144 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Time for model preprocessing: 935.039s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	1392777
+Transitions: 	2659352
+Reward Models:  none
+State Labels: 	448 labels
+   * WRITE63_1 -> 2016 item(s)
+   * WRITE63_0 -> 1008 item(s)
+   * WRITE31_1 -> 1024 item(s)
+   * WEIGHT57_1 -> 19200 item(s)
+   * WEIGHT57_0 -> 9600 item(s)
+   * VELOCITY7_1 -> 8192 item(s)
+   * VELOCITY7_0 -> 4096 item(s)
+   * VECTOR73_1 -> 3584 item(s)
+   * VECTOR70_1 -> 8 item(s)
+   * VECTOR44_0 -> 640 item(s)
+   * VECTOR27_0 -> 2304 item(s)
+   * VALUE3_1 -> 4608 item(s)
+   * TRY26_1 -> 16 item(s)
+   * TRY25_0 -> 8 item(s)
+   * TRY24_0 -> 8 item(s)
+   * TRY14_1 -> 4 item(s)
+   * TRY12_1 -> 2 item(s)
+   * SYSTEM46_1 -> 6144 item(s)
+   * SYSTEM18_0 -> 64 item(s)
+   * SUM75_0 -> 1536 item(s)
+   * STRAT_90_1 -> 136 item(s)
+   * STRAT_90_0 -> 136 item(s)
+   * SNode_9_0 -> 32 item(s)
+   * SNode_97_1 -> 3456 item(s)
+   * SNode_95_1 -> 9600 item(s)
+   * SNode_95_0 -> 4800 item(s)
+   * SNode_94_0 -> 4608 item(s)
+   * SNode_93_1 -> 3456 item(s)
+   * SNode_93_0 -> 1728 item(s)
+   * SNode_92_0 -> 64 item(s)
+   * SNode_91_1 -> 32 item(s)
+   * SNode_91_0 -> 8 item(s)
+   * SNode_94_1 -> 4608 item(s)
+   * SNode_8_1 -> 8192 item(s)
+   * SNode_8_0 -> 4096 item(s)
+   * SNode_88_0 -> 3456 item(s)
+   * SNode_86_0 -> 3072 item(s)
+   * SNode_7_0 -> 1024 item(s)
+   * SNode_74_1 -> 1536 item(s)
+   * SNode_74_0 -> 1536 item(s)
+   * SNode_73_0 -> 1536 item(s)
+   * SNode_70_1 -> 4864 item(s)
+   * SNode_70_0 -> 1536 item(s)
+   * SNode_6_1 -> 8 item(s)
+   * SNode_68_0 -> 3200 item(s)
+   * SNode_67_0 -> 1536 item(s)
+   * SNode_65_1 -> 3072 item(s)
+   * SNode_65_0 -> 3072 item(s)
+   * SNode_64_1 -> 3072 item(s)
+   * SNode_60_1 -> 1024 item(s)
+   * SNode_5_0 -> 4 item(s)
+   * VALUE3_0 -> 1152 item(s)
+   * SNode_59_1 -> 2048 item(s)
+   * TRY25_1 -> 8 item(s)
+   * SNode_55_0 -> 256 item(s)
+   * SNode_54_0 -> 1024 item(s)
+   * SNode_51_1 -> 64 item(s)
+   * SNode_4_1 -> 3072 item(s)
+   * SNode_75_0 -> 1536 item(s)
+   * SNode_47_0 -> 2048 item(s)
+   * SNode_46_0 -> 3456 item(s)
+   * SNode_43_1 -> 4096 item(s)
+   * SNode_42_0 -> 4096 item(s)
+   * SNode_41_0 -> 64 item(s)
+   * SNode_3_1 -> 16384 item(s)
+   * SNode_38_1 -> 9216 item(s)
+   * SNode_37_1 -> 9216 item(s)
+   * SNode_34_1 -> 384 item(s)
+   * WRITE30_1 -> 1024 item(s)
+   * SNode_34_0 -> 256 item(s)
+   * SNode_33_1 -> 1024 item(s)
+   * SNode_31_0 -> 2304 item(s)
+   * SNode_29_1 -> 2304 item(s)
+   * SNode_28_0 -> 512 item(s)
+   * WRITE30_0 -> 512 item(s)
+   * SNode_27_1 -> 1024 item(s)
+   * SNode_26_1 -> 64 item(s)
+   * SNode_25_1 -> 6912 item(s)
+   * SNode_64_0 -> 768 item(s)
+   * SNode_25_0 -> 4608 item(s)
+   * SNode_24_0 -> 6912 item(s)
+   * SNode_21_1 -> 13824 item(s)
+   * SNode_20_1 -> 18432 item(s)
+   * SNode_18_1 -> 1 item(s)
+   * SNode_18_0 -> 1 item(s)
+   * SNode_17_1 -> 1 item(s)
+   * SNode_17_0 -> 1 item(s)
+   * SNode_16_1 -> 18432 item(s)
+   * SNode_37_0 -> 4608 item(s)
+   * SNode_16_0 -> 12288 item(s)
+   * TRY13_1 -> 4 item(s)
+   * SNode_156_1 -> 3072 item(s)
+   * SNode_33_0 -> 1024 item(s)
+   * SNode_155_1 -> 3920 item(s)
+   * SNode_155_0 -> 3920 item(s)
+   * SNode_9_1 -> 32 item(s)
+   * SNode_154_0 -> 2800 item(s)
+   * SNode_152_1 -> 2016 item(s)
+   * SNode_152_0 -> 1008 item(s)
+   * SNode_14_1 -> 1 item(s)
+   * SNode_14_0 -> 1 item(s)
+   * SNode_13_0 -> 32 item(s)
+   * SNode_137_0 -> 2304 item(s)
+   * SNode_7_1 -> 2048 item(s)
+   * SNode_136_1 -> 3456 item(s)
+   * SNode_136_0 -> 3456 item(s)
+   * SNode_135_1 -> 80 item(s)
+   * VECTOR70_0 -> 4 item(s)
+   * SNode_73_1 -> 4608 item(s)
+   * SNode_135_0 -> 80 item(s)
+   * SNode_134_1 -> 16 item(s)
+   * SNode_134_0 -> 16 item(s)
+   * WEIGHT56_0 -> 4608 item(s)
+   * SNode_47_1 -> 4096 item(s)
+   * SNode_133_0 -> 64 item(s)
+   * SNode_68_1 -> 3200 item(s)
+   * GOAL_84_1 -> 3072 item(s)
+   * IDENTIFY43_0 -> 256 item(s)
+   * GOAL_83_1 -> 1536 item(s)
+   * GOAL_81_1 -> 3072 item(s)
+   * GOAL_143_0 -> 576 item(s)
+   * GOAL_81_0 -> 1536 item(s)
+   * GOAL_109_0 -> 1680 item(s)
+   * RApp9_0 -> 11520 item(s)
+   * SNode_125_1 -> 2304 item(s)
+   * SNode_4_0 -> 1024 item(s)
+   * GOAL_69_1 -> 512 item(s)
+   * IDENTIFY41_0 -> 1024 item(s)
+   * GOAL_66_0 -> 1024 item(s)
+   * GOAL_130_0 -> 3840 item(s)
+   * GOAL_63_1 -> 1536 item(s)
+   * SNode_13_1 -> 64 item(s)
+   * GOAL66_1 -> 9600 item(s)
+   * GOAL_56_1 -> 128 item(s)
+   * GOAL_56_0 -> 128 item(s)
+   * GOAL_50_0 -> 32 item(s)
+   * SNode_12_1 -> 204 item(s)
+   * GOAL_49_0 -> 4 item(s)
+   * SUM75_1 -> 3456 item(s)
+   * IDENTIFY41_1 -> 1024 item(s)
+   * KINEMATI17_1 -> 128 item(s)
+   * NORMAL52_0 -> 68 item(s)
+   * VECTOR44_1 -> 4992 item(s)
+   * SNode_60_0 -> 512 item(s)
+   * GOAL_72_0 -> 384 item(s)
+   * GOAL_62_0 -> 128 item(s)
+   * GOAL_2_1 -> 4 item(s)
+   * GIVEN_1_1 -> 4096 item(s)
+   * GOAL_147_1 -> 96 item(s)
+   * GOAL_147_0 -> 96 item(s)
+   * SNode_15_0 -> 6912 item(s)
+   * GOAL_79_1 -> 2304 item(s)
+   * GOAL_146_1 -> 576 item(s)
+   * SNode_112_1 -> 4608 item(s)
+   * SNode_54_1 -> 1024 item(s)
+   * GOAL_143_1 -> 1152 item(s)
+   * RApp12_1 -> 384 item(s)
+   * GOAL_2_0 -> 4 item(s)
+   * GOAL_142_0 -> 1536 item(s)
+   * GOAL_48_0 -> 4 item(s)
+   * RApp6_1 -> 1536 item(s)
+   * GOAL_150_1 -> 1 item(s)
+   * SNode_55_1 -> 256 item(s)
+   * MAXIMIZE34_1 -> 2048 item(s)
+   * RApp6_0 -> 3072 item(s)
+   * RApp8_1 -> 2304 item(s)
+   * deadlock -> 2 item(s)
+   * TRY13_0 -> 2 item(s)
+   * GOAL_61_0 -> 512 item(s)
+   * GOAL_127_1 -> 17280 item(s)
+   * GOAL_62_1 -> 512 item(s)
+   * GOAL_127_0 -> 17280 item(s)
+   * GOAL_126_1 -> 1920 item(s)
+   * SNode_24_1 -> 6912 item(s)
+   * DISPLACEM0_1 -> 8192 item(s)
+   * GOAL_121_1 -> 5712 item(s)
+   * SNode_117_0 -> 64 item(s)
+   * GOAL_121_0 -> 3808 item(s)
+   * WRITE64_1 -> 2016 item(s)
+   * KNOWN6_1 -> 2048 item(s)
+   * SNode_154_1 -> 5544 item(s)
+   * IDENTIFY39_0 -> 4096 item(s)
+   * GOAL_111_1 -> 7680 item(s)
+   * GOAL_149_1 -> 8 item(s)
+   * GRAV78_1 -> 2 item(s)
+   * CHOOSE35_1 -> 512 item(s)
+   * GOAL_110_1 -> 1920 item(s)
+   * SNode_44_0 -> 2304 item(s)
+   * IDENTIFY9_1 -> 1024 item(s)
+   * IDENTIFY9_0 -> 512 item(s)
+   * EQUAL71_0 -> 2 item(s)
+   * GOAL72_1 -> 3696 item(s)
+   * SNode_116_1 -> 3200 item(s)
+   * SNode_44_1 -> 2304 item(s)
+   * GOAL_69_0 -> 512 item(s)
+   * DISPLACEM0_0 -> 8192 item(s)
+   * SNode_27_0 -> 512 item(s)
+   * GOAL68_1 -> 3840 item(s)
+   * SNode_124_1 -> 4608 item(s)
+   * SNode_3_0 -> 8192 item(s)
+   * FIND58_1 -> 9216 item(s)
+   * GOAL_57_0 -> 512 item(s)
+   * GOAL_87_0 -> 3072 item(s)
+   * FIND58_0 -> 4608 item(s)
+   * SNode_52_0 -> 32 item(s)
+   * GOAL_107_1 -> 1008 item(s)
+   * GOAL_113_0 -> 3920 item(s)
+   * RApp10_1 -> 5184 item(s)
+   * SNode_119_1 -> 2 item(s)
+   * TRY26_0 -> 8 item(s)
+   * SNode_156_0 -> 3072 item(s)
+   * GIVEN_1_0 -> 4096 item(s)
+   * RApp11_0 -> 384 item(s)
+   * COMPO16_0 -> 4 item(s)
+   * COMPO16_1 -> 8 item(s)
+   * HORIZ53_0 -> 68 item(s)
+   * FORCE60_1 -> 8064 item(s)
+   * NEED1_1 -> 30720 item(s)
+   * CONSTANT5_0 -> 32 item(s)
+   * init -> 1 item(s)
+   * GOAL72_0 -> 3696 item(s)
+   * APPLY61_0 -> 4032 item(s)
+   * APPLY32_1 -> 256 item(s)
+   * GOAL_66_1 -> 1024 item(s)
+   * WRITE64_0 -> 1008 item(s)
+   * GOAL_53_0 -> 128 item(s)
+   * KINE29_1 -> 3072 item(s)
+   * CHOOSE47_0 -> 3072 item(s)
+   * GRAV2_1 -> 9216 item(s)
+   * SNode_86_1 -> 3072 item(s)
+   * BUGGY54_0 -> 204 item(s)
+   * GOAL_114_1 -> 5120 item(s)
+   * GOAL_49_1 -> 4 item(s)
+   * AXIS33_1 -> 1024 item(s)
+   * GOAL_153_1 -> 5544 item(s)
+   * RESOLVE42_0 -> 384 item(s)
+   * APPLY61_1 -> 8064 item(s)
+   * BUGGY54_1 -> 68 item(s)
+   * APPLY77_0 -> 1 item(s)
+   * GOAL_50_1 -> 64 item(s)
+   * GOAL_80_0 -> 3072 item(s)
+   * SLIDING4_1 -> 4608 item(s)
+   * GOAL66_0 -> 9600 item(s)
+   * SNode_59_0 -> 2048 item(s)
+   * NEWTONS45_1 -> 6144 item(s)
+   * CHOOSE62_0 -> 8064 item(s)
+   * CHOOSE47_1 -> 3072 item(s)
+   * INCLINE51_1 -> 136 item(s)
+   * CHOOSE19_0 -> 64 item(s)
+   * AXIS33_0 -> 512 item(s)
+   * VAR20_1 -> 3072 item(s)
+   * TRY76_0 -> 8 item(s)
+   * GOAL_61_1 -> 512 item(s)
+   * GOAL_129_0 -> 2240 item(s)
+   * GOAL_79_0 -> 2304 item(s)
+   * FORCE60_0 -> 8064 item(s)
+   * RApp4_1 -> 256 item(s)
+   * SNode_137_1 -> 2304 item(s)
+   * DEFINE23_1 -> 4608 item(s)
+   * CHOOSE19_1 -> 64 item(s)
+   * GOAL_130_1 -> 3840 item(s)
+   * GOAL65_0 -> 960 item(s)
+   * VECTOR69_1 -> 5120 item(s)
+   * SYSTEM18_1 -> 128 item(s)
+   * EQUATION28_1 -> 2304 item(s)
+   * SNode_151_0 -> 1 item(s)
+   * RESOLVE42_1 -> 640 item(s)
+   * SYSTEM46_0 -> 3072 item(s)
+   * SNode_88_1 -> 4608 item(s)
+   * GOAL_83_0 -> 1536 item(s)
+   * GOAL_129_1 -> 3360 item(s)
+   * RESOLVE38_1 -> 1024 item(s)
+   * SNode_29_0 -> 1152 item(s)
+   * GOAL_98_1 -> 4608 item(s)
+   * GOAL_57_1 -> 512 item(s)
+   * GOAL_48_1 -> 8 item(s)
+   * TRY76_1 -> 16 item(s)
+   * GOAL_111_0 -> 7680 item(s)
+   * EQUAL71_1 -> 4 item(s)
+   * GOAL_108_1 -> 2016 item(s)
+   * FIND49_1 -> 9216 item(s)
+   * VAR20_0 -> 768 item(s)
+   * GOAL_110_0 -> 1920 item(s)
+   * TRY15_1 -> 4 item(s)
+   * GOAL_84_0 -> 3072 item(s)
+   * APPLY32_0 -> 128 item(s)
+   * SNode_19_1 -> 1 item(s)
+   * GIVEN21_0 -> 1024 item(s)
+   * GOAL_126_0 -> 1920 item(s)
+   * WEIGHT56_1 -> 6912 item(s)
+   * FIND49_0 -> 6144 item(s)
+   * IDENTIFY39_1 -> 6144 item(s)
+   * SNode_5_1 -> 8 item(s)
+   * GOAL_150_0 -> 1 item(s)
+   * GOAL_114_0 -> 3680 item(s)
+   * GOAL_63_0 -> 1536 item(s)
+   * GOAL68_0 -> 960 item(s)
+   * CHOOSE35_0 -> 512 item(s)
+   * SNode_67_1 -> 4096 item(s)
+   * SNode_132_1 -> 2304 item(s)
+   * SNode_11_0 -> 16 item(s)
+   * GOAL_103_1 -> 4032 item(s)
+   * NULL48_1 -> 4608 item(s)
+   * SNode_26_0 -> 64 item(s)
+   * GOAL_109_1 -> 2016 item(s)
+   * CONSTANT5_1 -> 64 item(s)
+   * EQUATION28_0 -> 768 item(s)
+   * GOAL_103_0 -> 4032 item(s)
+   * SNode_92_1 -> 136 item(s)
+   * APPLY77_1 -> 2 item(s)
+   * RESOLVE40_0 -> 512 item(s)
+   * SNode_51_0 -> 64 item(s)
+   * SNode_12_0 -> 68 item(s)
+   * GOAL_104_1 -> 8064 item(s)
+   * SNode_116_0 -> 1280 item(s)
+   * GOAL_107_0 -> 1008 item(s)
+   * SNode_100_0 -> 10240 item(s)
+   * GOAL_108_0 -> 2016 item(s)
+   * GOAL_87_1 -> 6144 item(s)
+   * NEED67_0 -> 6912 item(s)
+   * GOAL_80_1 -> 3072 item(s)
+   * GRAV78_0 -> 1 item(s)
+   * KINEMATI17_0 -> 64 item(s)
+   * RESOLVE37_0 -> 1536 item(s)
+   * GOAL_153_0 -> 3080 item(s)
+   * GOAL_99_0 -> 4608 item(s)
+   * GOAL_99_1 -> 4608 item(s)
+   * SNode_71_0 -> 1920 item(s)
+   * SNode_11_1 -> 16 item(s)
+   * SNode_122_0 -> 1344 item(s)
+   * VECTOR73_0 -> 2016 item(s)
+   * TRY14_0 -> 2 item(s)
+   * GIVEN21_1 -> 2048 item(s)
+   * GRAV2_0 -> 9216 item(s)
+   * SNode_42_1 -> 4096 item(s)
+   * SNode_38_0 -> 9216 item(s)
+   * RApp13_0 -> 192 item(s)
+   * HORIZ53_1 -> 204 item(s)
+   * SNode_133_1 -> 136 item(s)
+   * DEFINE23_0 -> 4608 item(s)
+   * IDENTIFY10_0 -> 128 item(s)
+   * MAXIMIZE34_0 -> 1024 item(s)
+   * TRY11_0 -> 2 item(s)
+   * IDENTIFY10_1 -> 128 item(s)
+   * SNode_46_1 -> 3456 item(s)
+   * SNode_31_1 -> 2304 item(s)
+   * IDENTIFY22_0 -> 9216 item(s)
+   * SNode_106_1 -> 4032 item(s)
+   * IDENTIFY43_1 -> 256 item(s)
+   * SNode_40_1 -> 9216 item(s)
+   * IDENTIFY55_0 -> 2304 item(s)
+   * GOAL65_1 -> 3840 item(s)
+   * IDENTIFY55_1 -> 4032 item(s)
+   * IDENTIFY59_0 -> 30720 item(s)
+   * SNode_117_1 -> 88 item(s)
+   * SNode_71_1 -> 1920 item(s)
+   * IDENTIFY59_1 -> 30720 item(s)
+   * GOAL_72_1 -> 384 item(s)
+   * KNOWN8_0 -> 256 item(s)
+   * VECTOR27_1 -> 4608 item(s)
+   * INCLINE51_0 -> 136 item(s)
+   * SNode_20_0 -> 9216 item(s)
+   * RApp4_0 -> 256 item(s)
+   * KINE29_0 -> 1536 item(s)
+   * KNOWN6_0 -> 512 item(s)
+   * KNOWN8_1 -> 512 item(s)
+   * TRY24_1 -> 8 item(s)
+   * NEED1_0 -> 18432 item(s)
+   * NEED36_0 -> 2048 item(s)
+   * NEED36_1 -> 2048 item(s)
+   * SNode_128_0 -> 6912 item(s)
+   * NEED67_1 -> 6912 item(s)
+   * CHOOSE62_1 -> 8064 item(s)
+   * SNode_112_0 -> 3072 item(s)
+   * NEWTONS45_0 -> 3072 item(s)
+   * SNode_124_0 -> 4608 item(s)
+   * NEWTONS74_0 -> 3456 item(s)
+   * IDENTIFY22_1 -> 9216 item(s)
+   * NEWTONS74_1 -> 6144 item(s)
+   * NORMAL50_0 -> 9216 item(s)
+   * TRY15_0 -> 2 item(s)
+   * TRY11_1 -> 2 item(s)
+   * RApp12_0 -> 384 item(s)
+   * SLIDING4_0 -> 4608 item(s)
+   * NORMAL50_1 -> 9216 item(s)
+   * NULL48_0 -> 3072 item(s)
+   * RApp10_0 -> 17280 item(s)
+   * RApp5_1 -> 1536 item(s)
+   * RApp11_1 -> 192 item(s)
+   * RApp1_0 -> 16384 item(s)
+   * GOAL_149_0 -> 4 item(s)
+   * SNode_118_0 -> 2 item(s)
+   * RApp7_0 -> 11520 item(s)
+   * SNode_21_0 -> 6912 item(s)
+   * RApp1_1 -> 4096 item(s)
+   * RApp2_0 -> 4096 item(s)
+   * SNode_19_0 -> 1 item(s)
+   * SNode_125_0 -> 2304 item(s)
+   * RApp2_1 -> 4096 item(s)
+   * VECTOR69_0 -> 1120 item(s)
+   * SNode_100_1 -> 30720 item(s)
+   * RApp3_0 -> 2048 item(s)
+   * RApp3_1 -> 1024 item(s)
+   * GOAL_146_0 -> 384 item(s)
+   * RApp5_0 -> 4608 item(s)
+   * SNode_41_1 -> 64 item(s)
+   * RApp7_1 -> 4608 item(s)
+   * RApp8_0 -> 7680 item(s)
+   * RApp9_1 -> 7680 item(s)
+   * RESOLVE37_1 -> 1920 item(s)
+   * SNode_28_1 -> 512 item(s)
+   * NORMAL52_1 -> 136 item(s)
+   * RESOLVE38_0 -> 1024 item(s)
+   * SNode_52_1 -> 64 item(s)
+   * RESOLVE40_1 -> 768 item(s)
+   * SNode_102_0 -> 4032 item(s)
+   * SNode_15_1 -> 13824 item(s)
+   * SNode_102_1 -> 8064 item(s)
+   * GOAL_98_0 -> 4608 item(s)
+   * SNode_106_0 -> 2016 item(s)
+   * SNode_131_0 -> 2560 item(s)
+   * TRY12_0 -> 2 item(s)
+   * SNode_43_0 -> 4096 item(s)
+   * GOAL_142_1 -> 1536 item(s)
+   * SNode_10_0 -> 192 item(s)
+   * GOAL_104_0 -> 4032 item(s)
+   * SNode_10_1 -> 384 item(s)
+   * SNode_115_0 -> 3520 item(s)
+   * SNode_40_0 -> 9216 item(s)
+   * SNode_115_1 -> 6240 item(s)
+   * SNode_75_1 -> 3072 item(s)
+   * GOAL_53_1 -> 128 item(s)
+   * SNode_118_1 -> 4 item(s)
+   * WRITE31_0 -> 512 item(s)
+   * GOAL_113_1 -> 4080 item(s)
+   * SNode_119_0 -> 2 item(s)
+   * SNode_151_1 -> 1 item(s)
+   * SNode_120_0 -> 64 item(s)
+   * SNode_120_1 -> 64 item(s)
+   * SNode_97_0 -> 3456 item(s)
+   * SNode_122_1 -> 3136 item(s)
+   * SNode_123_0 -> 4032 item(s)
+   * SNode_6_0 -> 4 item(s)
+   * RApp13_1 -> 96 item(s)
+   * SNode_132_0 -> 768 item(s)
+   * SNode_123_1 -> 4032 item(s)
+   * SNode_128_1 -> 10368 item(s)
+   * SNode_131_1 -> 5120 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+Accumulated values for labels:
+	APPLY32_0: 0.5
+	APPLY32_1: 0.5
+	APPLY61_0: 0.5
+	APPLY61_1: 0.5
+	APPLY77_0: 0.5
+	APPLY77_1: 0.5
+	AXIS33_0: 0.2
+	AXIS33_1: 0.8
+	BUGGY54_0: 0.4832
+	BUGGY54_1: 0.5168
+	CHOOSE19_0: 0.5
+	CHOOSE19_1: 0.5
+	CHOOSE35_0: 0.5
+	CHOOSE35_1: 0.5
+	CHOOSE47_0: 0.5
+	CHOOSE47_1: 0.5
+	CHOOSE62_0: 0.5
+	CHOOSE62_1: 0.5
+	COMPO16_0: 0.5
+	COMPO16_1: 0.5
+	CONSTANT5_0: 0.5
+	CONSTANT5_1: 0.5
+	DEFINE23_0: 0.5
+	DEFINE23_1: 0.5
+	DISPLACEM0_0: 0.5
+	DISPLACEM0_1: 0.5
+	EQUAL71_0: 0.4
+	EQUAL71_1: 0.6
+	EQUATION28_0: 0.6
+	EQUATION28_1: 0.4
+	FIND49_0: 0.5
+	FIND49_1: 0.5
+	FIND58_0: 0.7
+	FIND58_1: 0.3
+	FORCE60_0: 0.2
+	FORCE60_1: 0.8
+	GIVEN21_0: 0.1
+	GIVEN21_1: 0.9
+	GIVEN_1_0: 0.02
+	GIVEN_1_1: 0.98
+	GOAL65_0: 0.5
+	GOAL65_1: 0.5
+	GOAL66_0: 0.6
+	GOAL66_1: 0.4
+	GOAL68_0: 0.5
+	GOAL68_1: 0.5
+	GOAL72_0: 0.5
+	GOAL72_1: 0.5
+	GOAL_103_0: 0.7625994037
+	GOAL_103_1: 0.2374005963
+	GOAL_104_0: 0.7050492575
+	GOAL_104_1: 0.2949507425
+	GOAL_107_0: 0.754276648
+	GOAL_107_1: 0.245723352
+	GOAL_108_0: 0.7017204881
+	GOAL_108_1: 0.2982795119
+	GOAL_109_0: 0.7017204881
+	GOAL_109_1: 0.2982795119
+	GOAL_110_0: 0.6807001264
+	GOAL_110_1: 0.3192998736
+	GOAL_111_0: 0.7045601012
+	GOAL_111_1: 0.2954398988
+	GOAL_113_0: 0.6722928226
+	GOAL_113_1: 0.3277071774
+	GOAL_114_0: 0.6722928226
+	GOAL_114_1: 0.3277071774
+	GOAL_121_0: 0.6807001264
+	GOAL_121_1: 0.3192998736
+	GOAL_126_0: 0.6807001264
+	GOAL_126_1: 0.3192998736
+	GOAL_127_0: 0.7045601012
+	GOAL_127_1: 0.2954398988
+	GOAL_129_0: 0.6722928226
+	GOAL_129_1: 0.3277071774
+	GOAL_130_0: 0.6722928226
+	GOAL_130_1: 0.3277071774
+	GOAL_142_0: 0.7931823662
+	GOAL_142_1: 0.2068176338
+	GOAL_143_0: 0.795509605
+	GOAL_143_1: 0.204490395
+	GOAL_146_0: 0.7931823662
+	GOAL_146_1: 0.2068176338
+	GOAL_147_0: 0.5853168078
+	GOAL_147_1: 0.4146831922
+	GOAL_149_0: 0.5548753966
+	GOAL_149_1: 0.4451246034
+	GOAL_150_0: 0.7676871286
+	GOAL_150_1: 0.2323128714
+	GOAL_153_0: 0.6807001264
+	GOAL_153_1: 0.3192998736
+	GOAL_2_0: 0.02
+	GOAL_2_1: 0.98
+	GOAL_48_0: 0.4080392
+	GOAL_48_1: 0.5919608
+	GOAL_49_0: 0.5999012703
+	GOAL_49_1: 0.4000987297
+	GOAL_50_0: 0.6399765121
+	GOAL_50_1: 0.3600234879
+	GOAL_53_0: 0.7446626331
+	GOAL_53_1: 0.2553373669
+	GOAL_56_0: 0.7446626331
+	GOAL_56_1: 0.2553373669
+	GOAL_57_0: 0.6978752667
+	GOAL_57_1: 0.3021247333
+	GOAL_61_0: 0.7511358619
+	GOAL_61_1: 0.2488641381
+	GOAL_62_0: 0.7004642993
+	GOAL_62_1: 0.2995357007
+	GOAL_63_0: 0.767779084
+	GOAL_63_1: 0.232220916
+	GOAL_66_0: 0.7706180956
+	GOAL_66_1: 0.2293819044
+	GOAL_69_0: 0.7635712619
+	GOAL_69_1: 0.2364287381
+	GOAL_72_0: 0.7701349546
+	GOAL_72_1: 0.2298650454
+	GOAL_79_0: 0.7944883597
+	GOAL_79_1: 0.2055116403
+	GOAL_80_0: 0.7485452566
+	GOAL_80_1: 0.2514547434
+	GOAL_81_0: 0.6283747023
+	GOAL_81_1: 0.3716252977
+	GOAL_83_0: 0.5309701901
+	GOAL_83_1: 0.4690298099
+	GOAL_84_0: 0.6124068372
+	GOAL_84_1: 0.3875931628
+	GOAL_87_0: 0.6428832655
+	GOAL_87_1: 0.3571167345
+	GOAL_98_0: 0.7347237319
+	GOAL_98_1: 0.2652762681
+	GOAL_99_0: 0.7363400623
+	GOAL_99_1: 0.2636599377
+	GRAV2_0: 0.5
+	GRAV2_1: 0.5
+	GRAV78_0: 0.5
+	GRAV78_1: 0.5
+	HORIZ53_0: 0.5168
+	HORIZ53_1: 0.4832
+	IDENTIFY10_0: 0.5
+	IDENTIFY10_1: 0.5
+	IDENTIFY22_0: 0.5
+	IDENTIFY22_1: 0.5
+	IDENTIFY39_0: 0.5
+	IDENTIFY39_1: 0.5
+	IDENTIFY41_0: 0.5
+	IDENTIFY41_1: 0.5
+	IDENTIFY43_0: 0.6
+	IDENTIFY43_1: 0.4
+	IDENTIFY55_0: 0.5
+	IDENTIFY55_1: 0.5
+	IDENTIFY59_0: 0.5
+	IDENTIFY59_1: 0.5
+	IDENTIFY9_0: 0.5
+	IDENTIFY9_1: 0.5
+	INCLINE51_0: 0.646
+	INCLINE51_1: 0.354
+	KINE29_0: 0.5
+	KINE29_1: 0.5
+	KINEMATI17_0: 0.5
+	KINEMATI17_1: 0.5
+	KNOWN6_0: 0.5
+	KNOWN6_1: 0.5
+	KNOWN8_0: 0.5
+	KNOWN8_1: 0.5
+	MAXIMIZE34_0: 0.5
+	MAXIMIZE34_1: 0.5
+	NEED1_0: 0.5
+	NEED1_1: 0.5
+	NEED36_0: 0.5
+	NEED36_1: 0.5
+	NEED67_0: 0.5
+	NEED67_1: 0.5
+	NEWTONS45_0: 0.5
+	NEWTONS45_1: 0.5
+	NEWTONS74_0: 0.5
+	NEWTONS74_1: 0.5
+	NORMAL50_0: 0.5
+	NORMAL50_1: 0.5
+	NORMAL52_0: 0.646
+	NORMAL52_1: 0.354
+	NULL48_0: 0.5
+	NULL48_1: 0.5
+	RApp10_0: 0.8522912515
+	RApp10_1: 0.1477087485
+	RApp11_0: 0.8965963381
+	RApp11_1: 0.1034036619
+	RApp12_0: 0.8977514556
+	RApp12_1: 0.1022485444
+	RApp13_0: 0.8965963381
+	RApp13_1: 0.1034036619
+	RApp1_0: 0.510049
+	RApp1_1: 0.489951
+	RApp2_0: 0.020098
+	RApp2_1: 0.979902
+	RApp3_0: 0.8248087265
+	RApp3_1: 0.1751912735
+	RApp4_0: 0.510049
+	RApp4_1: 0.489951
+	RApp5_0: 0.8972544554
+	RApp5_1: 0.1027455446
+	RApp6_0: 0.8742604058
+	RApp6_1: 0.1257395942
+	RApp7_0: 0.850875158
+	RApp7_1: 0.149124842
+	RApp8_0: 0.8522912515
+	RApp8_1: 0.1477087485
+	RApp9_0: 0.850875158
+	RApp9_1: 0.149124842
+	RESOLVE37_0: 0.5
+	RESOLVE37_1: 0.5
+	RESOLVE38_0: 0.5
+	RESOLVE38_1: 0.5
+	RESOLVE40_0: 0.5
+	RESOLVE40_1: 0.5
+	RESOLVE42_0: 0.5
+	RESOLVE42_1: 0.5
+	SLIDING4_0: 0.1
+	SLIDING4_1: 0.9
+	SNode_100_0: 0.6939001038
+	SNode_100_1: 0.3060998962
+	SNode_102_0: 0.8158632927
+	SNode_102_1: 0.1841367073
+	SNode_106_0: 0.6820312793
+	SNode_106_1: 0.3179687207
+	SNode_10_0: 0.02
+	SNode_10_1: 0.98
+	SNode_112_0: 0.5935484054
+	SNode_112_1: 0.4064515946
+	SNode_115_0: 0.668928809
+	SNode_115_1: 0.331071191
+	SNode_116_0: 0.8923398033
+	SNode_116_1: 0.1076601967
+	SNode_117_0: 0.668928809
+	SNode_117_1: 0.331071191
+	SNode_118_0: 0.7449820894
+	SNode_118_1: 0.2550179106
+	SNode_119_0: 0.8848665387
+	SNode_119_1: 0.1151334613
+	SNode_11_0: 0.02
+	SNode_11_1: 0.98
+	SNode_120_0: 0.8941874084
+	SNode_120_1: 0.1058125916
+	SNode_122_0: 0.6722892515
+	SNode_122_1: 0.3277107485
+	SNode_123_0: 0.8741166782
+	SNode_123_1: 0.1258833218
+	SNode_124_0: 0.8862252804
+	SNode_124_1: 0.1137747196
+	SNode_125_0: 0.8055196832
+	SNode_125_1: 0.1944803168
+	SNode_128_0: 0.5935484054
+	SNode_128_1: 0.4064515946
+	SNode_12_0: 0.02
+	SNode_12_1: 0.98
+	SNode_131_0: 0.668928809
+	SNode_131_1: 0.331071191
+	SNode_132_0: 0.8923398033
+	SNode_132_1: 0.1076601967
+	SNode_133_0: 0.668928809
+	SNode_133_1: 0.331071191
+	SNode_134_0: 0.8937329441
+	SNode_134_1: 0.1062670559
+	SNode_135_0: 0.8941874084
+	SNode_135_1: 0.1058125916
+	SNode_136_0: 0.8887237785
+	SNode_136_1: 0.1112762215
+	SNode_137_0: 0.8055196832
+	SNode_137_1: 0.1944803168
+	SNode_13_0: 0.02
+	SNode_13_1: 0.98
+	SNode_14_0: 0.02
+	SNode_14_1: 0.98
+	SNode_151_0: 0.795469662
+	SNode_151_1: 0.204530338
+	SNode_152_0: 0.5965202677
+	SNode_152_1: 0.4034797323
+	SNode_154_0: 0.6722892515
+	SNode_154_1: 0.3277107485
+	SNode_155_0: 0.8838709108
+	SNode_155_1: 0.1161290892
+	SNode_156_0: 0.6902511834
+	SNode_156_1: 0.3097488166
+	SNode_15_0: 0.02
+	SNode_15_1: 0.98
+	SNode_16_0: 0.02
+	SNode_16_1: 0.98
+	SNode_17_0: 0.02
+	SNode_17_1: 0.98
+	SNode_18_0: 0.02
+	SNode_18_1: 0.98
+	SNode_19_0: inf
+	SNode_19_1: inf
+	SNode_20_0: 0.4080392
+	SNode_20_1: 0.5919608
+	SNode_21_0: 0.5632393584
+	SNode_21_1: 0.4367606416
+	SNode_24_0: 0.7034773655
+	SNode_24_1: 0.2965226345
+	SNode_25_0: 0.10627938
+	SNode_25_1: 0.89372062
+	SNode_26_0: 0.4080392
+	SNode_26_1: 0.5919608
+	SNode_27_0: 0.337482209
+	SNode_27_1: 0.662517791
+	SNode_28_0: 0.7323405473
+	SNode_28_1: 0.2676594527
+	SNode_29_0: 0.6501256954
+	SNode_29_1: 0.3498743046
+	SNode_31_0: 0.7425723073
+	SNode_31_1: 0.2574276927
+	SNode_33_0: 0.10627938
+	SNode_33_1: 0.89372062
+	SNode_34_0: 0.4080392
+	SNode_34_1: 0.5919608
+	SNode_37_0: 0.6939001038
+	SNode_37_1: 0.3060998962
+	SNode_38_0: 0.6286011997
+	SNode_38_1: 0.3713988003
+	SNode_3_0: 0.02
+	SNode_3_1: 0.98
+	SNode_40_0: 0.7328872528
+	SNode_40_1: 0.2671127472
+	SNode_41_0: 0.4080392
+	SNode_41_1: 0.5919608
+	SNode_42_0: 0.5651809784
+	SNode_42_1: 0.4348190216
+	SNode_43_0: 0.7555942234
+	SNode_43_1: 0.2444057766
+	SNode_44_0: 0.6631464518
+	SNode_44_1: 0.3368535482
+	SNode_46_0: 0.7484310617
+	SNode_46_1: 0.2515689383
+	SNode_47_0: 0.4080392
+	SNode_47_1: 0.5919608
+	SNode_4_0: 0.02
+	SNode_4_1: 0.98
+	SNode_51_0: 0.7412455189
+	SNode_51_1: 0.2587544811
+	SNode_52_0: 0.6965085577
+	SNode_52_1: 0.3034914423
+	SNode_54_0: 0.6978752667
+	SNode_54_1: 0.3021247333
+	SNode_55_0: 0.751636929
+	SNode_55_1: 0.248363071
+	SNode_59_0: 0.6815789479
+	SNode_59_1: 0.3184210521
+	SNode_5_0: 0.02
+	SNode_5_1: 0.98
+	SNode_60_0: 0.5962309056
+	SNode_60_1: 0.4037690944
+	SNode_64_0: 0.7071209224
+	SNode_64_1: 0.2928790776
+	SNode_65_0: 0.8744997933
+	SNode_65_1: 0.1255002067
+	SNode_67_0: 0.7082564135
+	SNode_67_1: 0.2917435865
+	SNode_68_0: 0.8380772076
+	SNode_68_1: 0.1619227924
+	SNode_6_0: 0.02
+	SNode_6_1: 0.98
+	SNode_70_0: 0.7054379619
+	SNode_70_1: 0.2945620381
+	SNode_71_0: 0.8361748796
+	SNode_71_1: 0.1638251204
+	SNode_73_0: 0.7080631765
+	SNode_73_1: 0.2919368235
+	SNode_74_0: 0.8971295033
+	SNode_74_1: 0.1028704967
+	SNode_75_0: 0.8391878456
+	SNode_75_1: 0.1608121544
+	SNode_7_0: 0.02
+	SNode_7_1: 0.98
+	SNode_86_0: 0.7256005185
+	SNode_86_1: 0.2743994815
+	SNode_88_0: 0.7563911971
+	SNode_88_1: 0.2436088029
+	SNode_8_0: 0.008200771842
+	SNode_8_1: 0.9917992282
+	SNode_91_0: 0.7668743087
+	SNode_91_1: 0.2331256913
+	SNode_92_0: 0.5974346586
+	SNode_92_1: 0.4025653414
+	SNode_93_0: 0.7282789823
+	SNode_93_1: 0.2717210177
+	SNode_94_0: 0.7029686002
+	SNode_94_1: 0.2970313998
+	SNode_95_0: 0.6336790498
+	SNode_95_1: 0.3663209502
+	SNode_97_0: 0.7069120804
+	SNode_97_1: 0.2930879196
+	SNode_9_0: 0.02
+	SNode_9_1: 0.98
+	STRAT_90_0: 0.5
+	STRAT_90_1: 0.5
+	SUM75_0: 0.5
+	SUM75_1: 0.5
+	SYSTEM18_0: 0.5
+	SYSTEM18_1: 0.5
+	SYSTEM46_0: 0.5
+	SYSTEM46_1: 0.5
+	TRY11_0: 0.56
+	TRY11_1: 0.44
+	TRY12_0: 0.7
+	TRY12_1: 0.3
+	TRY13_0: 0.56
+	TRY13_1: 0.44
+	TRY14_0: 0.63
+	TRY14_1: 0.37
+	TRY15_0: 0.63
+	TRY15_1: 0.37
+	TRY24_0: 0.095
+	TRY24_1: 0.905
+	TRY25_0: 0.1
+	TRY25_1: 0.9
+	TRY26_0: 0.09
+	TRY26_1: 0.91
+	TRY76_0: 0.5
+	TRY76_1: 0.5
+	VALUE3_0: 0.5
+	VALUE3_1: 0.5
+	VAR20_0: 0.3
+	VAR20_1: 0.7
+	VECTOR27_0: 0.5
+	VECTOR27_1: 0.5
+	VECTOR44_0: 0.5
+	VECTOR44_1: 0.5
+	VECTOR69_0: 0.7
+	VECTOR69_1: 0.3
+	VECTOR70_0: 0.1
+	VECTOR70_1: 0.9
+	VECTOR73_0: 0.5
+	VECTOR73_1: 0.5
+	VELOCITY7_0: 0.5
+	VELOCITY7_1: 0.5
+	WEIGHT56_0: 0.3
+	WEIGHT56_1: 0.7
+	WEIGHT57_0: 0.3
+	WEIGHT57_1: 0.7
+	WRITE30_0: 0.5
+	WRITE30_1: 0.5
+	WRITE31_0: 0.5
+	WRITE31_1: 0.5
+	WRITE63_0: 0.5
+	WRITE63_1: 0.5
+	WRITE64_0: 0.5
+	WRITE64_1: 0.5
+	deadlock: inf
+	init: 1
+Result: [5.159204391e-16, inf] (range)
+Time for model checking: 0.552s.

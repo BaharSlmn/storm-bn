@@ -1,0 +1,257 @@
+Storm 1.6.4 (dev)
+
+Date: Thu Apr 28 12:34:35 2022
+Command line arguments: --jani storm/jani_files/water.jani --expvisittimes --build-all-labels
+Current working directory: /home/hans/Desktop/private/ace_storm_comparison/unary_hypothesis
+
+Time for model input parsing: 0.429s.
+
+Time for model construction: 0.636s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	37569
+Transitions: 	72778
+Reward Models:  none
+State Labels: 	118 labels
+   * C_NI_12_452 -> 3 item(s)
+   * C_NI_12_453 -> 3 item(s)
+   * C_NI_12_450 -> 3 item(s)
+   * C_NI_12_303 -> 60 item(s)
+   * C_NI_12_300 -> 60 item(s)
+   * C_NI_12_153 -> 56 item(s)
+   * C_NI_12_152 -> 64 item(s)
+   * C_NI_12_150 -> 56 item(s)
+   * C_NI_12_000 -> 24 item(s)
+   * CNON_12_450 -> 456 item(s)
+   * CNON_12_303 -> 0 item(s)
+   * deadlock -> 3 item(s)
+   * CNON_12_151 -> 4 item(s)
+   * CNON_12_002 -> 0 item(s)
+   * CNON_12_000 -> 0 item(s)
+   * CNOD_12_452 -> 0 item(s)
+   * CNOD_12_450 -> 240 item(s)
+   * CNOD_12_303 -> 0 item(s)
+   * CNOD_12_301 -> 2304 item(s)
+   * C_NI_12_301 -> 60 item(s)
+   * CNOD_12_300 -> 2320 item(s)
+   * CNOD_12_150 -> 2 item(s)
+   * CNOD_12_453 -> 0 item(s)
+   * CNOD_12_451 -> 192 item(s)
+   * CNOD_12_003 -> 0 item(s)
+   * CNOD_12_001 -> 1 item(s)
+   * CNON_12_150 -> 0 item(s)
+   * CKNN_12_452 -> 0 item(s)
+   * CKNN_12_451 -> 1440 item(s)
+   * CKNN_12_300 -> 1332 item(s)
+   * CNOD_12_000 -> 0 item(s)
+   * CKNN_12_152 -> 0 item(s)
+   * CKNN_12_450 -> 1440 item(s)
+   * CKNN_12_151 -> 480 item(s)
+   * CKNN_12_150 -> 480 item(s)
+   * CBODN_12_000 -> 0 item(s)
+   * CNOD_12_302 -> 0 item(s)
+   * CKND_12_000 -> 0 item(s)
+   * C_NI_12_451 -> 3 item(s)
+   * CBODN_12_150 -> 0 item(s)
+   * CBODN_12_450 -> 216 item(s)
+   * CNON_12_153 -> 0 item(s)
+   * CKNI_12_450 -> 1 item(s)
+   * CBODN_12_002 -> 0 item(s)
+   * CBODD_12_152 -> 64 item(s)
+   * init -> 1 item(s)
+   * CKNN_12_302 -> 0 item(s)
+   * CBODD_12_453 -> 12 item(s)
+   * CNON_12_452 -> 480 item(s)
+   * CNON_12_451 -> 720 item(s)
+   * CBODN_12_003 -> 0 item(s)
+   * CBODD_12_452 -> 12 item(s)
+   * CKNI_12_000 -> 8 item(s)
+   * CBODD_12_000 -> 0 item(s)
+   * CBODD_12_153 -> 0 item(s)
+   * CKND_12_001 -> 240 item(s)
+   * CNON_12_302 -> 1716 item(s)
+   * CBODN_12_303 -> 0 item(s)
+   * CKND_12_451 -> 1878 item(s)
+   * CKNI_12_002 -> 8 item(s)
+   * C_NI_12_001 -> 24 item(s)
+   * CBODD_12_451 -> 12 item(s)
+   * CBODD_12_001 -> 1 item(s)
+   * C_NI_12_003 -> 24 item(s)
+   * CKNI_12_151 -> 384 item(s)
+   * CBODN_12_001 -> 1 item(s)
+   * CBODD_12_301 -> 928 item(s)
+   * CNON_12_001 -> 1 item(s)
+   * CBODD_12_302 -> 688 item(s)
+   * CBODD_12_150 -> 32 item(s)
+   * CBODN_12_152 -> 1 item(s)
+   * CKNI_12_001 -> 8 item(s)
+   * CBODN_12_151 -> 1 item(s)
+   * C_NI_12_002 -> 24 item(s)
+   * CBODD_12_303 -> 208 item(s)
+   * CNON_12_003 -> 0 item(s)
+   * CKND_12_300 -> 0 item(s)
+   * CBODD_12_151 -> 96 item(s)
+   * CBODD_12_003 -> 0 item(s)
+   * CKNI_12_300 -> 946 item(s)
+   * CNON_12_453 -> 24 item(s)
+   * CNON_12_301 -> 2288 item(s)
+   * CBODN_12_153 -> 0 item(s)
+   * CBODD_12_300 -> 464 item(s)
+   * CKNI_12_301 -> 946 item(s)
+   * CBODN_12_302 -> 880 item(s)
+   * CBODD_12_450 -> 12 item(s)
+   * CBODN_12_452 -> 504 item(s)
+   * CBODD_12_002 -> 0 item(s)
+   * CBODN_12_451 -> 648 item(s)
+   * CBODN_12_453 -> 72 item(s)
+   * CNON_12_300 -> 572 item(s)
+   * CKND_12_002 -> 0 item(s)
+   * CNON_12_152 -> 4 item(s)
+   * CNOD_12_151 -> 2 item(s)
+   * CKND_12_150 -> 0 item(s)
+   * CKND_12_301 -> 1440 item(s)
+   * CBODN_12_301 -> 880 item(s)
+   * CKND_12_452 -> 2838 item(s)
+   * CKND_12_302 -> 2220 item(s)
+   * CNOD_12_153 -> 0 item(s)
+   * CKND_12_450 -> 0 item(s)
+   * C_NI_12_151 -> 64 item(s)
+   * CKNN_12_301 -> 1176 item(s)
+   * CKNI_12_150 -> 384 item(s)
+   * CKND_12_151 -> 240 item(s)
+   * CKNI_12_152 -> 384 item(s)
+   * CNOD_12_002 -> 0 item(s)
+   * CKND_12_152 -> 240 item(s)
+   * CKNI_12_302 -> 946 item(s)
+   * CKNI_12_451 -> 1 item(s)
+   * CKNI_12_452 -> 1 item(s)
+   * CKNN_12_000 -> 0 item(s)
+   * C_NI_12_302 -> 60 item(s)
+   * CBODN_12_300 -> 460 item(s)
+   * CKNN_12_001 -> 1 item(s)
+   * CNOD_12_152 -> 0 item(s)
+   * CKNN_12_002 -> 0 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+Accumulated values for labels:
+	CBODD_12_000: 0
+	CBODD_12_001: 1
+	CBODD_12_002: 0
+	CBODD_12_003: 0
+	CBODD_12_150: 0.01384999861
+	CBODD_12_151: 0.9305082403
+	CBODD_12_152: 0.0556416611
+	CBODD_12_153: 0
+	CBODD_12_300: 0.02224348646
+	CBODD_12_301: 0.8728426483
+	CBODD_12_302: 0.1018171475
+	CBODD_12_303: 0.00309661773
+	CBODD_12_450: 0.02833044813
+	CBODD_12_451: 0.8213987874
+	CBODD_12_452: 0.1425162449
+	CBODD_12_453: 0.007754419528
+	CBODN_12_000: 0
+	CBODN_12_001: 1
+	CBODN_12_002: 0
+	CBODN_12_003: 0
+	CBODN_12_150: 0
+	CBODN_12_151: 0.9922
+	CBODN_12_152: 0.0078
+	CBODN_12_153: 0
+	CBODN_12_300: 0.0005662930599
+	CBODN_12_301: 0.9818120191
+	CBODN_12_302: 0.01762158784
+	CBODN_12_303: 0
+	CBODN_12_450: 0.001427361128
+	CBODN_12_451: 0.9693777285
+	CBODN_12_452: 0.02918837347
+	CBODN_12_453: 6.43686388e-06
+	CKND_12_000: 0
+	CKND_12_001: 0.9999999
+	CKND_12_002: 0
+	CKND_12_150: 0
+	CKND_12_151: 0.9444332389
+	CKND_12_152: 0.05556666111
+	CKND_12_300: 0
+	CKND_12_301: 0.8944829871
+	CKND_12_302: 0.1055169129
+	CKND_12_450: 0
+	CKND_12_451: 0.848873747
+	CKND_12_452: 0.151126153
+	CKNI_12_000: 0.3333333
+	CKNI_12_001: 0.3333333
+	CKNI_12_002: 0.3333333
+	CKNI_12_150: 0.239999976
+	CKNI_12_151: 0.519999948
+	CKNI_12_152: 0.239999976
+	CKNI_12_300: 0.2287999771
+	CKNI_12_301: 0.5423999458
+	CKNI_12_302: 0.2287999771
+	CKNI_12_450: inf
+	CKNI_12_451: inf
+	CKNI_12_452: inf
+	CKNN_12_000: 0
+	CKNN_12_001: 1
+	CKNN_12_002: 0
+	CKNN_12_150: 0.249899975
+	CKNN_12_151: 0.750099925
+	CKNN_12_152: 0
+	CKNN_12_300: 0.4267241031
+	CKNN_12_301: 0.5732757969
+	CKNN_12_302: 0
+	CKNN_12_450: 0.5499664372
+	CKNN_12_451: 0.4500334628
+	CKNN_12_452: 0
+	CNOD_12_000: 0
+	CNOD_12_001: 1
+	CNOD_12_002: 0
+	CNOD_12_003: 0
+	CNOD_12_150: 0.3635
+	CNOD_12_151: 0.6365
+	CNOD_12_152: 0
+	CNOD_12_153: 0
+	CNOD_12_300: 0.5932238549
+	CNOD_12_301: 0.4067760451
+	CNOD_12_302: 0
+	CNOD_12_303: 0
+	CNOD_12_450: 0.7383229457
+	CNOD_12_451: 0.2616769543
+	CNOD_12_452: 0
+	CNOD_12_453: 0
+	CNON_12_000: 0
+	CNON_12_001: 1
+	CNON_12_002: 0
+	CNON_12_003: 0
+	CNON_12_150: 0
+	CNON_12_151: 0.9549
+	CNON_12_152: 0.0451
+	CNON_12_153: 0
+	CNON_12_300: 0.001139027106
+	CNON_12_301: 0.9256096858
+	CNON_12_302: 0.07325118706
+	CNON_12_303: 0
+	CNON_12_450: 0.004161748338
+	CNON_12_451: 0.9047757874
+	CNON_12_452: 0.09106234417
+	CNON_12_453: 2.004399301e-08
+	C_NI_12_000: 0.249999975
+	C_NI_12_001: 0.249999975
+	C_NI_12_002: 0.249999975
+	C_NI_12_003: 0.249999975
+	C_NI_12_150: 0.19999998
+	C_NI_12_151: 0.349999965
+	C_NI_12_152: 0.2624999738
+	C_NI_12_153: 0.1874999813
+	C_NI_12_300: 0.1962499804
+	C_NI_12_301: 0.3793749621
+	C_NI_12_302: 0.2681249732
+	C_NI_12_303: 0.1562499844
+	C_NI_12_450: 0.2008124799
+	C_NI_12_451: 0.3910312109
+	C_NI_12_452: 0.2686249731
+	C_NI_12_453: 0.139531236
+	deadlock: inf
+	init: 1
+Result: [2.657867459e-19, inf] (range)
+Time for model checking: 0.014s.

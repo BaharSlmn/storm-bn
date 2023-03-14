@@ -1,0 +1,1 @@
+storm --jani jani_files/5/survey.jani --prop "P=? [G(O=0 | O=-1)]"

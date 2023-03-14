@@ -1,0 +1,1 @@
+storm-pars -drn storm/drn_files/p1/win95pts.drn --prop "P=? [F(\"GDIIN0\")]" --bisimulation

@@ -1,0 +1,1 @@
+storm --jani jani_files/no_evidence/sachs.jani --prop "P=? [F(Jnk=1|Jnk=2|Erk=1|Erk=2|Akt=1|Akt=2)]"
